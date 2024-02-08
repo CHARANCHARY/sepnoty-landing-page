@@ -1,0 +1,20 @@
+.contact-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 21px;
+}
+
+.contact-type {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-type {
+    font-size: 8px;
+  }
+
+  .contact-items {
+    padding-top: 7px;
+  }
+}
