@@ -7,13 +7,14 @@ export const ContactContainer = styled.div`
   border-radius: 30px;
   margin: 30px;
   align-self: center;
-  width: 70%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 10%;
   background-color: #fafafa;
-}
-.contact-query-container {
-  padding: 5px 30px 20px 30px;
-  padding: 20px;
+`;
+
+export const ContactQueryContainer = styled.div`
+  padding: 20px 30px 20px 30px;
+
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;
@@ -22,7 +23,7 @@ export const ContactContainer = styled.div`
 export const ContactHeading = styled.h1`
   font-size: 20px;
   color: #383721;
-  padding-right: 30px;
+  padding-right: 200px;
   margin: 10px;
 `;
 
@@ -122,8 +123,8 @@ export const ContactUsHeading = styled.h1`
 
 export const ContactContactssContainer = styled.div`
   background-image: linear-gradient(#5beba3, #606c9e);
-  padding: 20px 30px 0px;
-  width: 600px;
+  padding: 10px 30px 0px;
+  width: 300px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 2px 2px 5px 3px #d2d4dc;
@@ -136,9 +137,15 @@ export const ContactContactUsItems = styled.ul`
   padding: 0px;
   margin: 0px;
   color: #777777;
-}
 
-.contact-icon {
+  .contact-icon {
+    font-size: 20px;
+    margin-right: 20px;
+    color: #011f4b;
+  }
+`;
+
+/* export const ContactIcon {
   font-size: 20px;
   margin-right: 20px;
   color: #011f4b;
@@ -150,11 +157,11 @@ export const ContactImageContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-self: flex-end;
-  margin-top: 87px;
-}
+  margin-top: 84px;
+`;
 
-.contact-image {
-  height: 250px;
+export const ContactImage = styled.img`
+  height: 200px;
   width: 200px;
   align-self: flex-end;
 `;
@@ -167,7 +174,7 @@ export const ContactUsInput = styled.input`
   width: 280px;
   margin-right: 20px;
   margin-bottom: 20px;
-}
+`;
 
 /* .error {
   color: red;
@@ -184,7 +191,7 @@ export const ContactUsInput = styled.input`
 }
 .contact-query-container {
   padding: 5px 30px 20px 30px;
-  
+  width: 700px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;

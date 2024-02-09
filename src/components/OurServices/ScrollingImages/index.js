@@ -1,13 +1,13 @@
-import "./index.css";
+import {Slide,SlideImg} from "./styledComponents.js"
 
 const ScrollingImagesContent = (props) => {
   const { details } = props;
   const { imageUrl, alt } = details;
 
   return (
-    <div className="slide-00">
-      <img src={imageUrl} alt={alt} />
-    </div>
+    <Slide>
+      <SlideImg src={imageUrl} alt={alt} />
+    </Slide>
   );
 };
 

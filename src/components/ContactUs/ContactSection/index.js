@@ -1,4 +1,4 @@
-import "./index.css";
+import { IconContactssItems, IconContactssType } from "./styled.js";
 
 const ContactSection = (props) => {
   const { contactDetails } = props;
