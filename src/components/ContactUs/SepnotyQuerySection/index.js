@@ -30,22 +30,22 @@ import ContactSection from "../ContactSection";
 const contactListItem = [
   {
     id: 1,
-    contactIcon: <IoCall className="contact-icon" />,
+    contactIcon: <IoCall className="contact-icons" />,
     contactType: "Call Us",
   },
   {
     id: 2,
-    contactIcon: <IoLogoWechat className="contact-icon" />,
+    contactIcon: <IoLogoWechat className="contact-icons" />,
     contactType: "Live Chat",
   },
   {
     id: 3,
-    contactIcon: <IoLogoWhatsapp className="contact-icon" />,
+    contactIcon: <IoLogoWhatsapp className="contact-icons" />,
     contactType: "Whats app",
   },
   {
     id: 4,
-    contactIcon: <MdAttachEmail className="contact-icon" />,
+    contactIcon: <MdAttachEmail className="contact-icons" />,
     contactType: "Email",
   },
 ];

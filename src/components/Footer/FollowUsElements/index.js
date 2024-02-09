@@ -1,4 +1,4 @@
-import "./index.css";
+import { Logo } from "./styled";
 
 const FollowUsElements = (props) => {
   const { logos } = props;
@@ -6,7 +6,7 @@ const FollowUsElements = (props) => {
 
   return (
     <li>
-      <img src={logoSrc} alt={logoName} className="logo" />
+      <Logo src={logoSrc} alt={logoName} />
     </li>
   );
 };
