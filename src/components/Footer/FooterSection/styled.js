@@ -1,7 +1,7 @@
-import { createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
+import { createGlobalStyle } from "styled-components";
+import styled from "styled-components";
 
-export const GlobalStyel=createGlobalStyle` 
+export const GlobalStyle = createGlobalStyle` 
  *{ box-sizing: border-box;
   color: #ebe6e6;
   margin: 0px;
@@ -9,7 +9,7 @@ export const GlobalStyel=createGlobalStyle`
  }
 `;
 
-export const Container =styled.div`
+export const Container = styled.div`
   display: flex;
   background-color: #000000;
   background-size: unset;
@@ -17,14 +17,14 @@ export const Container =styled.div`
   padding: 40px;
 `;
 
-export const FooterContainer =styled.div`
+export const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
 `;
 
-`@media screen and (max-width: 576px) {
+/* media screen and (max-width: 576px) {
   .container {
     padding: 20px;
   }
@@ -33,56 +33,84 @@ export const FooterContainer =styled.div`
     flex-direction: column;
     justify-content: center;
   }
-}`
+}`; */
 
-export const LogoContainer =styled.div`
+export const LogoContainer = styled.div`
   margin-right: 10px;
+
+  @media screen and (max-width: 576px) {
+    margin-bottom: 20px;
+  }
 `;
 
-export const SepnotyLogo =styled.img`
+export const SepnotyLogo = styled.img`
   height: 270px;
   width: 270px;
   margin: -120px -35px -100px -42px;
+
+  @media screen and (max-width: 576px) {
+    height: 150px;
+    width: 140px;
+    margin: -80px -10px -80px -22px;
+  }
 `;
 
-export const SepnotyDescription=styled.p`
+export const SepnotyDescription = styled.p`
   font-size: 14px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 8px;
+    order: 0;
+  }
 `;
 
-export const FollowUsHeading =styled.h1`
+export const FollowUsHeading = styled.h1`
   font-size: 22px;
   margin: 20px 0px 10px;
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 `;
 
-export const FollowUsSection=styled.ul`
+export const FollowUsSection = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-`
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
+`;
 
-export const FollowUsSections=styled.ul`
+export const FollowUsSections = styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   margin-left: auto;
-`;
 
-/* @media screen and (min-width: 576px) {
-  .followUs-sections {
+  @media screen and (min-width: 576px) {
     display: none;
   }
+`;
+
+export const LogoSections = styled.div`
+  @media screen and (min-width: 576px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+`;
+/* 
 } */
 
 /* @media screen and (max-width: 576px) {
-  .followUs-heading {
-    display: none;
-  }
+  .followUs-heading 
   .logo-container {
-    margin-bottom: 20px;
+    
   }
 
   .logo-section {
@@ -93,71 +121,92 @@ export const FollowUsSections=styled.ul`
   }
 
   .sepnoty-description {
-    font-size: 8px;
+    
   }
 
   .sepnoty-logo {
-    height: 150px;
-    width: 140px;
-    margin: -80px -10px -80px -22px;
+    
   }
 
   .sepnoty-description {
-    order: 0;
+    
   }
 
   .followUs-section {
-    display: none;
+    
   }
 } */
 
-export const ServiceContainer =styled.div`
-  margin-right: 30px;
+export const ServiceContainer = styled.div`
+  margin-right: 100px;
 `;
 
-export const ServiceHeading =styled.h1`
+export const ServiceHeading = styled.h1`
   font-size: 16px;
   font-weight: 600;
   border-bottom: 2px solid #757474;
   width: 64px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+    width: 50px;
+    font-weight: 500;
+  }
 `;
 
-export const ServiceItems {
+export const ServiceItems = styled.p`
   font-size: 14px;
   padding-top: 24px;
-}
 
-.contact-section {
+  @media media (max-width: 576px) {
+    font-size: 8px;
+    padding-top: 10px;
+  }
+`;
+
+export const ContactUsSection = styled.div`
   margin-right: 30px;
   margin-left: 10px;
-}
+`;
 
-.contactus-items {
+export const ContactusItems = styled.ul`
   display: flex;
   flex-direction: column;
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-}
 
-.contact-icon {
-  font-size: 18px;
-  margin-right: 16px;
-}
+  .contact-icon {
+    font-size: 18px;
+    margin-right: 16px;
+  }
 
-.contact-heading {
+  @media screen and (max-width: 576px) {
+    .contact-icon {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+`;
+
+export const ContactHeading = styled.h1`
   font-size: 15px;
-}
-
-.contact-service-container {
-  display: flex;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 576px) {
-  .contact-heading {
+  @media screen and (max-width: 576px) {
     font-size: 12px;
     font-weight: 500;
+  }
+`;
+
+export const ContactServiceContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+`;
+
+/* @media screen and (max-width: 576px) {
+  .contact-heading {
+    
   }
 
   .contact-icon {
@@ -172,23 +221,23 @@ export const ServiceItems {
   }
 
   .service-items {
-    font-size: 8px;
-    padding-top: 10px;
+    
   }
-}
+} */
 
-.news-heading {
+export const NewsHeading = styled.h1`
   font-size: 13px;
   color: #c23636;
-}
+`;
 
-.news-desc {
+export const NewsDesc = styled.p`
   font-size: 12px;
   color: #969595;
   padding: 10px 0px 10px;
-}
+  width: 316px;
+`;
 
-.input-holder {
+export const InputHolder = styled.input`
   background-color: #4a4848;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -197,25 +246,30 @@ export const ServiceItems {
   padding: 7px;
   width: 180px;
   outline: none;
-}
 
-::placeholder {
-  color: #e2dccc;
-}
+  & ::placeholder {
+    color: #e2dccc;
+  }
+`;
 
-.email-msg {
+export const EmailMsg = styled.p`
   font-size: 10px;
   color: #969595;
   padding-top: 10px;
-}
+`;
 
-@media screen and (max-width: 576px) {
-  .news-container {
+export const NewsContainer = styled.div`
+  @media screen and (max-width: 576px) {
     display: none;
   }
+`;
+/* @media screen and (max-width: 576px) {
+  .news-container {
+    
+  }
 }
-
-.button {
+ */
+export const Button = styled.button`
   background-color: #c23636;
   text-align: center;
   font-size: 9px;
@@ -224,68 +278,95 @@ export const ServiceItems {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
   color: #e2dccc;
-}
+`;
 
-.copywrite-container {
+export const CopywriteContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
 
-.copywrite-icon {
-  font-size: 10px;
-}
-.copywrite-content {
+  & .copywrite-icon {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    order: 1;
+
+    & .copywrite-icon {
+      font-size: 8px;
+    }
+  }
+`;
+
+export const CopywriteContent = styled.p`
   font-size: 10px;
   color: #969595;
-}
 
-.bottom-container {
+  @media screen and (max-width: 576px) {
+    font-size: 8px;
+  }
+`;
+
+export const BottomContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.section-container {
+  @media screen and (max-width: 576px) {
+    display: flex;
+    flex-direction: column;
+  }
+`;
+
+export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
-}
+`;
 
-.sections {
+export const Sections = styled.p`
   font-size: 10px;
   color: #969595;
   border-right: 3px solid #454445;
   margin-right: 10px;
   padding-right: 10px;
-}
 
-.section {
+  @media screen and (max-width: 576px) {
+    font-size: 8px;
+  }
+`;
+
+export const Section = styled.p`
   font-size: 10px;
   color: #969595;
-}
 
-@media screen and (max-width: 576px) {
+  @media screen and (max-width: 576px) {
+    font-size: 8px;
+  }
+`;
+
+/* @media screen and (max-width: 576px) {
   .bottom-container {
     display: flex;
     flex-direction: column;
   }
 
   .copywrite-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    order: 1;
+    
   }
   .sections {
-    font-size: 8px;
+    
   }
   .section {
-    font-size: 8px;
+    
   }
   .copywrite-icon {
     font-size: 8px;
   }
   .copywrite-content {
-    font-size: 8px;
+   
   }
 }
+ */
