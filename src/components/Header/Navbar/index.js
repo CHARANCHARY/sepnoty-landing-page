@@ -1,7 +1,19 @@
 import { useState } from "react";
-import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import "./index.css";
+import { Header1,
+  HeaderLogoImg,
+  HeaderNavButton,
+  HeaderAnchorEl,
+  HeaderDropDown,
+  HeaderNavItem,
+  HeaderDropContent,
+  HeaderDropAnchorEl,
+  HeaderContactButton,
+  HeaderNav,
+  HeaderDrop,
+  HeaderDownArrow
+} from "./styledComponents";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -20,60 +32,61 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <img className="logoimage" src={logo} alt="not found" />
-      <button className="nav-btn" onClick={toggleNavbar}>
+    <Header1>
+      <HeaderLogoImg src={logo} alt="not found"></HeaderLogoImg>
+      <HeaderNavButton 
+      onClick={toggleNavbar}>
         {isNavOpen ? <FaTimes /> : <FaBars onClick={closeNavbar} />}
-      </button>
-      <nav className={isNavOpen ? "responsive_nav" : ""}>
-        <a href="/#" onClick={closeNavbar}>
+      </HeaderNavButton>
+      <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
+        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           Home
-        </a>
+        </HeaderAnchorEl>
 
         {/* Services Dropdown */}
-        <div className="dropdown">
-          <div className="nav-item" onClick={toggleDropdown}>
-            <span>Services</span>
-            <FaChevronDown className="arrow-icon" />
-          </div>
+        <HeaderDropDown>
+          <HeaderNavItem onClick={toggleDropdown}>
+            <HeaderDrop>Services</HeaderDrop>
+            <HeaderDownArrow />
+          </HeaderNavItem>
           {isDropdownOpen && (
-            <div className="dropdown-content">
-              <a href="/#">Option 1</a>
-              <a href="/#">Option 2</a>
-              <a href="/#">Option 3</a>
-            </div>
+            <HeaderDropContent>
+              <HeaderDropAnchorEl href="/#">Option 1</HeaderDropAnchorEl>
+              <HeaderDropAnchorEl href="/#">Option 2</HeaderDropAnchorEl>
+              <HeaderDropAnchorEl href="/#">Option 3</HeaderDropAnchorEl>
+            </HeaderDropContent>
           )}
-        </div>
+        </HeaderDropDown>
 
         {/* Products Dropdown */}
-        <div className="dropdown">
-          <div className="nav-item" onClick={toggleDropdown}>
-            <span>Products</span>
-            <FaChevronDown className="arrow-icon" />
-          </div>
+        <HeaderDropDown>
+          <HeaderNavItem onClick={toggleDropdown}>
+            <HeaderDrop>Products</HeaderDrop>
+            <HeaderDownArrow />
+          </HeaderNavItem>
           {isDropdownOpen && (
-            <div className="dropdown-content">
-              <a href="/#">Option 1</a>
-              <a href="/#">Option 2</a>
-              <a href="/#">Option 3</a>
-            </div>
+            <HeaderDropContent>
+              <HeaderDropAnchorEl href="/#">Option 1</HeaderDropAnchorEl>
+              <HeaderDropAnchorEl href="/#">Option 2</HeaderDropAnchorEl>
+              <HeaderDropAnchorEl href="/#">Option 3</HeaderDropAnchorEl>
+            </HeaderDropContent>
           )}
-        </div>
+        </HeaderDropDown>
 
-        <a href="/#" onClick={closeNavbar}>
+        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           Blog
-        </a>
-        <a href="/#" onClick={closeNavbar}>
+        </HeaderAnchorEl>
+        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           Contact
-        </a>
-        <a href="/#" onClick={closeNavbar}>
+        </HeaderAnchorEl>
+        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           About
-        </a>
-        <button className="contact-button" onClick={closeNavbar}>
+        </HeaderAnchorEl>
+        <HeaderContactButton onClick={closeNavbar}>
           Contact Us
-        </button>
-      </nav>
-    </header>
+        </HeaderContactButton>
+      </HeaderNav>
+    </Header1>
   );
 };
 
