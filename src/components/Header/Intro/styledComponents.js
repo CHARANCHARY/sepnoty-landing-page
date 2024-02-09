@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const Intro1 = styled.div`
 display: flex;
 flex-direction: row;
+margin-top: -40px;
 justify-content: space-between;
-padding: 20px;
+padding: 10px;
+margin: 30px;
 background-color: #eee;
 border-radius: 50px;
 @media screen and (max-width: 768px) {
@@ -14,7 +16,7 @@ border-radius: 50px;
 export const Intro2 = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 20px;
 `;
 export const Intro3 = styled.div`
 display: flex;
@@ -124,8 +126,8 @@ export const IntroRightPart=styled.div`
   
 `;
 export const IntroRightImg=styled.img`
-width: 800px;
-height: 570px;
+width: 600px;
+height: 500px;
 @media screen and (max-width: 768px) { 
       width: 500px;
       height: 400px;

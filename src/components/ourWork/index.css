@@ -121,7 +121,7 @@
   padding: 15px;
   border-radius: 15px;
   position: absolute;
-  top: 1800px;
+  margin-top: 550px;
   left: 30px;
   box-shadow: 5px 5px 5px 3px #d2d4dc;
 }

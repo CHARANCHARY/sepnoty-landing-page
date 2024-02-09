@@ -8,16 +8,17 @@ export const TopContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
-  height: 40vh;
+  height: 60vh;
   margin-top: 20px;
 `;
 
 export const StoriesContainer = styled.div`
   display: flex;
+  height: 60%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   border-right: 1px solid #c0c2ce;
-  width: 500px;
+  width: 700px;
 `;
 
 export const Heading = styled.h1`
@@ -70,13 +71,14 @@ export const MeetingContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 400px;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 0;
+  margin-bottom: 50px;
 `;
 
 export const BottomHeading = styled.h1`
-  font-family: "Inter", serif sans;
+  font-family: serif sans;
   font-size: 23px;
   color: #383721;
   margin-bottom: -10px;
@@ -84,11 +86,12 @@ export const BottomHeading = styled.h1`
 `;
 
 export const BottomDesc = styled.p`
-  color: #878787;
+  color: #2A3621;
   font-size: 15px;
   width: 300px;
+  align-self:center;
+  text-align: center;
   text-shadow: 0px 1px 1px;
-  padding-left: 30px;
 `;
 
 export const Button = styled.button`
@@ -110,7 +113,11 @@ export const Imag = styled.img`
   margin-right: 30px;
 `;
 export const MainContainer = styled.div`
-  height: 100vh;
   background: white;
   margin-bottom: 20px;
 `;
+
+export const Sliders = styled.div`
+margin-left: 0px;
+`
+

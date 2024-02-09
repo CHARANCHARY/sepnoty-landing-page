@@ -1,14 +1,16 @@
-.icon-contactss-items {
+import styled from "styled-components";
+
+export const IconContactssItems = styled.li`
   display: flex;
   align-items: center;
   margin-top: 10px;
-}
+`;
 
-.icon-contactss-type {
+export const IconContactssType = styled.p`
   font-size: 16px;
-}
+`;
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .icon-contactss-type {
     font-size: 8px;
   }
@@ -17,3 +19,4 @@
     padding-top: 7px;
   }
 }
+ */

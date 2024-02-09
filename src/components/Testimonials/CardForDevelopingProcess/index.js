@@ -41,12 +41,14 @@ const CardParagraph = styled.p`
   font-size: 16px;
   line-height: 1.5;
   color: black;
+  display:flex;
+  flex-direction: column;
 `;
 
 const ReadMore = styled.span`
   cursor: pointer;
-  color: black;
-
+  color: red;
+   margin-top:10px;
   &:hover {
     text-decoration: underline;
   }
@@ -67,7 +69,8 @@ const CardItem = ({ cardsList }) => {
         <CardTitle>{title}</CardTitle>
       </CardHeader>
       <CardParagraph>
-        (isExpanded ? description : ${description.slice(0, 100)}...)
+        {isExpanded ? description : description.slice(0, 100)}
+        {/* (isExpanded ? description : ${description.slice(0, 100)}...) */}
         {!isExpanded && (
           <ReadMore onClick={handleReadMoreClick}>Read More</ReadMore>
         )}
