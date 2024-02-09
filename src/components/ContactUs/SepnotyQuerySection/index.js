@@ -3,9 +3,29 @@ import { FiUploadCloud } from "react-icons/fi";
 import { IoCall, IoLogoWechat, IoLogoWhatsapp } from "react-icons/io5";
 import { MdAttachEmail } from "react-icons/md";
 import axios from "axios";
+import {
+  ContactContainer,
+  ContactQueryContainer,
+  ContactHeading,
+  ContactDescription,
+  ContactTextarea,
+  ContactDragAndDrop,
+  ContactAnchorEle,
+  ContactInputContainer,
+  ContactInputList,
+  SepnotyContact,
+  RequestSepnoty,
+  ContactButton,
+  ContactUsHeading,
+  ContactContactssContainer,
+  ContactContactUsItems,
+  ContactImageContainer,
+  ContactImage,
+  ContactUsInput,
+  ContactButtonCon,
+} from "./styled";
 
 import ContactSection from "../ContactSection";
-import "./index.css";
 
 const contactListItem = [
   {
@@ -111,42 +131,37 @@ function SepnotyQuerySection() {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-query-container ">
+    <ContactContainer>
+      <ContactQueryContainer>
         <div>
-          <h1 className="contact-heading">
+          <ContactHeading>
             Have a question to our team or need help with your project?
-          </h1>
-          <p className="contact-description">
+          </ContactHeading>
+          <ContactDescription>
             our team is ready to provide client references, estimate your
             project, or answer any other question related to your IT intiative.
-          </p>
-          <textarea
+          </ContactDescription>
+          <ContactTextarea
             rows="7"
             cols="85"
             placeholder="How can we help you?"
-            className="contact-textarea"
-          ></textarea>
+          ></ContactTextarea>
         </div>
-        <div className="contact-drag-and-drop">
-          <FiUploadCloud className="contact-upload-icon" />
-          <p className="contact-description">
+        <ContactDragAndDrop>
+          <FiUploadCloud className="icon" />
+          <ContactDescription>
             Drag and drop or{" "}
-            <a href="https://www.example.com" className="contact-anchor-ele">
+            <ContactAnchorEle href="https://www.example.com">
               browse
-            </a>{" "}
+            </ContactAnchorEle>{" "}
             to upload your file(s)?
-          </p>
-        </div>
-        <div className="contact-input-container">
-          <form
-            className="contact-input-list"
-            id="userForm"
-            onSubmit={handleSubmit}
-          >
+          </ContactDescription>
+        </ContactDragAndDrop>
+        <ContactInputContainer>
+          <ContactInputList id="userForm" onSubmit={handleSubmit}>
             <div>
-              <input
-                className="contact-us-input"
+              <ContactUsInput
+                placeholder="Full Name"
                 type="text"
                 id="name"
                 onBlur={namehandle}
@@ -159,77 +174,72 @@ function SepnotyQuerySection() {
               </p>
             </div>
             <div>
-              <input
-                className="contact-us-input"
+              <ContactUsInput
+                placeholder="Work email"
                 type="email"
                 id="email"
                 name="email"
                 onChange={handleChange}
                 onBlur={emailhandle}
-                required
               />
               <p id="emailErrMsg" class="error">
                 {emailErrMsg}
               </p>
             </div>
             <div>
-              <input
-                className="contact-us-input"
+              <ContactUsInput
+                placeholder="Company"
                 type="text"
                 id="age"
                 name="age"
                 onChange={handleChange}
                 onBlur={agehandle}
-                required
               />
             </div>
             <div>
-              <input
-                className="contact-us-input"
-                type="date"
-                id="dob"
-                name="dob"
-                onChange={handleChange}
-                required
-              />
+              <ContactUsInput placeholder="Phone" />
               <p id="ageErrMsg" class="error">
                 {ageErrMsg}
               </p>
             </div>
             <div className="contact-checked">
-              <input type="radio" id="sepnotyContact" name="agree" checked />
-              <label for="sepnotyContact" className="contact-description">
+              <SepnotyContact
+                type="radio"
+                id="sepnotyContact"
+                name="agree"
+                checked
+              />
+              <label for="sepnotyContact">
                 I agree to have Sepnoty contact me via email, phone, messengers
               </label>
               <br />
-              <input type="radio" id="requestSepnoty" name="agree" />
-              <label for="requestSepnoty" className="contact-description">
+              <RequestSepnoty type="radio" id="requestSepnoty" name="agree" />
+              <label for="requestSepnoty">
                 I agree to have Sepnoty provide my request Information to
                 Sepnoty affiliated development center
               </label>
             </div>
-            <button type="button" className="contact-button">
-              Send
-            </button>
-          </form>
-        </div>
-      </div>
-      <div className="contact-contactss-container">
-        <h1 className="contact-us-heading">Get in touch instantly</h1>
-        <ul className="contact-contact-us-items">
+          </ContactInputList>
+          <ContactButtonCon>
+            <ContactButton type="button">Send</ContactButton>
+          </ContactButtonCon>
+        </ContactInputContainer>
+      </ContactQueryContainer>
+      <ContactContactssContainer>
+        <ContactUsHeading>Get in touch instantly</ContactUsHeading>
+        <ContactContactUsItems>
           {contactListItem.map((eachItem) => (
             <ContactSection key={eachItem.id} contactDetails={eachItem} />
           ))}
-        </ul>
-        <div className="contact-image-container">
-          <img
+        </ContactContactUsItems>
+        <ContactImageContainer>
+          <ContactImage
             src="https://res.cloudinary.com/du74u7bsh/image/upload/v1707124056/Screenshot__184_-removebg_ezwcrq.png"
             alt="contactUs"
-            class="contact-image"
           />
-        </div>
-      </div>
-    </div>
+        </ContactImageContainer>
+      </ContactContactssContainer>
+    </ContactContainer>
   );
 }
 

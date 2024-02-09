@@ -1,14 +1,14 @@
-import "./index.css";
+import { IconContactssItems, IconContactssType } from "./styled";
 
 const ContactSection = (props) => {
   const { contactDetails } = props;
   const { contactIcon, contactType } = contactDetails;
 
   return (
-    <li className="icon-contactss-items">
+    <IconContactssItems>
       {contactIcon}
-      <p className="icon-contactss-type">{contactType}</p>
-    </li>
+      <IconContactssType>{contactType}</IconContactssType>
+    </IconContactssItems>
   );
 };
 
