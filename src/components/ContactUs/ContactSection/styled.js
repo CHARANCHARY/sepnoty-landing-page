@@ -4,10 +4,6 @@ export const IconContactssItems = styled.li`
   display: flex;
   align-items: center;
   margin-top: 10px;
-
-  .icon {
-    color: black;
-  }
 `;
 
 export const IconContactssType = styled.p`

@@ -1,14 +1,16 @@
-.logo {
+import styled from "styled-components" 
+
+export const Logo=styled.img`
   height: 32px;
   width: 32px;
   margin-right: 20px;
-}
+`;
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .logo {
     height: 15px;
     width: 15px;
     margin-left: 10px;
     margin-right: 0px;
   }
-}
+} */

@@ -1,25 +1,30 @@
-* {
-  box-sizing: border-box;
+import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
+
+export const GlobalStyel=createGlobalStyle` 
+ *{ box-sizing: border-box;
   color: #ebe6e6;
   margin: 0px;
   font-family: "Inter", sans-serif;
-}
-.container {
+ }
+`;
+
+export const Container =styled.div`
   display: flex;
   background-color: #000000;
   background-size: unset;
   flex-direction: column;
   padding: 40px;
-}
+`;
 
-.footer-container {
+export const FooterContainer =styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-}
+`;
 
-@media screen and (max-width: 576px) {
+`@media screen and (max-width: 576px) {
   .container {
     padding: 20px;
   }
@@ -28,50 +33,51 @@
     flex-direction: column;
     justify-content: center;
   }
-}
+}`
 
-.logo-container {
+export const LogoContainer =styled.div`
   margin-right: 10px;
-}
+`;
 
-.sepnoty-logo {
+export const SepnotyLogo =styled.img`
   height: 270px;
   width: 270px;
   margin: -120px -35px -100px -42px;
-}
+`;
 
-.sepnoty-description {
+export const SepnotyDescription=styled.p`
   font-size: 14px;
-}
+`;
 
-.followUs-heading {
+export const FollowUsHeading =styled.h1`
   font-size: 22px;
   margin: 20px 0px 10px;
-}
+`;
 
-.followUs-section {
+export const FollowUsSection=styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
-}
+`
 
-.followUs-sections {
+export const FollowUsSections=styled.ul`
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0px;
   padding: 0px;
   margin-left: auto;
-}
+`;
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .followUs-sections {
     display: none;
   }
-}
-@media screen and (max-width: 576px) {
+} */
+
+/* @media screen and (max-width: 576px) {
   .followUs-heading {
     display: none;
   }
@@ -103,20 +109,20 @@
   .followUs-section {
     display: none;
   }
-}
+} */
 
-.service-container {
+export const ServiceContainer =styled.div`
   margin-right: 30px;
-}
+`;
 
-.service-heading {
+export const ServiceHeading =styled.h1`
   font-size: 16px;
   font-weight: 600;
   border-bottom: 2px solid #757474;
   width: 64px;
-}
+`;
 
-.service-items {
+export const ServiceItems {
   font-size: 14px;
   padding-top: 24px;
 }

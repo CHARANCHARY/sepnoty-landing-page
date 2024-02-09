@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IoCall, IoLogoWechat, IoLogoWhatsapp } from "react-icons/io5";
 
 export const ContactContainer = styled.div`
   display: flex;
