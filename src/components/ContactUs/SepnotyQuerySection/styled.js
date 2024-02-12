@@ -7,16 +7,16 @@ export const ContactContainer = styled.div`
   border-radius: 30px;
   margin: 30px;
   align-self: center;
-  width: 70%;
-  margin-left: 15%;
-  background-color: #fafafa;
+  margin-left: 30px;
+  padding: 20px 10px 20px 0px;
 `;
 
 export const ContactQueryContainer = styled.div`
-  padding: 20px 30px 20px 30px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
+  padding: 20px 30px 20px 40px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;
+  width: 747px;
 `;
 
 export const ContactHeading = styled.h1`
@@ -28,12 +28,12 @@ export const ContactHeading = styled.h1`
 
 export const ContactDescription = styled.p`
   font-size: 13px;
-  color: #afafaf;
+  color: #4e4e4e;
   margin: 10px;
 `;
 
 export const ContactTextarea = styled.textarea`
-  background-color: #ffffff;
+  background-color: #3a3c3d;
   border-radius: 12px;
   border: 1px solid #e5e6eb;
   padding: 10px;
@@ -42,8 +42,8 @@ export const ContactTextarea = styled.textarea`
   font-size: 12px;
 
   &::placeholder {
-    color: #afafaf;
-    font-size: 12px;
+    color: #d9d9d9;
+    font-size: 14px;
   }
 `;
 
@@ -51,11 +51,17 @@ export const ContactDragAndDrop = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 10px;
 
   .icon {
     margin-right: 5px;
     color: black;
   }
+`;
+
+export const DragHead = styled.p`
+  color: #8c8c8c;
+  font-size: 14px;
 `;
 
 export const ContactAnchorEle = styled.a`
@@ -76,22 +82,22 @@ export const ContactInputList = styled.form`
 `;
 
 export const SepnotyContact = styled.input`
-  accent-color: #606c9e;
+  accent-color: #5368a3;
   margin-bottom: 10px;
   cursor: pointer;
 
   & + label {
     font-size: 13px;
-    color: #afafaf;
+    color: #4e4e4e;
     margin: 10px;
   }
 `;
 
 export const RequestSepnoty = styled.input`
-  accent-color: #606c9e;
+  accent-color: #5368a3;
   & + label {
     font-size: 13px;
-    color: #afafaf;
+    color: #4e4e4e;
     margin: 10px;
   }
 `;
@@ -117,15 +123,15 @@ export const ContactButton = styled.button`
 export const ContactUsHeading = styled.h1`
   margin-bottom: 30px;
   font-size: 20px;
-  color: #383721;
+  color: #121415;
 `;
 
 export const ContactContactssContainer = styled.div`
-  background-image: linear-gradient(#5beba3, #606c9e);
+  background-image: linear-gradient(#244887, #69aca5, #b7bac0);
   padding: 20px 30px 0px;
-  width: 600px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  width: 269px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 2px 2px 5px 3px #d2d4dc;
 `;
 
@@ -136,12 +142,6 @@ export const ContactContactUsItems = styled.ul`
   padding: 0px;
   margin: 0px;
   color: #777777;
-
-  & .contact-icons {
-    font-size: 20px;
-    margin-right: 20px;
-    color: black;
-  }
 `;
 
 /* export const ContactIcon {
@@ -156,12 +156,12 @@ export const ContactImageContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-self: flex-end;
-  margin-top: 65px;
+  margin-top: 85px;
 `;
 
 export const ContactImage = styled.img`
-  height: 250px;
-  width: 200px;
+  height: 185px;
+  width: 230px;
   align-self: flex-end;
 `;
 
@@ -170,16 +170,70 @@ export const ContactUsInput = styled.input`
   border: 1px solid #e5e6eb;
   padding: 10px;
   border-radius: 15px;
-  width: 280px;
+  width: 248px;
   margin-right: 20px;
   margin-bottom: 20px;
+  background-color: #3a3c3d;
 
   &::placeholder {
-    color: #afafaf;
-    font-size: 12px;
+    color: #8c8c8c;
+    font-size: 14px;
   }
 `;
 
+export const BottomCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  margin-bottom: 0px;
+  width: 410px;
+`;
+
+export const MeetingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin-top: 20px;
+`;
+
+export const BottomHeading = styled.h1`
+  font-size: 20px;
+  color: #2b459b;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.75em;
+`;
+
+export const BottomDesc = styled.p`
+  color: #b7b6bd;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.25em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+`;
+
+export const Button = styled.button`
+  background-color: #254989;
+  color: #121415;
+  padding: 10px 20px 10px 20px;
+  border-radius: 15px;
+  border-width: 0px;
+  align-self: center;
+  font-size: 13px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+`;
+
+export const Image = styled.img`
+  height: 327px;
+  width: 440px;
+`;
+
+export const QueryContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 /* .error {
   color: red;
   font-size: 8px;
