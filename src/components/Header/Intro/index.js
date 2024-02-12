@@ -88,14 +88,14 @@ const HeaderSection = () => {
       </Intro1>
       <IntroExplorePart>
       <IntroAchievements>
-        <IntroOrangeText>200+
+        <IntroOrangeText>200+k
         </IntroOrangeText>
         
         <IntroBlackText>Projects Complete
         </IntroBlackText>
       </IntroAchievements>
       <IntroAchievements>
-        <IntroOrangeText>80+</IntroOrangeText>
+        <IntroOrangeText>81+k</IntroOrangeText>
         
         <IntroBlackText>Active Customers</IntroBlackText>
       </IntroAchievements>

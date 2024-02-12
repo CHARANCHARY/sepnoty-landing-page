@@ -120,7 +120,7 @@ line-height: 1.5;
 `;
 export const IntroAchievements=styled.div`
 margin-right: 40px;
-
+text-align:center;
 `;
 export const IntroOrangeText=styled.h1`
 color:white;
