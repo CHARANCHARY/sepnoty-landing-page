@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const Intro1 = styled.div`
 display: flex;
 flex-direction: row;
-margin-top: -40px;
 justify-content: space-between;
-padding: 10px;
-margin: 30px;
-background-color: #eee;
-border-radius: 50px;
+padding-left: 50px;
+padding:30px 30px 0px 70px;
+background-color:#0C111F;
+line-height: 1.5;
 @media screen and (max-width: 768px) {
       flex-direction: column;
   }
@@ -16,18 +15,21 @@ border-radius: 50px;
 export const Intro2 = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  
 `;
 export const Intro3 = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction:column;
 justify-content: flex-start;
 `;
 export const Introhd1=styled.h1`
-  color:black;
+  color:white;
+  margin-bottom:10px;
+  margin-top:15px;
 `;
 export const Introp1=styled.p`
-  color:black;
+  color:white;
+  line-height: 1.5;
 `;
 export const IntroCircles=styled.ul`
 list-style-type: none;
@@ -37,7 +39,7 @@ display: flex;
 `;
 export const IntroWhiteCircle=styled.li`
 margin-right: -15px;
-background-color: rgba(2, 23, 49, 0.2);
+background-image:url('circleimg');
 border-radius: 30px;
 width: 50px;
 height: 50px;
@@ -56,7 +58,7 @@ background-color:rgb(83, 43, 226);
 border-radius: 30px;
 width: 50px;
 height: 50px;
-border-color: aliceblue;
+border-color:white;
 border-width: 2px;
 padding: 0px;
 display: flex;
@@ -67,11 +69,11 @@ border: 2px solid whitesmoke;
 `;
 export const IntroBlueCircleText=styled.span`
 margin-top: 5px;
-color:black;
+color:white;
 `;
-export const IntroRightText=styled.h3`
+export const IntroRightText=styled.p`
 margin-top: 20px;
-color:black;
+color:white;
 `;
 export const IntroButtonVideo=styled.div`
 display: flex;
@@ -80,13 +82,14 @@ justify-content: flex-start;
 `;
 export const IntroProposalText=styled.button`
 border-radius: 30px;
-background-color: rgb(83, 43, 226);
-color: aliceblue;
+background-color:white;
+color:#0C111F;
 height: 50px;
 padding-left: 30px;
 padding-right: 30px;
 border: none;
 font-family: "roboto";
+cursor:pointer;
 `;
 export const IntroPlayVideo=styled.div`
 margin-top: 5px;
@@ -102,32 +105,38 @@ border: 3px solid rgb(178, 169, 213);
 export const IntroVideoText=styled.p`
 margin-top: 10px;
 margin-left: 10px;
-color:black;
+color:white;
 `;
 export const IntroExplorePart=styled.div`
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content:flex-end;
+
+padding:0px 60px 50px 70px;
+background-color:#0C111F;
+line-height: 1.5;
 `;
 export const IntroAchievements=styled.div`
 margin-right: 40px;
+
 `;
 export const IntroOrangeText=styled.h1`
-color: orange;
+color:white;
 `;
 export const IntroBlackText=styled.p`
- color:black;
+ color:white;
 `;
 export const IntroExploreText=styled.a`
  cursor:pointer;
- color:rgb(83, 43, 226);
+ color:white;
 `;
 export const IntroRightPart=styled.div`
   
 `;
 export const IntroRightImg=styled.img`
-width: 600px;
+width:700px;
 height: 500px;
+margin-right:50px;
 @media screen and (max-width: 768px) { 
       width: 500px;
       height: 400px;
