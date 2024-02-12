@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import circleImage from '../assets/circleimg.png';
+import circleImage2 from '../assets/circleimage2.png';
 
 export const Intro1 = styled.div`
 display: flex;
@@ -39,12 +41,12 @@ display: flex;
 `;
 export const IntroWhiteCircle=styled.li`
 margin-right: -15px;
-background-image:url('circleimg');
+background: url(${circleImage}) center/cover no-repeat;
 border-radius: 30px;
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 border-color: aliceblue;
-border-width: 2px;
+border-width: 1px;
 padding: 2px;
 display: flex;
 flex-direction: column;
@@ -54,12 +56,12 @@ border: 2px solid whitesmoke;
 `;
 export const IntroBlueCircle=styled.li`
 margin-right: -15px;
-background-color:rgb(83, 43, 226);
+background: url(${circleImage2}) center/cover no-repeat;
 border-radius: 30px;
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 border-color:white;
-border-width: 2px;
+border-width: 1px;
 padding: 0px;
 display: flex;
 flex-direction: column;

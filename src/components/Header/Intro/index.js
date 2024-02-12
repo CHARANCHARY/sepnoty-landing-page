@@ -10,7 +10,7 @@ import { Intro1,
    IntroCircles,
    IntroWhiteCircle,
    IntroBlueCircle,
-   IntroBlueCircleText,
+   
    IntroRightText,
    IntroButtonVideo,
    IntroProposalText,
@@ -72,11 +72,11 @@ const HeaderSection = () => {
             <IntroWhiteCircle />
             <IntroWhiteCircle />
            
-            <IntroBlueCircle><IntroBlueCircleText>1.8k+</IntroBlueCircleText></IntroBlueCircle>
+            <IntroBlueCircle></IntroBlueCircle>
           </IntroCircles>
        
         
-          <IntroRightText>People bought our services today.</IntroRightText>
+          <IntroRightText>1.8k  People bought our services today.</IntroRightText>
         
       </Intro3>
       <br />
