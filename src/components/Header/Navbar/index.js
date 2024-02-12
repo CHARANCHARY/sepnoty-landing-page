@@ -40,7 +40,7 @@ const Header = () => {
       </HeaderNavButton>
       <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Home
+          Hom
         </HeaderAnchorEl>
 
         {/* Services Dropdown */}
