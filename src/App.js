@@ -5,11 +5,13 @@ import DevelopingProcess from "./components/Testimonials/DevelopingProcessSectio
 import FooterSection from "./components/Footer/FooterSection";
 
 import SepnotyQuerySection from "./components/ContactUs/SepnotyQuerySection";
+import Combined from "./components/AdvancedServices/Combined/Combined";
 
 function App() {
   return (
     <>
       <HeaderSection />
+      <Combined />
       <ServicesSection />
       <OurWork />
       <DevelopingProcess />

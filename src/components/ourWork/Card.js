@@ -1,16 +1,36 @@
 import React from "react";
+import {
+  OurWorkCard,
+  OurWorkCardTitle,
+  OurWorkButton,
+  OurWorkSideHeading,
+  OurWorkThreeCol,
+  Details
+} from "./styledComponents";
 
 function Card() {
   return (
-    <div className="card1">
-      <h>-- Our project</h>
-      <h2>
-        Software products<br></br>
+    <OurWorkCard>
+      <OurWorkCardTitle>Our project</OurWorkCardTitle>
+      <br />
+      <OurWorkSideHeading>
+        Software products
         development
-      </h2>
-      <p>bat-and-ball sport played between two teams of nine players each</p>
-      <button className="view-btn">View Profile</button>
-    </div>
+      </OurWorkSideHeading>
+      <br />
+      <OurWorkThreeCol>
+      <Details>Service</Details>
+      <Details>Year</Details>
+      <Details>Client</Details>
+      </OurWorkThreeCol>
+      
+      <OurWorkThreeCol>
+      <Details>UI Design</Details>
+      <Details>2022</Details>
+      <Details>Sepnoty</Details>
+      </OurWorkThreeCol>
+      <OurWorkButton>View Profile</OurWorkButton>
+    </OurWorkCard>
   );
 }
 
