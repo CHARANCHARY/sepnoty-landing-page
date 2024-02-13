@@ -3,7 +3,6 @@ import { Component } from "react";
 import FollowUsElements from "../FollowUsElements";
 import { ThemeProvider } from "styled-components";
 
-import { PiCopyright } from "react-icons/pi";
 import {
   GlobalStyle,
   Container,
@@ -27,6 +26,7 @@ import {
   Sections,
   Section,
   FollowUsContainer,
+  Copyright,
 } from "./styled";
 
 const followUsElements = [
@@ -111,10 +111,9 @@ class FooterSection extends Component {
           </FooterContainer>
           <BottomContainer>
             <CopywriteContainer>
-              <PiCopyright className="copywrite-icon" />
+              <Copyright src="./images/copyright.svg" alt="cr" />
               <CopywriteContent>
-                {" "}
-                All rights reserved by Sepnoty - 2024
+                2024 Sepnoty.All rights received.
               </CopywriteContent>
             </CopywriteContainer>
             <SectionContainer>

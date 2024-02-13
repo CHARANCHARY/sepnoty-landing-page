@@ -12,7 +12,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactQueryContainer = styled.div`
-  padding: 20px 30px 20px 40px;
+  padding: 20px 15px 20px 15px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;
@@ -40,10 +40,11 @@ export const ContactTextarea = styled.textarea`
   resize: none;
   outline: none;
   font-size: 12px;
+  margin-bottom: 5px;
 
   &::placeholder {
-    color: #d9d9d9;
-    font-size: 14px;
+    color: #8c8c8c;
+    font-size: 13px;
   }
 `;
 
@@ -51,7 +52,7 @@ export const ContactDragAndDrop = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   .icon {
     margin-right: 5px;
@@ -61,7 +62,7 @@ export const ContactDragAndDrop = styled.div`
 
 export const DragHead = styled.p`
   color: #8c8c8c;
-  font-size: 14px;
+  font-size: 13px;
 `;
 
 export const ContactAnchorEle = styled.a`
@@ -111,10 +112,10 @@ export const ContactButtonCon = styled.div`
 `;
 
 export const ContactButton = styled.button`
-  background-color: #606c9e;
+  background-color: #5368a3;
   border-width: 0px;
   border-radius: 50px;
-  color: #ffffff;
+  color: #121415;
   text-align: center;
   padding: 10px 60px 10px 60px;
   font-size: 14px;
@@ -128,7 +129,7 @@ export const ContactUsHeading = styled.h1`
 
 export const ContactContactssContainer = styled.div`
   background-image: linear-gradient(#244887, #69aca5, #b7bac0);
-  padding: 20px 30px 0px;
+  padding: 30px 30px 0px;
   width: 269px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -177,7 +178,7 @@ export const ContactUsInput = styled.input`
 
   &::placeholder {
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 13px;
   }
 `;
 
@@ -187,13 +188,6 @@ export const BottomCon = styled.div`
   padding: 30px;
   margin-bottom: 0px;
   width: 410px;
-`;
-
-export const MeetingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  margin-top: 20px;
 `;
 
 export const BottomHeading = styled.h1`

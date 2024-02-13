@@ -21,7 +21,7 @@ export const FooterContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 export const LogoContainer = styled.div`
@@ -129,22 +129,29 @@ export const Button = styled.button`
 export const CopywriteContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
 
   & .copywrite-icon {
     font-size: 10px;
   }
 `;
 
+export const Copyright = styled.img`
+  height: 18px;
+  width: 18px;
+  margin-right: 5px;
+`;
+
 export const CopywriteContent = styled.p`
   font-size: 10px;
-  color: #969595;
+  color: #d9d9d9;
 `;
 
 export const BottomContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 50px;
 `;
 
 export const SectionContainer = styled.div`
@@ -154,15 +161,17 @@ export const SectionContainer = styled.div`
 
 export const Sections = styled.p`
   font-size: 10px;
-  color: #969595;
-  border-right: 3px solid #454445;
+  position: relative;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
   margin-right: 10px;
   padding-right: 10px;
+  height: 10px;
 `;
 
 export const Section = styled.p`
   font-size: 10px;
-  color: #969595;
+  color: #ffffff;
 `;
 
 export const FollowUsContainer = styled.div`
