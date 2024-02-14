@@ -12,24 +12,7 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactQueryContainer = styled.div`
-  padding: 20px 15px 20px 15px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-=======
-`;
-
-export const ContactQueryContainer = styled.div`
-  padding: 20px 15px 20px 15px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  width: 80%;
-  margin-left: 10%;
-  background-color: #fafafa;
-`;
-
-export const ContactQueryContainer = styled.div`
   padding: 20px 30px 20px 30px;
-
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;
@@ -162,7 +145,6 @@ export const ContactContactUsItems = styled.ul`
   color: #777777;
 `;
 
-
 /* export const ContactIcon {
   font-size: 20px;
   margin-right: 20px;
@@ -181,14 +163,7 @@ export const ContactImageContainer = styled.div`
 export const ContactImage = styled.img`
   height: 185px;
   width: 230px;
-
   margin-top: 84px;
-`;
-
-export const ContactImage = styled.img`
-  height: 200px;
-  width: 200px;
-  align-self: flex-end;
 `;
 
 export const ContactUsInput = styled.input`
