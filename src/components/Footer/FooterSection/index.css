@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  color: #ebe6e6;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  display: flex;
+  background-color: #000000;
+  background-size: unset;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 20px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.logo-container {
+  margin-right: 10px;
+}
+
+.sepnoty-logo {
+  height: 270px;
+  width: 270px;
+  margin: -120px -35px -100px -42px;
+}
+
+.sepnoty-description {
+  font-size: 14px;
+}
+
+.followUs-heading {
+  font-size: 22px;
+  margin: 20px 0px 10px;
+}
+
+.followUs-section {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.followUs-sections {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .followUs-sections {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .followUs-heading {
+    display: none;
+  }
+  .logo-container {
+    margin-bottom: 20px;
+  }
+
+  .logo-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .sepnoty-description {
+    font-size: 8px;
+  }
+
+  .sepnoty-logo {
+    height: 150px;
+    width: 140px;
+    margin: -80px -10px -80px -22px;
+  }
+
+  .sepnoty-description {
+    order: 0;
+  }
+
+  .followUs-section {
+    display: none;
+  }
+}
+
+.service-container {
+  margin-right: 30px;
+}
+
+.service-heading {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 2px solid #757474;
+  width: 64px;
+}
+
+.service-items {
+  font-size: 14px;
+  padding-top: 24px;
+}
+
+.contact-section {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.contactus-items {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contact-icon {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.contact-heading {
+  font-size: 15px;
+}
+
+.contact-service-container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 576px) {
+  .contact-heading {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .contact-icon {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .service-heading {
+    font-size: 12px;
+    width: 50px;
+    font-weight: 500;
+  }
+
+  .service-items {
+    font-size: 8px;
+    padding-top: 10px;
+  }
+}
+
+.news-heading {
+  font-size: 13px;
+  color: #c23636;
+}
+
+.news-desc {
+  font-size: 12px;
+  color: #969595;
+  padding: 10px 0px 10px;
+}
+
+.input-holder {
+  background-color: #4a4848;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-width: 0px;
+  font-size: 9px;
+  padding: 7px;
+  width: 180px;
+  outline: none;
+}
+
+::placeholder {
+  color: #e2dccc;
+}
+
+.email-msg {
+  font-size: 10px;
+  color: #969595;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .news-container {
+    display: none;
+  }
+}
+
+.button {
+  background-color: #c23636;
+  text-align: center;
+  font-size: 9px;
+  border-width: 0px;
+  padding: 7px 15px 7px 15px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  color: #e2dccc;
+}
+
+.copywrite-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.copywrite-icon {
+  font-size: 10px;
+}
+.copywrite-content {
+  font-size: 10px;
+  color: #969595;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sections {
+  font-size: 10px;
+  color: #969595;
+  border-right: 3px solid #454445;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.section {
+  font-size: 10px;
+  color: #969595;
+}
+
+@media screen and (max-width: 576px) {
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copywrite-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    order: 1;
+  }
+  .sections {
+    font-size: 8px;
+  }
+  .section {
+    font-size: 8px;
+  }
+  .copywrite-icon {
+    font-size: 8px;
+  }
+  .copywrite-content {
+    font-size: 8px;
+  }
+}

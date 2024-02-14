@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.carousel {
+  overflow: hidden;
+  width: 70vw;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 490px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.carousel-item-text {
+  font-size: 15px;
+  margin: 40px 0 40px 0;
+  padding: 0 20px 0 20px;
+  width: 300px;
+  white-space: normal;
+  color: black;
+  text-align: left;
+}
+
+.carousel-img {
+  width: 250px;
+  padding: 0 20px 0 20px;
+}
+
+/* final stage */
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button-arrow:hover {
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.indicators {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.indicator-buttons {
+  border: none;
+  cursor: pointer;
+}
+
+.indicators > button {
+  margin: 5px;
+  background: none;
+}
+
+.indicator-symbol {
+  color: #00ca75;
+}
+
+.indicator-symbol-active {
+  color: rgb(1, 100, 248);
+  font-size: 30px;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+  text-align: center;
+  margin-top: 40px;
+}
+.recent-work {
+  color: rgba(0, 0, 0, 0.615);
+}
+.our-text {
+  background-color: black;
+  color: #fff;
+  padding: 2px 4px;
+  border-radius: 9px 0px 0px 9px;
+}
+.work-text {
+  color: blue;
+}
+.para {
+  font-size: 16px;
+  font-family: Roboto;
+  color: #7e7e7e;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.card1 {
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  shadow: 1px;
+  padding: 15px;
+  border-radius: 15px;
+  position: absolute;
+  top: 1800px;
+  left: 30px;
+  box-shadow: 5px 5px 5px 3px #d2d4dc;
+}
+.card1 h {
+  color: #b4b4b4;
+}
+.card1 h2 {
+  color: #3e3e3e;
+  margin: 10px 0px 20px 0px;
+}
+.view-btn {
+  padding: 10px;
+  width: 120px;
+  margin: 10px;
+  background-color: #5469ab;
+  border-radius: 50px;
+  border: 0px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 400px;
+    text-align: center;
+  }
+  .card1 {
+    position: absolute;
+    margin-top: 1000px;
+  }
+
+  .carousel-item-text {
+    font-size: 0.9rem;
+    padding: 0 5px;
+  }
+
+  .button-arrow {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .indicator-symbol-active {
+    font-size: 15px;
+  }
+
+  .carousel {
+    width: 80vw;
+  }
+  .text-container {
+    width: 80vw;
+  }
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 30px;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: row;
+  /* Ensure items wrap to the next line */
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  width: 1200px;
+  margin: 0;
+}
+.service-card-container {
+  justify-content: center;
+}
+
+@media screen and (max-width: 608px) {
+  .service-list {
+    flex-direction: column;
+  }
+}
+.service-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-left: 30px;
+  box-sizing: border-box;
+}
+
+.service-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  align-self: flex-start;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.greenLine {
+  height: 8px;
+  border-radius: 7px;
+  width: 60%;
+  align-self: flex-start;
+  background-color: #00ca75;
+}
+.service-details p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  width: 300px;
+  margin-top: 10px;
+  text-align: left;
+  color: #d5d5d5;
+}
