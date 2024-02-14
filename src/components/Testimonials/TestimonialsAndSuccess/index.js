@@ -14,7 +14,6 @@ import { CR } from "./styledComponents";
 import { CrEle } from "./styledComponents";
 import { Desc } from "./styledComponents";
 
-
 class Testimonials extends Component {
   render() {
     return (

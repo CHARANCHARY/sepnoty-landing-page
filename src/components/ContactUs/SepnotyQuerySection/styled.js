@@ -16,6 +16,12 @@ export const ContactQueryContainer = styled.div`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 =======
+`;
+
+export const ContactQueryContainer = styled.div`
+  padding: 20px 15px 20px 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   width: 80%;
   margin-left: 10%;
   background-color: #fafafa;
@@ -154,6 +160,7 @@ export const ContactContactUsItems = styled.ul`
   padding: 0px;
   margin: 0px;
   color: #777777;
+`;
 
 
 /* export const ContactIcon {
@@ -174,6 +181,7 @@ export const ContactImageContainer = styled.div`
 export const ContactImage = styled.img`
   height: 185px;
   width: 230px;
+
   margin-top: 84px;
 `;
 

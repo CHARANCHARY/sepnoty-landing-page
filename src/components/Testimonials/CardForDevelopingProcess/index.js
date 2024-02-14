@@ -20,6 +20,7 @@ import {
 
 const CardItem = (props) => {
   const { cardsList } = props;
+
   transition: max-height 0.1s ease;
 
   &:hover {
@@ -114,6 +115,7 @@ const CardItem = ({ cardsList }) => {
         </PopupContainer>
       )}
     </>
+
     <CardContainer isExpanded={isExpanded}>
       <CardHeader>
         <CardNumber>0{id}</CardNumber>

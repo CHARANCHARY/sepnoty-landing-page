@@ -13,7 +13,7 @@ export const CardListContainer = styled.ul`
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
 `;
