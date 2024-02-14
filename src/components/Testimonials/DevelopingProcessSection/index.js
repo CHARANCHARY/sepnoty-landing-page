@@ -1,5 +1,5 @@
 import CardItem from "../CardForDevelopingProcess";
-
+import Testimonials from "../TestimonialsAndSuccess";
 import {
   BgContainer,
   CardListContainer,
@@ -67,6 +67,7 @@ const DevelopingProcess = () => (
         ))}
       </CardListContainer>
     </BgContainer>
+    <Testimonials />
   </>
 );
 
