@@ -57,6 +57,7 @@ export const Desc = styled.p`
   text-shadow: 0px 1px 1px;
 `;
 
+
 export const BottomCon = styled.div`
   display: flex;
   flex-direction: row;

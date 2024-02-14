@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React, { useState } from "react";
 
-const CardContainer = styled.div`
-  margin: 20px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  overflow: hidden;
-  max-height: ${({ isExpanded }) => (isExpanded ? 'none' : '150px')}; 
+import {
+  CardContainer,
+  CardHeader,
+  CardNumber,
+  CardTitle,
+  CardParagraph,
+  Button,
+  PopupContainer,
+  PopupContent,
+  PopupImage,
+  Close,
+  PopupTitle,
+  CloseImg,
+  PopupHeading,
+  Header,
+  PopupDesc,
+} from "./styled";
 
+const CardItem = (props) => {
+  const { cardsList } = props;
   transition: max-height 0.1s ease;
 
   &:hover {
@@ -56,13 +65,55 @@ const ReadMore = styled.span`
 
 const CardItem = ({ cardsList }) => {
   const { title, description, id } = cardsList;
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isPopupOpen, setPopupOpen] = useState(false);
 
-  const handleReadMoreClick = () => {
-    setIsExpanded(!isExpanded);
+  const togglePopup = () => {
+    setPopupOpen(!isPopupOpen);
   };
 
   return (
+    <>
+      <CardContainer>
+        <CardHeader>
+          <CardNumber>0{id}</CardNumber>
+          <CardTitle>{title}</CardTitle>
+        </CardHeader>
+        <CardParagraph>{description}</CardParagraph>
+        <Button onClick={togglePopup}>Learn More</Button>
+      </CardContainer>
+      {isPopupOpen && (
+        <PopupContainer>
+          <Close onClick={togglePopup}>
+            <CloseImg src="./images/close.svg" alt="close" />
+          </Close>
+          <PopupContent>
+            <PopupImage
+              src="./images/Programming-image.svg"
+              alt="programming"
+            />
+            <Header>
+              <PopupTitle>{title}</PopupTitle>
+              <PopupHeading>
+                Designing web interfaces that stimulate growth and enhance user
+                engagement
+              </PopupHeading>
+            </Header>
+          </PopupContent>
+          <PopupDesc>
+            During the project discovery phase, business analysts conduct intial
+            research to undertand the projects purpose and identify the needs of
+            target audience. This phase helps in selecting the appropriate
+            technology stack, defining project deliverables, and estimate the
+            required timelines and resources. The goal is to gather essential
+            information that will guide the project's direction and ensure
+            alignment with the client's objectives and user requirements. This
+            thourough analysis lays the groundwork for a successful project
+            execution by providing a clear understanding of the project scope,
+            objectives and constraints.
+          </PopupDesc>
+        </PopupContainer>
+      )}
+    </>
     <CardContainer isExpanded={isExpanded}>
       <CardHeader>
         <CardNumber>0{id}</CardNumber>
