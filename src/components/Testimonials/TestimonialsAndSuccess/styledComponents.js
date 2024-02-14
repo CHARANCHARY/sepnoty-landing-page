@@ -57,11 +57,6 @@ export const Desc = styled.p`
   text-shadow: 0px 1px 1px;
 `;
 
-export const Imag = styled.img`
-  height: 280px;
-  width: 450px;
-  margin-right: 30px;
-`;
 export const MainContainer = styled.div`
   background: white;
   margin-bottom: 20px;
