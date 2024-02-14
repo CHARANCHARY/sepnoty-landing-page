@@ -1,17 +1,27 @@
 import React from "react";
+import {
+  OurWorkTextContainer,
+  OurWorkOur,
+  OurWorkOurText,
+  OurWorkText,
+  OurWorkPara
+} from './styledComponents';
 
 function Content() {
   return (
-    <div className="text-container">
-      <h2 className="recent-work">
-        <span className="our-text">Our</span> Recent{" "}
-        <span className="work-text">work</span>
-      </h2>
-      <p className="para">
-        We connect the best of design thinking, an agile way of working, and
-        lean agency principles to create our growth-driven methodology.
-      </p>
-    </div>
+    <OurWorkTextContainer>
+      <OurWorkOur>
+        <OurWorkOurText>Our</OurWorkOurText> Recent{" "}
+        <OurWorkText>work</OurWorkText>
+      </OurWorkOur>
+      <OurWorkPara>
+        We connect the best of design thinking, an agile way of
+        <br />
+        working, and lean agency principles to create our
+        <br />
+        growth-driven methodology.
+      </OurWorkPara>
+    </OurWorkTextContainer>
   );
 }
 

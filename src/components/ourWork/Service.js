@@ -1,16 +1,24 @@
 import PropTypes from "prop-types";
+import {
+  OurWorkServiceCardContainer,
+  OurWorkServiceImg,
+  OurWorkGreenLine,
+  OurWorkServiceDetails,
+  OurWorkDescription
+} from "./styledComponents";
 import "./index.css";
+
 const Service = ({ details }) => {
   const { imageUrl, description } = details;
 
   return (
-    <li className="service-card-container">
-      <img src={imageUrl} className="service-image" alt="Service" />
-      <hr className="greenLine" />
-      <div className="service-details">
-        <p>{description}</p>
-      </div>
-    </li>
+    <OurWorkServiceCardContainer>
+      <OurWorkServiceImg src={imageUrl} alt="Service" />
+      <OurWorkGreenLine />
+      <OurWorkServiceDetails>
+        <OurWorkDescription>{description}</OurWorkDescription>
+      </OurWorkServiceDetails>
+    </OurWorkServiceCardContainer>
   );
 };
 

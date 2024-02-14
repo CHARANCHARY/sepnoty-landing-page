@@ -6,13 +6,12 @@ export const Header1 = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding-left: 3.3rem;
-  background-color: white;
-  color:#525f93;
+  padding:50px 30px 50px 70px;
+  background-color:#0C111F;
+  color:white;
 `;
 export const HeaderLogoImg = styled.img`
- width: 180px;
- height: 50px;
+
 `;
 export const HeaderNavButton=styled.button`
 padding: 5px;
@@ -20,17 +19,17 @@ cursor: pointer;
 background: transparent;
 border: none;
 outline: none;
-color: #5767aa;
+color:white;
 display: none;
 opacity: 0;
 font-size: 1.8rem;
 `;
 export const HeaderAnchorEl=styled.a`
 margin: 0 1rem;
-color:#29335c;
+color:white;
 text-decoration: none;
 &:hover {
-    color:#db2b39;
+    color:#254989;
   }
 `;
 export const HeaderDropContent=styled.div`
@@ -56,28 +55,28 @@ export const HeaderNavItem=styled.div`
 display: flex;
 align-items: center;
 cursor: pointer;
-color:#29335c;
+color:white;
 `;
 
 export const HeaderDropAnchorEl=styled.a`
-color: black;
+color:#254989;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   &:hover {
-    background-color: #f1f1f1;
+    background-color:white;
 `;
 export const HeaderContactButton=styled.button`
 width: 130px;
 height: 45px;
 border-radius: 50px;
 background-color:#5767aa;
-color:#eee;
+color:white;
 padding: 10px;
 font-family: "Roboto";
-border: none;
 cursor: pointer;
-margin-right: 30px;
+margin-right: 50px;
+border-color:white;
 @media screen and (min-width: 768px) {
       margin-left: 300px;
   }
@@ -85,7 +84,7 @@ margin-right: 30px;
 export const HeaderNav=styled.nav`
 display: flex;
   align-items: center;
-  color:black;
+  color:white;
   ${props => props.isNavOpen && `
   display: flex;
   `}
@@ -97,9 +96,9 @@ display: flex;
   }
 `;
 export const HeaderDrop=styled.span`
-color:black;
+color:white;
 &:hover{
-    color:#db2b39;
+    color:#254989;
 }
 `;
 
@@ -107,8 +106,8 @@ color:black;
 export const HeaderDownArrow = styled(FaChevronDown)`
 margin-left: 5px;
 margin-right: 15px;
-color:black;
+color:white;
 &:hover{
-    color:#db2b39;
+    color:#254989;
 }
 `;

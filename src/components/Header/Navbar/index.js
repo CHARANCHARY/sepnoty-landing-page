@@ -40,7 +40,7 @@ const Header = () => {
       </HeaderNavButton>
       <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Home
+          About us
         </HeaderAnchorEl>
 
         {/* Services Dropdown */}
@@ -61,7 +61,7 @@ const Header = () => {
         {/* Products Dropdown */}
         <HeaderDropDown>
           <HeaderNavItem onClick={toggleDropdown}>
-            <HeaderDrop>Products</HeaderDrop>
+            <HeaderDrop>Blog</HeaderDrop>
             <HeaderDownArrow />
           </HeaderNavItem>
           {isDropdownOpen && (
@@ -74,14 +74,12 @@ const Header = () => {
         </HeaderDropDown>
 
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Blog
+          Career Opportunities
         </HeaderAnchorEl>
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Contact
+          Resoource Center
         </HeaderAnchorEl>
-        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          About
-        </HeaderAnchorEl>
+        
         <HeaderContactButton onClick={closeNavbar}>
           Contact Us
         </HeaderContactButton>
