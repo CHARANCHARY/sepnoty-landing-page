@@ -48,6 +48,10 @@ gap: 10px;
 margin-top:25px;
 `
 
+
+
+
+
 export const CrEle = Styled.p`
   margin: -7px;
   padding: 0px;
