@@ -1,10 +1,9 @@
 import { Component } from "react";
 
+import Slider from "../Sliders";
 
-import Slider from "../Sliders"
-
-import {MainContainer} from "./styledComponents"
-import {Sliders} from "./styledComponents"
+import { MainContainer } from "./styledComponents";
+import { Sliders } from "./styledComponents";
 
 import { TopContainer } from "./styledComponents";
 import { StoriesContainer } from "./styledComponents";
@@ -34,9 +33,8 @@ class Testimonials extends Component {
             </Desc>
           </StoriesContainer>
           <Sliders>
-            <Slider/>
+            <Slider />
           </Sliders>
-          
         </TopContainer>
       </MainContainer>
     );
