@@ -7,6 +7,15 @@ const image1 = "./images/image1.svg"
 const image2 = "./images/image2.svg"
 
 
+
+
+
+
+
+
+
+
+
 const SwiperButtons = () =>{
     const swiper = useSwiper();
 

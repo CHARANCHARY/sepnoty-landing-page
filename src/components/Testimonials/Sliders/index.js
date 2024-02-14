@@ -8,6 +8,13 @@ import { MainContainer, CardContainer, Stars, Para1, Para2, Image, Name, Role, D
 import 'swiper/css';
 
 
+
+
+
+
+
+
+
 // import required modules
 import { Pagination } from 'swiper/modules';
 const Slider = () => {

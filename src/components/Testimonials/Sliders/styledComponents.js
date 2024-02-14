@@ -60,6 +60,14 @@ flex-direction:column;
 export const Name = Styled.a`
 color:#2B459B;
 font-size:15px;
+
+
+
+
+
+
+
+
 `
 export const Role = Styled.a`
 color:#2B459B;

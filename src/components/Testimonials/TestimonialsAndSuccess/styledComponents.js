@@ -45,6 +45,15 @@ export const Con = Styled.div`
 display: flex;
 flex-direction:column;
 gap: 10px;
+
+
+
+
+
+
+
+
+
 margin-top:25px;
 `
 export const CrEle = Styled.p`
