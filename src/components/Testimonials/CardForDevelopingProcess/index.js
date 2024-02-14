@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
   CardContainer,
   CardHeader,
@@ -8,18 +7,17 @@ import {
   CardParagraph,
   Button,
   PopupContainer,
+  Close,
+  CloseImg,
   PopupContent,
   PopupImage,
-  Close,
-  PopupTitle,
-  CloseImg,
-  PopupHeading,
   Header,
+  PopupTitle,
+  PopupHeading,
   PopupDesc,
 } from "./styled";
 
-const CardItem = (props) => {
-  const { cardsList } = props;
+const CardItem = ({ cardsList }) => {
   const { title, description, id } = cardsList;
   const [isPopupOpen, setPopupOpen] = useState(false);
 

@@ -1,13 +1,14 @@
 import CardItem from "../CardForDevelopingProcess";
 
+import Testimonials from "../TestimonialsAndSuccess";
 import {
   BgContainer,
-  CardListContainer,
   Heading,
-  Devl,
   Our,
+  Devl,
   Process,
   Description,
+  CardListContainer,
 } from "./styled";
 
 const cardsList = [
@@ -67,6 +68,7 @@ const DevelopingProcess = () => (
         ))}
       </CardListContainer>
     </BgContainer>
+    <Testimonials />
   </>
 );
 

@@ -5,6 +5,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
 
   margin: 20px 40px 30px 40px;
+
   padding: 30px 10px 30px 10px;
   background-color: rgba(0, 0, 150, 0.15);
   border-radius: 8px;

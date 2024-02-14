@@ -22,7 +22,7 @@ export const ContactQueryContainer = styled.div`
 export const ContactHeading = styled.h1`
   font-size: 20px;
   color: #383721;
-  padding-right: 30px;
+  padding-right: 200px;
   margin: 10px;
 `;
 
@@ -161,8 +161,8 @@ export const ContactImageContainer = styled.div`
 `;
 
 export const ContactImage = styled.img`
-  height: 185px;
-  width: 230px;
+  height: 250px;
+  width: 200px;
   align-self: flex-end;
 `;
 
@@ -244,7 +244,7 @@ export const QueryContainer = styled.div`
 }
 .contact-query-container {
   padding: 5px 30px 20px 30px;
-  
+  width: 700px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   box-shadow: -2px 2px 5px 3px #d2d4dc;

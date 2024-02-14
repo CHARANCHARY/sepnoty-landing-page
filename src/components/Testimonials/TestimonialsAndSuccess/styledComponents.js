@@ -8,16 +8,17 @@ export const TopContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 30px;
-  height: 40vh;
+  height: 60vh;
   margin-top: 20px;
 `;
 
 export const StoriesContainer = styled.div`
   display: flex;
+  height: 60%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   border-right: 1px solid #c0c2ce;
-  width: 500px;
+  width: 700px;
 `;
 
 export const Heading = styled.h1`
@@ -62,7 +63,10 @@ export const Imag = styled.img`
   margin-right: 30px;
 `;
 export const MainContainer = styled.div`
-  height: 100vh;
   background: white;
   margin-bottom: 20px;
+`;
+
+export const Sliders = styled.div`
+  margin-left: 0px;
 `;
