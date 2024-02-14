@@ -4,12 +4,12 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  margin: 20px 80px 40px 80px;
+  margin: 20px 40px 30px 40px;
   padding: 30px 10px 30px 10px;
   background-color: rgba(0, 0, 150, 0.15);
   border-radius: 8px;
   border: 1px solid #cecece;
-  height: 320px;
+  height: 350px;
   width: 270px;
   color: #b7b6bd;
 
