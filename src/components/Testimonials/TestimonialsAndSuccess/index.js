@@ -1,8 +1,10 @@
 import { Component } from "react";
 
-import { Imag } from "./styledComponents";
 
-import { MainContainer } from "./styledComponents";
+import Slider from "../Sliders"
+
+import {MainContainer} from "./styledComponents"
+import {Sliders} from "./styledComponents"
 
 import { TopContainer } from "./styledComponents";
 import { StoriesContainer } from "./styledComponents";
@@ -11,6 +13,7 @@ import { ConsumerCon } from "./styledComponents";
 import { CR } from "./styledComponents";
 import { CrEle } from "./styledComponents";
 import { Desc } from "./styledComponents";
+
 
 class Testimonials extends Component {
   render() {
@@ -31,12 +34,10 @@ class Testimonials extends Component {
               their businesses
             </Desc>
           </StoriesContainer>
-          <div>
-            <Imag
-              src="https://res.cloudinary.com/dds29bnj2/image/upload/v1707296399/WhatsApp_Image_2024-02-07_at_2.28.55_PM_mossbz.jpg"
-              alt="slider"
-            />
-          </div>
+          <Sliders>
+            <Slider/>
+          </Sliders>
+          
         </TopContainer>
       </MainContainer>
     );
