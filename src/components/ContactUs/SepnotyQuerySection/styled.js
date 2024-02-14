@@ -228,6 +228,7 @@ export const QueryContainer = styled.div`
   display: flex;
   flex-direction: row;
 `;
+
 /* .error {
   color: red;
   font-size: 8px;
