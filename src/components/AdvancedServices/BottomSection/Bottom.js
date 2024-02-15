@@ -30,7 +30,7 @@ const serviceLists = [
       imageUrl:cloud,
       imageTitle:"Cloud Development",
       description:
-        "We furnish clients with comprehensive project plans, illustrating actionable strategies to transform their vision into tangible outcomes. This ensures clarity regarding project milestones and deliverables",
+        "Crafting interactive Experience that strengthen The brand and conversation",
       popupText:"Front-end Development focuses on building the user-facing part of websites using HTML, CSS, and JavaScript to structure content, style elements, and add interactivity. Back-end Development involves creating the server-side of web applications, managing databases, and utilizing server-side programming languages like Python, Ruby, PHP, etc., for tasks like user authentication and database operations. Full-stack Development encompasses proficiency in both front-end and back-end development, enabling developers to handle all aspects of web development, including designing interfaces, managing databases, and implementing server-side logic."
 
     },
@@ -39,7 +39,7 @@ const serviceLists = [
         imageUrl:app,
         imageTitle:"App Development",
         description:
-          "We furnish clients with comprehensive project plans, illustrating actionable strategies to transform their vision into tangible outcomes. This ensures clarity regarding project milestones and deliverables",
+          "Flawless consumer-facing App to Nurture Online Relationships",
         popupText:"Front-end Development focuses on building the user-facing part of websites using HTML, CSS, and JavaScript to structure content, style elements, and add interactivity. Back-end Development involves creating the server-side of web applications, managing databases, and utilizing server-side programming languages like Python, Ruby, PHP, etc., for tasks like user authentication and database operations. Full-stack Development encompasses proficiency in both front-end and back-end development, enabling developers to handle all aspects of web development, including designing interfaces, managing databases, and implementing server-side logic."
 
       },

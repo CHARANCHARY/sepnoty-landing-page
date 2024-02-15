@@ -18,7 +18,8 @@ border-radius:20px;
 padding:25px;
 text-align:center;
 justify-content:space-around;
-width:270px;
+width:245px;
+height:800;
 transition: transform 0.3s, background-color 0.3s;
 &:hover {
     transform: scale(1.05); /* Zoom out effect */
@@ -91,10 +92,9 @@ color:white;
 text-align:center;
 padding:5px;
 `;
-`
+
 
 export const PopUpTitle = styled.h2`
-
   font-size: 18px;
   color:white;
 

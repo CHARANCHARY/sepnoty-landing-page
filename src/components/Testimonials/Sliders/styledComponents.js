@@ -1,54 +1,61 @@
-import styled from "styled-components";
+import Styled from "styled-components";
 
-export const MainContainers = styled.div`
-background-color:white;
+export const MainContainer = Styled.div`
 display: flex;
-flex-direction: column;
-gap: 10px;
-height: 250px;
-width: 400px;
-background-color: white;
-	position: relative;
-	padding: 20px;
-	color: white;
-	border-radius: 30px;
-
-&::after {
-	content: "";
-	position: absolute;
-	height: 25px;
-	width: 35px;
-	bottom: -25px;
-	left: 10%;
-	background-color: #003BDE;
-	clip-path: polygon(20% 0%, 100% 0, 30% 100%);  
-    border-radius: 0 0 20px 40px;
-
-}
+flex-direction:column;
+padding: 10px;
+height:400px;
+margin-top:30px;
+width:300px;
 `
-
-
-export const Name = styled.p`
-color:black;
-font-size: 22px;
+export const CardContainer = Styled.div`
+background: #121415;
+border-radius:15px;
+padding: 20px;
+border:0px;
+height: 450px;
+margin-bottom:10px;
 `
-
-export const Role = styled.a`
-color:black;
-font-size: 10px;
+export const Stars = Styled.a`
+font-size:10px;
 `
-export const Discription = styled.p`
-color:#878787;
-font-size: 12px;
-
+export const Para1 = Styled.p`
+color:#B7B6BD;
+font-family: "Inter", serif sans;
+font-size: 18px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0px;
+text-align: left;
 `
-export const Button = styled.button`
-border: 0;
-background-color: white;
-color: black;
+export const Para2 = Styled.p`
+color:#B7B6BD;
+font-family: "Inter", serif sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0px;
+text-align: left;
+`
+export const ProfileCon = Styled.div`
 display: flex;
-flex-direction: column;
-justify-content: end;
-align-items: end;
-text-decoration: underline;
+flex-direction:row;
+gap:20px;
+
+`
+export const Image = Styled.img`
+
+`
+export const Details = Styled.div`
+display: flex;
+flex-direction:column;
+
+`
+export const Name = Styled.a`
+color:#2B459B;
+font-size:15px;
+`
+export const Role = Styled.a`
+color:#2B459B;
+font-size:12px;
 `

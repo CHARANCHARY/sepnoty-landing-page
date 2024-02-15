@@ -1,142 +1,131 @@
 import React from 'react';
-
-
-
-import { MainContainers } from "./styledComponents"
-
-
-
-
-import {Button} from "./styledComponents"
-
-import {Name} from "./styledComponents"
-
-import {Role} from "./styledComponents"
-
-import {Discription} from "./styledComponents"
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Buttons from "../Buttons/index"
+import { MainContainer,CardContainer,Stars,Para1,Para2,Image,Name,Role,Details,ProfileCon} from './styledComponents';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-creative';
-
-
-
-
+import 'swiper/css/pagination';
 // import required modules
-import { EffectCreative } from 'swiper/modules';
-import styled from 'styled-components';
-
-const Slider = () => {
-    return (
-        <>
-        <Swipers
-        grabCursor={true}
-        effect={'creative'}
-        creativeEffect={{
-          prev: {
-            shadow: true,
-            origin: 'left center',
-            translate: ['-5%', 0, -200],
-            rotate: [0, 100, 0],
-          },
-          next: {
-            origin: 'right center',
-            translate: ['5%', 0, -200],
-            rotate: [0, -100, 0],
-          },
+import { Pagination } from 'swiper/modules';
+export default function App() {
+  return (
+    <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
         }}
-        modules={[EffectCreative]}
-        className="mySwiper6"
+        modules={[Pagination]}
+        className="mySwiper"
       >
-        <SwiperSlides>
-        <MainContainers>
-                <Name>
-                    Naqush Shahid
-                </Name>
-                <Role>
-                    CEO Tech Industry
-                </Role>
-                <Discription>
-                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
-                </Discription>
-                <div className='star'>
-                ⭐⭐⭐⭐⭐</div>
-                <Button>
-                   View All </Button>      
-            </MainContainers>
-        </SwiperSlides>
-        <SwiperSlides>
-        <MainContainers className='comment-box'>
-                <Name>
-                    Naqush Shahid
-                </Name>
-                <Role>
-                    CEO Tech Industry
-                </Role>
-                <Discription>
-                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
-                </Discription>
-                <div className='star'>
-                ⭐⭐⭐⭐⭐</div>   
-                <Button>
-                   View All </Button>
-                  
-            </MainContainers>
-        </SwiperSlides>
-        <SwiperSlides>
-        <MainContainers>
-                <Name>
-                    Naqush Shahid
-                </Name>
-                <Role>
-                    CEO Tech Industry
-                </Role>
-                <Discription>
-                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
-                </Discription>
-                <div className='star'>
-                ⭐⭐⭐⭐⭐</div>
-                <Button>
-                   View All </Button>        
-            </MainContainers>
-        </SwiperSlides>
-        <SwiperSlides>
-        <MainContainers>
-                <Name>
-                    Naqush Shahid
-                </Name>
-                <Role>
-                    CEO Tech Industry
-                </Role>
-                <Discription>
-                    The Slider is simply amazing. The aninimation addition of slides and & drop features really simplified the whole process
-                </Discription>
-                <div className='star'>
-                ⭐⭐⭐⭐⭐</div>
-                <Button>
-                   View All </Button>        
-            </MainContainers>
-        </SwiperSlides>
-      </Swipers>
-        </>
-    )
-
+        <SwiperSlide>
+            <MainContainer>
+            <CardContainer>
+                <Stars>
+                ⭐⭐⭐⭐
+                </Stars>
+                <Para1>
+                Modern look & trending design
+                </Para1>
+                <Para2>
+                Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                </Para2>
+                <ProfileCon>
+                    <Image src='https://res.cloudinary.com/dds29bnj2/image/upload/v1707787670/Ellipse_mwqg4v.svg'/>
+                    <Details>
+                        <Name>
+                        Naqash Shahid
+                        </Name>
+                        <Role>
+                        CEO Tech Industry
+                        </Role>
+                    </Details>
+                </ProfileCon>
+            </CardContainer>
+            </MainContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+            <MainContainer>
+            <CardContainer>
+                <Stars>
+                ⭐⭐⭐⭐
+                </Stars>
+                <Para1>
+                Design Quality & performance
+                </Para1>
+                <Para2>
+                Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                </Para2>
+                <ProfileCon>
+                    <Image src="https://res.cloudinary.com/dds29bnj2/image/upload/v1707787670/Ellipse_mwqg4v.svg"/>
+                    <Details>
+                        <Name>
+                        Bianca
+                        </Name>
+                        <Role>
+                        Program Manager
+                        </Role>
+                    </Details>
+                </ProfileCon>
+            </CardContainer>
+            </MainContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+            <MainContainer>
+            <CardContainer>
+                <Stars>
+                ⭐⭐⭐⭐
+                </Stars>
+                <Para1>
+                Layout and organized layers
+                </Para1>
+                <Para2>
+                Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                </Para2>
+                <ProfileCon>
+                    <Image src="https://res.cloudinary.com/dds29bnj2/image/upload/v1707787670/Ellipse_mwqg4v.svg"/>
+                    <Details>
+                        <Name>
+                        Denny Hilguston
+                        </Name>
+                        <Role>
+                        CEO Tech Industry
+                        </Role>
+                    </Details>
+                </ProfileCon>
+            </CardContainer>
+            </MainContainer>
+        </SwiperSlide>
+        <SwiperSlide>
+            <MainContainer>
+            <CardContainer>
+                <Stars>
+                ⭐⭐⭐⭐
+                </Stars>
+                <Para1>
+                Modern look & trending design
+                </Para1>
+                <Para2>
+                Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                </Para2>
+                <ProfileCon>
+                    <Image src="https://res.cloudinary.com/dds29bnj2/image/upload/v1707787670/Ellipse_mwqg4v.svg"/>
+                    <Details>
+                        <Name>
+                        Naqash Shahid
+                        </Name>
+                        <Role>
+                        CEO Tech Industry
+                        </Role>
+                    </Details>
+                </ProfileCon>
+            </CardContainer>
+            </MainContainer>
+        </SwiperSlide> 
+        <Buttons/>
+      </Swiper>
+    </>
+  );
 }
-
-export default Slider
-
-const Swipers = styled(Swiper)`
-margin: 100px auto;
-  width: 320px;
-  height: 240px;
-`
-const SwiperSlides = styled(SwiperSlide)`
-display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;`

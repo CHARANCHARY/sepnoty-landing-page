@@ -107,7 +107,6 @@ export const HeaderDownArrow = styled(FaChevronDown)`
   margin-left: 5px;
   margin-right: 15px;
   color: white;
-
   &:hover {
     color: #254989;
   }
