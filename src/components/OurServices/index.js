@@ -19,7 +19,6 @@ const Idea = () => (
         <Image src="./images/Python-Logo 2.svg" alt="Python" />
         <Image src="./images/django-logo.svg" alt="django" />
         <Image src="./images/net-logo.svg" alt=".net" />
-
         <Image src="./images/laravel-logo.svg" alt="laravel" />
         <Image src="./images/PhP.svg" alt="Php" />
         <Img src="./images/Symfony-logo.svg" alt="Symfony" />

@@ -22,7 +22,7 @@ function App() {
       <HeaderSection />
       
       <Combined />
-      <ServicesSection />
+      <Idea />
       <OurWork />
       <DevelopingProcess />
       <SepnotyQuerySection />

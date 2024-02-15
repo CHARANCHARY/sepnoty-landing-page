@@ -5,7 +5,9 @@ import {
   OurWorkButton,
   OurWorkSideHeading,
   OurWorkThreeCol,
-  Details
+  Details,
+  Detail,
+  OurWorkEl,
 } from "./styledComponents";
 
 function Card() {
@@ -13,23 +15,24 @@ function Card() {
     <OurWorkCard>
       <OurWorkCardTitle>Our project</OurWorkCardTitle>
       <br />
-      <OurWorkSideHeading>
-        Software products
-        development
-      </OurWorkSideHeading>
+      <OurWorkSideHeading>Software Products Development</OurWorkSideHeading>
       <br />
-      <OurWorkThreeCol>
-      <Details>Service</Details>
-      <Details>Year</Details>
-      <Details>Client</Details>
-      </OurWorkThreeCol>
-      
-      <OurWorkThreeCol>
-      <Details>UI Design</Details>
-      <Details>2022</Details>
-      <Details>Sepnoty</Details>
-      </OurWorkThreeCol>
-      <OurWorkButton>View Profile</OurWorkButton>
+      <OurWorkEl>
+        <OurWorkThreeCol>
+          <Details>Service</Details>
+          <Detail>UI/UX & Development</Detail>
+        </OurWorkThreeCol>
+
+        <OurWorkThreeCol>
+          <Details>Year</Details>
+          <Detail>2022</Detail>
+        </OurWorkThreeCol>
+        <OurWorkThreeCol>
+          <Details>Client</Details>
+          <Detail>Sepnoty</Detail>
+        </OurWorkThreeCol>
+      </OurWorkEl>
+      <OurWorkButton>View Portfolio</OurWorkButton>
     </OurWorkCard>
   );
 }
