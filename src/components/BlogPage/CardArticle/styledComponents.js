@@ -10,15 +10,17 @@ import styled from "styled-components";
  height:400px;
  margin:20px;
  `;
+ export const ArticleImg=styled.img`
+ 
+`;
 export const ArticleTextConatiner=styled.div`
 display:flex;
 flex-direction:column;
 padding:7px;
 background-color:rgba(217, 217, 217, 1);
+border-radius:7px;
 `;
-export const ArticleImg=styled.img`
- 
-`;
+
 export const ArticleTitle=styled.h3`
 color:rgba(234, 50, 50, 1);
 font-size:12px;

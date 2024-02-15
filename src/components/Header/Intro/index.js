@@ -1,5 +1,8 @@
-import Introimage from "../assets/Introimg.png";
+import Introimage from "../assets/Introimg.svg";
 import play from "../assets/play-button.png";
+import bgTransparent from "../assets/bgtransparent1.svg";
+import bgTransparents from "../assets/bgTransparent2.svg";
+import midTransparent from "../assets/bgTransparent3.svg";
 import Header from "../Navbar";
 import { useState } from "react";
 
@@ -22,9 +25,12 @@ import { Intro1,
    IntroAchievements,
    IntroOrangeText,
    IntroBlackText,
-  
+   Intro,
    IntroRightPart,
-   IntroRightImg
+   IntroRightImg,
+   TransparentImg,
+   TransparentImgs,
+   TransparentImgss,
   } from "./styledComponents";
 
 
@@ -32,11 +38,15 @@ import { Intro1,
 const HeaderSection = () => {
     const [projects]=useState('200+k');
     const [active]=useState('81+k');
-    const [customer]=useState('21/7');
+    const [customer]=useState('24/7');
     
   return (
     <>
       <Header />
+      <Intro>
+      <TransparentImg src={bgTransparent} alt="not found" />
+      <TransparentImgs src={bgTransparents} alt="not found" />
+      <TransparentImgss src={midTransparent} alt="not found" />
       <Intro1>
         <Intro2>
           <Introhd1>
@@ -48,7 +58,7 @@ const HeaderSection = () => {
             <br />
             Development
           </Introhd1>
-          <br />
+          
           <Introp1>
             Development agency specialized in delivering
             <br /> 
@@ -58,7 +68,6 @@ const HeaderSection = () => {
          
             technology.
           </Introp1>
-          <br />
           <IntroButtonVideo>
             <IntroProposalText>Get a Proposal
             </IntroProposalText>
@@ -68,51 +77,52 @@ const HeaderSection = () => {
             </IntroVideoText>
             </IntroPlayVideo>
           </IntroButtonVideo>
-          <br />
-          <br />
           <Intro3>
             
           <IntroCircles>
             <IntroWhiteCircle />
             <IntroWhiteCircle />
             <IntroWhiteCircle />
-           
-            <IntroBlueCircle></IntroBlueCircle>
+            <IntroBlueCircle />
+            <IntroBlueCircle />
           </IntroCircles>
        
         
           <IntroRightText>1.8k  People bought our services today.</IntroRightText>
         
       </Intro3>
-      <br />
 
         </Intro2>
         <IntroRightPart>
           <IntroRightImg src={Introimage} alt="not found" />
         </IntroRightPart>
-      </Intro1>
-      <IntroExplorePart>
-      <IntroAchievements>
-        <IntroOrangeText>{projects}
-
-        </IntroOrangeText>
         
-        <IntroBlackText>Projects Complete
-        </IntroBlackText>
-      </IntroAchievements>
-      <IntroAchievements>
-        <IntroOrangeText>{active}</IntroOrangeText>
+        </Intro1>
+        <IntroExplorePart>
+        <IntroAchievements>
+          <IntroOrangeText>{projects}
+          </IntroOrangeText>
+          
+          <IntroBlackText>Projects Complete
+          </IntroBlackText>
+        </IntroAchievements>
+        <IntroAchievements>
+          <IntroOrangeText>{active}</IntroOrangeText>
+          
+          <IntroBlackText>Active Customers</IntroBlackText>
+        </IntroAchievements>
+        <IntroAchievements>
+          <IntroOrangeText>{customer}</IntroOrangeText>
+          
+          <IntroBlackText>Customer Support</IntroBlackText>
+        </IntroAchievements>
         
-        <IntroBlackText>Active Customers</IntroBlackText>
-      </IntroAchievements>
-      <IntroAchievements>
-        <IntroOrangeText>{customer}</IntroOrangeText>
-
-        
-        <IntroBlackText>Customer Support</IntroBlackText>
-      </IntroAchievements>
+      </IntroExplorePart>
       
-    </IntroExplorePart>
+      </Intro>
+      
+     
+    
     </>
   );
 };

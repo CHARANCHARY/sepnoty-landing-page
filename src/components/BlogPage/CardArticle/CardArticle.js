@@ -16,14 +16,15 @@ const CardArticle = (props) => {
   
     return (
       <ArticleConatiner>
-      <ArticleImg src={imgUrl} alt="not found"></ArticleImg>
+      <ArticleImg src={imgUrl} alt="not found">
+      </ArticleImg>
       <ArticleTextConatiner>
        <ArticleTitle>{title}</ArticleTitle>
        
        <ArticleName>{name}</ArticleName>
        
        <ArticleDescription>{description}</ArticleDescription>
-       <br />
+       
        <ArticleTime>{time}</ArticleTime>
        
        <Arrow>&rarr;</Arrow>
