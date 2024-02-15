@@ -9,19 +9,22 @@ export const ContactContainer = styled.div`
   align-self: center;
   margin-left: 30px;
   padding: 20px 10px 20px 0px;
+  background-color:rgba(0, 0, 0, 0.25);
+  margin-left:50px;
 `;
 
 export const ContactQueryContainer = styled.div`
   padding: 20px 15px 20px 15px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  box-shadow: -2px 2px 5px 3px #d2d4dc;
+  background-color:rgba(250, 250, 250, 1);
   width: 747px;
+  
 `;
 
 export const ContactHeading = styled.h1`
-  font-size: 20px;
-  color: #383721;
+  font-size: 16px;
+  color:rgba(61, 61, 61, 1);
   padding-right: 200px;
   margin: 10px;
 `;
@@ -33,7 +36,7 @@ export const ContactDescription = styled.p`
 `;
 
 export const ContactTextarea = styled.textarea`
-  background-color: #3a3c3d;
+  background-color: rgba(217, 217, 217, 1);
   border-radius: 12px;
   border: 1px solid #e5e6eb;
   padding: 10px;
@@ -133,7 +136,7 @@ export const ContactContactssContainer = styled.div`
   width: 269px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: 2px 2px 5px 3px #d2d4dc;
+  
 `;
 
 export const ContactContactUsItems = styled.ul`
@@ -174,7 +177,7 @@ export const ContactUsInput = styled.input`
   width: 248px;
   margin-right: 20px;
   margin-bottom: 20px;
-  background-color: #3a3c3d;
+  background-color: rgba(217, 217, 217, 1);
 
   &::placeholder {
     color: #8c8c8c;
@@ -188,6 +191,7 @@ export const BottomCon = styled.div`
   padding: 30px;
   margin-bottom: 0px;
   width: 410px;
+  align-items:center;
 `;
 
 export const BottomHeading = styled.h1`
@@ -209,24 +213,25 @@ export const BottomDesc = styled.p`
 
 export const Button = styled.button`
   background-color: #254989;
-  color: #121415;
+  color: white;
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
   border-width: 0px;
   align-self: center;
   font-size: 13px;
-  margin-top: 60px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 `;
 
 export const Image = styled.img`
-  height: 327px;
-  width: 440px;
+  height: 290px;
+  width: 390px;
 `;
 
 export const QueryContainer = styled.div`
   display: flex;
   flex-direction: row;
+  background-color:rgba(12, 17, 31, 1);
 `;
 
 /* .error {
