@@ -1,67 +1,72 @@
-import styled from "styled-components";
+import Styled from "styled-components"
 
-export const TopContainer = styled.div`
-  background-color: #f1f1f1;
-  display: flex;
-  flex-direction: row;
-  padding: 30px;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  height: 60vh;
-  margin-top: 20px;
-`;
+export const MainContainer = Styled.div`
+height:100vh;
+background-size:cover;
+background-color:rgba(12, 17, 31, 1);
+padding : 20px;
+align-items:center;
 
-export const StoriesContainer = styled.div`
-  display: flex;
-  height: 60%;
-  flex-direction: column;
-  justify-content: space-around;
-  border-right: 1px solid #c0c2ce;
-  width: 700px;
-`;
+`
+export const TestContainer =  Styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+margin-bottom:30px;
+margin-right:30px;
 
-export const Heading = styled.h1`
-  font-family: "Inter", serif sans;
-  font-size: 23px;
-  color: #383721;
-  margin-bottom: -10px;
-`;
+`
+export const Heading = Styled.h1`
+color: #2B459B;
+font-size: 40px;
+  margin-bottom: 0px;
+  font-family: "Inter", "serif sans";
 
-export const ConsumerCon = styled.div`
+`
+export const ConsumerCon = Styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: -30px;
-`;
+  gap:50px;
+`
+export const CRLOGO = Styled.h2`
+width: 20px;
+height: 25px;
+top: 1290px;
+left: 770px;
+color:#244886;
+font-size: 40px;
+margin: 0px;
+font-family: "Inter", serif sans;
+`
+export const Con = Styled.div`
+display: flex;
+flex-direction:column;
+gap: 10px;
+margin-top:25px;
+`
 
-export const CR = styled.h1`
-  color: #365899;
-  font-family: "Inter", "serif sans";
-  font-size: 40px;
-  font-weight: bolder;
-  margin-right: 10px;
-`;
-
-export const CrEle = styled.p`
+export const CrEle = Styled.p`
   margin: -7px;
   padding: 0px;
-  color: #383721;
+  color: #244886;
   font-size: 17px;
-`;
-
-export const Desc = styled.p`
-  color: #878787;
-  font-size: 15px;
-  width: 280px;
+  font-family: "Inter", serif sans;
+`
+export const Desc = Styled.p`
+  color: #B7B6BD;
+  font-size: 20px;
   text-shadow: 0px 1px 1px;
-`;
+  margin-top:50px
+  font-family: "Inter", serif sans;
+  margin-top:100px;
+`
+export const SliderCon = Styled.div`
+padding-left:20px;
+`
 
-export const MainContainer = styled.div`
-  background: white;
-  margin-bottom: 20px;
-`;
 
-export const Sliders = styled.div`
-  margin-left: 0px;
-`;
+
+// background: linear-gradient(to left, #333, #333 55%, #eee 100%, #333 75%);

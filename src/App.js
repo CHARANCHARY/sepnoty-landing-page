@@ -10,6 +10,7 @@ import Combined from "./components/AdvancedServices/Combined/Combined";
 /*<Inquiry />
 <Blog />*/
 
+import Testimonials from "./components/Testimonials/TestimonialsAndSuccess"
 
 import FooterSection from "./components/Footer/FooterSection";
 /*import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";*/
@@ -26,7 +27,7 @@ function App() {
       <DevelopingProcess />
       <SepnotyQuerySection />
       
-      
+      <Testimonials/>
       <FooterSection />
     </>
   );

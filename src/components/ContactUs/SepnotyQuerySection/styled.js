@@ -5,12 +5,12 @@ export const ContactContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   border-radius: 30px;
-  margin: 30px;
   align-self: center;
   margin-left: 30px;
   padding: 20px 10px 20px 0px;
   background-color:rgba(0, 0, 0, 0.25);
   margin-left:50px;
+  width: 1000px;
 `;
 
 export const ContactQueryContainer = styled.div`
@@ -224,8 +224,8 @@ export const Button = styled.button`
 `;
 
 export const Image = styled.img`
-  height: 290px;
-  width: 390px;
+  height: 300px;
+  width: 260px;
 `;
 
 export const QueryContainer = styled.div`

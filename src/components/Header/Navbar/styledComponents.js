@@ -39,5 +39,5 @@ export const ContactUsButton = styled.button`
   display:block; 
   font-size: 15px;
   border-radius:24px;
-  margin:0px 5px 0px 10px;
+  margin:-10px 5px 0px 10px;
 `;
