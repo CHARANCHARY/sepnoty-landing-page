@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
-import { Header1,
+import AboutUsSection from "../../AboutUsSection/AboutUs";
+
+import {
+  Header1,
   HeaderLogoImg,
   HeaderNavButton,
   HeaderAnchorEl,
@@ -12,12 +15,19 @@ import { Header1,
   HeaderContactButton,
   HeaderNav,
   HeaderDrop,
-  HeaderDownArrow
+  HeaderDownArrow,
+  AboutUsDropContent,
+  AboutUsDropDown,
 } from "./styledComponents";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
+  const [isAboutUsOpen, setAboutUsOpen] = useState(false);
+
+  const toggleAboutUs = () => {
+    setAboutUsOpen(!isAboutUsOpen);
+  };
 
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
@@ -34,14 +44,19 @@ const Header = () => {
   return (
     <Header1>
       <HeaderLogoImg src={logo} alt="not found"></HeaderLogoImg>
-      <HeaderNavButton 
-      onClick={toggleNavbar}>
+      <HeaderNavButton onClick={toggleNavbar}>
         {isNavOpen ? <FaTimes /> : <FaBars onClick={closeNavbar} />}
       </HeaderNavButton>
       <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
-        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          About us
-        </HeaderAnchorEl>
+        {/* AboutUs Section */}
+        <AboutUsDropDown>
+          <HeaderDrop onClick={toggleAboutUs}>About us</HeaderDrop>
+          {isAboutUsOpen && (
+            <AboutUsDropContent>
+              <AboutUsSection />
+            </AboutUsDropContent>
+          )}
+        </AboutUsDropDown>
 
         {/* Services Dropdown */}
         <HeaderDropDown>
@@ -79,7 +94,7 @@ const Header = () => {
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           Resoource Center
         </HeaderAnchorEl>
-        
+
         <HeaderContactButton onClick={closeNavbar}>
           Contact Us
         </HeaderContactButton>
