@@ -116,8 +116,8 @@ export const HeaderDownArrow = styled(FaChevronDown)`
 export const AboutUsDropContent = styled.div`
   display: block;
   position: absolute;
-  top: 160%;
-  left: -353px;
+  top: 190%;
+  left: -335px;
   border-radius: 10px;
   z-index: 1;
 `;
@@ -126,4 +126,11 @@ export const AboutUsDropDown = styled.div`
   position: relative;
   display: inline-block;
   }
+`;
+
+export const Dropdown = styled.img`
+  margin-left: 5px;
+  height: 7px;
+  width: 10px;
+  padding-top: 1px;
 `;

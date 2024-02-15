@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import AboutUsSection from "../../AboutUsSection/AboutUs";
-
+import dropdown from "../assets/dropdown.svg";
 import {
   Header1,
   HeaderLogoImg,
@@ -18,15 +18,25 @@ import {
   HeaderDownArrow,
   AboutUsDropContent,
   AboutUsDropDown,
+  Dropdown,
 } from "./styledComponents";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isAboutUsOpen, setAboutUsOpen] = useState(false);
+  const [isAboutUsText, setAboutUsText] = useState("AboutUs");
+
+  const text = (
+    <>
+      <HeaderDrop>About Us</HeaderDrop>
+      <Dropdown src={dropdown} alt="not-found" />
+    </>
+  );
 
   const toggleAboutUs = () => {
     setAboutUsOpen(!isAboutUsOpen);
+    setAboutUsText(isAboutUsOpen ? "About Us" : text);
   };
 
   const toggleDropdown = () => {
@@ -50,7 +60,7 @@ const Header = () => {
       <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
         {/* AboutUs Section */}
         <AboutUsDropDown>
-          <HeaderDrop onClick={toggleAboutUs}>About us</HeaderDrop>
+          <HeaderDrop onClick={toggleAboutUs}>{isAboutUsText}</HeaderDrop>
           {isAboutUsOpen && (
             <AboutUsDropContent>
               <AboutUsSection />
