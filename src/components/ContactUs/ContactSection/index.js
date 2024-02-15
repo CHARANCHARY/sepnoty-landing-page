@@ -1,4 +1,4 @@
-import { IconContactssItems, IconContactssType } from "./styled.js";
+import { IconContactssItems, IconContactssType, Icon } from "./styled";
 
 const ContactSection = (props) => {
   const { contactDetails } = props;
@@ -6,7 +6,7 @@ const ContactSection = (props) => {
 
   return (
     <IconContactssItems>
-      {contactIcon}
+      <Icon src={contactIcon} alt={contactType} />
       <IconContactssType>{contactType}</IconContactssType>
     </IconContactssItems>
   );

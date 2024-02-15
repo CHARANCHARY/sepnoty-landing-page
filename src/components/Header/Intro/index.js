@@ -77,7 +77,6 @@ const HeaderSection = () => {
             </IntroVideoText>
             </IntroPlayVideo>
           </IntroButtonVideo>
-
           <Intro3>
             
           <IntroCircles>

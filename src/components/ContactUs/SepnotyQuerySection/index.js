@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FiUploadCloud } from "react-icons/fi";
-import { IoCall, IoLogoWechat, IoLogoWhatsapp } from "react-icons/io5";
-import { MdAttachEmail } from "react-icons/md";
+
 import axios from "axios";
 import {
   ContactContainer,
@@ -23,6 +22,13 @@ import {
   ContactImage,
   ContactUsInput,
   ContactButtonCon,
+  BottomCon,
+  BottomHeading,
+  BottomDesc,
+  Button,
+  Image,
+  DragHead,
+  QueryContainer,
 } from "./styled";
 
 import ContactSection from "../ContactSection";
@@ -30,22 +36,22 @@ import ContactSection from "../ContactSection";
 const contactListItem = [
   {
     id: 1,
-    contactIcon: <IoCall className="contact-icons" />,
+    contactIcon: "./images/call.svg",
     contactType: "Call Us",
   },
   {
     id: 2,
-    contactIcon: <IoLogoWechat className="contact-icons" />,
+    contactIcon: "./images/livechat.svg",
     contactType: "Live Chat",
   },
   {
     id: 3,
-    contactIcon: <IoLogoWhatsapp className="contact-icons" />,
+    contactIcon: "./images/whatsapp.svg",
     contactType: "Whats app",
   },
   {
     id: 4,
-    contactIcon: <MdAttachEmail className="contact-icons" />,
+    contactIcon: "./images/email.svg",
     contactType: "Email",
   },
 ];
@@ -131,115 +137,128 @@ function SepnotyQuerySection() {
   };
 
   return (
-    <ContactContainer>
-      <ContactQueryContainer>
-        <div>
-          <ContactHeading>
-            Have a question to our team or need help with your project?
-          </ContactHeading>
-          <ContactDescription>
-            our team is ready to provide client references, estimate your
-            project, or answer any other question related to your IT intiative.
-          </ContactDescription>
-          <ContactTextarea
-            rows="7"
-            cols="85"
-            placeholder="How can we help you?"
-          ></ContactTextarea>
-        </div>
-        <ContactDragAndDrop>
-          <FiUploadCloud className="icon" />
-          <ContactDescription>
-            Drag and drop or{" "}
-            <ContactAnchorEle href="https://www.example.com">
-              browse
-            </ContactAnchorEle>{" "}
-            to upload your file(s)?
-          </ContactDescription>
-        </ContactDragAndDrop>
-        <ContactInputContainer>
-          <ContactInputList id="userForm" onSubmit={handleSubmit}>
-            <div>
-              <ContactUsInput
-                placeholder="Full Name"
-                type="text"
-                id="name"
-                onBlur={namehandle}
-                name="name"
-                required
-                onChange={handleChange}
-              />
-              <p id="nameErrMsg" class="error">
-                {nameErr}
-              </p>
-            </div>
-            <div>
-              <ContactUsInput
-                placeholder="Work email"
-                type="email"
-                id="email"
-                name="email"
-                onChange={handleChange}
-                onBlur={emailhandle}
-              />
-              <p id="emailErrMsg" class="error">
-                {emailErrMsg}
-              </p>
-            </div>
-            <div>
-              <ContactUsInput
-                placeholder="Company"
-                type="text"
-                id="age"
-                name="age"
-                onChange={handleChange}
-                onBlur={agehandle}
-              />
-            </div>
-            <div>
-              <ContactUsInput placeholder="Phone" />
-              <p id="ageErrMsg" class="error">
-                {ageErrMsg}
-              </p>
-            </div>
-            <div className="contact-checked">
-              <SepnotyContact
-                type="radio"
-                id="sepnotyContact"
-                name="agree"
-                checked
-              />
-              <label for="sepnotyContact">
-                I agree to have Sepnoty contact me via email, phone, messengers
-              </label>
-              <br />
-              <RequestSepnoty type="radio" id="requestSepnoty" name="agree" />
-              <label for="requestSepnoty">
-                I agree to have Sepnoty provide my request Information to
-                Sepnoty affiliated development center
-              </label>
-            </div>
-          </ContactInputList>
-          <ContactButtonCon>
-            <ContactButton type="button">Send</ContactButton>
-          </ContactButtonCon>
-        </ContactInputContainer>
-      </ContactQueryContainer>
-      <ContactContactssContainer>
-        <ContactUsHeading>Get in touch instantly</ContactUsHeading>
-        <ContactContactUsItems>
-          {contactListItem.map((eachItem) => (
-            <ContactSection key={eachItem.id} contactDetails={eachItem} />
-          ))}
-        </ContactContactUsItems>
-        <ContactImageContainer>
-          <ContactImage
-            src="https://res.cloudinary.com/du74u7bsh/image/upload/v1707124056/Screenshot__184_-removebg_ezwcrq.png"
-            alt="contactUs"
-          />
-        </ContactImageContainer>
-      </ContactContactssContainer>
-    </ContactContainer>
+    <QueryContainer>
+      <BottomCon>
+        <BottomHeading>
+          The Brightest Minds in Digital At Your Service
+        </BottomHeading>
+        <BottomDesc>
+          Partnering across start-ups to SMBs to corporate businesses,we deliver
+          innovation that is measurable, mature, and meaningful.
+        </BottomDesc>
+        <Button>Schedule Meeting</Button>
+        <Image src="./images/remote-meeting.svg" />
+      </BottomCon>
+
+      <ContactContainer>
+        <ContactQueryContainer>
+          <div>
+            <ContactHeading>
+              Have a question to our team or need help with your project?
+            </ContactHeading>
+            <ContactDescription>
+              our team is ready to provide client references, estimate your
+              project, or answer any other question related to your IT
+              intiative.
+            </ContactDescription>
+            <ContactTextarea
+              rows="9"
+              cols="85"
+              placeholder="How can we help you?"
+            ></ContactTextarea>
+          </div>
+          <ContactDragAndDrop>
+            <FiUploadCloud className="icon" />
+            <DragHead>
+              Drag and drop or{" "}
+              <ContactAnchorEle href="https://www.example.com">
+                browse
+              </ContactAnchorEle>{" "}
+              to upload your file(s)?
+            </DragHead>
+          </ContactDragAndDrop>
+          <ContactInputContainer>
+            <ContactInputList id="userForm" onSubmit={handleSubmit}>
+              <div>
+                <ContactUsInput
+                  placeholder="Full Name"
+                  type="text"
+                  id="name"
+                  onBlur={namehandle}
+                  name="name"
+                  required
+                  onChange={handleChange}
+                />
+                <p id="nameErrMsg" class="error">
+                  {nameErr}
+                </p>
+              </div>
+              <div>
+                <ContactUsInput
+                  placeholder="Work email"
+                  type="email"
+                  id="email"
+                  name="email"
+                  onChange={handleChange}
+                  onBlur={emailhandle}
+                />
+                <p id="emailErrMsg" class="error">
+                  {emailErrMsg}
+                </p>
+              </div>
+              <div>
+                <ContactUsInput
+                  placeholder="Company"
+                  type="text"
+                  id="age"
+                  name="age"
+                  onChange={handleChange}
+                  onBlur={agehandle}
+                />
+              </div>
+              <div>
+                <ContactUsInput placeholder="Phone" />
+                <p id="ageErrMsg" class="error">
+                  {ageErrMsg}
+                </p>
+              </div>
+              <div className="contact-checked">
+                <SepnotyContact
+                  type="radio"
+                  id="sepnotyContact"
+                  name="agree"
+                  checked
+                />
+                <label for="sepnotyContact">
+                  I agree to have Sepnoty contact me via email, phone,
+                  messengers
+                </label>
+                <br />
+                <RequestSepnoty type="radio" id="requestSepnoty" name="agree" />
+                <label for="requestSepnoty">
+                  I agree to have Sepnoty provide my request Information to
+                  Sepnoty affiliated development center
+                </label>
+              </div>
+            </ContactInputList>
+            <ContactButtonCon>
+              <ContactButton type="button">Send</ContactButton>
+            </ContactButtonCon>
+          </ContactInputContainer>
+        </ContactQueryContainer>
+        <ContactContactssContainer>
+          <ContactUsHeading>Get in touch instantly</ContactUsHeading>
+          <ContactContactUsItems>
+            {contactListItem.map((eachItem) => (
+              <ContactSection key={eachItem.id} contactDetails={eachItem} />
+            ))}
+          </ContactContactUsItems>
+          <ContactImageContainer>
+            <ContactImage src="./images/get-in-touch.svg" alt="contactUs" />
+          </ContactImageContainer>
+        </ContactContactssContainer>
+      </ContactContainer>
+    </QueryContainer>
   );
 }
 
