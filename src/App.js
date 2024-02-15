@@ -11,7 +11,6 @@ import Combined from "./components/AdvancedServices/Combined/Combined";
 <Blog />*/
 
 
-import Header from "./components/Header/Navbar";
 import FooterSection from "./components/Footer/FooterSection";
 /*import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";*/
 
@@ -27,7 +26,6 @@ function App() {
       <DevelopingProcess />
       <SepnotyQuerySection />
       
-      <Header />
       
       <FooterSection />
     </>
