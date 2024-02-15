@@ -77,7 +77,8 @@ const Header = () => {
           Career Opportunities
         </HeaderAnchorEl>
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Resoource Center
+          Resource Center
+
         </HeaderAnchorEl>
         
         <HeaderContactButton onClick={closeNavbar}>

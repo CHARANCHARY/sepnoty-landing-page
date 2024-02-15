@@ -62,11 +62,12 @@ export const PopUpCardContainer = styled.div`
   padding: 20px;
   text-align: center;
   z-index: 2;
-  width:450px;
-  height:auto;
+  width:400px;
+  height:500px;
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
+  
+
   color:white;
 `;
 export const PopupLftRgt=styled.div`
@@ -79,6 +80,8 @@ export const PopUpImg = styled.img`
   width: 60px;
   height: 60px;
   align-self:center;
+  padding:5px;
+
 `;
 export const PopRight=styled.div`
 display:flex;
@@ -86,6 +89,8 @@ flex-direction:column;
 justify-content:space-between;
 color:white;
 text-align:center;
+padding:5px;
+`;
 `
 
 export const PopUpTitle = styled.h2`
@@ -112,6 +117,12 @@ export const CloseButton = styled.button`
   cursor: pointer;
 `;
 export const PopupText=styled.p`
+font-size:13px;
+color:white;
+line-height:20px;
+
+text-align:justify;
+padding:20px 35px 20px 35px;
 font-size:12px;
 color:white;
 line-height:15px;

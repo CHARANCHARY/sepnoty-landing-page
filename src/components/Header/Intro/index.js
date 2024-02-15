@@ -1,7 +1,8 @@
-import React from "react";
 import Introimage from "../assets/Introimg.png";
 import play from "../assets/play-button.png";
 import Header from "../Navbar";
+import { useState } from "react";
+
 import { Intro1,
   Intro2,
    Intro3,
@@ -29,6 +30,10 @@ import { Intro1,
 
 
 const HeaderSection = () => {
+    const [projects]=useState('200+k');
+    const [active]=useState('81+k');
+    const [customer]=useState('21/7');
+    
   return (
     <>
       <Header />
@@ -88,19 +93,21 @@ const HeaderSection = () => {
       </Intro1>
       <IntroExplorePart>
       <IntroAchievements>
-        <IntroOrangeText>200+k
+        <IntroOrangeText>{projects}
+
         </IntroOrangeText>
         
         <IntroBlackText>Projects Complete
         </IntroBlackText>
       </IntroAchievements>
       <IntroAchievements>
-        <IntroOrangeText>81+k</IntroOrangeText>
+        <IntroOrangeText>{active}</IntroOrangeText>
         
         <IntroBlackText>Active Customers</IntroBlackText>
       </IntroAchievements>
       <IntroAchievements>
-        <IntroOrangeText>24/7</IntroOrangeText>
+        <IntroOrangeText>{customer}</IntroOrangeText>
+
         
         <IntroBlackText>Customer Support</IntroBlackText>
       </IntroAchievements>
