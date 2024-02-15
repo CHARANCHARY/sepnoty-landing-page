@@ -28,6 +28,7 @@ margin:5px;
 border-radius:7px;
 font-size:10px;
 &:hover{
-    background-color:blue;
+    background-color:rgba(43, 69, 155, 1);
+    color:white;
 }
 `;

@@ -1,89 +1,28 @@
-import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.svg";
 import { Header1,
-  HeaderLogoImg,
-  HeaderNavButton,
-  HeaderAnchorEl,
-  HeaderDropDown,
-  HeaderNavItem,
-  HeaderDropContent,
-  HeaderDropAnchorEl,
-  HeaderContactButton,
-  HeaderNav,
-  HeaderDrop,
-  HeaderDownArrow
+  LogoImg,
+  NavItems,
+  NavigationItem,
+  ContactUsButton,
+  
 } from "./styledComponents";
 
 const Header = () => {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
-  const toggleNavbar = () => {
-    setIsNavOpen(!isNavOpen);
-  };
-
-  const closeNavbar = () => {
-    setIsNavOpen(false);
-  };
 
   return (
     <Header1>
-      <HeaderLogoImg src={logo} alt="not found"></HeaderLogoImg>
-      <HeaderNavButton 
-      onClick={toggleNavbar}>
-        {isNavOpen ? <FaTimes /> : <FaBars onClick={closeNavbar} />}
-      </HeaderNavButton>
-      <HeaderNav className={isNavOpen ? "responsive_nav" : ""}>
-        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          About us
-        </HeaderAnchorEl>
-
-        {/* Services Dropdown */}
-        <HeaderDropDown>
-          <HeaderNavItem onClick={toggleDropdown}>
-            <HeaderDrop>Services</HeaderDrop>
-            <HeaderDownArrow />
-          </HeaderNavItem>
-          {isDropdownOpen && (
-            <HeaderDropContent>
-              <HeaderDropAnchorEl href="/#">Option 1</HeaderDropAnchorEl>
-              <HeaderDropAnchorEl href="/#">Option 2</HeaderDropAnchorEl>
-              <HeaderDropAnchorEl href="/#">Option 3</HeaderDropAnchorEl>
-            </HeaderDropContent>
-          )}
-        </HeaderDropDown>
-
-        {/* Products Dropdown */}
-        <HeaderDropDown>
-          <HeaderNavItem onClick={toggleDropdown}>
-            <HeaderDrop>Blog</HeaderDrop>
-            <HeaderDownArrow />
-          </HeaderNavItem>
-          {isDropdownOpen && (
-            <HeaderDropContent>
-              <HeaderDropAnchorEl href="/#">Option 1</HeaderDropAnchorEl>
-              <HeaderDropAnchorEl href="/#">Option 2</HeaderDropAnchorEl>
-              <HeaderDropAnchorEl href="/#">Option 3</HeaderDropAnchorEl>
-            </HeaderDropContent>
-          )}
-        </HeaderDropDown>
-
-        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Career Opportunities
-        </HeaderAnchorEl>
-        <HeaderAnchorEl href="/#" onClick={closeNavbar}>
-          Resource Center
-        </HeaderAnchorEl>
-        
-        <HeaderContactButton onClick={closeNavbar}>
-          Contact Us
-        </HeaderContactButton>
-      </HeaderNav>
+      <LogoImg src={logo} alt="not found" /> 
+      <NavItems>
+      
+      <NavigationItem>About us</NavigationItem>
+      <NavigationItem>Services</NavigationItem>
+      <NavigationItem>Blog</NavigationItem>
+      <NavigationItem>Career Opportunities</NavigationItem>
+      <NavigationItem>Resource Center</NavigationItem>
+      
+      <ContactUsButton>Contact Us</ContactUsButton>
+      </NavItems>
+      
     </Header1>
   );
 };
