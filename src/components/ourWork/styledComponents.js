@@ -124,18 +124,26 @@ export const OurWorkSideHeading = styled.h1`
 `;
 export const OurWorkThreeCol = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 20px;
-  margin-right: 100px;
+  margin-right: 50px;
 `;
 export const Details = styled.h4`
   font-weight: bold;
   color: #263238;
-  padding-right: 10px;
+  font-size: 16px;
+  align-self: flex-start;
 `;
 
 export const Detail = styled.p`
   font-weight: 500;
   color: #263238;
+  font-size: 14px;
+  margin-top: 30px;
+`;
+
+export const OurWorkEl = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 `;
