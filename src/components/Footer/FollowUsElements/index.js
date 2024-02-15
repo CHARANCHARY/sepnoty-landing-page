@@ -1,13 +1,14 @@
-import { Logo } from "./styled";
+import { Logo, Items, Name } from "./styled";
 
 const FollowUsElements = (props) => {
   const { logos } = props;
   const { logoSrc, logoName } = logos;
 
   return (
-    <li>
+    <Items>
       <Logo src={logoSrc} alt={logoName} />
-    </li>
+      <Name>{logoName}</Name>
+    </Items>
   );
 };
 

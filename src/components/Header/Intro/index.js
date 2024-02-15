@@ -94,6 +94,7 @@ const HeaderSection = () => {
       <IntroExplorePart>
       <IntroAchievements>
         <IntroOrangeText>{projects}
+
         </IntroOrangeText>
         
         <IntroBlackText>Projects Complete
@@ -106,6 +107,7 @@ const HeaderSection = () => {
       </IntroAchievements>
       <IntroAchievements>
         <IntroOrangeText>{customer}</IntroOrangeText>
+
         
         <IntroBlackText>Customer Support</IntroBlackText>
       </IntroAchievements>

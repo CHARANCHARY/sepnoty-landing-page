@@ -78,6 +78,7 @@ const Header = () => {
         </HeaderAnchorEl>
         <HeaderAnchorEl href="/#" onClick={closeNavbar}>
           Resource Center
+
         </HeaderAnchorEl>
         
         <HeaderContactButton onClick={closeNavbar}>
