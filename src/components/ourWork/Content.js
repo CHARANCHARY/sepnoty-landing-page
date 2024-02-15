@@ -4,15 +4,15 @@ import {
   OurWorkOur,
   OurWorkOurText,
   OurWorkText,
-  OurWorkPara
-} from './styledComponents';
+  OurWorkPara,
+} from "./styledComponents";
 
 function Content() {
   return (
     <OurWorkTextContainer>
       <OurWorkOur>
         <OurWorkOurText>Our</OurWorkOurText> Recent{" "}
-        <OurWorkText>work</OurWorkText>
+        <OurWorkText>Work</OurWorkText>
       </OurWorkOur>
       <OurWorkPara>
         We connect the best of design thinking, an agile way of

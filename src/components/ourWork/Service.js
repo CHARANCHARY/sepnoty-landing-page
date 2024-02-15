@@ -4,7 +4,7 @@ import {
   OurWorkServiceImg,
   OurWorkGreenLine,
   OurWorkServiceDetails,
-  OurWorkDescription
+  OurWorkDescription,
 } from "./styledComponents";
 import "./index.css";
 
