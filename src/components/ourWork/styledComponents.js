@@ -84,7 +84,7 @@ export const OurWorkText = styled.span`
   color: #2b459b;
 `;
 export const OurWorkPara = styled.p`
-  font-size: 16px;
+  font-size: 20px;
   font-family: Roboto;
   color: #b7b6bd;
   line-height: 25px;
@@ -100,6 +100,7 @@ export const OurWorkCard = styled.div`
   text-align: center;
   box-shadow: rgba(43, 69, 155, 1);
   padding: 35px 20px 0px 20px;
+  margin-top: 20px;
 `;
 export const OurWorkCardTitle = styled.h1`
   color: #2b459b;
@@ -146,4 +147,13 @@ export const OurWorkEl = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+`;
+
+export const Pattern = styled.img`
+  position: absolute;
+  top: 100;
+  margin-top: 20px;
+  margin-left: -100px;
+  width: 350px;
+  height: 250px;
 `;
