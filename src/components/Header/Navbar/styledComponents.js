@@ -4,8 +4,8 @@ export const Header1 = styled.div`
   display: flex;
   align-items: center;
   justify-content:space-between;
-  height: 60px;
-  padding:30px 60px 20px 60px;
+  height: 70px;
+  padding:40px 60px 20px 60px;
   background-color:#0C111F;
   color:white;
 `;
@@ -25,12 +25,12 @@ text-decoration:none;
 color:white;
 margin:0px 10px 0px 10px;
 &:hover{
-  color:rgba(43, 69, 155, 1);
+  color:rgba(43, 69, 155, 1);!important;
 }
 `;
 
 export const ContactUsButton = styled.button`
-  padding: 7px 17px 7px 17px;
+  padding: 5px 17px 7px 17px;
   cursor: pointer;
   background-color: rgba(37, 73, 137, 1);
   border: 0.5px solid rgba(255, 255, 255, 1);

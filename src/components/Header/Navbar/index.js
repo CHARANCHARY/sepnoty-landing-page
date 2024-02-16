@@ -13,13 +13,11 @@ const Header = () => {
     <Header1>
       <LogoImg src={logo} alt="not found" /> 
       <NavItems>
-      
-      <NavigationItem>About us</NavigationItem>
+      <NavigationItem>About Us</NavigationItem>
       <NavigationItem>Services</NavigationItem>
       <NavigationItem>Blog</NavigationItem>
       <NavigationItem>Career Opportunities</NavigationItem>
       <NavigationItem>Resource Center</NavigationItem>
-      
       <ContactUsButton>Contact Us</ContactUsButton>
       </NavItems>
       

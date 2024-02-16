@@ -154,14 +154,14 @@ position:absolute;
 width:440px;
 top:100;
 left:0;
-opacity: 0.5;
+opacity: 0.7;
 `;
 export const TransparentImgs=styled.img`
 position:absolute;
 top:100;
 width:440px;
 right:0;
-opacity: 0.5;
+opacity: 0.7;
 `;
 export const TransparentImgss=styled.img`
 position:absolute;
@@ -170,7 +170,7 @@ width:440px;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-opacity: 0.5;
+opacity: 0.7;
 `;
 export const Intro=styled.div`
 display:flex;
