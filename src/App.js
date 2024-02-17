@@ -22,11 +22,11 @@ function App() {
       {/* <Inquiry />
       <Blog /> */}
       <Combined />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
       <OurWork />
       <DevelopingProcess />
       <SepnotyQuerySection />
-      <Testimonials/>
+      {/* <Testimonials/> */}
       <FooterSection />
     </>
   );
