@@ -1,9 +1,6 @@
 import Introimage from "../assets/Introimg.svg";
 import play from "../assets/play-button.png";
-import bgTransparent from "../assets/bgtransparent1.svg";
-import bgTransparents from "../assets/bgTransparent2.svg";
-import midTransparent from "../assets/bgTransparent3.svg";
-import Header from "../Navbar";
+
 import { useState } from "react";
 
 import { Intro1,
@@ -28,27 +25,35 @@ import { Intro1,
    Intro,
    IntroRightPart,
    IntroRightImg,
-   TransparentImg,
-   TransparentImgs,
-   TransparentImgss,
+   
   } from "./styledComponents";
 
 
-
-const HeaderSection = () => {
+ /*
+ TransparentImg,
+   TransparentImgs,
+   TransparentImgss,
+   <TransparentImg src={bgTransparent} alt="not found" />
+      <TransparentImgs src={bgTransparents} alt="not found" />
+      <TransparentImgss src={midTransparent} alt="not found" />
+      import bgTransparent from "../assets/bgtransparent1.svg";
+import bgTransparents from "../assets/bgTransparent2.svg";
+import midTransparent from "../assets/bgTransparent3.svg";
+*/
+const HomeSection = () => {
     const [projects]=useState('200+k');
     const [active]=useState('81+k');
     const [customer]=useState('24/7');
     
   return (
     <>
-      <Header />
+      
       <Intro>
-      <TransparentImg src={bgTransparent} alt="not found" />
-      <TransparentImgs src={bgTransparents} alt="not found" />
-      <TransparentImgss src={midTransparent} alt="not found" />
+      
       <Intro1>
+      
         <Intro2>
+        
           <Introhd1>
             Empowering the Next
             <br />
@@ -118,7 +123,7 @@ const HeaderSection = () => {
         </IntroAchievements>
         
       </IntroExplorePart>
-      
+    
       </Intro>
       
      
@@ -127,4 +132,4 @@ const HeaderSection = () => {
   );
 };
 
-export default HeaderSection;
+export default HomeSection;

@@ -63,7 +63,7 @@ const FilterNamesList=[
     },
 ]
 
-const Blog = () => {
+const Blogs = () => {
   return (
     <BlogPage>
     <BlogTitle>BLog &gt; Thought Leadership</BlogTitle>
@@ -82,4 +82,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default Blogs

@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
-  width: 98vw;
+  width: 100vw;
   border-radius: 10px;
 `;
 

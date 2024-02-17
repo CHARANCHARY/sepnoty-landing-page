@@ -4,7 +4,7 @@ import {
     AdServ,
 } from './styledComponents';
 
-const Combined = () => {
+const AdvanceServices = () => {
   return (
     <AdServ>
       <Top />
@@ -13,4 +13,4 @@ const Combined = () => {
   )
 }
 
-export default Combined
+export default AdvanceServices
