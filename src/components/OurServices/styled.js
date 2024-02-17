@@ -18,7 +18,7 @@ export const ImgContainer = styled.div`
 
 export const Image = styled.img`
   height: 30px;
-  width: 180px;
+  width: 150px;
   padding: 0px 50px 0px 50px;
   border-right: 1px solid #abaaaa;
 `;
