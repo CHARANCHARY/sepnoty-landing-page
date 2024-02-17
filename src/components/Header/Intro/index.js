@@ -1,8 +1,8 @@
-import Introimage from "../assets/Introimg.svg";
+// import Introimage from "../assets/Introimg.svg";
 import play from "../assets/play-button.png";
-import bgTransparent from "../assets/bgtransparent1.svg";
-import bgTransparents from "../assets/bgTransparent2.svg";
-import midTransparent from "../assets/bgTransparent3.svg";
+// import bgTransparent from "../assets/bgtransparent1.svg";
+// import bgTransparents from "../assets/bgTransparent2.svg";
+// import midTransparent from "../assets/bgTransparent3.svg";
 import Header from "../Navbar";
 import { useState } from "react";
 
@@ -27,10 +27,10 @@ import { Intro1,
    IntroBlackText,
    Intro,
    IntroRightPart,
-   IntroRightImg,
-   TransparentImg,
-   TransparentImgs,
-   TransparentImgss,
+  //  IntroRightImg,
+  //  TransparentImg,
+  //  TransparentImgs,
+  //  TransparentImgss,
   } from "./styledComponents";
 
 
@@ -44,9 +44,9 @@ const HeaderSection = () => {
     <>
       <Header />
       <Intro>
-      <TransparentImg src={bgTransparent} alt="not found" />
+      {/* <TransparentImg src={bgTransparent} alt="not found" />
       <TransparentImgs src={bgTransparents} alt="not found" />
-      <TransparentImgss src={midTransparent} alt="not found" />
+      <TransparentImgss src={midTransparent} alt="not found" /> */}
       <Intro1>
         <Intro2>
           <Introhd1>
@@ -94,7 +94,7 @@ const HeaderSection = () => {
 
         </Intro2>
         <IntroRightPart>
-          <IntroRightImg src={Introimage} alt="not found" />
+          {/* <IntroRightImg src={Introimage} alt="not found" /> */}
         </IntroRightPart>
         
         </Intro1>
