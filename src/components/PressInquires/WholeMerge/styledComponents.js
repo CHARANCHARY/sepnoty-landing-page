@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import styled from "styled-components";
+=======
 import styled,{ keyframes } from "styled-components";
+>>>>>>> main
 
 export const InquirySection=styled.div`
 background-color:rgba(12, 17, 31, 1);
@@ -39,13 +43,30 @@ justify-content:space-between;
 `;
 export const RequestCallLeft=styled.div`
 display:flex;
+<<<<<<< HEAD
+flex-direction:row;
+flex-wrap:wrap;
+width:70%;
+@media screen and (max-width:768px){
+    flex-direction:column;
+}
+=======
 flex-wrap:wrap;
 width:80%;
 
+>>>>>>> main
 `;
 export const RequestRight=styled.div`
 display:flex;
 flex-direction:column;
+<<<<<<< HEAD
+justify-content:center;
+align-items:center;
+`;
+export const CalenderImg=styled.img`
+width:300px;
+height:300px;
+=======
 justify-content:Flex-start;
 
 `;
@@ -53,6 +74,7 @@ export const CalenderImg=styled.img`
 width:330px;
 height:330px;
 align-items:center;
+>>>>>>> main
 `;
 export const CallButton=styled.button`
 background: rgb(2,0,36);
@@ -62,6 +84,8 @@ color:rgba(35, 69, 129, 1);
 border-radius:20px;
 padding:10px 20px 10px 20px;
 width:150px;
+<<<<<<< HEAD
+=======
 align-self:center;
 `;
 export const ExpertTitle=styled.h2`
@@ -139,4 +163,5 @@ padding:10px;
 color:rgba(35, 69, 129, 1);
 border-radius:20px;
 cursor:pointer;
+>>>>>>> main
 `;

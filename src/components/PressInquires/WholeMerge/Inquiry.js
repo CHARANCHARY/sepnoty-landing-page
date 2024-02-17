@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+import React from 'react';
+=======
 import React,{ useState } from 'react';
+>>>>>>> main
 import { 
     InquirySection,
     InqueryTitle,
@@ -10,6 +14,8 @@ import {
     RequestRight,
     CalenderImg,
     CallButton,
+<<<<<<< HEAD
+=======
     ExpertTitle,
     ExpertText,
     InquiryMedia,
@@ -21,6 +27,7 @@ import {
     ExpertResearch,
     ExpertsInfo,
     SeeMoreButton,
+>>>>>>> main
 } from './styledComponents'
 import InTouch from '../GetInTouch/InTouch';
 import image5 from '../assets/image5.svg';
@@ -29,6 +36,9 @@ import image2 from '../assets/image2.svg';
 import image3 from '../assets/image3.svg';
 import image4 from '../assets/image4.svg';
 import RequestCard from '../RequestCard/RequestCard';
+<<<<<<< HEAD
+
+=======
 import cnet from '../assets/cnet.svg';
 import engodget from '../assets/engodget.svg';
 import VentureBeat from '../assets/VentureBeat.svg';
@@ -58,12 +68,17 @@ const ExpertsDetails=[
   about:"Pradeep kumar  Penetration Testing Consultant, CEH, was featured on CNET Blog."
 },
 ]
+>>>>>>> main
 const CardsDetails=[
     {
       id: 1,
       imgUrl:image1,
       title:'Competent opinion on IT-related issues',
+<<<<<<< HEAD
+      description:"We will offer expert opinions on different topics, including advanced techs like AI, big data, IoT,computer vision, AR/VR, and blockchain.",
+=======
       description:"We will offer expert opinions on different topics, including advanced techs like AI, big data, IoT,computer vision, AR/VR, and blockchain.",
+>>>>>>> main
       RequestText:"Request Opinion",
     },
     {
@@ -84,6 +99,14 @@ const CardsDetails=[
         id: 4,
         imgUrl:image4,
         title:'Quotes of any research or article',
+<<<<<<< HEAD
+        description:"We will share with you the materials that you could use in your publication.",
+        RequestText:"Request Opinion",
+      },
+]
+
+const Inquiry = () => {
+=======
         description:"We will share with you the materials that you could use in your publication.",
         RequestText:"Request Opinion",
       },
@@ -111,6 +134,7 @@ const Inquiry = () => {
 
   
   
+>>>>>>> main
   return (
     <InquirySection>
     <InqueryTitle>Blog &gt; Press Inquires</InqueryTitle>
@@ -135,6 +159,8 @@ const Inquiry = () => {
     <CallButton>Get In Touch</CallButton>
     </RequestRight>
     </RequestCall>
+<<<<<<< HEAD
+=======
     <ExpertTitle>Our Experts In The Media</ExpertTitle>
     <ExpertText>Our professionals frequently contribute articles to our blog as well as prominent IT platforms 
     like CIO.com, InformationWeek.com, Medgadget.com, Arpost.com, and others.
@@ -160,6 +186,7 @@ const Inquiry = () => {
    
     </ExpertsInfo>
     <SeeMoreButton>Sell All Experts</SeeMoreButton>
+>>>>>>> main
     </InquirySection>
   )
 }

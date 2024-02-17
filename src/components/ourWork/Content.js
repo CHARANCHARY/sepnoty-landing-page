@@ -1,22 +1,18 @@
 import React from "react";
-import pattern from "./Media/pattern.svg";
-
 import {
   OurWorkTextContainer,
   OurWorkOur,
   OurWorkOurText,
   OurWorkText,
-  OurWorkPara,
-  Pattern,
-} from "./styledComponents";
+  OurWorkPara
+} from './styledComponents';
 
 function Content() {
   return (
     <OurWorkTextContainer>
-      <Pattern src={pattern} alt="pattern" />
       <OurWorkOur>
         <OurWorkOurText>Our</OurWorkOurText> Recent{" "}
-        <OurWorkText>Work</OurWorkText>
+        <OurWorkText>work</OurWorkText>
       </OurWorkOur>
       <OurWorkPara>
         We connect the best of design thinking, an agile way of

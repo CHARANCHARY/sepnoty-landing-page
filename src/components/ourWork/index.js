@@ -9,7 +9,8 @@ import {
   OurWorkContainer,
   OurWorkHeading,
   OurWorkList,
-} from "./styledComponents";
+}
+from "./styledComponents";
 
 const serviceDetails = [
   {
@@ -36,7 +37,7 @@ function OurWork() {
   return (
     <OurWorkContainer>
       <OurWorkHeading>
-        We Deliver Clean Code, Error Free, and Secure Web Applications
+      We Deliver Clean Code, Error Free, and Secure Web Applications
       </OurWorkHeading>
       <br />
       <OurWorkList>
@@ -44,8 +45,8 @@ function OurWork() {
           <Service key={eachItem.uniqueNo} details={eachItem} />
         ))}
       </OurWorkList>
-      <br />
-      <br />
+      <br/>
+      <br/>
       <Content />
       <br />
       <Card />

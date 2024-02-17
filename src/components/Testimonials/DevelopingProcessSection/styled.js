@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BgContainer = styled.div`
-  background-color: #121415;
+  background-color:rgba(12, 17, 31, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
