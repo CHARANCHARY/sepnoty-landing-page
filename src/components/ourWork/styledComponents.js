@@ -8,7 +8,7 @@ text-align:center;
 `;
 
 export const OurWorkHeading=styled.h1`
-font-size: 30px;
+font-size: 20px;
 align-self: center;
 text-align: center;
 margin-bottom: 20px;
@@ -19,14 +19,10 @@ export const OurWorkList=styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items:center;
-  align-self:center;
   list-style: none;
 
   @media screen and (max-width: 608px) {
-    
       flex-direction: column;
-  
   }
 `;
 
@@ -38,21 +34,22 @@ export const OurWorkServiceCardContainer=styled.li`
   padding: 10px;
   margin-left: 30px;
   box-sizing: border-box;
-  width:25%;
+  width:28%;
+  height:40%;
 `;
 
 export const OurWorkServiceImg=styled.img`
-width: 60px;
-height: 60px;
-object-fit: cover;
+width: 50px;
+height: 45px;
 align-self: center;
-margin-bottom: 10px;
+margin-bottom: 20px;
 `;
 
 export const OurWorkGreenLine=styled.hr`
-height: 6px;
+height: 5px;
   border-radius: 7px;
   width:131px;
+  border:none;
   align-self: center;
   background-color:#2B459B;
   
@@ -64,8 +61,11 @@ export const OurWorkServiceDetails=styled.div`
 `;
 
 export const OurWorkDescription=styled.p`
-font-size:15px;
-align-self:left;
+font-size:80%;
+text-align:left;
+line-height: 18px;
+color:#B7B6BD;
+margin-left: 30px;
 `;
 
 export const OurWorkTextContainer=styled.div`

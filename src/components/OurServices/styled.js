@@ -13,7 +13,7 @@ export const ImgContainer = styled.div`
   border-radius: 10px;
   margin-left: 10%;
   width: 80%;
-  margin-bottom: 30px;
+  margin-top: 10vh;
 `;
 
 export const Image = styled.img`
@@ -31,18 +31,19 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 30px;
-  margin-top: 80px;
+  margin-top: 30vh;
 `;
 
 export const Heading = styled.h1`
   font-size: 30px;
   color: #4c64b2;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 10px;
 `;
 
 export const Description = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   color: #b7b6bd;
   font-weight: bold;
   width: 620px;
@@ -56,7 +57,8 @@ export const Pattern = styled.img`
   top: 200;
   right: 0;
   z-index: 0;
-  height: 330px;
+  height: 50%;
+  width: 30%
 `;
 
 export const CuateImage = styled.img`
