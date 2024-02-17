@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import styled from "styled-components";
+=======
+import styled,{ keyframes } from "styled-components";
+>>>>>>> main
 
 export const InquirySection=styled.div`
 background-color:rgba(12, 17, 31, 1);
@@ -39,22 +43,38 @@ justify-content:space-between;
 `;
 export const RequestCallLeft=styled.div`
 display:flex;
+<<<<<<< HEAD
 flex-direction:row;
 flex-wrap:wrap;
 width:70%;
 @media screen and (max-width:768px){
     flex-direction:column;
 }
+=======
+flex-wrap:wrap;
+width:80%;
+
+>>>>>>> main
 `;
 export const RequestRight=styled.div`
 display:flex;
 flex-direction:column;
+<<<<<<< HEAD
 justify-content:center;
 align-items:center;
 `;
 export const CalenderImg=styled.img`
 width:300px;
 height:300px;
+=======
+justify-content:Flex-start;
+
+`;
+export const CalenderImg=styled.img`
+width:330px;
+height:330px;
+align-items:center;
+>>>>>>> main
 `;
 export const CallButton=styled.button`
 background: rgb(2,0,36);
@@ -64,4 +84,84 @@ color:rgba(35, 69, 129, 1);
 border-radius:20px;
 padding:10px 20px 10px 20px;
 width:150px;
+<<<<<<< HEAD
+=======
+align-self:center;
+`;
+export const ExpertTitle=styled.h2`
+color:rgba(43, 69, 155, 1);
+font-size:18px;
+
+margin:0px 30px 20px 30px;
+`;
+export const ExpertText=styled.p`
+font-size:14px;
+color:rgba(255, 255, 255, 1);
+margin:0px 30px 20px 30px;
+`;
+export const InquiryMedia=styled.div`
+margin:10px 50px 20px 30px;
+border-radius:10px;
+background-color:rgba(193, 202, 231, 1);
+position: relative;
+width:60%;
+`;
+export const MediaImg=styled.img`
+width:150px;
+height:40px;
+margin-right:30px;
+`;
+
+const arrowAnimation = keyframes`
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+`;
+
+export const RightArrow = styled.div`
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  animation: ${arrowAnimation} 1s infinite;
+`;
+export const MarqueeWrapper = styled.div`
+display: flex;
+`;
+export const InquiryMarquee = styled.div`
+  display: flex;
+  overflow: hidden;
+`;
+export const MarqueeContent = styled.div`
+  display: flex;
+  transition: transform 0.5s ease;
+`;
+export const ExpertResearch=styled.p`
+ color:rgba(255, 255, 255, 1);
+ margin-left:30px;
+ font-size:13px;
+`;
+export const ExpertsInfo=styled.div`
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+flex-wrap:wrap;
+padding:30px 150px 20px 30px;
+`;
+export const SeeMoreButton=styled.button`
+background-color:white;
+align-self:center;
+padding:10px;
+color:rgba(35, 69, 129, 1);
+border-radius:20px;
+cursor:pointer;
+>>>>>>> main
 `;

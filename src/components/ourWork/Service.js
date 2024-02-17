@@ -4,7 +4,11 @@ import {
   OurWorkServiceImg,
   OurWorkGreenLine,
   OurWorkServiceDetails,
+<<<<<<< HEAD
+  OurWorkDescription
+=======
   OurWorkDescription,
+>>>>>>> main
 } from "./styledComponents";
 import "./index.css";
 
