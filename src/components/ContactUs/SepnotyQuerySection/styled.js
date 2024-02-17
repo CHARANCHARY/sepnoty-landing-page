@@ -2,15 +2,11 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   border-radius: 30px;
   align-self: center;
-  margin-left: 30px;
   padding: 20px 10px 20px 0px;
   background-color:rgba(0, 0, 0, 0.25);
-  margin-left:50px;
-  width: 1000px;
+  width: 100px;
 `;
 
 export const ContactQueryContainer = styled.div`

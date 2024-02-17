@@ -18,8 +18,8 @@ export const ImgContainer = styled.div`
 
 export const Image = styled.img`
   height: 30px;
-  width: 15 0px;
-  padding: 0px 50px 0px 50px;
+  width: 30%;
+  padding: 0px 30px 0px 30px;
   border-right: 1px solid #abaaaa;
 `;
 
@@ -60,11 +60,11 @@ export const Pattern = styled.img`
 `;
 
 export const CuateImage = styled.img`
-  width: 400px0px;
+  width: 60%;
   height: 400px;
   position: relative;
   margin-top: 80px;
-  margin-left: 250px;
+  margin-left: 200px;
   z-index: 1;
 `;
 
