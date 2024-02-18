@@ -1,12 +1,6 @@
 import styled from "styled-components";
-import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle = createGlobalStyle` 
- *{ box-sizing: border-box;
- }
-`;
-
-export const Container = styled.div`
+export const CareerContainer = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
   width: 98vw;
@@ -18,7 +12,7 @@ export const SubContainer = styled.div`
   flex-direction: row;
 `;
 
-export const MvContainer = styled.div`
+export const Career = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -33,56 +27,16 @@ export const Heading = styled.h1`
 
 export const Description = styled.p`
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   color: #263238;
-  width: 560px;
+  width: 450px;
   padding: 20px 30px 0px 0px;
 `;
 
-export const MvImg = styled.img`
-  height: 150px;
-  width: 194px;
+export const CareerImg = styled.img`
+  height: 165px;
+  width: 250px;
   margin-left: 70px;
-`;
-
-export const Section = styled.h1`
-  font-weight: 700;
-  font-size: 20px;
-  color: #263238;
-  width: 70px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #2b459b;
-`;
-
-export const SectionItem = styled.p`
-  font-weight: 500;
-  font-size: 16px;
-  color: #263238;
-  margin-bottom: 20px;
-`;
-
-export const Item = styled.p`
-  font-weight: 500;
-  font-size: 16px;
-  color: #263238;
-  width: 170px;
-  margin-bottom: 20px;
-`;
-
-export const CompanyContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 20px;
-  padding-right: 30px;
-  margin-right: 30px;
-`;
-
-export const FollowUsList = styled.ul`
-  list-style-type: none;
-  diaplay: flex;
-  flex-direction: column;
-  margin: 0px;
-  padding: 0px;
 `;
 
 export const BreakLine = styled.hr`
@@ -134,4 +88,42 @@ export const Input = styled.input`
 export const SearchIcon = styled.img`
   height: 15px;
   width: 15px;
+`;
+
+export const DeveloperItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  flex-wrap: wrap;
+`;
+
+export const Developer = styled.h1`
+  font-weight: 700;
+  font-size: 20px;
+  color: #263238;
+  margin-bottom: 5px;
+`;
+
+export const Item = styled.p`
+  font-weight: 500;
+  font-size: 16px;
+  color: #263238;
+  margin-bottom: 10px;
+  margin-right: 30px;
+`;
+
+export const Border = styled.hr`
+  border: 1px solid #2b459b;
+  align-self: center;
+  width: 100px;
+  margin-left: 33px;
+  margin-bottom: 0px;
+`;
+
+export const SectionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  padding-right: 30px;
+  margin-right: 30px;
 `;

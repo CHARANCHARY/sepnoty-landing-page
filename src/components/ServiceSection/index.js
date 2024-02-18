@@ -1,41 +1,53 @@
-import service from "../assets.service.svg";
-import search from "../assets.search.svg";
+import service from "./images/service.svg";
+import search from "./images/search.svg";
 
 import {
   ServiceContainer,
   ServiceItemsContainer,
+  Service,
   BreakLine,
   SearchSuggestionContainer,
   SearchContainer,
   SearchIcon,
   SearchSuggestion,
   Input,
+  Heading,
+  Description,
+  SerImg,
+  Services,
+  ServiceItem,
+  ServiceItemContainer,
+  Border,
+  Items,
 } from "./styled";
 
 const ServiceSection = () => (
   <ServiceContainer>
     <ServiceItemsContainer>
-      <div>
-        <h1>Service Recognition</h1>
-        <p>
+      <Service>
+        <Heading>Service Recognition</Heading>
+        <Description>
           Sepnoty is featured among the best outsourcing service providers in
           Global Outsourcing list.
-        </p>
-        <img src={service} alt="service" />
-      </div>
-      <div>
-        <h1>Services</h1>
-        <p>Software development</p>
-        <p>Web development</p>
-        <p>Mobile App development</p>
-        <p> UI/UX Design</p>
-        <p>Digital Marketing</p>
-        <p>Graphic Designing</p>
-        <p>Video Editing</p>
-        <p>Cloud services integration</p>
-        <p>Cyber Security Provision</p>
-        <p>AI Technology services integration</p>
-      </div>
+        </Description>
+        <SerImg src={service} alt="service" />
+      </Service>
+      <Items>
+        <Services>Services</Services>
+        <Border />
+        <ServiceItemContainer>
+          <ServiceItem>Software development</ServiceItem>
+          <ServiceItem>Web development</ServiceItem>
+          <ServiceItem>Mobile App development</ServiceItem>
+          <ServiceItem> UI/UX Design</ServiceItem>
+          <ServiceItem>Digital Marketing</ServiceItem>
+          <ServiceItem>Graphic Designing</ServiceItem>
+          <ServiceItem>Video Editing</ServiceItem>
+          <ServiceItem>Cloud services integration</ServiceItem>
+          <ServiceItem>Cyber Security Provision</ServiceItem>
+          <ServiceItem>AI Technology services integration</ServiceItem>
+        </ServiceItemContainer>
+      </Items>
     </ServiceItemsContainer>
     <BreakLine />
     <SearchSuggestionContainer>
