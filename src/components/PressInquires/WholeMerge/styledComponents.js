@@ -63,6 +63,7 @@ border-radius:20px;
 padding:10px 20px 10px 20px;
 width:150px;
 align-self:center;
+font-size:15px;
 `;
 export const ExpertTitle=styled.h2`
 color:rgba(43, 69, 155, 1);
@@ -139,4 +140,75 @@ padding:10px;
 color:rgba(35, 69, 129, 1);
 border-radius:20px;
 cursor:pointer;
+`;
+export const TrustWorthy=styled.h2`
+font-size:20px;
+font-weight:600;
+margin:30px 40px 30px 40px;
+color:rgba(43, 69, 155, 1);
+`;
+export const TrustTitle=styled.p`
+font-size:14px;
+color:white;
+margin:30px 40px 30px 30px;
+`;
+export const TrustDescription = styled.ul`
+  font-size: 14px;
+  color: white;
+  margin: 0px 40px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc; 
+`;
+
+export const TrustDescriptionItems = styled.li`
+  list-style-type: none;
+  color: white;
+  margin-bottom: 7px;
+  width:75%;
+  &:before {
+    content: '•'; /* Unicode character for a bullet point */
+    color: white;
+    margin-right: 5px;
+  }
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  background-color: #dfe3f0;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 30px;
+`;
+
+export const Image = styled.img`
+  height: 30px;
+  width: 180px;
+  padding: 0px 50px 0px 50px;
+  border-right: 1px solid #abaaaa;
+`;
+
+export const Img = styled(Image)`
+  border: 0px;
+`;
+export const TechTopicsTitle=styled.h2`
+font-size:20px;
+font-weight:600;
+margin:30px 40px 40px 40px;
+color:rgba(43, 69, 155, 1);
+`;
+export const TechTopics=styled.h2`
+color:white;
+font-weight:700;
+font-size:20px;
+margin:30px 40px 15px 40px;
+`;
+export const TechTopicsCon=styled.div`
+display:flex;
+flex-wrap:wrap;
+margin:10px 30px 40px 40px;
+width:55%;
 `;

@@ -1,10 +1,13 @@
 import React from 'react'
-
+import Inquiry from '../components/PressInquires/WholeMerge/Inquiry'
+import FooterSection from '../components/Footer/FooterSection'
 const CareerOpportunities = () => {
   return (
-    <div>
-    <h1>Welcome to Career Oppurtunities Page</h1>
-    </div>
+    <>
+    <Inquiry />
+
+    <FooterSection />
+    </>
   )
 }
 

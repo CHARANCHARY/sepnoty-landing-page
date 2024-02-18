@@ -21,6 +21,16 @@ import {
     ExpertResearch,
     ExpertsInfo,
     SeeMoreButton,
+    TrustWorthy,
+    TrustTitle,
+    TrustDescription,
+    TrustDescriptionItems,
+    ImgContainer,
+  Image,
+  Img,
+  TechTopicsTitle,
+  TechTopics,
+  TechTopicsCon,
 } from './styledComponents'
 import InTouch from '../GetInTouch/InTouch';
 import image5 from '../assets/image5.svg';
@@ -39,6 +49,19 @@ import expert2 from '../assets/expert2.svg';
 import expert3 from '../assets/expert3.svg';
 import expert4 from '../assets/expert4.svg';
 import ExpertsCard from '../ExpertsCard/ExpertsCard';
+import techimg1 from '../assets/techimg1.svg';
+import techimg2 from '../assets/techimg2.svg';
+import techimg3 from '../assets/techimg3.svg';
+import techimg4 from '../assets/techimg4.svg';
+import techimg5 from '../assets/techimg5.svg';
+import techimg6 from '../assets/techimg6.svg';
+import techimg7 from '../assets/techimg7.svg';
+import techimg8 from '../assets/techimg8.svg';
+import techimg9 from '../assets/techimg9.svg';
+import techimg10 from '../assets/techimg10.svg';
+import TechCard from '../TechCard/TechCard';
+
+import Contact from '../Contact/SepnotyQuerySection';
 
 const ExpertsDetails=[
   {id:1,
@@ -101,7 +124,58 @@ const mediaData = [
   { id: 10, src: TechRadar },
   // Add more images as needed
 ];
-
+const TechDetails=[
+  {
+    id:1,
+    TechUrl:techimg1,
+    title:'Software Development',
+  },
+  {
+    id:2,
+    TechUrl:techimg2,
+    title:'Web & Mobile Development',
+  },
+  {
+    id:3,
+    TechUrl:techimg3,
+    title:'QA and Testing',
+  },
+  {
+    id:4,
+    TechUrl:techimg4,
+    title:'Data Analytics',
+  },
+  {
+    id:5,
+    TechUrl:techimg5,
+    title:'IT Infrastructure',
+  },
+  {
+    id:6,
+    TechUrl:techimg6,
+    title:'CRM',
+  },
+  {
+    id:7,
+    TechUrl:techimg7,
+    title:'Share',
+  },
+  {
+    id:8,
+    TechUrl:techimg8,
+    title:'Services',
+  },
+  {
+    id:9,
+    TechUrl:techimg9,
+    title:'Information Security',
+  },
+  {
+    id:10,
+    TechUrl:techimg10,
+    title:'UX/UI Design',
+  },
+]
 const Inquiry = () => {
   const [visibleSet, setVisibleSet] = useState(0);
 
@@ -109,8 +183,6 @@ const Inquiry = () => {
     setVisibleSet((prevSet) => (prevSet + 1) % Math.ceil(mediaData.length / 5));
   };
 
-  
-  
   return (
     <InquirySection>
     <InqueryTitle>Blog &gt; Press Inquires</InqueryTitle>
@@ -156,10 +228,42 @@ const Inquiry = () => {
     {ExpertsDetails.map((eachItem) => (
       <ExpertsCard key={eachItem.uniqueNo} details={eachItem} />
     ))}
-    
-   
     </ExpertsInfo>
     <SeeMoreButton>Sell All Experts</SeeMoreButton>
+    <TrustWorthy>What Makes us Trustworthy</TrustWorthy>
+    <TrustTitle>Sepnoty a renowned authority in the field of IT, offering consulting and software development services across industries. Our proficiency is underscored by:</TrustTitle>
+    <TrustDescription>
+    <TrustDescriptionItems>Over2000 success stories spanning diverse domains including data analytics, big data, IoT, information security, and mobile and web development.
+    </TrustDescriptionItems>
+    <TrustDescriptionItems>A team of 750+ IT professionals, with 22% at senior-level expertise.
+    </TrustDescriptionItems>
+    <TrustDescriptionItems>Strategic partnerships with industry leaders such as Microsoft, AWS, Magento, Salesforce, Oracle, and others.
+    </TrustDescriptionItems>
+    <TrustDescriptionItems>Trusted by esteemed brands including Purple Mango, Maroon Door, Unchained Carrot Baxter, among others.
+    </TrustDescriptionItems>
+    <TrustDescriptionItems>Recognition on Clutch lists for Top IT Services Firms, Top Cloud Consultants, Top 1000 B2B Providers Globally, and more, as well as inclusion in the 2023 Global Outsourcing 100 List by IAOP.
+    </TrustDescriptionItems>
+    <TrustDescriptionItems>Acknowledged as one of Fastest-Growing Companies by the Financial Times of years, affirming Sepnoty Corporation's commitment to excellence.
+    </TrustDescriptionItems>
+    </TrustDescription>
+    <ImgContainer>
+        <Image src="./images/Node.js_logo_20.svg" alt="Node.js" />
+        <Image src="./images/Python-Logo 2.svg" alt="Python" />
+        <Image src="./images/django-logo.svg" alt="django" />
+        <Image src="./images/net-logo.svg" alt=".net" />
+        <Image src="./images/laravel-logo.svg" alt="laravel" />
+        <Image src="./images/PhP.svg" alt="Php" />
+        <Img src="./images/Symfony-logo.svg" alt="Symfony" />
+      </ImgContainer>
+      <TechTopicsTitle>What Makes us Trustworthy</TechTopicsTitle>
+      <TechTopics>TechTopics</TechTopics>
+      <TechTopicsCon>
+      {TechDetails.map((eachItem) => (
+        <TechCard key={eachItem.uniqueNo} details={eachItem} />
+      ))}
+      </TechTopicsCon>
+      <Contact />
+      
     </InquirySection>
   )
 }
