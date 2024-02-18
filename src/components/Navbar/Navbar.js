@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa"
 import { ImCross } from "react-icons/im"
 import logo from '../Navbar/assets/logo.svg';
 
+
 import {
   LogoImg,
 } from './styledComponents';
