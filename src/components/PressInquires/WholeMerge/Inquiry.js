@@ -63,8 +63,10 @@ import techimg8 from '../assets/techimg8.svg';
 import techimg9 from '../assets/techimg9.svg';
 import techimg10 from '../assets/techimg10.svg';
 import TechCard from '../TechCard/TechCard';
+import Contact from '../../ContactUs/SepnotyQuerySection';
 
-import Contact from '../Contact/SepnotyQuerySection';
+
+
 
 const ExpertsDetails=[
   {id:1,
