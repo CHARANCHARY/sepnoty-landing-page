@@ -154,14 +154,22 @@ position:absolute;
 width:440px;
 top:100;
 left:0;
-opacity: 0.5;
+<<<<<<< HEAD:src/components/Header/Intro/styledComponents.js
+opacity: 0.4;
+=======
+opacity: 0.7;
+>>>>>>> main:src/components/Home/Intro/styledComponents.js
 `;
 export const TransparentImgs=styled.img`
 position:absolute;
 top:100;
 width:440px;
 right:0;
-opacity: 0.5;
+<<<<<<< HEAD:src/components/Header/Intro/styledComponents.js
+opacity: 0.4;
+=======
+opacity: 0.7;
+>>>>>>> main:src/components/Home/Intro/styledComponents.js
 `;
 export const TransparentImgss=styled.img`
 position:absolute;
@@ -170,7 +178,11 @@ width:440px;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-opacity: 0.5;
+<<<<<<< HEAD:src/components/Header/Intro/styledComponents.js
+opacity: 0.4;
+=======
+opacity: 0.7;
+>>>>>>> main:src/components/Home/Intro/styledComponents.js
 `;
 export const Intro=styled.div`
 display:flex;

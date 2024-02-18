@@ -2,15 +2,11 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   border-radius: 30px;
   align-self: center;
-  margin-left: 30px;
   padding: 20px 10px 20px 0px;
   background-color:rgba(0, 0, 0, 0.25);
-  margin-left:50px;
-  width: 1000px;
+  width: 100px;
 `;
 
 export const ContactQueryContainer = styled.div`
@@ -44,7 +40,7 @@ export const ContactTextarea = styled.textarea`
   outline: none;
   font-size: 12px;
   margin-bottom: 5px;
-
+  color:black;
   &::placeholder {
     color: #8c8c8c;
     font-size: 13px;
@@ -178,7 +174,7 @@ export const ContactUsInput = styled.input`
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: rgba(217, 217, 217, 1);
-
+  color:black;
   &::placeholder {
     color: #8c8c8c;
     font-size: 13px;

@@ -30,7 +30,7 @@ margin:0px 10px 0px 10px;
 `;
 
 export const ContactUsButton = styled.button`
-  padding: 7px 17px 7px 17px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
   background-color: rgba(37, 73, 137, 1);
   border: 0.5px solid rgba(255, 255, 255, 1);
@@ -39,5 +39,5 @@ export const ContactUsButton = styled.button`
   display:block; 
   font-size: 15px;
   border-radius:24px;
-  margin:-10px 5px 0px 10px;
+  margin:0px 5px 0px 10px;
 `;

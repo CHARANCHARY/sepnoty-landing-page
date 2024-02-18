@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const ServiceCards=styled.div`
 display:flex;
 flex-direction:row;
-padding:40px 120px 50px 120px;
-justify-content:space-between;
+justify-content:space-around;
 @media screen and (max-width:768px){
     flex-direction:column;
     justify-content:space-between;
@@ -14,11 +13,12 @@ export const ServiceCardContainer=styled.div`
 display:flex;
 flex-direction:column;
 border:1px solid white;
-border-radius:20px;
+border-radius:15px;
 padding:25px;
 text-align:center;
-justify-content:space-around;
-width:270px;
+width:38vh;
+height:45vh;
+margin-bottom: 50px;
 transition: transform 0.3s, background-color 0.3s;
 &:hover {
     transform: scale(1.05); /* Zoom out effect */
@@ -39,13 +39,18 @@ export const ServiceTitle=styled.h2`
 `;
 export const ServiceDescription=styled.p`
 font-size:14px;
-text-align:center;
-color:white;
+color:#AB9F9F;
+font-weight: bold;
 line-height:20px;
 `;
 export const ServiceButton=styled.button`
 padding:7px 10px 7px 10px;
 color:white;
+width:160px;
+height:40px;
+font-size:15px;
+align-self: center;
+margin-top: 40px;
 background-color:#254989;
 border-radius:30px;
 margin-top:15px;
