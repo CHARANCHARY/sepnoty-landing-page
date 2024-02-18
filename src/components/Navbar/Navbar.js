@@ -22,7 +22,7 @@ const Navbar = () => {
         */}
         <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
           <Link to='/'>
-            <li>AboutUs</li>
+            <li>About us</li>
           </Link>
           <Link to='/Services'>
             <li>Services</li>

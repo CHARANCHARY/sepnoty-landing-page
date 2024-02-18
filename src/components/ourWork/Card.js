@@ -5,7 +5,7 @@ import {
   OurWorkButton,
   OurWorkSideHeading,
   OurWorkThreeCol,
-  Details
+  Details,Details2
 } from "./styledComponents";
 
 function Card() {
@@ -25,11 +25,11 @@ function Card() {
       </OurWorkThreeCol>
       
       <OurWorkThreeCol>
-      <Details>UI Design</Details>
-      <Details>2022</Details>
-      <Details>Sepnoty</Details>
+      <Details2>UI Design</Details2>
+      <Details2>2022</Details2>
+      <Details2>Sepnoty</Details2>
       </OurWorkThreeCol>
-      <OurWorkButton>View Profile</OurWorkButton>
+      <OurWorkButton type="button">View Profile</OurWorkButton>
     </OurWorkCard>
   );
 }
