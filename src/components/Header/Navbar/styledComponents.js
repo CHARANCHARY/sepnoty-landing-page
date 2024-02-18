@@ -33,7 +33,7 @@ export const NavigationItem = styled.p`
 `;
 
 export const ContactUsButton = styled.button`
-  padding: 7px 17px 7px 17px;
+  padding: 5px 15px 5px 15px;
   cursor: pointer;
   background-color: rgba(37, 73, 137, 1);
   border: 0.5px solid rgba(255, 255, 255, 1);
@@ -63,4 +63,6 @@ export const Button = styled.button`
   background-color: transparent;
   border: 0px;
   outline: none;
+  border-radius: 24px;
+  margin: 0px 5px 0px 10px;
 `;
