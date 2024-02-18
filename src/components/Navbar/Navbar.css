@@ -110,4 +110,5 @@ button {
   border: 0.5px solid white;
   border-radius: 30px;
   font-size: 15px;
+  cursor:pointer;
 }
