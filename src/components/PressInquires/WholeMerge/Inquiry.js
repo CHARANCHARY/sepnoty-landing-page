@@ -41,7 +41,6 @@ import image3 from '../assets/image3.svg';
 import image4 from '../assets/image4.svg';
 import RequestCard from '../RequestCard/RequestCard';
 
-=======
 import cnet from '../assets/cnet.svg';
 import engodget from '../assets/engodget.svg';
 import VentureBeat from '../assets/VentureBeat.svg';
@@ -118,11 +117,7 @@ const CardsDetails=[
       },
 ]
 
-const Inquiry = () => {
-        description:"We will share with you the materials that you could use in your publication.",
-        RequestText:"Request Opinion",
-      },
-];
+
 const mediaData = [
   { id: 1, src: cnet },
   { id: 2, src: Mashable },
