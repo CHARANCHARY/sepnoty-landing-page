@@ -4,18 +4,9 @@ import OurWork from "./components/ourWork";
 import Idea from "./components/OurServices";
 import DevelopingProcess from "./components/Testimonials/DevelopingProcessSection"; */
 
-<<<<<<< Updated upstream
 /*import Blog from "./components/BlogPage/Blogs/Blog";*/
 /* import SepnotyQuerySection from "./components/ContactUs/SepnotyQuerySection";
 import Combined from "./components/AdvancedServices/Combined/Combined"; */
-=======
-import AboutUs from './pages/AboutUs';  
-import Services from './pages/Services';
-import Blog from './pages/Blog';
-import CareerOpportunities from './pages/CareerOpportunities';
-import ResourceCenter from './pages/ResourceCenter';
-import Navbar from './components/Navbar/Navbar';
->>>>>>> Stashed changes
 
 /*<Inquiry />
 <Blog />*/
@@ -49,7 +40,7 @@ import Blog from "./components/BlogPage/Blogs/Blog";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
-import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
+// import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 
 const App = () => {
   return (

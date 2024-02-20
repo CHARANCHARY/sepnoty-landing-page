@@ -48,12 +48,9 @@ const HeaderSection = () => {
         <Intro1>
           <Intro2>
             <Introhd1>
-              Empowering the Next
-              <br />
+              Empowerng the Next
               Generation of Software
-              <br />
               And Web-app
-              <br />
               Development
             </Introhd1>
 
