@@ -2,6 +2,7 @@ import { Component } from "react";
 
 import FollowUsElements from "../FollowUsElements";
 import { ThemeProvider } from "styled-components";
+import layout from "../../Footer/FooterSection/Images/layout.svg";
 
 import {
   GlobalStyle,

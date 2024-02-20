@@ -1,14 +1,18 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-export const ContactItems=styled.li`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 21px;
+export const ContactItems = styled.li`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 21px;
+  }
 `;
 
-export const ContactType=styled.p`
-  font-size: 12px;
+export const ContactType = styled.p`
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 /* @media screen and (max-width: 576px) {

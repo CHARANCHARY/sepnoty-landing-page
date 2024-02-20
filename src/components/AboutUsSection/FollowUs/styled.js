@@ -4,7 +4,7 @@ export const List = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 13px;
+  margin-top: -10px;
 `;
 
 export const Icon = styled.img`
@@ -15,6 +15,6 @@ export const Icon = styled.img`
 
 export const IconName = styled.p`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 12px;
   color: #263238;
 `;
