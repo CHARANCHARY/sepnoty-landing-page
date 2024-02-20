@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import layout from "../../Footer/FooterSection/Images/layout.svg";
 
 export const GlobalStyle = createGlobalStyle` 
  *{ box-sizing: border-box;
@@ -10,13 +11,14 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
-    background-color: #0c111f;
-    background-size: unset;
-    flex-direction: column;
-    padding: 40px 40px 5px 40px;
-  }
+  display: flex;
+  background-color: #0c111f;
+  background-size: unset;
+  flex-direction: column;
+  padding: 40px 40px 5px 40px;
+  z-index: 2;
+  background-image: url(${layout});
+  background-size: cover;
 `;
 
 export const FooterContainer = styled.div`
@@ -123,6 +125,7 @@ export const InputHolder = styled.input`
     padding: 7px;
     width: 200px;
     outline: none;
+    z-index: 2;
 
     & ::placeholder {
       color: #e2dccc;
@@ -154,6 +157,7 @@ export const Button = styled.button`
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     color: #e2dccc;
+    z-index: 2;
   }
 `;
 

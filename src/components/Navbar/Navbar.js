@@ -238,7 +238,10 @@ const Navbar = () => {
           {/* {Mobile ? <ImCross /> : <FaBars />} */}
         </button>
       </nav>
-      <Switch>
+      {/* <Switch>
+        <Route exact path="/">
+          <AboutUs />
+        </Route>
         <Route exact path="/AboutUs" component={AboutUs} />
         <Route exact path="/Services" component={Services} />
         <Route exact path="/Blog" component={BlogSection} />
@@ -248,8 +251,7 @@ const Navbar = () => {
           component={CareerOppurtunities}
         />
         <Route exact path="/ResourceCenter" component={ResourceCenterSection} />
-        <Route path="/" />
-      </Switch>
+      </Switch> */}
     </Router>
   );
 };

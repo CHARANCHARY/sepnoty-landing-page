@@ -40,20 +40,22 @@ import Blog from "./components/BlogPage/Blogs/Blog";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
+import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/" exact>
+        <ContentRecommendation />
+        {/* <Switch>
+          <Route path="/AboutUS" exact>
             <AboutUs />
           </Route>
-          <Route path="/services" exact>
+          <Route path="/Services" exact>
             <Services />
           </Route>
-        </Switch>
+        </Switch> */}
       </Router>
     </>
   );

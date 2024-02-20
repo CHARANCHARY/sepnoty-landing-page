@@ -21,7 +21,7 @@ export const AboutCon = styled.div`
     top: 110%;
     border-radius: 10px;
     transform: translateX(-50%);
-    left: 143%;
+    left: 128%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
