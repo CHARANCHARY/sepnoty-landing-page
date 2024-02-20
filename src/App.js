@@ -47,15 +47,23 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <ContentRecommendation />
-        {/* <Switch>
-          <Route path="/AboutUS" exact>
+        <Switch>
+          <Route path="/" exact>
             <AboutUs />
           </Route>
-          <Route path="/Services" exact>
+          <Route path="/services" exact>
             <Services />
           </Route>
-        </Switch> */}
+          <Route path="/blog" exact>
+            <Blog />
+          </Route>
+          <Route path="/careeropportunities" exact>
+            <CareerOpportunities />
+          </Route>
+          <Route path="/resourcecenter" exact>
+            <ResourceCenter />
+          </Route>
+        </Switch>
       </Router>
     </>
   );

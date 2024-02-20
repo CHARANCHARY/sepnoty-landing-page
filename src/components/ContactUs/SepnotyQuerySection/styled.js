@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
   align-self: center;
   padding: 20px 10px 20px 0px;
   background-color:rgba(0, 0, 0, 0.25);
-  width: 100px;
+  width: 60%;
 `;
 
 export const ContactQueryContainer = styled.div`
@@ -14,7 +14,7 @@ export const ContactQueryContainer = styled.div`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color:rgba(250, 250, 250, 1);
-  width: 747px;
+  width: 80%;
   
 `;
 
@@ -77,7 +77,6 @@ export const ContactInputList = styled.form`
   flex-direction: row;
   flex-flow: wrap;
   margin: 0px;
-  padding: 0px;
   list-style-type: none;
 `;
 
@@ -129,7 +128,6 @@ export const ContactUsHeading = styled.h1`
 export const ContactContactssContainer = styled.div`
   background-image: linear-gradient(#244887, #69aca5, #b7bac0);
   padding: 30px 30px 0px;
-  width: 269px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   
@@ -186,7 +184,7 @@ export const BottomCon = styled.div`
   flex-direction: column;
   padding: 30px;
   margin-bottom: 0px;
-  width: 410px;
+  width: 30%;
   align-items:center;
 `;
 
@@ -221,7 +219,7 @@ export const Button = styled.button`
 
 export const Image = styled.img`
   height: 300px;
-  width: 260px;
+  width: 60%;
 `;
 
 export const QueryContainer = styled.div`

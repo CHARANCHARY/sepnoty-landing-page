@@ -40,6 +40,8 @@ color:rgba(35, 69, 129, 1);
 border-radius:20px;
 padding:10px 20px 10px 20px;
 width:150px;
+font-size:15px;
+font-weight:600;
 `;
 export const RightImg=styled.img`
  width:200px;

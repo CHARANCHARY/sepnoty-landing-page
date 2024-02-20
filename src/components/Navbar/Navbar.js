@@ -120,6 +120,7 @@ const Navbar = () => {
         if large screen ma xa bhane Mobile add huxa
         if mobile screen ma xa bhane nav-links-mobile add huxa
         */}
+
         <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
           onClick={(e) => {
@@ -222,6 +223,31 @@ const Navbar = () => {
               )}
             </Link>
           </DropdownContainer>
+          <Link to="/Blog">
+            <li>
+              <button className="contact-button">Contact Us</button>
+            </li>
+          </Link>
+        </ul>
+        <ul
+          className={Mobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setMobile(false)}
+        >
+          <Link to="/">
+            <li>About us</li>
+          </Link>
+          <Link to="/Services">
+            <li>Services</li>
+          </Link>
+          <Link to="/Blog">
+            <li>Blog</li>
+          </Link>
+          <Link to="/CareerOpportunities">
+            <li>Career Opportunities</li>
+          </Link>
+          <Link to="/ResourceCenter">
+            <li>Resource Center</li>
+          </Link>
           <Link to="/Blog">
             <li>
               <button className="contact-button">Contact Us</button>

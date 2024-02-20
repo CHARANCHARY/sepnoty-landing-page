@@ -3,10 +3,21 @@ import styled from "styled-components";
 export const OurWorkContainer=styled.div`
 background-color:#0C111F;
 padding:30px;
-align-items:center;
-text-align:center;
+display:flex
+flex-direction:column;
+text-align: center;
+
 `;
 
+export const OurWorkCard=styled.div`
+width: 40%;
+height: 45vh;
+background-color: #DFE3F0;
+padding: 15px;
+border-radius: 8px;
+margin-left: 30%;
+box-shadow:rgba(43, 69, 155, 1);
+`;
 export const OurWorkHeading=styled.h1`
 font-size: 20px;
 align-self: center;
@@ -99,34 +110,32 @@ margin-top: 10px;
 }
 `;
 
-export const OurWorkCard=styled.div`
-width: 400px;
-height: 300px;
-background-color: #fff;
-padding: 15px;
-border-radius: 15px;
-text-align:center;
-box-shadow:rgba(43, 69, 155, 1);
-margin-left:37%;
-`;
+
 export const OurWorkCardTitle=styled.h2`
 color:rgba(43, 69, 155, 1);
 text-align:center;
 `;
 export const OurWorkButton=styled.button`
 padding: 10px;
-width: 120px;
+width: 150px;
+height:40px
 margin: 10px;
+cursor: pointer;
 color:white;
-border-radius:20px;
+font-size:16px;
+border-radius:8px;
 border:none;
+font-size: 15px;
 background: rgba(43, 69, 155, 1);
 `;
 export const OurWorkSideHeading=styled.h3`
-  color:black;
-  font-size:16px;
+  color:#263238;
+  font-size:18px;
+  font-family: roboto;
   text-align:left;
+  font-weight: 900;
   margin-top:10px;
+  margin-left: 20px;
 `;
 export const OurWorkThreeCol=styled.div`
 display:flex;
@@ -135,6 +144,10 @@ justify-content:space-between;
 padding:20px;
 `;
 export const Details=styled.h4`
+font-weight:bold;
+color:black;
+`;
+export const Details2=styled.h4`
 font-weight:500;
 color:black;
 `;

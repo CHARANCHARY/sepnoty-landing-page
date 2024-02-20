@@ -1,10 +1,9 @@
 import React from 'react'
+import BlogTought from '../components/BlogThought/BlogSection/Blogs'
 
 const Services = () => {
   return (
-    <div>
-    <h1>Welcome to Services Page</h1>
-    </div>
+    <BlogTought />
   )
 }
 
