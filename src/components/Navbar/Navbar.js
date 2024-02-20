@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa"
 import { ImCross } from "react-icons/im"
 import logo from '../Navbar/assets/logo.svg';
 
+
 import {
   LogoImg,
 } from './styledComponents';
@@ -21,7 +22,7 @@ const Navbar = () => {
         */}
         <ul className={Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}>
           <Link to='/'>
-            <li>AboutUs</li>
+            <li>About us</li>
           </Link>
           <Link to='/Services'>
             <li>Services</li>

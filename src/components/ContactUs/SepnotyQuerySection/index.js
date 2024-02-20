@@ -63,7 +63,7 @@ const contactListItem = [
 //   { id: 4, inputType: "Phone" },
 // ];
 
-function SepnotyQuerySection(){
+function Contact(){
   const [formData, setFormData] = useState({
     name: "",
     age: "",
@@ -262,4 +262,4 @@ function SepnotyQuerySection(){
   );
 }
 
-export default SepnotyQuerySection;
+export default Contact;
