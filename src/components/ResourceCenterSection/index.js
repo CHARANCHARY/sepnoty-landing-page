@@ -40,6 +40,7 @@ const ResourceCenterSection = () => (
           <ResourceItem>Collaboration and Community Features</ResourceItem>
           <ResourceItem> Technical Aricles and Blogs</ResourceItem>
           <ResourceItem>Video Tutorials</ResourceItem>
+          <br />
           <ResourceItem>Learning Paths and Roadmaps</ResourceItem>
           <ResourceItem>Events and Workshop</ResourceItem>
           <ResourceItem>Career Resources and Job Listings</ResourceItem>

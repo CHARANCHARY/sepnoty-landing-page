@@ -1,7 +1,8 @@
 import logo from "../assets/logo.svg";
 import React, { useState } from "react";
-import dropdown from "../assets/dropdown.svg";
+
 import AboutUsSection from "../../AboutUsSection/AboutUs";
+import ServiceSection from "../../ServiceSection";
 
 import {
   Header1,
@@ -11,15 +12,35 @@ import {
   ContactUsButton,
   AboutCon,
   DropdownContainer,
+  DownArrow,
 } from "./styledComponents";
 
 const Header = () => {
+  const [isAboutUsOpen, setAboutUsOPen] = useState(false);
+
+  const toggleAboutUs = () => {
+    setAboutUsOPen(!isAboutUsOpen);
+  };
+
   return (
     <Header1>
       <LogoImg src={logo} alt="not found" />
-+      <NavItems>
-        <NavigationItem>AboutUs</NavigationItem>
-        <NavigationItem>Services</NavigationItem>
+      <NavItems>
+        <DropdownContainer>
+          <NavigationItem onClick={toggleAboutUs}>AboutUs</NavigationItem>
+          {isAboutUsOpen && (
+            <AboutCon>
+              <AboutUsSection />
+            </AboutCon>
+          )}
+          <NavigationItem onClick={toggleService}>Services</NavigationItem>
+          {isServiceOpen && (
+            <AboutCon>
+              <ServiceSection />
+            </AboutCon>
+          )}
+        </DropdownContainer>
+
         <NavigationItem>Blog</NavigationItem>
         <NavigationItem>Career Opportunities</NavigationItem>
         <NavigationItem>Resource Center</NavigationItem>

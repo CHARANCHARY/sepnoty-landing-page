@@ -1,5 +1,6 @@
 import blog from "./images/blog.svg";
 import search from "./images/search.svg";
+import { Link } from "react-router-dom";
 
 import {
   BlogContainer,
@@ -34,10 +35,18 @@ const BlogSection = () => (
       <SectionContainer>
         <Insight>Insights & news</Insight>
         <Border />
-        <Item>Thought Leadership</Item>
-        <Item>News</Item>
-        <Item>Press Inquires</Item>
-        <Item>Articles</Item>
+        <Link to="ThoughtLeadership">
+          <Item>Thought Leadership</Item>
+        </Link>
+        <Link to="News+">
+          <Item>News</Item>
+        </Link>
+        <Link to="PressInquires">
+          <Item>Press Inquires</Item>
+        </Link>
+        <Link to="Article">
+          <Item>Articles</Item>
+        </Link>
       </SectionContainer>
     </SubContainer>
     <BreakLine />

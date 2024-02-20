@@ -56,7 +56,7 @@ export const AboutCon = styled.div`
 
 export const DropdownContainer = styled.div`
   position: relative;
-  display: inline-block;
+  display: block;
 `;
 
 export const Button = styled.button`

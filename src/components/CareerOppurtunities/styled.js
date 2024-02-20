@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CareerContainer = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
-  width: 98vw;
+  width: 99vw;
   border-radius: 10px;
 `;
 
@@ -17,11 +17,12 @@ export const Career = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px 30px 0px 40px;
+  margin-right: 20px;
 `;
 
 export const Heading = styled.h1`
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   color: #2b459b;
 `;
 
@@ -29,13 +30,13 @@ export const Description = styled.p`
   font-weight: 500;
   font-size: 16px;
   color: #263238;
-  width: 450px;
+  width: 430px;
   padding: 20px 30px 0px 0px;
 `;
 
 export const CareerImg = styled.img`
-  height: 165px;
-  width: 250px;
+  height: 155px;
+  width: 230px;
   margin-left: 70px;
 `;
 
@@ -47,16 +48,18 @@ export const BreakLine = styled.hr`
 
 export const SearchSuggestion = styled.h1`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: #263238;
-  text-align: center;
   padding-bottom: 10px;
+  margin-right: 50px;
 `;
 
 export const SearchSuggestionContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 10px;
+  margin-right: 10%;
 `;
 
 export const SearchContainer = styled.div`
@@ -68,7 +71,7 @@ export const SearchContainer = styled.div`
   padding: 5px;
   border-radius: 10px;
   align-self: center;
-  margin-left: 120px;
+  margin-left: 140px;
 `;
 
 export const Input = styled.input`
@@ -76,6 +79,7 @@ export const Input = styled.input`
   outline: none;
   border: 0px;
   width: 410px;
+  color: #263238;
 
   &::placeholder {
     color: #263238;
@@ -93,31 +97,31 @@ export const SearchIcon = styled.img`
 export const DeveloperItems = styled.div`
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 200px;
   flex-wrap: wrap;
 `;
 
 export const Developer = styled.h1`
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   color: #263238;
   margin-bottom: 5px;
 `;
 
 export const Item = styled.p`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #263238;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-right: 30px;
 `;
 
 export const Border = styled.hr`
   border: 1px solid #2b459b;
-  align-self: center;
-  width: 100px;
-  margin-left: 33px;
-  margin-bottom: 0px;
+
+  width: 80px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 `;
 
 export const SectionContainer = styled.div`

@@ -4,7 +4,7 @@ export const ResourceCenterContainer = styled.div`
   @media screen and (min-width: 768px) {
     background-color: #c1cae7;
     padding: 40px 0px 20px 0px;
-    width: 98vw;
+    width: 99vw;
     border-radius: 10px;
   }
 `;
@@ -22,7 +22,7 @@ export const ResourceCenter = styled.div`
 `;
 export const Heading = styled.h1`
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
   color: #2b459b;
 `;
 
@@ -42,18 +42,18 @@ export const SerImg = styled.img`
 
 export const Resources = styled.h1`
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   color: #263238;
   width: 70px;
-  margin-bottom: -5px;
+  margin-bottom: 0px;
   padding-left: 20px;
 `;
 
 export const ResourceItem = styled.p`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #263238;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
   margin-right: 20px;
 `;
 
@@ -65,16 +65,18 @@ export const BreakLine = styled.hr`
 
 export const SearchSuggestion = styled.h1`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: #263238;
   text-align: center;
   padding-bottom: 10px;
+  margin-right: 50px;
 `;
 
 export const SearchSuggestionContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  margin-right: 10%;
 `;
 
 export const SearchContainer = styled.div`
@@ -86,7 +88,7 @@ export const SearchContainer = styled.div`
   padding: 5px;
   border-radius: 10px;
   align-self: center;
-  margin-left: 120px;
+  margin-left: 140px;
 `;
 
 export const Input = styled.input`
@@ -111,7 +113,7 @@ export const SearchIcon = styled.img`
 export const ResourcesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 200px;
   flex-wrap: wrap;
 `;
 
@@ -120,7 +122,7 @@ export const Border = styled.hr`
   align-self: center;
   width: 60px;
   margin-left: 30px;
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 `;
 
 export const Items = styled.div`

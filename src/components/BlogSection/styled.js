@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BlogContainer = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
-  width: 98vw;
+  width: 99vw;
   border-radius: 10px;
 `;
 
@@ -47,16 +47,18 @@ export const BreakLine = styled.hr`
 
 export const SearchSuggestion = styled.h1`
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   color: #263238;
   text-align: center;
   padding-bottom: 10px;
+  margin-right: 50px;
 `;
 
 export const SearchSuggestionContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+  margin-right: 10%;
 `;
 
 export const SearchContainer = styled.div`
@@ -68,7 +70,7 @@ export const SearchContainer = styled.div`
   padding: 5px;
   border-radius: 10px;
   align-self: center;
-  margin-left: 120px;
+  margin-left: 140px;
 `;
 
 export const Input = styled.input`
@@ -92,25 +94,28 @@ export const SearchIcon = styled.img`
 
 export const Insight = styled.h1`
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   color: #263238;
   margin-bottom: 5px;
 `;
 
 export const Item = styled.p`
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   color: #263238;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-right: 30px;
+  &:hover {
+    color: #2b459b;
+  }
 `;
 
 export const Border = styled.hr`
   border: 1px solid #2b459b;
   align-self: center;
-  width: 100px;
-  margin-left: 33px;
-  margin-bottom: 0px;
+  width: 80px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 `;
 
 export const SectionContainer = styled.div`
