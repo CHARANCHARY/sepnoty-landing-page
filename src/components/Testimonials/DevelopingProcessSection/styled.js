@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BgContainer = styled.div`
-  background-color:rgba(12, 17, 31, 1);
+  background-color: rgba(12, 17, 31, 1);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@ export const CardListContainer = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 30px;

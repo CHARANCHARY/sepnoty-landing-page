@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
   border-radius: 30px;
   align-self: center;
   padding: 20px 10px 20px 0px;
-  background-color:rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.25);
   width: 60%;
 `;
 
@@ -13,14 +13,13 @@ export const ContactQueryContainer = styled.div`
   padding: 20px 15px 20px 15px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  background-color:rgba(250, 250, 250, 1);
+  background-color: rgba(250, 250, 250, 1);
   width: 80%;
-  
 `;
 
 export const ContactHeading = styled.h1`
   font-size: 16px;
-  color:rgba(61, 61, 61, 1);
+  color: rgba(61, 61, 61, 1);
   padding-right: 200px;
   margin: 10px;
 `;
@@ -40,7 +39,7 @@ export const ContactTextarea = styled.textarea`
   outline: none;
   font-size: 12px;
   margin-bottom: 5px;
-  color:black;
+  color: black;
   &::placeholder {
     color: #8c8c8c;
     font-size: 13px;
@@ -130,7 +129,6 @@ export const ContactContactssContainer = styled.div`
   padding: 30px 30px 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  
 `;
 
 export const ContactContactUsItems = styled.ul`
@@ -172,7 +170,7 @@ export const ContactUsInput = styled.input`
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: rgba(217, 217, 217, 1);
-  color:black;
+  color: black;
   &::placeholder {
     color: #8c8c8c;
     font-size: 13px;
@@ -185,7 +183,7 @@ export const BottomCon = styled.div`
   padding: 30px;
   margin-bottom: 0px;
   width: 30%;
-  align-items:center;
+  align-items: center;
 `;
 
 export const BottomHeading = styled.h1`
@@ -225,7 +223,8 @@ export const Image = styled.img`
 export const QueryContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color:rgba(12, 17, 31, 1);
+  flex-wrap: wrap;
+  background-color: rgba(12, 17, 31, 1);
 `;
 
 /* .error {

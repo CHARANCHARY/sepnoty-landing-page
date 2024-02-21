@@ -15,8 +15,7 @@ export const Container = styled.div`
   background-color: #0c111f;
   background-size: unset;
   flex-direction: column;
-  padding: 40px 40px 5px 40px;
-  z-index: 2;
+  padding: 40px 60px 25px 60px;
   background-image: url(${layout});
   background-size: cover;
 `;
@@ -26,7 +25,8 @@ export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
   }
 `;
 

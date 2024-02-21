@@ -47,7 +47,8 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <Switch>
+        <AboutUs />
+        {/* <Switch>
           <Route path="/" exact>
             <AboutUs />
           </Route>
@@ -63,7 +64,7 @@ const App = () => {
           <Route path="/resourcecenter" exact>
             <ResourceCenter />
           </Route>
-        </Switch>
+        </Switch> */}
       </Router>
     </>
   );

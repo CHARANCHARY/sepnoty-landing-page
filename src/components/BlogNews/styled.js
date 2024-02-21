@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const BlogContainer = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
-  width: 100vw;
+  width: 99vw;
   border-radius: 10px;
 `;
 

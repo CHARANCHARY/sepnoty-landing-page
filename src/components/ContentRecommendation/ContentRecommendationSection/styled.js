@@ -114,6 +114,7 @@ export const ListItems = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
 
 export const Rectangle1 = styled.img`

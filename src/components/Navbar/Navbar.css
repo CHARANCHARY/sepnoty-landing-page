@@ -13,7 +13,6 @@ li {
 .navbar {
   display: flex;
   height: 8vh;
-
   align-items: center;
   flex-direction: row;
   color: white;

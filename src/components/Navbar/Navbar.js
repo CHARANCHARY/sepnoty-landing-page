@@ -27,7 +27,7 @@ import {
 } from "./styledComponents";
 import AboutUsSection from "../AboutUsSection/AboutUs";
 import ServiceSection from "../ServiceSection";
-import BlogSection from "../BlogSection";
+import BlogSection from "../BlogNews";
 import CareerOppurtunities from "../CareerOppurtunities";
 import ResourceCenterSection from "../ResourceCenterSection";
 import AboutUs from "../../pages/AboutUs";
@@ -229,7 +229,7 @@ const Navbar = () => {
             </li>
           </Link>
         </ul>
-        <ul
+        {/* <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
           onClick={() => setMobile(false)}
         >
@@ -253,7 +253,7 @@ const Navbar = () => {
               <button className="contact-button">Contact Us</button>
             </li>
           </Link>
-        </ul>
+        </ul> */}
         {/* 
         whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 
         */}

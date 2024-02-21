@@ -2,21 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #c1cae7;
-  padding: 40px 0px 20px 0px;
-  width: 100vw;
+  padding: 30px 0px 20px 0px;
+  width: 99vw;
   border-radius: 10px;
 `;
 
 export const SubContainer = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const MvContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px 30px 0px 40px;
+  justify-content: center;
+  padding: 0px 30px 0px 40px;
 `;
 
 export const Heading = styled.h1`
@@ -63,17 +64,18 @@ export const Item = styled.p`
 export const CompanyContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   padding-right: 30px;
   margin-right: 30px;
 `;
 
-export const FollowUsCon = styled.ul`
+export const FollowUsCon = styled.div`
   list-style-type: none;
   display: flex;
   flex-direction: column;
   padding: 0px;
-  margin-left: -30px;
+  margin-left: 0px;
+  box-sizing: border-box;
+  justify-content: space-around;
 `;
 
 export const BreakLine = styled.hr`
