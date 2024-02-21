@@ -16,6 +16,10 @@ export const CardListContainer = styled.ul`
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  @media screen and (max-width:455px){
+    flex-wrap:wrap;
+    margin-left:-40px;
+  }
 `;
 
 export const Description = styled.p`
@@ -23,7 +27,12 @@ export const Description = styled.p`
   font-size: 20px;
   color: #858585;
   width: 600px;
-  font-weight: 500;
+  font-weight: bold;
+  @media screen and (max-width:455px){
+    font-size: 15px;
+    width: 400px;
+    line-height:30px;
+  }
 `;
 
 export const Our = styled.span`

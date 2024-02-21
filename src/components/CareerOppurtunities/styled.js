@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CareerContainer = styled.div`
   background-color: #c1cae7;
   padding: 40px 0px 20px 0px;
-  width: 99vw;
+  width: 100vw;
   border-radius: 10px;
 `;
 

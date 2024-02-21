@@ -40,15 +40,14 @@ import Blog from "./components/BlogPage/Blogs/Blog";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
-import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
+// import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <AboutUs />
-        {/* <Switch>
+        <Switch>
           <Route path="/" exact>
             <AboutUs />
           </Route>
@@ -64,7 +63,7 @@ const App = () => {
           <Route path="/resourcecenter" exact>
             <ResourceCenter />
           </Route>
-        </Switch> */}
+        </Switch>
       </Router>
     </>
   );

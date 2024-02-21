@@ -7,13 +7,16 @@ import {
   Intro1,
   Intro2,
   Intro3,
+  Intro33,
   Introhd1,
   Introp1,
+  Introp11,
   IntroCircles,
   IntroWhiteCircle,
   IntroBlueCircle,
   IntroRightText,
   IntroButtonVideo,
+  IntroButtonVideo2,
   IntroProposalText,
   IntroPlayVideo,
   IntroPlayButton,
@@ -50,11 +53,8 @@ const HomeSection = () => {
           <Intro2>
             <Introhd1>
               Empowering the Next
-              <br />
               Generation of Software
-              <br />
               And Web-app
-              <br />
               Development
             </Introhd1>
 
@@ -89,7 +89,31 @@ const HomeSection = () => {
           <IntroRightPart>
             <IntroRightImg src={Introimage} alt="not found" />
           </IntroRightPart>
+
+          <IntroButtonVideo2>
+              <IntroProposalText>Get a Proposal</IntroProposalText>
+              <IntroPlayVideo>
+                <IntroPlayButton src={play} alt="not found" />
+                <IntroVideoText>Watch Our Intro</IntroVideoText>
+              </IntroPlayVideo>
+              <Introp11>
+              Sepnoty, is a Developing agency Specialized in Delivering World class Solutions For Web and Mobile Through Mature And Development Technology.
+            </Introp11>
+            </IntroButtonVideo2>
         </Intro1>
+        <Intro33>
+              <IntroCircles>
+                <IntroWhiteCircle />
+                <IntroWhiteCircle />
+                <IntroWhiteCircle />
+                <IntroBlueCircle />
+                <IntroBlueCircle />
+              </IntroCircles>
+
+              <IntroRightText>
+                1.8k People bought our services today.
+              </IntroRightText>
+            </Intro33>
         <IntroExplorePart>
           <IntroAchievements>
             <IntroOrangeText>{projects}</IntroOrangeText>

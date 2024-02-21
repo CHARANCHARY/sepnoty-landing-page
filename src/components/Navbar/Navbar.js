@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
   BrowserRouter as Router,
-  Route,
-  Switch,
-  useHistory,
+  // Route,
+  // Switch,
+  // useHistory,
 } from "react-router-dom";
 
 import "./Navbar.css";
@@ -30,8 +30,8 @@ import ServiceSection from "../ServiceSection";
 import BlogSection from "../BlogNews";
 import CareerOppurtunities from "../CareerOppurtunities";
 import ResourceCenterSection from "../ResourceCenterSection";
-import AboutUs from "../../pages/AboutUs";
-import Services from "../../pages/Services";
+// import AboutUs from "../../pages/AboutUs";
+// import Services from "../../pages/Services";
 
 const Navbar = () => {
   const [Mobile, setMobile] = useState(false);

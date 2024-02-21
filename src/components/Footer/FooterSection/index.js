@@ -2,7 +2,7 @@ import { Component } from "react";
 
 import FollowUsElements from "../FollowUsElements";
 import { ThemeProvider } from "styled-components";
-import layout from "../../Footer/FooterSection/Images/layout.svg";
+// import layout from "../../Footer/FooterSection/Images/layout.svg";
 
 import {
   GlobalStyle,
@@ -12,20 +12,21 @@ import {
   SepnotyLogo,
   SepnotyDescription,
   FollowUsSection,
-  ServiceHeading,
   ServiceItems,
   ContactHeading,
   NewsHeading,
   NewsDesc,
   InputHolder,
+  FollowUsContainer1,
   EmailMsg,
+  ServiceContact,
   Button,
   CopywriteContainer,
   CopywriteContent,
   BottomContainer,
   SectionContainer,
+  SepnotyDescription1,
   Sections,
-  Section,
   FollowUsContainer,
   Copyright,
 } from "./styled";
@@ -71,10 +72,18 @@ class FooterSection extends Component {
                 <SepnotyLogo src="./images/image 20.svg" alt="sepnoty" />
               </div>
               <SepnotyDescription>
-                We're happy to speak to businesses at any stage of their journey{" "}
-                <br /> -no query too big or small.{" "}
+                We're happy to speak to businesses at any stage of their journey
+                <SepnotyDescription1>-no query too big or small.</SepnotyDescription1> 
               </SepnotyDescription>
             </LogoContainer>
+            <FollowUsContainer1>
+              <ContactHeading>Follow Us</ContactHeading>
+              <FollowUsSection>
+                {followUsElements.map((eachLogo) => (
+                  <FollowUsElements key={eachLogo.id} logos={eachLogo} />
+                ))}
+              </FollowUsSection>
+            </FollowUsContainer1>
             <div>
               <NewsHeading>Our Newsletter</NewsHeading>
               <NewsDesc>
@@ -87,20 +96,21 @@ class FooterSection extends Component {
                 <EmailMsg>*we hate spam as much as you do</EmailMsg>
               </div>
             </div>
-
-            <div>
-              <ServiceHeading>Services</ServiceHeading>
-              <ServiceItems>Web Application Development</ServiceItems>
-              <ServiceItems>Customer Software Development </ServiceItems>
-              <ServiceItems>Web Development</ServiceItems>
-            </div>
-            <div>
-              <ContactHeading>Contact Us</ContactHeading>
-              <ServiceItems>Call us</ServiceItems>
-              <ServiceItems>Live Chat</ServiceItems>
-              <ServiceItems>WhatsApp</ServiceItems>
-              <ServiceItems>Email us</ServiceItems>
-            </div>
+          <ServiceContact>
+              <div1>
+                <ContactHeading>Services</ContactHeading>
+                <ServiceItems>Web Application Development</ServiceItems>
+                <ServiceItems>Customer Software Development </ServiceItems>
+                <ServiceItems>Web Development</ServiceItems>
+              </div1>
+              <div>
+                <ContactHeading>Contact Us</ContactHeading>
+                <ServiceItems>Call us</ServiceItems>
+                <ServiceItems>Live Chat</ServiceItems>
+                <ServiceItems>WhatsApp</ServiceItems>
+                <ServiceItems>Email us</ServiceItems>
+              </div>
+            </ServiceContact>
             <FollowUsContainer>
               <ContactHeading>Follow Us</ContactHeading>
               <FollowUsSection>
@@ -121,7 +131,7 @@ class FooterSection extends Component {
               <Sections>About</Sections>
               <Sections>Advertise</Sections>
               <Sections>Privacy & Policy</Sections>
-              <Section>Contact Us</Section>
+              <Sections>Contact Us</Sections>
             </SectionContainer>
           </BottomContainer>
         </Container>

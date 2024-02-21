@@ -4,7 +4,7 @@ export const List = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: -10px;
 `;
 
 export const Icon = styled.img`

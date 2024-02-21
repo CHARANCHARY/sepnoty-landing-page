@@ -68,14 +68,12 @@ export const CompanyContainer = styled.div`
   margin-right: 30px;
 `;
 
-export const FollowUsCon = styled.div`
+export const FollowUsCon = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
   padding: 0px;
-  margin-left: 0px;
-  box-sizing: border-box;
-  justify-content: space-around;
+  margin-left: -30px;
 `;
 
 export const BreakLine = styled.hr`

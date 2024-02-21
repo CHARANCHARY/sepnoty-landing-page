@@ -15,7 +15,8 @@ export const Container = styled.div`
   background-color: #0c111f;
   background-size: unset;
   flex-direction: column;
-  padding: 40px 60px 25px 60px;
+  padding: 40px 40px 5px 40px;
+  z-index: 2;
   background-image: url(${layout});
   background-size: cover;
 `;
@@ -25,8 +26,7 @@ export const FooterContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 `;
 
@@ -37,29 +37,34 @@ export const LogoContainer = styled.div`
 `;
 
 export const SepnotyLogo = styled.img`
-  @media screen and (min-width: 768px) {
-    height: 96px;
+height: 96px;
     width: 360px;
     margin: -40px -25px 0px -22px;
+  
+  @media screen and (max-width: 455px) {
+    height: 96px;
+    width: 220px;
   }
 `;
 
 export const SepnotyDescription = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+   font-size: 14px;
     width: 398px;
+  @media screen and (max-width: 455px) {
+    font-size: 14px;
+    width: 258px;
+    font-weight:500px;
   }
 `;
 
-export const FollowUsSection = styled.ul`
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+export const SepnotyDescription1 = styled.p`
+
+  @media screen and (max-width: 455px) {
+    display:none;
   }
 `;
+
+
 
 export const ServiceContainer = styled.div`
   @media screen and (min-width: 768px) {
@@ -79,9 +84,10 @@ export const ServiceHeading = styled.h1`
 `;
 
 export const ServiceItems = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+font-size: 14px;
     margin-top: 10px;
+  @media screen and (min-width: 768px) {
+   
   }
 `;
 
@@ -92,52 +98,61 @@ export const ContactUsSection = styled.div`
 `;
 
 export const ContactHeading = styled.h1`
-  @media screen and (min-width: 768px) {
     font-size: 17px;
     color: #cac7ee;
     margin-bottom: 16px;
+  @media screen and (max-width: 455px) {
+    margin-bottom: 6px;
+    margin-top:10px;
+    text-align:center;
+    text-align:left;
   }
 `;
 
 export const NewsHeading = styled.h1`
-  @media screen and (min-width: 768px) {
-    font-size: 17px;
-    color: #b44555;
+  font-size: 17px;
+  color: #b44555;
+  @media screen and (max-width: 455px) {
+     margin-top:20px;
+     margin-bottom:5px;
   }
 `;
 
 export const NewsDesc = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
+font-size: 14px;
     color: #969595;
     padding: 10px 0px 10px;
     width: 316px;
+  @media screen and (max-width: 455px) {
+     display:none;
   }
 `;
 
 export const InputHolder = styled.input`
-  @media screen and (min-width: 768px) {
-    background-color: #4a4848;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-width: 0px;
-    font-size: 12px;
-    padding: 7px;
-    width: 200px;
-    outline: none;
-    z-index: 2;
+background-color: #4a4848;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+border-width: 0px;
+font-size: 12px;
+padding: 7px;
+width: 200px;
+outline: none;
+z-index: 2;
 
-    & ::placeholder {
-      color: #e2dccc;
-    }
+& ::placeholder {
+  color: #e2dccc;
+}
+  @media screen and (min-width: 768px) {
+   
   }
 `;
 
 export const EmailMsg = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 12px;
+font-size: 12px;
     color: #969595;
     padding-top: 10px;
+  @media screen and (max-width: 455px) {
+     margin-bottom:20px;
   }
 `;
 
@@ -148,8 +163,7 @@ export const NewsContainer = styled.div`
 `;
 
 export const Button = styled.button`
-  @media screen and (min-width: 768px) {
-    background-color: #f93e53;
+background-color: #f93e53;
     text-align: center;
     font-size: 12px;
     border-width: 0px;
@@ -158,54 +172,61 @@ export const Button = styled.button`
     border-bottom-right-radius: 2px;
     color: #e2dccc;
     z-index: 2;
+  @media screen and (min-width: 768px) {
+    
   }
 `;
 
 export const CopywriteContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
+display: flex;
     flex-direction: row;
     align-items: center;
 
     & .copywrite-icon {
       font-size: 10px;
     }
+  @media screen and (max-width: 455px) {
+     width:100%;
+     margin-left:-20px;
   }
 `;
 
 export const Copyright = styled.img`
+height: 18px;
+width: 18px;
+margin-right: 5px;
   @media screen and (min-width: 768px) {
-    height: 18px;
-    width: 18px;
-    margin-right: 5px;
+    
   }
 `;
 
 export const CopywriteContent = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 10px;
+font-size: 10px;
     color: #d9d9d9;
+  @media screen and (max-width: 455px) {
+    font-size: 8px;
   }
 `;
 
 export const BottomContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
+display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    
   }
 `;
 
 export const SectionContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
+display: flex;
     flex-direction: row;
+  @media screen and (max-width: 455px) {
+    width:160px;
   }
 `;
 
 export const Sections = styled.p`
-  @media screen and (min-width: 768px) {
     font-size: 10px;
     position: relative;
     color: #ffffff;
@@ -213,19 +234,58 @@ export const Sections = styled.p`
     margin-right: 10px;
     padding-right: 10px;
     height: 10px;
+  @media screen and (max-width: 455px) {
+    font-size: 6px;
+    width:48px;
+    margin-right: 0px;
+    padding-right: 0px;
+    text-align:center;
   }
 `;
 
 export const Section = styled.p`
-  @media screen and (min-width: 768px) {
-    font-size: 10px;
+font-size: 10px;
     color: #ffffff;
+  @media screen and (min-width: 768px) {
+    
   }
 `;
 
 export const FollowUsContainer = styled.div`
-  @media screen and (min-width: 768px) {
+  display: flex;
+    flex-direction: column;
+  @media screen and (max-width: 455px) {
+     display:none;
+  }
+`;
+
+export const FollowUsContainer1 = styled.div`
+  display: flex;
+  @media screen and (max-width: 455px) {
+     display:flex;
+     flex-direction: column;
+     
+  }
+`;
+
+export const FollowUsSection = styled.ul`
     display: flex;
     flex-direction: column;
+    list-style-type: none;
+  @media screen and (max-width: 455px) {
+    flex-direction: row;
+    justify-content: flex-start;
   }
+`;
+
+export const ServiceContact = styled.div`
+@media screen and (max-width: 455px) {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & > div1 {
+    order:3;
+  }
+}
+
 `;

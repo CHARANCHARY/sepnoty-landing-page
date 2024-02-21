@@ -7,7 +7,7 @@ import Idea from "../components/OurServices";
 import SepnotyQuerySection from "../components/ContactUs/SepnotyQuerySection";
 import DevelopingProcess from "../components/Testimonials/DevelopingProcessSection";
 import Testimonials from "../components/Testimonials/TestimonialsAndSuccess";
-import Navbar from "../components/Navbar/Navbar";
+// import Navbar from "../components/Navbar/Navbar";
 
 const AboutUs = () => {
   return (
