@@ -10,6 +10,7 @@ export const Intro1 = styled.div`
   padding: 50px 30px 0px 60px;
   background-color: #0c111f;
   line-height: 1.5;
+  height:100%;
   font-family: "Roboto";
   @media screen and (max-width: 455px) {
     flex-direction: column;
@@ -40,8 +41,10 @@ export const Intro33 = styled.div`
 `;
 export const Introhd1 = styled.h1`
   color: white;
-  margin-top: 10px;
+  margin-top: 30px;
   letter-spacing: 2px;
+  width:400px;
+  margin-bottom:20px;
   @media screen and (max-width: 455px) {
       font-size:15px;
       letter-spacing: 0px;
@@ -51,6 +54,7 @@ export const Introp1 = styled.p`
   color: white;
   line-height: 1.5;
   margin-top: 10px;
+  margin-bottom:20px;
   @media screen and (max-width: 455px) {
     display:none;
 }
@@ -70,7 +74,7 @@ export const IntroCircles = styled.ul`
   padding: 0;
   margin-right: 30px;
   display: flex;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 export const IntroWhiteCircle = styled.li`
   margin-right: -15px;
@@ -117,6 +121,7 @@ export const IntroBlueCircleText = styled.span`
 export const IntroRightText = styled.p`
   margin-top: 15px;
   color: white;
+  padding: 0px 0px 40px 0px;
 `;
 export const IntroButtonVideo = styled.div`
   display: flex;
@@ -202,10 +207,10 @@ export const IntroExplorePart = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-
-  padding: 0px 60px 50px 70px;
+  padding: 0px 60px 60px 0px;
   background-color: #0c111f;
   line-height: 1.5;
+  margin-top:-40px;
   @media screen and (max-width: 455px) {
     padding: 30px 0px 50px 30px;
     justify-content: space-between;
@@ -242,8 +247,8 @@ export const IntroExploreText = styled.a`
 `;
 export const IntroRightPart = styled.div``;
 export const IntroRightImg = styled.img`
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 450px;
   margin-right: 50px;
   @media screen and (max-width: 455px) {
     width: 430px;

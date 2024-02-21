@@ -17,6 +17,11 @@ padding: 15px;
 border-radius: 8px;
 margin-left: 30%;
 box-shadow:rgba(43, 69, 155, 1);
+@media screen and (max-width: 455px) {
+  width: 100%;
+  margin-left: 0%;
+  height: 48vh;
+}
 `;
 export const OurWorkHeading=styled.h1`
 font-size: 20px;
@@ -32,8 +37,10 @@ export const OurWorkList=styled.ul`
   justify-content: center;
   list-style: none;
 
-  @media screen and (max-width: 608px) {
-      flex-direction: column;
+  @media screen and (max-width: 455px) {
+      flex-direction: row;
+      flex-wrap:wrap;
+      margin-left:-70px;
   }
 `;
 
@@ -47,6 +54,11 @@ export const OurWorkServiceCardContainer=styled.li`
   box-sizing: border-box;
   width:28%;
   height:40%;
+  @media screen and (max-width: 455px) {
+    flex:30%;
+    margin-left: 0px;
+    width: 90%;
+}
 `;
 
 export const OurWorkServiceImg=styled.img`
@@ -104,9 +116,13 @@ color:  #2B459B;
 export const  OurWorkPara=styled.p`
 font-size: 16px;
 font-family: Roboto;
-color:white;
-line-height: 25px;
+color:#B7B6BD;
+line-height: 20px;
 margin-top: 10px;
+@media screen and (max-width: 455px) {
+  margin-top: 30px;
+  font-size: 15px;
+}
 }
 `;
 
@@ -127,6 +143,9 @@ border-radius:8px;
 border:none;
 font-size: 15px;
 background: rgba(43, 69, 155, 1);
+@media screen and (max-width: 608px) {
+  border-radius:5px;
+}
 `;
 export const OurWorkSideHeading=styled.h3`
   color:#263238;
