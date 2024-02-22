@@ -3,6 +3,7 @@ import {
     Expert,
     ExpHeading,ExpText,ExpImgRole,ExpImg,ExpRole,ExpRol,
     ExpName,
+    TransparentBg,
 } from './styled';
 
 
@@ -12,7 +13,7 @@ const ExpertCardDetail = (props) => {
 
   return (
    <Expert>
-   <ExpHeading>{heading}</ExpHeading>
+   <ExpHeading><TransparentBg />{heading}</ExpHeading>
    <ExpText>{topicText}</ExpText>
    <ExpImgRole>
    <ExpImg src={ImgUrl}></ExpImg>
