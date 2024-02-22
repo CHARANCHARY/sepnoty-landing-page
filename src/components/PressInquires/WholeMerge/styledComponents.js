@@ -214,3 +214,15 @@ margin:10px 30px 40px 40px;
 width:55%;
 
 `;
+export const TrustWorthyText=styled.p`
+font-size:14px;
+color:white;
+margin:10px 30px 20px 40px;
+line-height:20px;
+`;
+
+export const ExpContainer=styled.div`
+display:flex;
+flex-direction:column;
+width:70%;
+`;

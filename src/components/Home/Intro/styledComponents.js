@@ -12,7 +12,7 @@ export const Intro1 = styled.div`
   line-height: 1.5;
   height:100%;
   font-family: "Roboto";
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 1080px) {
     flex-direction: column;
     padding: 45px 0px 0px 30px;
   }
