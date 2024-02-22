@@ -27,7 +27,7 @@ import {
 } from "./styledComponents";
 import AboutUsSection from "../AboutUsSection/AboutUs";
 import ServiceSection from "../ServiceSection";
-import BlogSection from "../BlogNews";
+import BlogSection from "../../pages/BlogSection/";
 import CareerOppurtunities from "../CareerOppurtunities";
 import ResourceCenterSection from "../ResourceCenterSection";
 // import AboutUs from "../../pages/AboutUs";
@@ -137,7 +137,7 @@ const Navbar = () => {
                     <DownArrow src={downarrow} alt="dd" />
                   </>
                 ) : (
-                  "AboutUs"
+                  "About us"
                 )}
               </li>
             </Link>
