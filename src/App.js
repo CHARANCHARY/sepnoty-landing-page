@@ -12,6 +12,7 @@ import BlogTought from "./components/BlogThought/BlogSection/Blogs"
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
 import BlogArticles from "./components/BlogArticles/BlogSection/Blogs"
 import Inquiry from "./components/PressInquires/WholeMerge/Inquiry"
+import CostHome from "./AllForms/UpperSection"
 
 const App = () => {
   return (
@@ -19,15 +20,16 @@ const App = () => {
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />  
+          <Route exact path="/" component={Home} />
+          <Route exact path="/getproposal" component={CostHome} /> 
           <Route exact path="/Services" component={Services} />
           <Route exact path="/Blog" component={BlogSection} />
           <Route exact path="/careeropportunities" component={CareerOpportunities} />
           <Route exact path="/resourcecenter" component={ResourceCenter} />
-          <Route exact path="/blog/ThoughtLeadership"  component={BlogTought} />
-          <Route exact path="/blog/News"  component={BlogNews} />
-          <Route exact path="/blog/PressInquires"  component={Inquiry} />
-          <Route exact path="/blog/Article"  component={BlogArticles} />
+          <Route exact path="/Blog/ThoughtLeadership"  component={BlogTought} />
+          <Route exact path="/Blog/News"  component={BlogNews} />
+          <Route exact path="/Blog/PressInquires"  component={Inquiry} />
+          <Route exact path="/Blog/Article"  component={BlogArticles} />
         </Switch>
       </Router>
     </>
