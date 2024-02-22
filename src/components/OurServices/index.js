@@ -8,6 +8,7 @@ import {
   Description,
   Pattern,
   CuateImage,
+  CuateImage11,
   PatternCon,
 } from "./styled";
 
@@ -25,6 +26,7 @@ const Idea = () => (
       </ImgContainer>
       <ContentContainer>
         <div>
+        <CuateImage11 src="./images/cuate.svg" alt="Idea"/>
           <Heading>From Idea-To-Development</Heading>
           <Description>
             we are a development agency focused on delivering top-tier solution

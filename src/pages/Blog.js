@@ -1,9 +1,8 @@
 import React from 'react'
-import BlogArticles from '../components/BlogArticles/BlogSection/Blogs'
-
+import BlogSection from "./BlogSection/index"
 const Blog = () => {
   return (
-    <BlogArticles />
+    <BlogSection />
   )
 }
 

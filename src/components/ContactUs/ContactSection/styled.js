@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const IconContactssItems = styled.li`
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
 `;
 
 export const IconContactssType = styled.p`

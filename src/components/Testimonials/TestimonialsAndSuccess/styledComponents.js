@@ -20,8 +20,14 @@ margin-right:30px;
 export const Heading = Styled.h1`
 color: #2B459B;
 font-size: 40px;
-  margin-bottom: 0px;
+margin-bottom: 0px;
   font-family: "Inter", "serif sans";
+  @media screen and (max-width:455px){
+    font-size: 20px;
+
+    font-family: "roboto";
+    text-align: center;
+  }
 
 `
 export const ConsumerCon = Styled.div`
@@ -58,10 +64,17 @@ export const CrEle = Styled.p`
 export const Desc = Styled.p`
   color: #B7B6BD;
   font-size: 20px;
-  text-shadow: 0px 1px 1px;
   margin-top:50px
+  font-weight: 500;
   font-family: "Inter", serif sans;
   margin-top:100px;
+  @media screen and (max-width:455px){
+    font-size: 15px;
+    font-family: "roboto";
+    margin-top:60px;
+    text-align: center;
+    text-shadow: 0px 0px 0px;
+  }
 `
 export const SliderCon = Styled.div`
 padding-left:20px;

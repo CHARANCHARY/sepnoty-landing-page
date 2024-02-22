@@ -12,23 +12,33 @@ li {
 }
 .navbar {
   display: flex;
-  justify-content: space-evenly;
+  height: 8vh;
   align-items: center;
-  height: 10vh;
-  color:white;
+  flex-direction: row;
+  color: white;
+  padding: 0px 20px;
   box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
-  background-color: #0C111F;
+  background-color: #0c111f;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
   /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
 }
 
 .nav-links {
   display: flex;
-  justify-content: flex-end;
-  width: 75%;
+  margin-left: auto;
+  align-items: center;
 }
 
 .nav-links li {
   color: white;
+
+  padding: 10px 30px;
+  cursor: pointer;
+  /*  text-transform: capitalize; */
+  font-size: 16px;
+
   padding: 10px 20px;
   cursor: pointer;
   text-transform: capitalize;
@@ -36,7 +46,7 @@ li {
   margin-top: 14px;
   font-weight: 500;
 }
-.nav-links li:hover{
+.nav-links li:hover {
   color: #6b7eb1;
 }
 .hero {
@@ -49,12 +59,12 @@ li {
 }
 .mobile-menu-icon {
   display: none;
-  color:white;
+  color: white;
 }
 button {
   border: none;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   background: none;
 }
 @media (max-width: 768px) {
@@ -66,30 +76,29 @@ button {
   }
   .nav-links {
     display: none;
-    
   }
   .nav-links-mobile {
     position: absolute;
     display: block;
-    
+
     list-style: none;
-    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
     top: 10%;
     transition: all 0.5s ease-in-out;
     width: 100%;
-    background-color: #0C111F;
-    
+    background-color: #0c111f;
   }
   ul li {
     padding: 20px;
     width: 100%;
     transition: all 0.5s ease-in-out;
     text-align: center;
-    color:white;
+    color: white;
   }
   ul li:hover {
-    color:#6b7eb1;
+    color: #6b7eb1;
   }
   .mobile-menu-icon {
     position: absolute;
@@ -100,16 +109,26 @@ button {
     font-size: 50px;
   }
 }
-.contact-button{
-  background-color:rgba(37, 73, 137, 1);
-  color:white;
+
+.contact-button {
+  background-color: rgba(37, 73, 137, 1);
+  color: white;
+  padding: 5px 15px 5px 15px;
+  border: 0.5px solid white;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.contact-button {
+  background-color: rgba(37, 73, 137, 1);
+  color: white;
   height: 30px;
   width: 90px;
-  padding:10px;
+  padding: 10px;
   border: 0.5px solid white;
   border-radius: 30px;
   font-size: 10px;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
   margin-top: -10px;
 }
