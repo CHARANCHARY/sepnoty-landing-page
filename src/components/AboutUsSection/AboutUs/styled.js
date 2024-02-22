@@ -73,7 +73,7 @@ export const FollowUsCon = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 0px;
-  margin-left: -30px;
+  margin-left: 0px;
 `;
 
 export const BreakLine = styled.hr`
