@@ -43,9 +43,8 @@ No
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-    <Input1>
-Yes (Please Specify)
-</Input1>
+  
+  <Input1 placeholder="Yes (Please Specify)"/>
     </Label>
 </InputContainer>
 
@@ -94,9 +93,9 @@ font-size:15px;
 color: #263238;
 font-weight:500;
 `
-const Input1 = Styled.textarea`
+const Input1 = Styled.input`
 background:transparent;
-border: 1px solid #C1CAE7;
+border: 1px solid black;
 font-size:15px;
 color: #263238;
 font-weight:500;

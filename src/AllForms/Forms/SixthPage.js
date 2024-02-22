@@ -29,21 +29,22 @@ const SixthPage = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="four"/>
                         <Label htmlfor="four">
-                        Interactive content
+                        PDF
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="five"/>
                         <Label htmlfor="five">
-                        Others (Please Specify)
+                            <input placeholder="Others (Please Specify)"/>
+                        
                         </Label>
                     </CheckBoxCon>
                     <Para1>
                     Should your website or App support payments?
                     </Para1>
                     <Main5>
-                        <ActiveButton>Yes</ActiveButton>
-                        <Buttonel>No</Buttonel>
+                        <ActiveButton type="button">Yes</ActiveButton>
+                        <Buttonel type="button">No</Buttonel>
                     </Main5>
                     
                 </Form>
@@ -55,59 +56,62 @@ const SixthPage = () => {
                     </Heading>
                     
                     <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    I am not sure
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    up to 50
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    50-100
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    100-500
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    500-1,000
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    1,000-5,000
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    5,000-10,000
-    </Label>
-</InputContainer>
-<InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
-    more than 10,000
-    </Label>
-</InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        I am not sure
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        up to 50
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        50-100
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        100-500
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        500-1,000
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        1,000-5,000
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        5,000-10,000
+                        </Label>
+                    </InputContainer>
+                    <InputContainer>
+                    <Label>
+                        <Input type='radio' name="industry" value="Healthcare"/>
+                        more than 10,000
+                        </Label>
+                    </InputContainer>
                 </Form>
             </FormContainer>
         </Main>
     )
 }
 export default SixthPage;
+
+
+
 
 const Main5 = Styled.div`
 display:flex;
@@ -126,10 +130,7 @@ const ActiveButton = Styled.button`
 export const Buttonel = Styled.button`
   font-size: 20px;
   background-color: #d9d9d9;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius:10px;
   padding: 0px;
   width:60px;
   height:30px;

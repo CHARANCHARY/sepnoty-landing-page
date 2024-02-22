@@ -41,7 +41,8 @@ const SevenPage = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="five"/>
                         <Label htmlfor="five">
-                        Others (Please Specify)
+                        
+                        <input placeholder="Others (Please Specify)"/>
                         </Label>
                     </CheckBoxCon> 
                 </Form>
@@ -61,7 +62,7 @@ No
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
     <Input1>
-Yes (Please Specify)
+    <input placeholder="Others (Please Specify)"/>
 </Input1>
     </Label>
 </InputContainer>
@@ -87,11 +88,9 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
-font-size: 20px;
+font-family: "roboto";
+font-size: 12px;
 font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
 text-align: left;
 color: #263238;
 `

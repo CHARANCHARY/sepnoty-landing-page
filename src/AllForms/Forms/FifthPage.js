@@ -70,7 +70,7 @@ const FifthPage = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="10st"/>
                         <Label htmlfor="10st">
-                        Others (Please Specify)
+                           <input placeholder="Others (Please Specify)"/>
                         </Label>
                     </CheckBoxCon>
                 </Form>

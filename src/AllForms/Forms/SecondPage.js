@@ -81,10 +81,11 @@ Public sector
     </Label>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Telecommunications"/>
-    others (please specify)
-    </Label>
+<Input type='radio' name="industry" value="Telecommunications"/>
+  <Label>
+    
+    <input placeholder="others (please specify)"/>
+  </Label>
 </InputContainer>
 
                 </Form2>

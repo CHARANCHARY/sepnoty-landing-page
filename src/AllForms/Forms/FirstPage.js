@@ -17,31 +17,31 @@ const FirstStep = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="2st"/>
                         <Label htmlfor="2st">
-                        Corporate Website/App
+                        Portfolio Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="3st"/>
                         <Label htmlfor="3st">
-                        Corporate Website/App
+                        Digital Media Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="4st"/>
                         <Label htmlfor="4st">
-                        Corporate Website/App
+                        Educational Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="5st"/>
                         <Label htmlfor="5st">
-                        Corporate Website/App
+                        Content aggregator(eg: Forum)
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="6st"/>
                         <Label htmlfor="6st">
-                        Corporate Website/App
+                        <input placeholder="others (please specify)" />
                         </Label>
                     </CheckBoxCon>
                 </Form>
@@ -49,42 +49,54 @@ const FirstStep = () => {
             <FormContainer>
                 <Form>
                     <Heading>
-                    *Choose the type of website/App you need:
+                    *How many pages will your website/App have?
                     </Heading>
                     <CheckBoxCon>
                         <input type="radio" name="first-page" id="1st"/>
                         <Label htmlfor="1st">
-                        Corporate Website/App
+                        I am not sure
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon> 
                         <input type="radio" name="first-page" id="2st"/>
                         <Label htmlfor="2st">
-                        Corporate Website/App
+                        up to 50
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="radio" name="first-page" id="3st"/>
                         <Label htmlfor="3st">
-                        Corporate Website/App
+                        50-100
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="radio" name="first-page" id="4st"/>
                         <Label htmlfor="4st">
-                        Corporate Website/App
+                        100-500
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="radio" name="first-page" id="5st"/>
                         <Label htmlfor="5st">
-                        Corporate Website/App
+                        500-1,000
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="radio" name="first-page" id="6st"/>
                         <Label htmlfor="6st">
-                        Corporate Website/App
+                        1,000-5,000
+                        </Label>
+                    </CheckBoxCon>
+                    <CheckBoxCon>
+                        <input type="radio" name="first-page" id="6st"/>
+                        <Label htmlfor="6st">
+                        5,000-10,000
+                        </Label>
+                    </CheckBoxCon>
+                    <CheckBoxCon>
+                        <input type="radio" name="first-page" id="6st"/>
+                        <Label htmlfor="6st">
+                        more than 10,000
                         </Label>
                     </CheckBoxCon>
                 </Form>

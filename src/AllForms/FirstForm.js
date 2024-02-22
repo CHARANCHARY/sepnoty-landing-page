@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import Styled from "styled-components"
 import './App.css';
-import FirstStep from "./FirstPage"
+import FirstStep from "./Forms/FirstPage"
 
 class PersonalDetails extends Component {
   continue = e => {

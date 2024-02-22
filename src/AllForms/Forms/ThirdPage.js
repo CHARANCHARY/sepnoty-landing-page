@@ -72,7 +72,8 @@ Migration to a new CMS
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-    <Input1>others (please specify)</Input1>
+    {/* <Input1>others (please specify)</Input1> */}
+    <Input1 placeholder="others (please specify)"/>
     </Label>
 </InputContainer>
 <InputContainer>
@@ -125,9 +126,9 @@ font-size:15px;
 color: #263238;
 font-weight:500;
 `
-const Input1 = Styled.textarea`
+const Input1 = Styled.input`
 background:transparent;
-border: 1px solid #C1CAE7;
+border: 1px solid black;
 font-size:15px;
 color: #263238;
 font-weight:500;

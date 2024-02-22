@@ -17,9 +17,7 @@ const EightthPage = () => {
                         <label>
                         *Full name
                         </label>
-                        <div>
                         <Input type="text"/>
-                        </div>
                     </Main4>
                     <Main4>
                         <para3>
