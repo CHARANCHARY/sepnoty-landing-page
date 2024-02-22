@@ -1,10 +1,10 @@
 import blog from "./images/blog.svg";
 import search from "./images/search.svg";
-import { Link , BrowserRouter as Router, Route } from "react-router-dom";
-import BlogTought from "../../components/BlogThought/BlogSection/Blogs";
-import BlogNews from "../../components/BlogNews/BlogSection/Blogs";
-import BlogArticles from "../../components/BlogArticles/BlogSection/Blogs"
-import Inquiry from "../../components/PressInquires/WholeMerge/Inquiry"
+import { Link } from "react-router-dom";
+// import BlogTought from "../../components/BlogThought/BlogSection/Blogs";
+// import BlogNews from "../../components/BlogNews/BlogSection/Blogs";
+// import BlogArticles from "../../components/BlogArticles/BlogSection/Blogs"
+// import Inquiry from "../../components/PressInquires/WholeMerge/Inquiry"
 import {
   BlogContainer,
   SubContainer,
@@ -38,24 +38,22 @@ const BlogSection = () => (
       <SectionContainer>
         <Insight>Insights & news</Insight>
         <Border />
-        <Router>
-          <Link to="/blog/ThoughtLeadership">
+          <Link to="/Blog/ThoughtLeadership">
             <Item>Thought Leadership</Item>
           </Link>
-          <Link to="/blog/News">
+          <Link to="/Blog/News">
             <Item>News</Item>
           </Link>
-          <Link to="/blog/PressInquires">
+          <Link to="/Blog/PressInquires">
             <Item>Press Inquires</Item>
           </Link>
-          <Link to="/blog/Article">
+          <Link to="/Blog/Article">
             <Item>Articles</Item>
           </Link>
-        </Router>
-        <Route path="/blog/ThoughtLeadership" exact component={BlogTought} />
-        <Route path="/blog/News" exact component={BlogNews} />
-        <Route path="/blog/PressInquires" exact component={Inquiry} />
-        <Route path="/blog/Article" exact component={BlogArticles} />
+        {/* <Route exact path="/blog/ThoughtLeadership"  component={BlogTought} />
+        <Route exact path="/blog/News"  component={BlogNews} />
+        <Route exact path="/blog/PressInquires"  component={Inquiry} />
+        <Route exact path="/blog/Article"  component={BlogArticles} /> */}
       </SectionContainer>
     </SubContainer>
     <BreakLine />
