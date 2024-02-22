@@ -1,12 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useHistory,
-} from "react-router-dom";
 
 import "./Navbar.css";
+
+import { useHistory } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 /* import { FaBars } from "react-icons/fa";
@@ -40,6 +36,8 @@ const Navbar = () => {
   const [isCareerOpen, setCareerOpen] = useState(false);
   const [isBlogOpen, setBlogOpen] = useState(false);
   const [isResourceOpen, setResourceOpen] = useState(false);
+
+  const history = useHistory();
 
   const aboutUsRef = useRef(null);
   const serviceRef = useRef(null);
@@ -96,6 +94,7 @@ const Navbar = () => {
 
   const toggleBlog = () => {
     closeOtherSections();
+
     setBlogOpen(!isBlogOpen);
   };
 
@@ -110,10 +109,11 @@ const Navbar = () => {
     setAboutUsOpen(false);
     setCareerOpen(false);
     setBlogOpen(false);
+    history.push("/");
   };
 
   return (
-    <Router>
+    <>
       <nav className="navbar">
         <LogoImg src={logo} alt="not found"></LogoImg>
         {/*
@@ -180,7 +180,7 @@ const Navbar = () => {
               </li>
               {isBlogOpen && (
                 <BlogCon>
-                  <BlogSection />
+                  <BlogSection closeOtherSections={closeOtherSections} />
                 </BlogCon>
               )}
             </Link>
@@ -264,21 +264,7 @@ const Navbar = () => {
           {/* {Mobile ? <ImCross /> : <FaBars />} */}
         </button>
       </nav>
-      {/* <Switch>
-        <Route exact path="/">
-          <AboutUs />
-        </Route>
-        <Route exact path="/AboutUs" component={AboutUs} />
-        <Route exact path="/Services" component={Services} />
-        <Route exact path="/Blog" component={BlogSection} />
-        <Route
-          exact
-          path="/CareerOpportunities"
-          component={CareerOppurtunities}
-        />
-        <Route exact path="/ResourceCenter" component={ResourceCenterSection} />
-      </Switch> */}
-    </Router>
+    </>
   );
 };
 

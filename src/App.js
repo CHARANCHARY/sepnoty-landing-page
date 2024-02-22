@@ -40,31 +40,27 @@ import Blog from "./components/BlogPage/Blogs/Blog";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
-import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
+import ButtonSec from "./components/ResourceAnalytics";
+import DigitalMarketing from "./components/Services/DigitalMarketing";
 
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-        <AboutUs />
-        {/* <Switch>
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/services" exact>
-            <Services />
-          </Route>
-          <Route path="/blog" exact>
-            <Blog />
-          </Route>
-          <Route path="/careeropportunities" exact>
-            <CareerOpportunities />
-          </Route>
-          <Route path="/resourcecenter" exact>
-            <ResourceCenter />
-          </Route>
-        </Switch> */}
+        <Switch>
+          {" "}
+          <Route exact path="/" component={DigitalMarketing} />
+          <Route exact path="/AboutUs" component={Blog} />
+          <Route exact path="/Services" component={AboutUs} />
+          <Route exact path="/Blog" component={Blog} />
+          <Route
+            exact
+            path="/CareerOpportunities"
+            component={CareerOpportunities}
+          />
+          <Route exact path="/ResourceCenter" component={ResourceCenter} />
+        </Switch>
       </Router>
     </>
   );

@@ -103,7 +103,7 @@ export const Item = styled.p`
   font-weight: 500;
   font-size: 14px;
   color: #263238;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 30px;
   &:hover {
     color: #2b459b;
