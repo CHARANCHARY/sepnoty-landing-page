@@ -1,3 +1,44 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import AboutUs from "./pages/AboutUs";
+import Services from "./pages/Services";
+// import Blog from "./components/BlogPage/Blogs/Blog";
+import BlogSection from "./pages/BlogSection/index"
+import CareerOpportunities from "./pages/CareerOpportunities";
+import ResourceCenter from "./pages/ResourceCenter";
+import Navbar from "./components/Navbar/Navbar";
+// import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
+
+const App = () => {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path="/" exact>
+            <AboutUs />
+          </Route>
+          <Route path="/services" exact>
+            <Services />
+          </Route>
+          <Route path="/blog" exact>
+            <BlogSection />
+          </Route>
+          <Route path="/careeropportunities" exact>
+            <CareerOpportunities />
+          </Route>
+          <Route path="/resourcecenter" exact>
+            <ResourceCenter />
+          </Route>
+        </Switch>
+      </Router>
+    </>
+  );
+};
+
+export default App;
+
+
 /* import HeaderSection from "./components/Header/Intro";
 import Header from "./components/Header/Navbar";
 import OurWork from "./components/ourWork";
@@ -32,38 +73,3 @@ import FooterSection from "./components/Footer/FooterSection"; */
   );
 }
  */
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
-import AboutUs from "./pages/AboutUs";
-import Services from "./pages/Services";
-import Blog from "./components/BlogPage/Blogs/Blog";
-import CareerOpportunities from "./pages/CareerOpportunities";
-import ResourceCenter from "./pages/ResourceCenter";
-import Navbar from "./components/Navbar/Navbar";
-import ButtonSec from "./components/ResourceAnalytics";
-import DigitalMarketing from "./components/Services/DigitalMarketing";
-
-const App = () => {
-  return (
-    <>
-      <Router>
-        <Navbar />
-        <Switch>
-          {" "}
-          <Route exact path="/" component={DigitalMarketing} />
-          <Route exact path="/AboutUs" component={Blog} />
-          <Route exact path="/Services" component={AboutUs} />
-          <Route exact path="/Blog" component={Blog} />
-          <Route
-            exact
-            path="/CareerOpportunities"
-            component={CareerOpportunities}
-          />
-          <Route exact path="/ResourceCenter" component={ResourceCenter} />
-        </Switch>
-      </Router>
-    </>
-  );
-};
-
-export default App;
