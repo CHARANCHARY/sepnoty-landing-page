@@ -32,6 +32,8 @@ import {
   TechTopicsTitle,
   TechTopics,
   TechTopicsCon,
+  TrustWorthyText,
+  ExpContainer,
 } from './styledComponents'
 import InTouch from '../GetInTouch/InTouch';
 import image5 from '../assets/image5.svg';
@@ -62,10 +64,43 @@ import techimg8 from '../assets/techimg8.svg';
 import techimg9 from '../assets/techimg9.svg';
 import techimg10 from '../assets/techimg10.svg';
 import TechCard from '../TechCard/TechCard';
-import Contact from '../../ContactUs/SepnotyQuerySection';
-
-
-
+import InqContact from '../../InquiryContact/InquiryContactSection';
+import ExpImg from '../assets/ExpImg.png';
+import ExpertCardDetail from '../ExpertDetailCard/ExpertDetailCard';
+const OurExpertsDetails=[
+  {
+    id:1,
+    heading:'Experts in Website Development',
+    topicText:'With a team of certified security experts, Sepnoty works with website speed, mobile-friendliness, website structure, indexing, and crawling directives',
+    ImgUrl:ExpImg,
+    ExpertName:'Nick Carter',
+    ExpertRole:'Technical Consultant',
+  },
+  {
+    id:2,
+    heading:'Experts in Website Development',
+    topicText:'With a team of certified security experts, Sepnoty works with website speed, mobile-friendliness, website structure, indexing, and crawling directives',
+    ImgUrl:ExpImg,
+    ExpertName:'Nick Carter',
+    ExpertRole:'Technical Consultant',
+  },
+  {
+    id:3,
+    heading:'Experts in Website Development',
+    topicText:'With a team of certified security experts, Sepnoty works with website speed, mobile-friendliness, website structure, indexing, and crawling directives',
+    ImgUrl:ExpImg,
+    ExpertName:'Nick Carter',
+    ExpertRole:'Technical Consultant',
+  },
+  {
+    id:4,
+    heading:'Experts in Website Development',
+    topicText:'With a team of certified security experts, Sepnoty works with website speed, mobile-friendliness, website structure, indexing, and crawling directives',
+    ImgUrl:ExpImg,
+    ExpertName:'Nick Carter',
+    ExpertRole:'Technical Consultant',
+  }
+];
 
 const ExpertsDetails=[
   {id:1,
@@ -84,7 +119,7 @@ const ExpertsDetails=[
   src:expert4,
   about:"Pradeep kumar  Penetration Testing Consultant, CEH, was featured on CNET Blog."
 },
-]
+];
 const CardsDetails=[
     {
       id: 1,
@@ -115,9 +150,7 @@ const CardsDetails=[
         description:"We will share with you the materials that you could use in your publication.",
         RequestText:"Request Opinion",
       },
-]
-
-
+];
 const mediaData = [
   { id: 1, src: cnet },
   { id: 2, src: Mashable },
@@ -182,7 +215,7 @@ const TechDetails=[
     TechUrl:techimg10,
     title:'UX/UI Design',
   },
-]
+];
 const Inquiry = () => {
   const [visibleSet, setVisibleSet] = useState(0);
 
@@ -272,8 +305,32 @@ const Inquiry = () => {
         <TechCard key={eachItem.uniqueNo} details={eachItem} />
       ))}
       </TechTopicsCon>
-      <Contact />
-      
+      <TrustWorthy>What Makes us Trustworthy</TrustWorthy>
+      <TrustWorthyText>
+      Sepnoty is a global IT consulting and software development company with experience in multiple industries, including healthcare, retail, manufacturing, banking, and telecoms. Key domains of our expertise are AI, big data, IoT, information security, mobile and web development, blockchain, collaboration and knowledge management, and more.
+      <br /><br />
+Our experts are always open to sharing their knowledge with reporters, bloggers, influencers, speakers, and everyone else interested in creating expert IT content.
+      </TrustWorthyText>
+      <ImgContainer>
+        <Image src="./images/Node.js_logo_20.svg" alt="Node.js" />
+        <Image src="./images/Python-Logo 2.svg" alt="Python" />
+        <Image src="./images/django-logo.svg" alt="django" />
+        <Image src="./images/net-logo.svg" alt=".net" />
+        <Image src="./images/laravel-logo.svg" alt="laravel" />
+        <Image src="./images/PhP.svg" alt="Php" />
+        <Img src="./images/Symfony-logo.svg" alt="Symfony" />
+      </ImgContainer>
+      <TrustWorthy>Our Experts in Media</TrustWorthy>
+      <TrustWorthyText>If you require technical or industry-specific information for your article or wish to interview one of our experts, we invite you to peruse 
+      the list of our consultants below and reach out to a suitable individual. Alternatively, you can contact our team directly, and they will 
+      assist you in connecting with the most relevant expert.
+      </TrustWorthyText>
+      <ExpContainer>
+      {OurExpertsDetails.map((eachItem) => (
+        <ExpertCardDetail key={eachItem.uniqueNo} details={eachItem} />
+      ))}
+      </ExpContainer>
+      <InqContact />
     </InquirySection>
   )
 }
