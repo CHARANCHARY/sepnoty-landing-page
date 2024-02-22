@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 import { useHistory } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+/* import { Link } from "react-router-dom"; */
 /* import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im"; */
 import logo from "../Navbar/assets/logo.svg";
@@ -77,7 +77,8 @@ const Navbar = () => {
     };
   }, [isAboutUsOpen, isServiceOpen, isCareerOpen, isBlogOpen, isResourceOpen]);
 
-  const toggleAboutUs = () => {
+  const toggleAboutUs = (e) => {
+    e.stopPropagation();
     closeOtherSections();
     setAboutUsOpen(!isAboutUsOpen);
   };
@@ -92,7 +93,8 @@ const Navbar = () => {
     setCareerOpen(!isCareerOpen);
   };
 
-  const toggleBlog = () => {
+  const toggleBlog = (e) => {
+    e.stopPropagation();
     closeOtherSections();
 
     setBlogOpen(!isBlogOpen);
@@ -129,18 +131,17 @@ const Navbar = () => {
           }}
         >
           <DropdownContainer ref={aboutUsRef}>
-            <Link to="/AboutUs">
-              <li onClick={toggleAboutUs}>
-                {isAboutUsOpen ? (
-                  <>
-                    AboutUs
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "About us"
-                )}
-              </li>
-            </Link>
+            <li onClick={toggleAboutUs}>
+              {isAboutUsOpen ? (
+                <>
+                  AboutUs
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "About us"
+              )}
+            </li>
+
             {isAboutUsOpen && (
               <AboutCon>
                 <AboutUsSection />
@@ -148,86 +149,77 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={serviceRef}>
-            <Link to="/Services">
-              <li onClick={toggleService}>
-                {isServiceOpen ? (
-                  <>
-                    Services
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Services"
-                )}
-              </li>
-              {isServiceOpen && (
-                <ServiceCon>
-                  <ServiceSection />
-                </ServiceCon>
+            <li onClick={toggleService}>
+              {isServiceOpen ? (
+                <>
+                  Services
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Services"
               )}
-            </Link>
+            </li>
+            {isServiceOpen && (
+              <ServiceCon>
+                <ServiceSection />
+              </ServiceCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={blogRef}>
-            <Link to="/Blog">
-              <li onClick={toggleBlog}>
-                {isBlogOpen ? (
-                  <>
-                    Blog
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Blog"
-                )}
-              </li>
-              {isBlogOpen && (
-                <BlogCon>
-                  <BlogSection closeOtherSections={closeOtherSections} />
-                </BlogCon>
+            <li onClick={toggleBlog}>
+              {isBlogOpen ? (
+                <>
+                  Blog
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Blog"
               )}
-            </Link>
+            </li>
+            {isBlogOpen && (
+              <BlogCon>
+                <BlogSection closeOtherSections={closeOtherSections} />
+              </BlogCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={careerRef}>
-            <Link to="/CareerOpportunities">
-              <li onClick={toggleCareer}>
-                {isCareerOpen ? (
-                  <>
-                    Career Opportunities
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Career Opportunities"
-                )}
-              </li>
-              {isCareerOpen && (
-                <CareerCon>
-                  <CareerOppurtunities />
-                </CareerCon>
+            <li onClick={toggleCareer}>
+              {isCareerOpen ? (
+                <>
+                  Career Opportunities
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Career Opportunities"
               )}
-            </Link>
+            </li>
+            {isCareerOpen && (
+              <CareerCon>
+                <CareerOppurtunities />
+              </CareerCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={resourceRef}>
-            <Link to="/ResourceCenter">
-              <li onClick={toggleResource}>
-                {isResourceOpen ? (
-                  <>
-                    Resource Center
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Resource Center"
-                )}
-              </li>
-              {isResourceOpen && (
-                <ResourceCon>
-                  <ResourceCenterSection />
-                </ResourceCon>
+            <li onClick={toggleResource}>
+              {isResourceOpen ? (
+                <>
+                  Resource Center
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Resource Center"
               )}
-            </Link>
-          </DropdownContainer>
-          <Link to="/Blog">
-            <li>
-              <button className="contact-button">Contact Us</button>
             </li>
-          </Link>
+            {isResourceOpen && (
+              <ResourceCon>
+                <ResourceCenterSection />
+              </ResourceCon>
+            )}
+          </DropdownContainer>
+
+          <li>
+            <button className="contact-button">Contact Us</button>
+          </li>
         </ul>
         {/* <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
