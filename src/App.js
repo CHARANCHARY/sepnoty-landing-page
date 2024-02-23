@@ -12,35 +12,16 @@ import BlogTought from "./components/BlogThought/BlogSection/Blogs";
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
 import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
 import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
-
+import Collaboration from "./components/ResourceCenter/Collabaration";
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/AboutUs" exact>
-            <AboutUs />
-          </Route>
-          <Route path="/services" exact>
-            <Services />
-          </Route>
-          <Route path="/blog" exact>
-            <BlogSection />
-          </Route>
-          <Route path="/careeropportunities" exact>
-            <CareerOpportunities />
-          </Route>
-          <Route path="/resourcecenter" exact>
-            <ResourceCenter />
-          </Route>
-
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Collaboration} />
           <Route exact path="/Services" component={Services} />
-          <Route exact path="/Blog" component={BlogSection} />
+          <Route exact path="/blog" component={BlogSection} />
           <Route
             exact
             path="/careeropportunities"
