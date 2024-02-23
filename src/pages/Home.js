@@ -9,7 +9,7 @@ import DevelopingProcess from "../components/Testimonials/DevelopingProcessSecti
 import Testimonials from "../components/Testimonials/TestimonialsAndSuccess";
 // import Navbar from "../components/Navbar/Navbar";
 
-const AboutUs = () => {
+const Home = () => {
   return (
     <>
       <HomeSection />
@@ -24,4 +24,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Home;

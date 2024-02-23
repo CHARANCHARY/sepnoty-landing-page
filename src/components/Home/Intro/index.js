@@ -1,6 +1,6 @@
 import Introimage from "../assets/Introimg.svg";
 import play from "../assets/play-button.png";
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { useState } from "react";
 
 import {
@@ -66,7 +66,10 @@ const HomeSection = () => {
               and emerging technology.
             </Introp1>
             <IntroButtonVideo>
-              <IntroProposalText>Get a Proposal</IntroProposalText>
+              <Link to="/getproposal">
+                <IntroProposalText>Get a Proposal</IntroProposalText>
+              </Link>
+              
               <IntroPlayVideo>
                 <IntroPlayButton src={play} alt="not found" />
                 <IntroVideoText>Watch Our Intro</IntroVideoText>

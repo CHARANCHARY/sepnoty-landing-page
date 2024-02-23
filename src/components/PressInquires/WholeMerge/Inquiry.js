@@ -336,5 +336,5 @@ Our experts are always open to sharing their knowledge with reporters, bloggers,
   )
 }
 
-export default Inquiry
+export default Inquiry;
 

@@ -1,14 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
-import {
-  BrowserRouter as Router,
-  // Route,
-  // Switch,
-  // useHistory,
-} from "react-router-dom";
 
 import "./Navbar.css";
 
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+
+/* import { Link } from "react-router-dom"; */
 /* import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im"; */
 import logo from "../Navbar/assets/logo.svg";
@@ -27,7 +23,7 @@ import {
 } from "./styledComponents";
 import AboutUsSection from "../AboutUsSection/AboutUs";
 import ServiceSection from "../ServiceSection";
-import BlogSection from "../BlogNews";
+import BlogSection from "../../pages/BlogSection/";
 import CareerOppurtunities from "../CareerOppurtunities";
 import ResourceCenterSection from "../ResourceCenterSection";
 // import AboutUs from "../../pages/AboutUs";
@@ -40,6 +36,8 @@ const Navbar = () => {
   const [isCareerOpen, setCareerOpen] = useState(false);
   const [isBlogOpen, setBlogOpen] = useState(false);
   const [isResourceOpen, setResourceOpen] = useState(false);
+
+  const history = useHistory();
 
   const aboutUsRef = useRef(null);
   const serviceRef = useRef(null);
@@ -79,7 +77,7 @@ const Navbar = () => {
     };
   }, [isAboutUsOpen, isServiceOpen, isCareerOpen, isBlogOpen, isResourceOpen]);
 
-  const toggleAboutUs = () => {
+  const toggleAboutUs = (e) => {
     closeOtherSections();
     setAboutUsOpen(!isAboutUsOpen);
   };
@@ -94,8 +92,10 @@ const Navbar = () => {
     setCareerOpen(!isCareerOpen);
   };
 
-  const toggleBlog = () => {
+  const toggleBlog = (e) => {
+    e.stopPropagation();
     closeOtherSections();
+
     setBlogOpen(!isBlogOpen);
   };
 
@@ -110,10 +110,11 @@ const Navbar = () => {
     setAboutUsOpen(false);
     setCareerOpen(false);
     setBlogOpen(false);
+    history.push("/");
   };
 
   return (
-    <Router>
+    <>
       <nav className="navbar">
         <LogoImg src={logo} alt="not found"></LogoImg>
         {/*
@@ -129,18 +130,17 @@ const Navbar = () => {
           }}
         >
           <DropdownContainer ref={aboutUsRef}>
-            <Link to="/AboutUs">
-              <li onClick={toggleAboutUs}>
-                {isAboutUsOpen ? (
-                  <>
-                    AboutUs
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "AboutUs"
-                )}
-              </li>
-            </Link>
+            <li onClick={toggleAboutUs}>
+              {isAboutUsOpen ? (
+                <>
+                  AboutUs
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "About us"
+              )}
+            </li>
+
             {isAboutUsOpen && (
               <AboutCon>
                 <AboutUsSection />
@@ -148,86 +148,78 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={serviceRef}>
-            <Link to="/Services">
-              <li onClick={toggleService}>
-                {isServiceOpen ? (
-                  <>
-                    Services
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Services"
-                )}
-              </li>
-              {isServiceOpen && (
-                <ServiceCon>
-                  <ServiceSection />
-                </ServiceCon>
+            <li onClick={toggleService}>
+              {isServiceOpen ? (
+                <>
+                  Services
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Services"
               )}
-            </Link>
+            </li>
+            {isServiceOpen && (
+              <ServiceCon>
+                <ServiceSection />
+              </ServiceCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={blogRef}>
-            <Link to="/Blog">
-              <li onClick={toggleBlog}>
-                {isBlogOpen ? (
-                  <>
-                    Blog
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Blog"
-                )}
-              </li>
-              {isBlogOpen && (
-                <BlogCon>
-                  <BlogSection />
-                </BlogCon>
+            <li onClick={toggleBlog}>
+              {isBlogOpen ? (
+                <>
+                  Blog
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Blog"
               )}
-            </Link>
+            </li>
+
+            {isBlogOpen && (
+              <BlogCon>
+                <BlogSection closeOtherSections={closeOtherSections} />
+              </BlogCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={careerRef}>
-            <Link to="/CareerOpportunities">
-              <li onClick={toggleCareer}>
-                {isCareerOpen ? (
-                  <>
-                    Career Opportunities
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Career Opportunities"
-                )}
-              </li>
-              {isCareerOpen && (
-                <CareerCon>
-                  <CareerOppurtunities />
-                </CareerCon>
+            <li onClick={toggleCareer}>
+              {isCareerOpen ? (
+                <>
+                  Career Opportunities
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Career Opportunities"
               )}
-            </Link>
+            </li>
+            {isCareerOpen && (
+              <CareerCon>
+                <CareerOppurtunities />
+              </CareerCon>
+            )}
           </DropdownContainer>
           <DropdownContainer ref={resourceRef}>
-            <Link to="/ResourceCenter">
-              <li onClick={toggleResource}>
-                {isResourceOpen ? (
-                  <>
-                    Resource Center
-                    <DownArrow src={downarrow} alt="dd" />
-                  </>
-                ) : (
-                  "Resource Center"
-                )}
-              </li>
-              {isResourceOpen && (
-                <ResourceCon>
-                  <ResourceCenterSection />
-                </ResourceCon>
+            <li onClick={toggleResource}>
+              {isResourceOpen ? (
+                <>
+                  Resource Center
+                  <DownArrow src={downarrow} alt="dd" />
+                </>
+              ) : (
+                "Resource Center"
               )}
-            </Link>
-          </DropdownContainer>
-          <Link to="/Blog">
-            <li>
-              <button className="contact-button">Contact Us</button>
             </li>
-          </Link>
+            {isResourceOpen && (
+              <ResourceCon>
+                <ResourceCenterSection />
+              </ResourceCon>
+            )}
+          </DropdownContainer>
+
+          <li>
+            <button className="contact-button">Contact Us</button>
+          </li>
         </ul>
         {/* <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
@@ -264,21 +256,7 @@ const Navbar = () => {
           {/* {Mobile ? <ImCross /> : <FaBars />} */}
         </button>
       </nav>
-      {/* <Switch>
-        <Route exact path="/">
-          <AboutUs />
-        </Route>
-        <Route exact path="/AboutUs" component={AboutUs} />
-        <Route exact path="/Services" component={Services} />
-        <Route exact path="/Blog" component={BlogSection} />
-        <Route
-          exact
-          path="/CareerOpportunities"
-          component={CareerOppurtunities}
-        />
-        <Route exact path="/ResourceCenter" component={ResourceCenterSection} />
-      </Switch> */}
-    </Router>
+    </>
   );
 };
 
