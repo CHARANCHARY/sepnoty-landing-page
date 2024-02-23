@@ -10,16 +10,16 @@ import Navbar from "./components/Navbar/Navbar";
 // import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 import BlogTought from "./components/BlogThought/BlogSection/Blogs";
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
-import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
-import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
-import Collaboration from "./components/ResourceCenter/Collabaration";
+import BlogArticles from "./components/BlogArticles/BlogSection/Blogs"
+import Inquiry from "./components/PressInquires/WholeMerge/Inquiry"
+
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Home} />  
           <Route exact path="/Services" component={Services} />
           <Route exact path="/blog" component={BlogSection} />
           <Route
@@ -28,10 +28,10 @@ const App = () => {
             component={CareerOpportunities}
           />
           <Route exact path="/resourcecenter" component={ResourceCenter} />
-          <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
-          <Route exact path="/blog/News" component={BlogNews} />
-          <Route exact path="/blog/PressInquires" component={Inquiry} />
-          <Route exact path="/blog/Article" component={BlogArticles} />
+          <Route exact path="/blog/ThoughtLeadership"  component={BlogTought} />
+          <Route exact path="/blog/News"  component={BlogNews} />
+          <Route exact path="/blog/PressInquires"  component={Inquiry} />
+          <Route exact path="/blog/Article"  component={BlogArticles} />
         </Switch>
       </Router>
     </>
