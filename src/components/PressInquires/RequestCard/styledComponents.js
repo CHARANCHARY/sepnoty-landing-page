@@ -12,24 +12,25 @@ height:auto;
 `;
 
 export const RequestImg=styled.img`
-width:50px;
-height:50px;
+width:52px;
+height:52px;
 align-self:center;
 margin-bottom:10px;
 `;
 export const RequestTitle=styled.h3`
 color:rgba(43, 69, 155, 1);
-margin-bottom:10px;
+margin-bottom:12px;
 align-items:center;
 `;
 export const RequestDescription=styled.p`
 color:black;
-font-size:12px;
-margin-bottom:15px;
+font-size:13px;
+width:90%;
+margin-bottom:10px;
 `;
 export const RequestTxt=styled.h3`
 color:rgba(43, 69, 155, 1);
 font-size:14px;
 margin-left:61%;
-margin-top:40px;
+margin-top:30px;
 `;

@@ -34,6 +34,7 @@ import {
   TechTopicsCon,
   TrustWorthyText,
   ExpContainer,
+  TransparentBg,
 } from './styledComponents'
 import InTouch from '../GetInTouch/InTouch';
 import image5 from '../assets/image5.svg';
@@ -229,7 +230,7 @@ const Inquiry = () => {
     <InqueryTitle>Blog &gt; Press Inquires</InqueryTitle>
     <InqueryName>Blog</InqueryName>
     <InTouch />
-    <HelpJournalTitle>How We Can Help Journalists
+    <HelpJournalTitle><TransparentBg />How We Can Help Journalists
     </HelpJournalTitle>
     <HelpJournalDescription>
     Our team of IT specialists guarantees to furnish you with current, dependable information 
@@ -249,7 +250,7 @@ const Inquiry = () => {
     </RequestRight>
     </RequestCall>
 
-    <ExpertTitle>Our Experts In The Media</ExpertTitle>
+    <ExpertTitle><TransparentBg />Our Experts In The Media</ExpertTitle>
     <ExpertText>Our professionals frequently contribute articles to our blog as well as prominent IT platforms 
     like CIO.com, InformationWeek.com, Medgadget.com, Arpost.com, and others.
     </ExpertText>
@@ -273,7 +274,7 @@ const Inquiry = () => {
     </ExpertsInfo>
     <SeeMoreButton>Sell All Experts</SeeMoreButton>
 
-    <TrustWorthy>What Makes us Trustworthy</TrustWorthy>
+    <TrustWorthy><TransparentBg />What Makes us Trustworthy</TrustWorthy>
     <TrustTitle>Sepnoty a renowned authority in the field of IT, offering consulting and software development services across industries. Our proficiency is underscored by:</TrustTitle>
     <TrustDescription>
     <TrustDescriptionItems>Over2000 success stories spanning diverse domains including data analytics, big data, IoT, information security, and mobile and web development.
@@ -298,14 +299,14 @@ const Inquiry = () => {
         <Image src="./images/PhP.svg" alt="Php" />
         <Img src="./images/Symfony-logo.svg" alt="Symfony" />
       </ImgContainer>
-      <TechTopicsTitle>What Makes us Trustworthy</TechTopicsTitle>
+      <TechTopicsTitle><TransparentBg />Our Tech Topics</TechTopicsTitle>
       <TechTopics>TechTopics</TechTopics>
       <TechTopicsCon>
       {TechDetails.map((eachItem) => (
         <TechCard key={eachItem.uniqueNo} details={eachItem} />
       ))}
       </TechTopicsCon>
-      <TrustWorthy>What Makes us Trustworthy</TrustWorthy>
+      <TrustWorthy><TransparentBg />What Makes us Trustworthy</TrustWorthy>
       <TrustWorthyText>
       Sepnoty is a global IT consulting and software development company with experience in multiple industries, including healthcare, retail, manufacturing, banking, and telecoms. Key domains of our expertise are AI, big data, IoT, information security, mobile and web development, blockchain, collaboration and knowledge management, and more.
       <br /><br />
@@ -320,7 +321,7 @@ Our experts are always open to sharing their knowledge with reporters, bloggers,
         <Image src="./images/PhP.svg" alt="Php" />
         <Img src="./images/Symfony-logo.svg" alt="Symfony" />
       </ImgContainer>
-      <TrustWorthy>Our Experts in Media</TrustWorthy>
+      <TrustWorthy><TransparentBg />Our Experts in Media</TrustWorthy>
       <TrustWorthyText>If you require technical or industry-specific information for your article or wish to interview one of our experts, we invite you to peruse 
       the list of our consultants below and reach out to a suitable individual. Alternatively, you can contact our team directly, and they will 
       assist you in connecting with the most relevant expert.
