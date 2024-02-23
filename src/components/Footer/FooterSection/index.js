@@ -29,6 +29,7 @@ import {
   Sections,
   FollowUsContainer,
   Copyright,
+  ServiceCon,
 } from "./styled";
 
 const followUsElements = [
@@ -73,7 +74,9 @@ class FooterSection extends Component {
               </div>
               <SepnotyDescription>
                 We're happy to speak to businesses at any stage of their journey
-                <SepnotyDescription1>-no query too big or small.</SepnotyDescription1> 
+                <SepnotyDescription1>
+                  -no query too big or small.
+                </SepnotyDescription1>
               </SepnotyDescription>
             </LogoContainer>
             <FollowUsContainer1>
@@ -96,13 +99,13 @@ class FooterSection extends Component {
                 <EmailMsg>*we hate spam as much as you do</EmailMsg>
               </div>
             </div>
-          <ServiceContact>
-              <div1>
+            <ServiceContact>
+              <ServiceCon>
                 <ContactHeading>Services</ContactHeading>
                 <ServiceItems>Web Application Development</ServiceItems>
                 <ServiceItems>Customer Software Development </ServiceItems>
                 <ServiceItems>Web Development</ServiceItems>
-              </div1>
+              </ServiceCon>
               <div>
                 <ContactHeading>Contact Us</ContactHeading>
                 <ServiceItems>Call us</ServiceItems>
