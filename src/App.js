@@ -7,6 +7,7 @@ import Blog from "./components/BlogPage/Blogs/Blog";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
+import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
 
 //import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 
@@ -15,7 +16,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
-        <Blog />
+        <Inquiry />
         <Switch>
           <Route path="/" exact>
             <AboutUs />
