@@ -24,47 +24,53 @@ import {
   SectionContainer,
 } from "./styled";
 
-const BlogSection = () => (
-  <BlogContainer>
-    <SubContainer>
-      <Blog>
-        <Heading>Blog</Heading>
-        <Description>
-          "Unveiling the secrets of Effective UI Design: Elevate Your User
-          Experience by reading our Blogs!"
-        </Description>
-        <BlogImg src={blog} alt="blog" />
-      </Blog>
-      <SectionContainer>
-        <Insight>Insights & news</Insight>
-        <Border />
+const BlogSection = (props) => {
+  const { closeOtherSections } = props;
+
+  const handleLinkClick = () => {
+    closeOtherSections();
+  };
+  return (
+    <BlogContainer>
+      <SubContainer>
+        <Blog>
+          <Heading>Blog</Heading>
+          <Description>
+            "Unveiling the secrets of Effective UI Design: Elevate Your User
+            Experience by reading our Blogs!"
+          </Description>
+          <BlogImg src={blog} alt="blog" />
+        </Blog>
+        <SectionContainer>
+          <Insight>Insights & news</Insight>
+          <Border />
           <Link to="/Blog/ThoughtLeadership">
-            <Item>Thought Leadership</Item>
+            <Item onClick={handleLinkClick}>Thought Leadership</Item>
           </Link>
           <Link to="/Blog/News">
-            <Item>News</Item>
+            <Item onClick={handleLinkClick}>News</Item>
           </Link>
           <Link to="/Blog/PressInquires">
-            <Item>Press Inquires</Item>
+            <Item onClick={handleLinkClick}>Press Inquires</Item>
           </Link>
           <Link to="/Blog/Article">
-            <Item>Articles</Item>
+            <Item onClick={handleLinkClick}>Articles</Item>
           </Link>
-        {/* <Route exact path="/blog/ThoughtLeadership"  component={BlogTought} />
+          {/* <Route exact path="/blog/ThoughtLeadership"  component={BlogTought} />
         <Route exact path="/blog/News"  component={BlogNews} />
         <Route exact path="/blog/PressInquires"  component={Inquiry} />
         <Route exact path="/blog/Article"  component={BlogArticles} /> */}
-      </SectionContainer>
-    </SubContainer>
-    <BreakLine />
-    <SearchSuggestionContainer>
-      <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
-      <SearchContainer>
-        <Input type="search" placeholder="Search" />
-        <SearchIcon src={search} alt="search" />
-      </SearchContainer>
-    </SearchSuggestionContainer>
-  </BlogContainer>
-);
-
+        </SectionContainer>
+      </SubContainer>
+      <BreakLine />
+      <SearchSuggestionContainer>
+        <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
+        <SearchContainer>
+          <Input type="search" placeholder="Search" />
+          <SearchIcon src={search} alt="search" />
+        </SearchContainer>
+      </SearchSuggestionContainer>
+    </BlogContainer>
+  );
+};
 export default BlogSection;

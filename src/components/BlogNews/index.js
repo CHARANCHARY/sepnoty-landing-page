@@ -28,11 +28,6 @@ import {
 import AboutUs from "../../pages/AboutUs.js";
 
 const BlogSection = (props) => {
-  const { closeOtherSections } = props;
-
-  const handleLinkClick = () => {
-    closeOtherSections();
-  };
   return (
     <>
       <BlogContainer>

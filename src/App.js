@@ -1,17 +1,19 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+/* import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 // import Blog from "./components/BlogPage/Blogs/Blog";
-import BlogSection from "./pages/BlogSection/index"
+import BlogSection from "./pages/BlogSection/index";
 import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
 // import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
-import BlogTought from "./components/BlogThought/BlogSection/Blogs"
+import BlogTought from "./components/BlogThought/BlogSection/Blogs";
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
-import BlogArticles from "./components/BlogArticles/BlogSection/Blogs"
-import Inquiry from "./components/PressInquires/WholeMerge/Inquiry"
+import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
+import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
+import Collaboration from "./components/ResourceCenter/Collabaration";
+
 import CostHome from "./AllForms/UpperSection"
 
 const App = () => {
@@ -21,23 +23,28 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+
           <Route exact path="/getproposal" component={CostHome} /> 
           <Route exact path="/Services" component={Services} />
-          <Route exact path="/Blog" component={BlogSection} />
-          <Route exact path="/careeropportunities" component={CareerOpportunities} />
+          <Route exact path="/blog" component={BlogSection} />
+          <Route
+            exact
+            path="/careeropportunities"
+            component={CareerOpportunities}
+          />
           <Route exact path="/resourcecenter" component={ResourceCenter} />
-          <Route exact path="/Blog/ThoughtLeadership"  component={BlogTought} />
-          <Route exact path="/Blog/News"  component={BlogNews} />
-          <Route exact path="/Blog/PressInquires"  component={Inquiry} />
-          <Route exact path="/Blog/Article"  component={BlogArticles} />
+          <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
+          <Route exact path="/blog/News" component={BlogNews} />
+          <Route exact path="/blog/PressInquires" component={Inquiry} />
+          <Route exact path="/blog/Article" component={BlogArticles} />
+
         </Switch>
       </Router>
     </>
   );
 };
 
-export default App;
-
+export default App; */
 
 /* import HeaderSection from "./components/Header/Intro";
 import Header from "./components/Header/Navbar";
@@ -73,3 +80,60 @@ import FooterSection from "./components/Footer/FooterSection"; */
   );
 }
  */
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  useLocation,
+} from "react-router-dom";
+
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import BlogSection from "./pages/BlogSection/index";
+import CareerOpportunities from "./pages/CareerOpportunities";
+import ResourceCenter from "./pages/ResourceCenter";
+import Navbar from "./components/Navbar/Navbar";
+import BlogTought from "./components/BlogThought/BlogSection/Blogs";
+import BlogNews from "./components/BlogNews/BlogSection/Blogs";
+import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
+import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
+
+const App = () => {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <AppRoutes />
+      </Router>
+    </>
+  );
+};
+
+const AppRoutes = () => {
+  const location = useLocation();
+
+  return (
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/Services" component={Services} />
+      <Route exact path="/blog" component={BlogSection} />
+      <Route
+        exact
+        path="/careeropportunities"
+        component={CareerOpportunities}
+      />
+      <Route exact path="/resourcecenter" component={ResourceCenter} />
+      <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
+      <Route exact path="/blog/News" component={BlogNews} />
+      <Route exact path="/blog/PressInquires" component={Inquiry} />
+      <Route exact path="/blog/Article" component={BlogArticles} />
+      <Route path="*">
+        {/* If no route matches, redirect to home */}
+        <Home />
+      </Route>
+    </Switch>
+  );
+};
+
+export default App;
