@@ -85,7 +85,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-  useLocation,
+  // useLocation,
 } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -98,6 +98,8 @@ import BlogTought from "./components/BlogThought/BlogSection/Blogs";
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
 import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
 import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
+import CostHome from "./AllForms/UpperSection"
+
 
 const App = () => {
   return (
@@ -111,7 +113,7 @@ const App = () => {
 };
 
 const AppRoutes = () => {
-  const location = useLocation();
+  // const location = useLocation();
 
   return (
     <Switch>
@@ -123,6 +125,7 @@ const AppRoutes = () => {
         path="/careeropportunities"
         component={CareerOpportunities}
       />
+      <Route exact path="/getproposal" component={CostHome} /> 
       <Route exact path="/resourcecenter" component={ResourceCenter} />
       <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
       <Route exact path="/blog/News" component={BlogNews} />
