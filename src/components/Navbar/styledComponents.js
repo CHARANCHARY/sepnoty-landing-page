@@ -46,33 +46,32 @@ export const ServiceCon = styled.div`
 
 export const BlogCon = styled.div`
   display: block;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
-  top: 110%;
+  top: 10;
   border-radius: 10px;
-  right: -625%;
+  right: 0;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 `;
 
 export const CareerCon = styled.div`
   display: block;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
-  top: 110%;
+  top: 10;
   border-radius: 10px;
-  transform: translateX(-50%);
-  left: -78%;
+  left: 0;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 `;
 export const ResourceCon = styled.div`
   display: block;
-  position: absolute;
+  position: fixed;
   background-color: #f9f9f9;
-  top: 110%;
+  top: 10;
   border-radius: 10px;
-  right: -103%;
+  right: 0;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 `;

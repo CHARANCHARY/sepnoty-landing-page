@@ -78,7 +78,6 @@ const Navbar = () => {
   }, [isAboutUsOpen, isServiceOpen, isCareerOpen, isBlogOpen, isResourceOpen]);
 
   const toggleAboutUs = (e) => {
-    e.stopPropagation();
     closeOtherSections();
     setAboutUsOpen(!isAboutUsOpen);
   };
@@ -176,6 +175,7 @@ const Navbar = () => {
                 "Blog"
               )}
             </li>
+
             {isBlogOpen && (
               <BlogCon>
                 <BlogSection closeOtherSections={closeOtherSections} />
