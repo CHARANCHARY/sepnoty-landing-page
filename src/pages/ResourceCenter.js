@@ -4,6 +4,7 @@ import BlogNews from '../components/BlogNews/BlogSection/Blogs'
 const ResourceCenter = () => {
   return (
    <BlogNews />
+   
   )
 }
 

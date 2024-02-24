@@ -1,5 +1,6 @@
 import resource from "./Images/resource.svg";
 import search from "./Images/search.svg";
+import {Link} from "react-router-dom";
 
 import {
   ResourceCenterContainer,
@@ -37,7 +38,9 @@ const ResourceCenterSection = () => (
         <ResourcesContainer>
           <ResourceItem>Analytics and Reporting</ResourceItem>
           <ResourceItem>Content Recommendations</ResourceItem>
-          <ResourceItem>Collaboration and Community Features</ResourceItem>
+          <Link to="/resource-center/collaboration-and-community-features">
+            <ResourceItem>Collaboration and Community Features</ResourceItem>
+          </Link>
           <ResourceItem> Technical Aricles and Blogs</ResourceItem>
           <ResourceItem>Video Tutorials</ResourceItem>
           <br />

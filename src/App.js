@@ -46,6 +46,8 @@ import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
 import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
 import CostHome from "./AllForms/UpperSection"
 
+import Collaboration from "./components/ResourceCenter/Collabaration"
+
 // import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
 
 const App = () => {
@@ -67,21 +69,15 @@ const AppRoutes = () => {
       <Route exact path="/" component={Home} />
       <Route exact path="/Services" component={Services} />
       <Route exact path="/blog" component={BlogSection} />
-      <Route
-        exact
-        path="/careeropportunities"
-        component={CareerOpportunities}
-      />
+      <Route exact path="/careeropportunities" component={CareerOpportunities} />
       <Route exact path="/getproposal" component={CostHome} /> 
-      <Route exact path="/resourcecenter" component={ResourceCenter} />
+      <Route exact path="/resource-center" component={ResourceCenter} />
       <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
       <Route exact path="/blog/News" component={BlogNews} />
       <Route exact path="/blog/PressInquires" component={Inquiry} />
       <Route exact path="/blog/Article" component={BlogArticles} />
-      <Route path="*">
-        {/* If no route matches, redirect to home */}
-        <Home />
-      </Route>
+      <Route path="*" component={Home} />
+      <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
     </Switch>
   );
 };
