@@ -57,7 +57,7 @@ const cardList = [
       "Internet of Things(IoT) has emerged as a game-changer, it has transformed industries, improved efficiency, and changed the way.",
   },
 ];
-const ContentRecommendationSection = () => {
+const ContentRecommendation = () => {
   return (
     <>
       <Container>
@@ -111,4 +111,4 @@ const ContentRecommendationSection = () => {
   );
 };
 
-export default ContentRecommendationSection;
+export default ContentRecommendation;

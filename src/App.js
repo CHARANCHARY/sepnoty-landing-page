@@ -48,7 +48,9 @@ import CostHome from "./AllForms/UpperSection"
 
 import Collaboration from "./components/ResourceCenter/Collabaration"
 
-// import ContentRecommendation from "./components/ContentRecommendation/ContentRecommendationSection";
+import ContentRecommendation from "./components/ResourceCenter/ContentRecommendationSection";
+
+import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs"
 
 const App = () => {
   return (
@@ -76,8 +78,11 @@ const AppRoutes = () => {
       <Route exact path="/blog/News" component={BlogNews} />
       <Route exact path="/blog/PressInquires" component={Inquiry} />
       <Route exact path="/blog/Article" component={BlogArticles} />
-      <Route path="*" component={Home} />
+      {/* <Route path="*" component={Home} /> */}
       <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
+      <Route exact path="/resource-center/content-recommendations" component={ContentRecommendation} />
+      <Route exact path="/resource-center/technical-articles-and-blogs" component={TechnicalArticals} />
+
     </Switch>
   );
 };
