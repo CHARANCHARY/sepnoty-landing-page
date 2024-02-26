@@ -37,11 +37,15 @@ const ResourceCenterSection = () => (
         <Border />
         <ResourcesContainer>
           <ResourceItem>Analytics and Reporting</ResourceItem>
-          <ResourceItem>Content Recommendations</ResourceItem>
+          <Link to="/resource-center/content-recommendations">
+              <ResourceItem>Content Recommendations</ResourceItem>
+          </Link>
           <Link to="/resource-center/collaboration-and-community-features">
             <ResourceItem>Collaboration and Community Features</ResourceItem>
           </Link>
+          <Link to="/resource-center/technical-articles-and-blogs">
           <ResourceItem> Technical Aricles and Blogs</ResourceItem>
+          </Link>
           <ResourceItem>Video Tutorials</ResourceItem>
           <br />
           <ResourceItem>Learning Paths and Roadmaps</ResourceItem>
