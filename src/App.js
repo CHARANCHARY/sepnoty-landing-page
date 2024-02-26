@@ -52,12 +52,14 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs"
 
+
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
         <AppRoutes />
+        
       </Router>
     </>
   );

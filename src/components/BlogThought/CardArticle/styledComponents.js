@@ -6,8 +6,8 @@ import styled from "styled-components";
  border:0.5px solid white;
  background-color:rgba(217, 217, 217, 1);
  border-radius:7px;
- width:400px;
- height:400px;
+ width:30%;
+ height:auto;
  margin:20px;
  `;
  export const ArticleImg=styled.img`
