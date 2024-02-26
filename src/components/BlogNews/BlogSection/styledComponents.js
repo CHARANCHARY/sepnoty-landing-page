@@ -4,6 +4,7 @@ export const BlogPage=styled.div`
 color:white;
 padding:40px;
 background-color:rgba(12, 17, 31, 1);
+padding-top:60px;
 `;
 export const BlogTitle=styled.h2`
 font-size:25px;
@@ -22,7 +23,7 @@ padding:5px 10px 5px 10px;
 text-align:center;
 background-color:white;
 color:black;
-width:130px;
+width:auto;
 height:auto;
 margin:5px;
 border-radius:7px;

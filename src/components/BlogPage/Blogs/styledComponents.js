@@ -12,19 +12,20 @@ margin-top:25px;
 `;
 export const BlogName=styled.h1`
 color:white;
-font-size:30px;
+
 `;
 export const FiltersContainer=styled.div`
 display:flex;
 flex-wrap:wrap;
+
 `;
 export const FilterBoxCon=styled.div`
-padding:5px 10px 5px 10px;
+padding:3px 5px 3px 3px;
 text-align:center;
 background-color:white;
 color:black;
-width:auto;
 height:auto;
+width:auto;
 margin:5px;
 border-radius:5px;
 font-size:10px;
