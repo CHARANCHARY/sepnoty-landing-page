@@ -112,7 +112,8 @@ display:flex;
 flex-direction:row;
 justify-content:center;
 align-item:center;
-gap:20px;
+width:900px;
+gap:10px;
 `
 const Heading = Styled.h1`
 font-family: Inter;
@@ -128,8 +129,8 @@ const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
 padding:10px;
-height:300px;
-width:300px;
+height:450px;
+width:60vh;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
 gap:20px;

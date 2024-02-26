@@ -93,10 +93,10 @@ export const ListHeading = styled.h1`
 
 export const Small = styled.img`
   position: absolute;
-  left: 5.5%;
+  left: 7.5%;
   height: 10%;
   width: 5%;
-  top: 78%;
+  top: 75%;
   z-index: 0;
 `;
 
@@ -113,7 +113,7 @@ export const Small2 = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  bottom: -126%;
+  bottom: -133%;
   z-index: 0;
 `;
 export const LabelCont = styled.div`
@@ -200,10 +200,11 @@ export const ChatContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #c1cae7;
-  width: 33%;
+  width: 35%;
+  height: 460px;
   border-radius: 5px;
   margin-right: 20%;
-  padding: 0px;
+  padding: 10px;
 `;
 export const PersonContainer = styled.div`
   display: flex;
@@ -303,6 +304,7 @@ export const TextArea = styled.div`
   padding: 0px 10px 0px 20px;
   margin: 0px;
   display: flex;
+  height:30px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -344,6 +346,7 @@ export const YourMsg = styled.p`
 export const MessageHeaderCon = styled.div`
   display: flex;
   flex-direction: row;
+  height: 50px;
   background-color: #2b459b;
   border-radius: 7px;
   justify-content: space-between;
@@ -353,6 +356,7 @@ export const MessageHeaderCon = styled.div`
 export const MessHeading = styled.h1`
   font-size: 18px;
   color: #ffffff;
+  margin:15px;
   font-weight: 600;
 `;
 
@@ -437,6 +441,7 @@ export const ConnectButton = styled(Button)`
   margin-left: 5%;
   align-self: flex-start;
   font-size: 11px;
+  font-weight:600;
 `;
 export const ProfileList = styled.ul`
   list-style-type: none;

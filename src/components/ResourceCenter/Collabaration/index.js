@@ -29,7 +29,7 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  Button,
+  // Button,
   Span,
   Small,
   ListHeading,
@@ -114,23 +114,22 @@ const Collaboration = () => {
     <>
       <Container>
         <Header>
-          Blog &gt; <Span>ContentRecommendation</Span>
+        Resource Center &gt; <Span>Collaboration and Community Features</Span>
         </Header>
         <Resource>Resources</Resource>
         <ContentRecomContainer>
-          <ConRecHead>Content Recommendation</ConRecHead>
+          <ConRecHead>Collaboration and Community Features</ConRecHead>
           <ConRecDesc>
-            "Discover your next favourite read with our personalized
-            Recommendations!"
+          "Connect, collaborate, conquer! Discover our community-driven features."
           </ConRecDesc>
           <Rectangle3 src={rectangle3} alt="not-found" />
           <Rectangle2 src={rectangle2} alt="not-found" />
           <Rectangle1 src={rectangle1} alt="not-found" />
-          <Button>Get Content</Button>
+          {/* <Button>Get Content</Button> */}
         </ContentRecomContainer>
         <DailyContents>
           <Small src={small} alt="not-found" />
-          <ListHeading>Your Daily Contents</ListHeading>
+          <ListHeading>Discussion Forums</ListHeading>
           <ViewsContainer>
             <LabelCont>
               <Topics>Topics</Topics>

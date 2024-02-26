@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const TechCardContainer = styled.div`
   margin-right: 30px;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 150px;
   height: 100px;
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 10px;
   margin-bottom: 20px;
   position: relative;
 
@@ -31,5 +31,5 @@ export const TechImg = styled.img`
 export const TechAbout = styled.p`
   color: white;
   font-size: 10px;
-  margin-top: 15px;
+  margin-top: 18px;
 `;
