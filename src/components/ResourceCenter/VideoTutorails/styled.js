@@ -40,23 +40,6 @@ export const DeepHeading = styled.h2`
 
 `;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -211,7 +194,7 @@ export const Small = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  top: 74%;
+  top: 78%;
   z-index: 0;
 `;
 
@@ -224,6 +207,6 @@ export const Small1 = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  top: 183%;
+  top: 187%;
   bottom: 20%;
 `;
