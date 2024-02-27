@@ -132,3 +132,13 @@ export const Items = styled.div`
   dispaly: flex;
   flex-direction: column;
 `;
+export const Item = styled.p`
+  font-weight: 500;
+  font-size: 14px;
+  color: #263238;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  &:hover {
+    color: #2b459b;
+  }
+`;

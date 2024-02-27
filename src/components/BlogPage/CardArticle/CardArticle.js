@@ -1,5 +1,5 @@
 import {
-    ArticleConatiner,
+    ArticleContainer,
     ArticleImg,
     ArticleTextConatiner,
     ArticleTitle,
@@ -15,7 +15,7 @@ const CardArticle = (props) => {
     const {title,name,imgUrl,description,time} = details;
   
     return (
-      <ArticleConatiner>
+      <ArticleContainer>
       <ArticleImg src={imgUrl} alt="not found">
       </ArticleImg>
       <ArticleTextConatiner>
@@ -29,7 +29,7 @@ const CardArticle = (props) => {
        
        <Arrow>&rarr;</Arrow>
       </ArticleTextConatiner>
-      </ArticleConatiner>
+      </ArticleContainer>
     );
   };
 

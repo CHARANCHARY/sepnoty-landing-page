@@ -69,6 +69,7 @@ const ServiceSection = () => {
             <Link to="/Services/AI-Technology-services-integration">
               <ServiceItem>AI Technology services integration</ServiceItem>
             </Link>
+
           </ServiceItemContainer>
         </Items>
       </ServiceItemsContainer>

@@ -99,12 +99,14 @@ import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blo
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
 
+
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
         <AppRoutes />
+        
       </Router>
     </>
   );
@@ -129,6 +131,8 @@ const AppRoutes = () => {
       <Route exact path="/blog/News" component={BlogNews} />
       <Route exact path="/blog/PressInquires" component={Inquiry} />
       <Route exact path="/blog/Article" component={BlogArticles} />
+      <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
+      <Route exact path="/services/software-development" component={SoftDevPage} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

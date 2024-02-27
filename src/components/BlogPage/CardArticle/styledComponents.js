@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
- export const ArticleConatiner=styled.div`
+ export const ArticleContainer=styled.div`
  display:flex;
  flex-direction:column;
  border:0.5px solid white;
  background-color:rgba(217, 217, 217, 1);
  border-radius:7px;
- width:400px;
+ width:25%;
  height:400px;
  margin:20px;
  `;
@@ -19,6 +19,7 @@ flex-direction:column;
 padding:7px;
 background-color:rgba(217, 217, 217, 1);
 border-radius:7px;
+height:auto;
 `;
 
 export const ArticleTitle=styled.h3`

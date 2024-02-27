@@ -1,3 +1,4 @@
+import FooterSection from "../../Footer/FooterSection";
 import AllArticles from "../Articles/AllArticles";
 import FilterBox from "./FilterBox";
 import { BlogPage,
@@ -66,8 +67,8 @@ const FilterNamesList=[
 const BlogArticles = () => {
   return (
     <BlogPage>
-    <BlogTitle>BLog &gt;Articles</BlogTitle>
-    <br />
+    <BlogTitle>Blog &gt;Articles</BlogTitle>
+    
     <BlogName>Blog</BlogName>
     <br />
     <FiltersContainer>
@@ -77,6 +78,7 @@ const BlogArticles = () => {
     </FiltersContainer>
     <br />
     <AllArticles />
+    <FooterSection />
     </BlogPage>
     
   )
