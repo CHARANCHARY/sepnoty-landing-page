@@ -104,6 +104,8 @@ import AiTechnologyServices from "./components/Services/AiTechnologyServices";
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
+import VideoTutorials from "./components/ResourceCenter/VideoTutorails";
+import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index";
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 
@@ -162,6 +164,43 @@ const AppRoutes = () => {
         exact
         path="/resource-center/technical-articles-and-blogs"
         component={TechnicalArticals}
+      />
+
+      <Route
+        exact
+        path="/services/digital-marketing"
+        component={DigitalMarketing}
+      />
+      <Route
+        exact
+        path="/services/software-development"
+        component={SoftDevPage}
+      />
+      {/* <Route path="*" component={Home} /> */}
+      <Route
+        exact
+        path="/resource-center/collaboration-and-community-features"
+        component={Collaboration}
+      />
+      <Route
+        exact
+        path="/resource-center/content-recommendations"
+        component={ContentRecommendation}
+      />
+      <Route
+        exact
+        path="/resource-center/technical-articles-and-blogs"
+        component={TechnicalArticals}
+      />
+      <Route
+        exact
+        path="/resource-center/video-tutorials"
+        component={VideoTutorials}
+      />
+      <Route
+        exact
+        path="/resource-center/learning-paths-and-roadmaps"
+        component={LearningRoadsMaps}
       />
       <Route
         exact
