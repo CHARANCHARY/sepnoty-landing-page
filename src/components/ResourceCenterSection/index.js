@@ -46,9 +46,12 @@ const ResourceCenterSection = () => (
           <Link to="/resource-center/technical-articles-and-blogs">
           <ResourceItem> Technical Aricles and Blogs</ResourceItem>
           </Link>
-          <ResourceItem>Video Tutorials</ResourceItem>
-          <br />
+          <Link to="/resource-center/video-tutorials">
+              <ResourceItem>Video Tutorials</ResourceItem>
+          </Link>
+          <Link to="/resource-center/learning-paths-and-roadmaps">
           <ResourceItem>Learning Paths and Roadmaps</ResourceItem>
+          </Link>
           <ResourceItem>Events and Workshop</ResourceItem>
           <ResourceItem>Career Resources and Job Listings</ResourceItem>
           <ResourceItem>Case Studies and Success Stories</ResourceItem>

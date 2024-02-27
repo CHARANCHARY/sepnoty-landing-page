@@ -99,6 +99,8 @@ import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blo
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import VideoTutorials from "./components/ResourceCenter/VideoTutorails"
+import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index"
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 
@@ -108,7 +110,6 @@ const App = () => {
       <Router>
         <Navbar />
         <AppRoutes />
-        
       </Router>
     </>
   );
@@ -122,11 +123,7 @@ const AppRoutes = () => {
       <Route exact path="/" component={Home} />
       <Route exact path="/Services" component={Services} />
       <Route exact path="/blog" component={BlogSection} />
-      <Route
-        exact
-        path="/careeropportunities"
-        component={CareerOpportunities}
-      />
+      <Route exact path="/careeropportunities" component={CareerOpportunities} />
       <Route exact path="/getproposal" component={CostHome} />
       <Route exact path="/resource-center" component={ResourceCenter} />
       <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
@@ -136,26 +133,12 @@ const AppRoutes = () => {
       <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
       <Route exact path="/services/software-development" component={SoftDevPage} />
       {/* <Route path="*" component={Home} /> */}
-      <Route
-        exact
-        path="/resource-center/collaboration-and-community-features"
-        component={Collaboration}
-      />
-      <Route
-        exact
-        path="/resource-center/content-recommendations"
-        component={ContentRecommendation}
-      />
-      <Route
-        exact
-        path="/resource-center/technical-articles-and-blogs"
-        component={TechnicalArticals}
-      />
-      <Route
-        exact
-        path="/services/digital-marketing"
-        component={DigitalMarketing}
-      />
+      <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
+      <Route exact path="/resource-center/content-recommendations" component={ContentRecommendation} />
+      <Route exact path="/resource-center/technical-articles-and-blogs" component={TechnicalArticals} />
+      <Route exact path="/resource-center/video-tutorials" component={VideoTutorials} />
+      <Route exact path="/resource-center/learning-paths-and-roadmaps" component={LearningRoadsMaps} />
+      <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
       <Route exact path="/services/video-editing" component={VideoEditing} />
     </Switch>
   );
