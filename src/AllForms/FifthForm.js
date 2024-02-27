@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import FifthPage from '../AllForms/';
+import FifthPage from './SoftwareSection/Website/FifthPage';
 
 class SecondForm extends Component {
   continue = e => {
