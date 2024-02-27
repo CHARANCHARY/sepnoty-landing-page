@@ -54,6 +54,7 @@ import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blo
 
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 
 const App = () => {
   return (
@@ -84,6 +85,7 @@ const AppRoutes = () => {
       <Route exact path="/blog/Article" component={BlogArticles} />
       <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
       <Route exact path="/services/software-development" component={SoftDevPage} />
+      <Route exact path="/services/web-development" component={WebDevPage} />
       {/* <Route path="*" component={Home} /> */}
       <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
       <Route exact path="/resource-center/content-recommendations" component={ContentRecommendation} />

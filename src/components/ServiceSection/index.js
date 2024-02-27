@@ -40,7 +40,10 @@ const ServiceSection = () => {
           <Link to="/services/software-development">
           <ServiceItem>Software development</ServiceItem>
           </Link>
-            <ServiceItem>Web development</ServiceItem>
+          <Link to="/services/web-development">
+          <ServiceItem>Web development</ServiceItem>
+          </Link>
+            
             <ServiceItem>Mobile App development</ServiceItem>
             <ServiceItem> UI/UX Design</ServiceItem>
             <Link to="/services/digital-marketing">
