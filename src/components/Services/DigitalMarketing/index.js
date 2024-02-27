@@ -7,7 +7,7 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  Button,
+  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -22,8 +22,8 @@ import {
   ServiceItemDetails,
   ServiceItemCon,
   ConatctCon,
-  ContactItem,
-  Container,
+  // ContactItem,
+  // Container,
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";

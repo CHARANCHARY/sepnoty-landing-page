@@ -170,7 +170,7 @@ const SoftDevPage = () => {
     <Slider />
     </SectionSix>
     <InqContact />
-    
+    <FooterSection />
     </SoftDevSection>
     
   )
