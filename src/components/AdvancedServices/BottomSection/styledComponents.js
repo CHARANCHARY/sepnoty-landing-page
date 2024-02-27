@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const ServiceCards=styled.div`
 display:flex;
 flex-direction:row;
+flex-wrap:wrap;
 justify-content:space-around;
 @media screen and (max-width:455px){
     justify-content:space-between;

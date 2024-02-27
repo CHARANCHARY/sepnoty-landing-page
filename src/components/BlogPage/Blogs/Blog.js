@@ -66,6 +66,7 @@ const FilterNamesList=[
 const Blog = () => {
   return (
     <BlogPage>
+    <br />
     <BlogTitle>BLog &gt; Thought Leadership</BlogTitle>
     <br />
     <BlogName>Blog</BlogName>

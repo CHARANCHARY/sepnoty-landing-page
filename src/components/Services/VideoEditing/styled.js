@@ -88,7 +88,45 @@ export const ListHeading = styled.h1`
   font-size: 20px;
   color: #2b459b;
   font-weight: bold;
+
   margin-left: -25px;
+
+  margin-bottom: 30px;
+  margin-top: 1em;
+`;
+
+export const Small = styled.img`
+  position: absolute;
+  left: 5%;
+  height: 8%;
+  width: 4%;
+  top: 86%;
+  z-index: 0;
+`;
+
+export const Small1 = styled.img`
+  position: absolute;
+  left: 5%;
+  height: 8%;
+  width: 4%;
+  top: 144%;
+  z-index: 0;
+`;
+export const Small2 = styled.img`
+  position: absolute;
+  left: 5%;
+  height: 8%;
+  width: 4%;
+  top: 201.5%;
+  z-index: 0;
+`;
+export const Small3 = styled.img`
+  position: absolute;
+  left: 5.5%;
+  height: 8%;
+  width: 4%;
+  top: 197%;
+  z-index: 0;
 `;
 
 export const ServiceItemCon = styled.div`
@@ -103,12 +141,12 @@ export const ServiceItemDesc = styled.p`
   color: #ffffff;
   width: 80%;
   text-align: justify;
+
   padding-left: 2.5%;
 `;
 
 export const ImageCon = styled.div`
   width: 16%;
-
   display: flex;
   flex-direction: column;
 `;

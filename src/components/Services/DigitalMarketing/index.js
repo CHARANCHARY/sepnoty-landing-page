@@ -7,10 +7,14 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  Button,
+  // Button,
   Span,
   DigitalContainer,
   ListHeading,
+  Small,
+  Small1,
+  Small2,
+  Small3,
   ServiceItemDesc,
   ImageCon,
   ServiceItemImg,
@@ -22,11 +26,17 @@ import {
   Container,
   PatternCon,
   SmallPattern,
+
+  // ContactItem,
+  // Container,
+  ain,
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
+
+import small from "../Images/Rectanglesmall.svg";
 
 import DM from "../Images/Digitalmarketing.svg";
 import SEO from "../Images/seo.svg";
@@ -60,6 +70,9 @@ const DigitalMarketing = () => {
               <ListHeading>Services of DigitalMarketing</ListHeading>
             </PatternCon>
 
+            <Small src={small} alt="not-found" />
+            <ListHeading>Services of DigitalMarketing</ListHeading>
+
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Digital marketing services encompass a wide range of strategies
@@ -77,6 +90,9 @@ const DigitalMarketing = () => {
               <SmallPattern></SmallPattern>
               <ListHeading>Search Engine Optimization (SEO)</ListHeading>
             </PatternCon>
+
+            <Small1 src={small} alt="not-found" />
+            <ListHeading>Search Engine Optimization (SEO)</ListHeading>
 
             <ServiceItemDetails>
               <ServiceItemDesc>
@@ -96,6 +112,9 @@ const DigitalMarketing = () => {
               <SmallPattern></SmallPattern>
               <ListHeading>Social Media Marketing (SMM)</ListHeading>
             </PatternCon>
+            <Small2 src={small} alt="not-found" />
+            <ListHeading>Social Media Marketing (SMM)</ListHeading>
+
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Promoting brands, products, or services on social media
@@ -114,6 +133,8 @@ const DigitalMarketing = () => {
               <SmallPattern></SmallPattern>
               <ListHeading>Content Marketing</ListHeading>
             </PatternCon>
+            <Small3 src={small} alt="not-found" />
+            <ListHeading>Content Marketing</ListHeading>
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Creating and distributing valuable, relevant, and consistent
