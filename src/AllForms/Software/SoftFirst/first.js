@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import Styled from "styled-components"
+import React,{Component} from "react"
 import { Stepper } from 'react-form-stepper';
-import './App.css';
-import FifthPage from '../AllForms/';
 
-class SecondForm extends Component {
+import Styled from "styled-components";
+
+import FirstPage from "./FirstPage";
+
+class FirstSoftwarePage extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep(); 
@@ -14,33 +15,15 @@ class SecondForm extends Component {
     //   this.props.nextStep();
     // }
   }
-  back = e => {
-    e.preventDefault();
-    this.props.prevStep();
-  };
 
   render() {
-    // const { 
-    //   firstname, 
-    //   lastname, 
-    //   email, 
-    //   phone, 
-    //   handleChange, 
-    //   validateFirstName,
-    //   validateLastName,
-    //   isErrorFirstName,
-    //   isErrorLastName,
-    //   errorMessageFirstName,
-    //   errorMessageLastName
-    // } = this.props;
-
-    return (
+    return(
       <Main className='form'>
         <form>
 
           <Stepper
             steps={[{ label: '' }, { label: '' }, { label: '' },{ label: '' },{label:""},{label:""},{label:""},{label:""}]}
-            activeStep={4}
+            activeStep={0}
             styleConfig={{
               activeBgColor: '#2B459B',
               activeTextColor: '#fff',
@@ -54,20 +37,20 @@ class SecondForm extends Component {
             stepClassName={'stepper__step'}
           />
 
-          <FifthPage />
+          <FirstPage />
             
+          
 
         </form>
         <Button style={{textAlign: 'center'}}>
-          <button className='buttons__button buttons__button--back' onClick={this.back}>Back</button>
             <button className='buttons__button buttons__button--next' onClick={this.continue}>Next</button>
           </Button>
       </Main>
+      
     )
   }
 }
-
-export default SecondForm;
+export default FirstSoftwarePage;
 
 const Button = Styled.div`
 display:flex;

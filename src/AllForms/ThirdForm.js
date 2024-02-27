@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import ThirdPage from './Forms/ThirdPage';
+import ThirdPage from '../AllForms/';
 
 class YourIndustry extends Component {
   continue = e => {
