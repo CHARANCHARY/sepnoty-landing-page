@@ -38,6 +38,7 @@ import {
   CropBg,
   EditerBg,
   ClipBg,
+  FocusBg,
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";
@@ -183,7 +184,9 @@ const VideoEditing = () => {
             </CardContainer>
             <CardContainer>
               <TitleContainer>
-                <Logo src={focus} alt="focus" />
+                <FocusBg>
+                  <Logo src={focus} alt="focus" />
+                </FocusBg>
                 <CardTitle>Video Stabilization</CardTitle>
               </TitleContainer>
               <CardTitle>
@@ -209,7 +212,7 @@ const VideoEditing = () => {
             </CardContainer>
             <CardContainer>
               <TitleContainer>
-                <Logo src={grading} alt="trim" />
+                <Logo src={grading} alt="grading" />
                 <CardTitle>Video Color grading</CardTitle>
               </TitleContainer>
               <CardTitle>

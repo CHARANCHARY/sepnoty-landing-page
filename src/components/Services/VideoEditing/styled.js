@@ -289,7 +289,7 @@ export const FocusBg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 255, 0, 0.3);
+  background-color: rgba(89, 235, 255, 0.5);
   padding: 3px 7px 3px 7px;
   margin-right: 10px;
   border-radius: 3px;
