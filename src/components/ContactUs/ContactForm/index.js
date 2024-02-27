@@ -3,6 +3,13 @@ import { FiUploadCloud } from "react-icons/fi";
 
 import axios from "axios";
 import ContactSection from "../ContactSection";
+
+import call from "../Images/call.svg";
+import whatsapp from "../Images/whatsapp.svg";
+import livechat from "../Images/livechat.svg";
+import email from "../Images/email.svg";
+import GIT from "../Images/get-in-touch.svg";
+
 import {
   ContactContainer,
   ContactQueryContainer,
@@ -29,23 +36,23 @@ import {
 const contactListItem = [
   {
     id: 1,
-    contactIcon: "./images/call.svg",
+    contactIcon: call,
     contactType: "Call Us",
   },
   {
     id: 2,
-    contactIcon: "./images/livechat.svg",
+    contactIcon: livechat,
     contactType: "Live Chat",
   },
   {
     id: 3,
-    contactIcon: "./images/whatsapp.svg",
+    contactIcon: whatsapp,
     contactType: "Whats app",
   },
   {
     id: 4,
-    contactIcon: "./images/email.svg",
-    contactType: "Email",
+    contactIcon: email,
+    contactType: "email",
   },
 ];
 
@@ -141,7 +148,7 @@ const ContactForm = () => {
           </ContactDescription>
           <ContactTextarea
             rows="9"
-            cols="85"
+            cols="75"
             placeholder="How can we help you?"
           ></ContactTextarea>
         </div>
@@ -231,7 +238,7 @@ const ContactForm = () => {
           ))}
         </ContactContactUsItems>
         <ContactImageContainer>
-          <ContactImage src="./images/get-in-touch.svg" alt="contactUs" />
+          <ContactImage src={GIT} alt="contactUs" />
         </ContactImageContainer>
       </ContactContactssContainer>
     </ContactContainer>

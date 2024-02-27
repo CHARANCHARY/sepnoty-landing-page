@@ -92,13 +92,12 @@ import BlogTought from "./components/BlogThought/BlogSection/Blogs";
 import BlogNews from "./components/BlogNews/BlogSection/Blogs";
 import BlogArticles from "./components/BlogArticles/BlogSection/Blogs";
 import Inquiry from "./components/PressInquires/WholeMerge/Inquiry";
-import CostHome from "./AllForms/UpperSection"
-
-import Collaboration from "./components/ResourceCenter/Collabaration"
-
+import CostHome from "./AllForms/UpperSection";
+import Collaboration from "./components/ResourceCenter/Collabaration";
 import ContentRecommendation from "./components/ResourceCenter/ContentRecommendationSection";
-
-import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs"
+import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
+import DigitalMarketing from "./components/Services/DigitalMarketing";
+import VideoEditing from "./components/Services/VideoEditing";
 
 const App = () => {
   return (
@@ -119,18 +118,39 @@ const AppRoutes = () => {
       <Route exact path="/" component={Home} />
       <Route exact path="/Services" component={Services} />
       <Route exact path="/blog" component={BlogSection} />
-      <Route exact path="/careeropportunities" component={CareerOpportunities} />
-      <Route exact path="/getproposal" component={CostHome} /> 
+      <Route
+        exact
+        path="/careeropportunities"
+        component={CareerOpportunities}
+      />
+      <Route exact path="/getproposal" component={CostHome} />
       <Route exact path="/resource-center" component={ResourceCenter} />
       <Route exact path="/blog/ThoughtLeadership" component={BlogTought} />
       <Route exact path="/blog/News" component={BlogNews} />
       <Route exact path="/blog/PressInquires" component={Inquiry} />
       <Route exact path="/blog/Article" component={BlogArticles} />
       {/* <Route path="*" component={Home} /> */}
-      <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
-      <Route exact path="/resource-center/content-recommendations" component={ContentRecommendation} />
-      <Route exact path="/resource-center/technical-articles-and-blogs" component={TechnicalArticals} />
-
+      <Route
+        exact
+        path="/resource-center/collaboration-and-community-features"
+        component={Collaboration}
+      />
+      <Route
+        exact
+        path="/resource-center/content-recommendations"
+        component={ContentRecommendation}
+      />
+      <Route
+        exact
+        path="/resource-center/technical-articles-and-blogs"
+        component={TechnicalArticals}
+      />
+      <Route
+        exact
+        path="/services/digital-marketing"
+        component={DigitalMarketing}
+      />
+      <Route exact path="/services/video-editing" component={VideoEditing} />
     </Switch>
   );
 };

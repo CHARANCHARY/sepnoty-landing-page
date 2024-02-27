@@ -4,9 +4,9 @@ export const ContactContainer = styled.div`
   display: flex;
   border-radius: 30px;
   align-self: center;
-  padding: 20px 10px 20px 0px;
+
   background-color: rgba(0, 0, 0, 0.25);
-  width: 60%;
+  width: 65%;
   margin-left: 30px;
 `;
 
@@ -15,7 +15,7 @@ export const ContactQueryContainer = styled.div`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: rgba(250, 250, 250, 1);
-  width: 70%;
+  width: 72%;
   @media screen and (max-width: 455px) {
     width: 800px;
     border-radius: 10px;
@@ -40,6 +40,7 @@ export const ContactDescription = styled.p`
   font-size: 13px;
   color: #4e4e4e;
   margin: 10px;
+  width: 80%;
 `;
 
 export const ContactTextarea = styled.textarea`
@@ -142,7 +143,7 @@ export const ContactButton = styled.button`
   background-color: #5368a3;
   border-width: 0px;
   border-radius: 50px;
-  color: #121415;
+  color: #ffffff;
   text-align: center;
   padding: 10px 60px 10px 60px;
   font-size: 14px;
@@ -156,10 +157,10 @@ export const ContactUsHeading = styled.h1`
 
 export const ContactContactssContainer = styled.div`
   background-image: linear-gradient(#244887, #69aca5, #b7bac0);
-  padding: 30px 0px 0px 30px;
+  padding: 30px 10px 0px 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 30%;
+  width: 28%;
   @media screen and (max-width: 455px) {
     display: none;
   }
@@ -195,6 +196,7 @@ export const ContactImage = styled.img`
   height: 250px;
   width: 200px;
   align-self: flex-end;
+  margin-right: 20px;
 `;
 
 export const ContactUsInput = styled.input`

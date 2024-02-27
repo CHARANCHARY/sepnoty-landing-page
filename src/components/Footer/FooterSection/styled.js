@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import layout from "../../Footer/FooterSection/Images/layout.svg";
+import layout from "../Images/layout.svg";
 
 export const GlobalStyle = createGlobalStyle` 
  *{ box-sizing: border-box;

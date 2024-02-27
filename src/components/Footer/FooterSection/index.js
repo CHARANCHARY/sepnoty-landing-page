@@ -2,7 +2,11 @@ import { Component } from "react";
 
 import FollowUsElements from "../FollowUsElements";
 import { ThemeProvider } from "styled-components";
-// import layout from "../../Footer/FooterSection/Images/layout.svg";
+import behance from "../Images/behance.svg";
+import facebook from "../Images/facebook.svg";
+import figma from "../Images/figma.svg";
+import instagram from "../Images/instagram.svg";
+import twitter from "../Images/twitter.svg";
 
 import {
   GlobalStyle,
@@ -35,27 +39,27 @@ import {
 const followUsElements = [
   {
     id: 1,
-    logoSrc: "./images/Path.svg",
+    logoSrc: facebook,
     logoName: "facebook",
   },
   {
     id: 2,
-    logoSrc: "./images/003-twitter.svg",
+    logoSrc: twitter,
     logoName: "twitter",
   },
   {
     id: 3,
-    logoSrc: "./images/004-instagram.svg",
+    logoSrc: instagram,
     logoName: "instagram",
   },
   {
     id: 4,
-    logoSrc: "./images/Group 171.svg",
+    logoSrc: behance,
     logoName: "behance",
   },
   {
     id: 5,
-    logoSrc: "./images/Group.svg",
+    logoSrc: figma,
     logoName: "figma",
   },
 ];
