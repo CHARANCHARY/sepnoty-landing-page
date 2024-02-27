@@ -102,6 +102,8 @@ import VideoEditing from "./components/Services/VideoEditing";
 import AiTechnologyServices from "./components/Services/AiTechnologyServices";
 
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import CyberSecurity from "./components/Services/CyberSecurity";
+import CloudService from "./components/Services/CloudServiceIntegration";
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 
@@ -172,6 +174,16 @@ const AppRoutes = () => {
         exact
         path="/Services/AI-Technology-services-integration"
         component={AiTechnologyServices}
+      />
+      <Route
+        exact
+        path="/Services/Cyber-Security-Provision"
+        component={CyberSecurity}
+      />
+      <Route
+        exact
+        path="/Services/Cloud-services-integration"
+        component={CloudService}
       />
     </Switch>
   );
