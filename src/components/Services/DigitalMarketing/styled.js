@@ -88,8 +88,7 @@ export const ListHeading = styled.h1`
   font-size: 20px;
   color: #2b459b;
   font-weight: bold;
-  margin-left: 5.8em;
-  margin-top: 1em;
+  margin-left: -20px;
 `;
 
 export const Small = styled.img`
@@ -127,7 +126,7 @@ export const Small3 = styled.img`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 5.5%;
+  margin-top: 5.9%;
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
@@ -153,6 +152,7 @@ export const ServiceItemButton = styled.button`
   color: #2b459b;
   font-size: 15px;
   border-radius: 7px;
+  padding: 3px 0 3px 0;
 `;
 
 export const ServiceItemDetails = styled.div`
@@ -168,4 +168,19 @@ export const ConatctCon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const SmallPattern = styled.div`
+  background-color: rgba(129, 150, 219, 0.25);
+  height: 50px;
+  width: 60px;
+  border-radius: 3px;
+`;
+
+export const PatternCon = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 5em;
 `;

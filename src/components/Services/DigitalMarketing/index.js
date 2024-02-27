@@ -11,10 +11,6 @@ import {
   Span,
   DigitalContainer,
   ListHeading,
-  Small,
-  Small1,
-  Small2,
-  Small3,
   ServiceItemDesc,
   ImageCon,
   ServiceItemImg,
@@ -24,12 +20,14 @@ import {
   ConatctCon,
   ContactItem,
   Container,
+  PatternCon,
+  SmallPattern,
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import small from "../Images/Rectanglesmall.svg";
+
 import DM from "../Images/Digitalmarketing.svg";
 import SEO from "../Images/seo.svg";
 import SMM from "../Images/smm.svg";
@@ -57,8 +55,11 @@ const DigitalMarketing = () => {
         </ContentRecomContainer>
         <ServiceItemCon>
           <div>
-            <Small src={small} alt="not-found" />
-            <ListHeading>Services of DigitalMarketing</ListHeading>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Services of DigitalMarketing</ListHeading>
+            </PatternCon>
+
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Digital marketing services encompass a wide range of strategies
@@ -72,8 +73,11 @@ const DigitalMarketing = () => {
             </ServiceItemDetails>
           </div>
           <div>
-            <Small1 src={small} alt="not-found" />
-            <ListHeading>Search Engine Optimization (SEO)</ListHeading>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Search Engine Optimization (SEO)</ListHeading>
+            </PatternCon>
+
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Optimizing a website to rank higher in search engine results
@@ -88,8 +92,10 @@ const DigitalMarketing = () => {
             </ServiceItemDetails>
           </div>
           <div>
-            <Small2 src={small} alt="not-found" />
-            <ListHeading>Social Media Marketing (SMM)</ListHeading>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Social Media Marketing (SMM)</ListHeading>
+            </PatternCon>
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Promoting brands, products, or services on social media
@@ -104,8 +110,10 @@ const DigitalMarketing = () => {
             </ServiceItemDetails>
           </div>
           <div>
-            <Small3 src={small} alt="not-found" />
-            <ListHeading>Content Marketing</ListHeading>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Content Marketing</ListHeading>
+            </PatternCon>
             <ServiceItemDetails>
               <ServiceItemDesc>
                 Creating and distributing valuable, relevant, and consistent

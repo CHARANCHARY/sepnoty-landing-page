@@ -98,6 +98,7 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
+import AiTechnologyServices from "./components/Services/AiTechnologyServices";
 
 const App = () => {
   return (
@@ -151,6 +152,11 @@ const AppRoutes = () => {
         component={DigitalMarketing}
       />
       <Route exact path="/services/video-editing" component={VideoEditing} />
+      <Route
+        exact
+        path="/Services/AI-Technology-services-integration"
+        component={AiTechnologyServices}
+      />
     </Switch>
   );
 };

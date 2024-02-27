@@ -7,14 +7,9 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  Button,
   Span,
   DigitalContainer,
   ListHeading,
-  Small,
-  Small1,
-  Small2,
-  Small3,
   ServiceItemDesc,
   ImageCon,
   ServiceItemImg,
@@ -39,12 +34,14 @@ import {
   EditerBg,
   ClipBg,
   FocusBg,
+  GradingBg,
+  SmallPattern,
+  PatternCon,
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import small from "../Images/Rectanglesmall.svg";
 import trim from "../Images/trim.svg";
 import CV from "../Images/CorporateVideo.svg";
 import SM from "../Images/socialmedia.svg";
@@ -83,8 +80,11 @@ const VideoEditing = () => {
         <ServiceItemCon>
           <ItemCon>
             <ServiceItemDetails>
-              <Small src={small} alt="not-found" />
-              <ListHeading>Corporate Videos</ListHeading>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Corporate Videos</ListHeading>
+              </PatternCon>
+
               <ServiceItemDesc>
                 Leverage videos to attract eyeballs and get visible among your
                 targeted audience. Our expertise lies in making and editing
@@ -99,10 +99,12 @@ const VideoEditing = () => {
             </ServiceItemDetails>
           </ItemCon>
           <ItemCon>
-            <Small1 src={small} alt="not-found" />
-
             <ServiceItemDetails>
-              <ListHeading>Social Media Videos</ListHeading>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Social Media Videos</ListHeading>
+              </PatternCon>
+
               <ServiceItemDesc>
                 Social media platforms prefer videos over text content or visual
                 images, so why don’t you take the advantage? We edit videos,
@@ -117,10 +119,12 @@ const VideoEditing = () => {
             </ServiceItemDetails>
           </ItemCon>
           <ItemCon>
-            <Small2 src={small} alt="not-found" />
-
             <ServiceItemDetails>
-              <ListHeading>Outsource Youtube Editing services</ListHeading>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Outsource Youtube Editing services</ListHeading>
+              </PatternCon>
+
               <ServiceItemDesc>
                 By removing background clutter, blurring unwanted elements, and
                 adding transitions and effects, we can create professional video
@@ -212,7 +216,9 @@ const VideoEditing = () => {
             </CardContainer>
             <CardContainer>
               <TitleContainer>
-                <Logo src={grading} alt="grading" />
+                <GradingBg>
+                  <Logo src={grading} alt="grading" />
+                </GradingBg>
                 <CardTitle>Video Color grading</CardTitle>
               </TitleContainer>
               <CardTitle>
@@ -225,8 +231,10 @@ const VideoEditing = () => {
           </CardHolder>
         </PostCon>
         <ToolsCon>
-          <Small src={small} alt="not-found" />
-          <ListHeading>Our expertise in software design tools</ListHeading>
+          <PatternCon>
+            <SmallPattern></SmallPattern>
+            <ListHeading>Our expertise in software design tools</ListHeading>
+          </PatternCon>
           <ToolsCardCon>
             <ToolsCard>
               <TitleContainer>
