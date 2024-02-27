@@ -93,7 +93,6 @@ const Navbar = () => {
   };
 
   const toggleBlog = (e) => {
-    e.stopPropagation();
     closeOtherSections();
 
     setBlogOpen(!isBlogOpen);
@@ -116,7 +115,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <LogoImg src={logo} alt="not found" ></LogoImg>
+        <LogoImg src={logo} alt="not found"></LogoImg>
         {/*
         if large screen ma xa bhane Mobile add huxa
         if mobile screen ma xa bhane nav-links-mobile add huxa

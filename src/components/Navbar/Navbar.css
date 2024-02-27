@@ -21,7 +21,8 @@ li {
   background-color: #0c111f;
   position: fixed;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
+  top: 0;
   /*box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
 }
 

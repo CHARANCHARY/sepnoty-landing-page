@@ -53,6 +53,10 @@ export const ServiceItem = styled.p`
   color: #263238;
   margin-bottom: 15px;
   margin-right: 30px;
+
+  &:hover {
+    color: #2b459b;
+  }
 `;
 
 export const BreakLine = styled.hr`
