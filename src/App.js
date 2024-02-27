@@ -98,7 +98,12 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
+
+import AiTechnologyServices from "./components/Services/AiTechnologyServices";
+
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import CyberSecurity from "./components/Services/CyberSecurity";
+import CloudService from "./components/Services/CloudServiceIntegration";
 import VideoTutorials from "./components/ResourceCenter/VideoTutorails"
 import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index"
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
@@ -130,8 +135,16 @@ const AppRoutes = () => {
       <Route exact path="/blog/News" component={BlogNews} />
       <Route exact path="/blog/PressInquires" component={Inquiry} />
       <Route exact path="/blog/Article" component={BlogArticles} />
-      <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
-      <Route exact path="/services/software-development" component={SoftDevPage} />
+      <Route
+        exact
+        path="/services/digital-marketing"
+        component={DigitalMarketing}
+      />
+      <Route
+        exact
+        path="/services/software-development"
+        component={SoftDevPage}
+      />
       {/* <Route path="*" component={Home} /> */}
       <Route exact path="/resource-center/collaboration-and-community-features" component={Collaboration} />
       <Route exact path="/resource-center/content-recommendations" component={ContentRecommendation} />
@@ -140,6 +153,22 @@ const AppRoutes = () => {
       <Route exact path="/resource-center/learning-paths-and-roadmaps" component={LearningRoadsMaps} />
       <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
       <Route exact path="/services/video-editing" component={VideoEditing} />
+
+      <Route
+        exact
+        path="/Services/AI-Technology-services-integration"
+        component={AiTechnologyServices}
+      />
+      <Route
+        exact
+        path="/Services/Cyber-Security-Provision"
+        component={CyberSecurity}
+      />
+      <Route
+        exact
+        path="/Services/Cloud-services-integration"
+        component={CloudService}
+      />
     </Switch>
   );
 };

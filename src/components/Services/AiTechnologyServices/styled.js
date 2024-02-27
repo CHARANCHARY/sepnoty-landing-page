@@ -5,7 +5,7 @@ export const DigitalContainer = styled.div`
   flex-direction: column;
   background-color: #0c111f;
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 `;
 export const Header = styled.h1`
   font-size: 15px;
@@ -41,8 +41,9 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width: 50%;
-  padding: 20px 30px 30px 0px;
+  width: 70%;
+  padding: 30px 30px 30px 0px;
+  text-align: justify;
 `;
 
 export const Button = styled.button`
@@ -92,7 +93,7 @@ export const ListHeading = styled.h1`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 10%;
+  margin-top: 35px;
 `;
 
 export const ItemCon = styled.div``;
@@ -103,12 +104,12 @@ export const ServiceItemDesc = styled.p`
   color: #ffffff;
   width: 80%;
   text-align: justify;
-
   padding-left: 2.5%;
 `;
 
 export const ImageCon = styled.div`
   width: 16%;
+
   display: flex;
   flex-direction: column;
 `;
@@ -281,6 +282,7 @@ export const SmallPattern = styled.div`
   background-color: rgba(129, 150, 219, 0.25);
   height: 50px;
   width: 60px;
+  border-radius: 3px;
 `;
 
 export const PatternCon = styled.div`
