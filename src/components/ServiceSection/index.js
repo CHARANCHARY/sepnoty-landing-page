@@ -1,6 +1,6 @@
 import service from "./images/service.svg";
 import search from "./images/search.svg";
-
+import {Link} from "react-router-dom";
 import {
   ServiceContainer,
   ServiceItemsContainer,
@@ -37,11 +37,15 @@ const ServiceSection = () => {
           <Services>Services</Services>
           <Border />
           <ServiceItemContainer>
-            <ServiceItem>Software development</ServiceItem>
+          <Link to="/services/software-development">
+          <ServiceItem>Software development</ServiceItem>
+          </Link>
             <ServiceItem>Web development</ServiceItem>
             <ServiceItem>Mobile App development</ServiceItem>
             <ServiceItem> UI/UX Design</ServiceItem>
-            <ServiceItem>Digital Marketing</ServiceItem>
+            <Link to="/services/digital-marketing">
+          <ServiceItem>Digital Marketing</ServiceItem>
+          </Link>
             <ServiceItem>Graphic Designing</ServiceItem>
             <ServiceItem>Video Editing</ServiceItem>
             <ServiceItem>Cloud services integration</ServiceItem>
