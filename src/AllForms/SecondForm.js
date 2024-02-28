@@ -5,7 +5,7 @@ import './App.css';
 
 import SecondPage from "./Website/SecondPage"
 
-import SecondPage from "./SoftwareSection/Website/SecondPage"
+
 
 
 // import MaterialTable from 'material-table';

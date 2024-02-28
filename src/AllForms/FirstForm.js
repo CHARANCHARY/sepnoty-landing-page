@@ -5,7 +5,7 @@ import './App.css';
 
 import FirstStep from "./Website/FirstPage"
 
-import FirstStep from "./SoftwareSection/Website/FirstPage"
+
 
 
 class PersonalDetails extends Component {

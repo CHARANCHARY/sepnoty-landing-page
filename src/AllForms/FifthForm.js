@@ -5,7 +5,6 @@ import './App.css';
 
 import FifthPage from './Website/FifthPage';
 
-import FifthPage from './SoftwareSection/Website/FifthPage';
 
 class SecondForm extends Component {
   continue = e => {

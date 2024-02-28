@@ -6,7 +6,7 @@ import './App.css';
 
 import SevenPage from './Website/SevenPage';
 
-import SevenPage from './SoftwareSection/Website/SevenPage';
+
 
 
 // import MaterialTable from 'material-table';

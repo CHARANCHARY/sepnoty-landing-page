@@ -5,7 +5,6 @@ import './App.css';
 
 import ThirdPage from '../AllForms/Website/ThirdPage';
 
-import ThirdPage from './SoftwareSection/Website/ThirdPage';
 
 
 class YourIndustry extends Component {

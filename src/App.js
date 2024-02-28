@@ -82,10 +82,11 @@ import FooterSection from "./components/Footer/FooterSection"; */
 
  */
 
- */
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
+import AboutUs from "./components/AboutUsSection/AboutUs/index"
 import Services from "./pages/Services";
 import BlogSection from "./pages/BlogSection/index";
 import CareerOpportunities from "./pages/CareerOpportunities";
@@ -101,7 +102,7 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
-
+import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
 import AiTechnologyServices from "./components/Services/AiTechnologyServices";
 
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
@@ -132,7 +133,9 @@ const AppRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
+      
       <Route exact path="/Services" component={Services} />
+      <Route exact path="/AboutUs" component={Services}/>
       <Route exact path="/blog" component={BlogSection} />
       <Route
         exact
@@ -160,6 +163,8 @@ const AppRoutes = () => {
       <Route exact path="/services/web-development" component={WebDevPage} />
       <Route exact path="/services/mobile-app-development" component={MobDevPage} />
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
+
+      <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/>
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

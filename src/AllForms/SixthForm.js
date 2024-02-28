@@ -5,7 +5,7 @@ import './App.css';
 
 import SixthPage from "./Website/SixthPage"
 
-import SixthPage from "./SoftwareSection/Website/SevenPage"
+
 
 
 // import MaterialTable from 'material-table';

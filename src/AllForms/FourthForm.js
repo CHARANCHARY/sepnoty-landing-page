@@ -5,8 +5,6 @@ import './App.css';
 
 import FourthPage from './Website/FourthPage';
 
-import FourthPage from './SoftwareSection/Website/FourthPage';
-
 class Summary extends Component {
   continue = e => {
     e.preventDefault();
