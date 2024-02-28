@@ -31,7 +31,7 @@ import rectangle3 from "../Images/Rectangle3.svg";
 import CV from "../Images/CorporateVideo.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
-
+import data from "../Images/data.svg";
 const DataPreparation = () => {
   return (
     <>
@@ -67,7 +67,7 @@ const DataPreparation = () => {
                 this stage.
               </ServiceItemDesc>
               <ImageCon>
-                <ServiceItemImg src={protection} alt="cv" />
+                <ServiceItemImg src={data} alt="data" />
                 <ServiceItemButton>Learn More</ServiceItemButton>
               </ImageCon>
             </ServiceItemDetails>

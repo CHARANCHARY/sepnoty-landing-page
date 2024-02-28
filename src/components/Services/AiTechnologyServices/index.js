@@ -75,7 +75,6 @@ const AiTechnologyServices = () => {
             </ServiceItemDetails>
           </ItemCon>
           <Link to="/Services/AITechnologyServices/DataPreparation">
-            {" "}
             <ItemCon>
               <ServiceItemDetails>
                 <PatternCon>

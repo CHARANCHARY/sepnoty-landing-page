@@ -81,7 +81,7 @@ export const ListHeading = styled.h1`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 1px;
+  margin-top: 20px;
 `;
 
 export const ItemCon = styled.div``;
