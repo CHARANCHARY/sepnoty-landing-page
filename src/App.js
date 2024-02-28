@@ -123,6 +123,8 @@ const App = () => {
     <>
       <Router>
         <Navbar />
+
+        
         <AppRoutes />
        
       </Router>
