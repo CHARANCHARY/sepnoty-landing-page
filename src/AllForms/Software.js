@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import FirstForm from "./Software/SoftFirst/first";
 import SecondForm from './Software/SoftSecond/Second';
 import YourIndustry from './ThirdForm';
@@ -9,7 +10,7 @@ import FormNo5 from './SixthForm';
 import SeventhForm from './SeventhForm';
 import CourseDetails1 from './EightthForm';
 import EightthPage from './Website/EightthPage';
-//Sample data
+
 const coursesData = [
   {
     id: 1,

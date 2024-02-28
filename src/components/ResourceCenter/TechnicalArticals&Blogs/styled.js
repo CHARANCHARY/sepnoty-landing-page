@@ -14,7 +14,6 @@ justify-content:center;
 export const DeepLearnFrame = styled.div`
 display: flex;
 flex-direction: column;
-width:40%;
 margin-left:0%;
 
 `;
@@ -24,22 +23,20 @@ display: flex;
 flex-direction: column;
 background-color: #645E5E;
 background-size: cover;
-width: 76vh;
-
-
+border-radius: 8px;
 
 
 `;
 export const DeepLearnImage = styled.img`
-  height: auto;
-  width: 76vh;
-  height: 300px;
+  height: 45vh;
   
 
 
 `;
 export const DeepHeading = styled.h2`
   font-height:20px;
+  text-align:center;
+  padding:20px;
 
 `;
 
@@ -115,15 +112,15 @@ export const Button = styled.button`
   width:220px;
   outline: none;
   font-size: 20px;
-  font-weight:bold;
+  font-weight: 600;
   margin-top: 20px;
 `;
 
 export const ListHeading = styled.h1`
-  font-size: 18px;
+  font-size: 20px;
   color: #2b459b;
   font-weight: bold;
-  margin-left: 2.7em;
+  margin-left: 2.2em;
 `;
 
 export const SearchHeading = styled.p`
@@ -214,7 +211,7 @@ export const Small = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  top: 78%;
+  top: 74%;
   z-index: 0;
 `;
 
@@ -227,6 +224,6 @@ export const Small1 = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  top: 150%;
-  z-index: 0;
+  top: 183%;
+  bottom: 20%;
 `;

@@ -22,17 +22,17 @@ export const AdServiceLeftHeading = styled.h2`
   color: white;
   margin-top: 20px;
   @media screen and (max-width: 768px) {
-    display:none;
+    display: none;
   }
 `;
 export const AdServiceLeftHeading1 = styled.h2`
   font-size: 25px;
   color: white;
   margin-top: 150px;
-  display:none;
+  display: none;
   @media screen and (max-width: 768px) {
-    display:inline;
-    width:300px;
+    display: inline;
+    width: 300px;
   }
 `;
 export const AdServiceLeftHeadingBlue = styled.span`
@@ -40,7 +40,7 @@ export const AdServiceLeftHeadingBlue = styled.span`
   font-size: 30px;
   @media screen and (max-width: 768px) {
     font-size: 25px;
-    width:300px;
+    width: 300px;
   }
 `;
 export const AdServiceLeftDescript = styled.p`
@@ -55,14 +55,14 @@ export const AdServiceLeftDescript = styled.p`
 export const AdServiceRightPart = styled.div`
   text-align: right;
   @media screen and (max-width: 455px) {
-    display:none;
+    display: none;
   }
 `;
 export const AdServiceRightPart1 = styled.div`
   text-align: right;
-  display:none;
+  display: none;
   @media screen and (max-width: 455px) {
-    display:flex;
+    display: flex;
   }
 `;
 export const AdServiceRightImg = styled.img`
@@ -73,7 +73,7 @@ export const AdServiceRightImg = styled.img`
   @media screen and (max-width: 455px) {
     width: 200px;
     height: 200px;
-    margin-left:-100px;
+    margin-left: -100px;
   }
 `;
 export const AdServDots = styled.img`
@@ -87,7 +87,6 @@ export const AdServDots = styled.img`
     width: 330px;
     height: 220px;
   }
-  
 `;
 export const AdServRightDots = styled.img`
   position: absolute;
@@ -97,6 +96,6 @@ export const AdServRightDots = styled.img`
   margin-top: 250px;
   height: 450px;
   @media screen and (max-width: 455px) {
-    display:none;
+    display: none;
   }
 `;

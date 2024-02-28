@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-
+import styled from "styled-components";
 import "./Navbar.css";
 
 // import { useHistory } from "react-router-dom";
@@ -93,7 +93,6 @@ const Navbar = () => {
   };
 
   const toggleBlog = (e) => {
-    e.stopPropagation();
     closeOtherSections();
 
     setBlogOpen(!isBlogOpen);
@@ -116,7 +115,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <LogoImg src={logo} alt="not found" ></LogoImg>
+        <LogoImg src={logo} alt="not found"></LogoImg>
         {/*
         if large screen ma xa bhane Mobile add huxa
         if mobile screen ma xa bhane nav-links-mobile add huxa
@@ -130,7 +129,7 @@ const Navbar = () => {
           }}
         >
           <DropdownContainer ref={aboutUsRef}>
-            <li onClick={toggleAboutUs}>
+            <ListComponent onClick={toggleAboutUs}>
               {isAboutUsOpen ? (
                 <>
                   AboutUs
@@ -139,7 +138,7 @@ const Navbar = () => {
               ) : (
                 "About us"
               )}
-            </li>
+            </ListComponent>
 
             {isAboutUsOpen && (
               <AboutCon>
@@ -148,7 +147,7 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={serviceRef}>
-            <li onClick={toggleService}>
+            <ListComponent class="list-item" onClick={toggleService}>
               {isServiceOpen ? (
                 <>
                   Services
@@ -157,7 +156,7 @@ const Navbar = () => {
               ) : (
                 "Services"
               )}
-            </li>
+            </ListComponent>
             {isServiceOpen && (
               <ServiceCon>
                 <ServiceSection />
@@ -165,7 +164,7 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={blogRef}>
-            <li onClick={toggleBlog}>
+            <ListComponent class="list-item" onClick={toggleBlog}>
               {isBlogOpen ? (
                 <>
                   Blog
@@ -174,7 +173,7 @@ const Navbar = () => {
               ) : (
                 "Blog"
               )}
-            </li>
+            </ListComponent>
 
             {isBlogOpen && (
               <BlogCon>
@@ -183,7 +182,7 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={careerRef}>
-            <li onClick={toggleCareer}>
+            <ListComponent class="list-item" onClick={toggleCareer}>
               {isCareerOpen ? (
                 <>
                   Career Opportunities
@@ -192,7 +191,7 @@ const Navbar = () => {
               ) : (
                 "Career Opportunities"
               )}
-            </li>
+            </ListComponent>
             {isCareerOpen && (
               <CareerCon>
                 <CareerOppurtunities />
@@ -200,7 +199,7 @@ const Navbar = () => {
             )}
           </DropdownContainer>
           <DropdownContainer ref={resourceRef}>
-            <li onClick={toggleResource}>
+            <ListComponent class="list-item" onClick={toggleResource}>
               {isResourceOpen ? (
                 <>
                   Resource Center
@@ -209,7 +208,7 @@ const Navbar = () => {
               ) : (
                 "Resource Center"
               )}
-            </li>
+            </ListComponent>
             {isResourceOpen && (
               <ResourceCon>
                 <ResourceCenterSection />
@@ -217,9 +216,9 @@ const Navbar = () => {
             )}
           </DropdownContainer>
 
-          <li>
+          <ListComponent class="list-item">
             <button className="contact-button">Contact Us</button>
-          </li>
+          </ListComponent>
         </ul>
         {/* <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}
@@ -261,3 +260,8 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+export const ListComponent = styled.li`
+list-style-type: none;
+`;

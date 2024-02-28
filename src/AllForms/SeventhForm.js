@@ -3,7 +3,11 @@ import { Stepper } from 'react-form-stepper';
 import Styled from "styled-components"
 import './App.css';
 // import SecondPage from "./Forms/SevenPage"
+
 import SevenPage from './Website/SevenPage';
+
+import SevenPage from './SoftwareSection/Website/SevenPage';
+
 
 // import MaterialTable from 'material-table';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';

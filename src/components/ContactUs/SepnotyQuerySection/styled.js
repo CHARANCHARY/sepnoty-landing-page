@@ -7,6 +7,7 @@ export const ContactContainer = styled.div`
   padding: 20px 10px 20px 0px;
   background-color: rgba(0, 0, 0, 0.25);
   width: 60%;
+  margin-left: 30px;
 `;
 
 export const ContactQueryContainer = styled.div`
@@ -14,11 +15,11 @@ export const ContactQueryContainer = styled.div`
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: rgba(250, 250, 250, 1);
-  width: 80%;
-  @media screen and (max-width:455px){
+  width: 75%;
+  @media screen and (max-width: 455px) {
     width: 800px;
-    border-radius:10px;
-    margin-left:-70px;
+    border-radius: 10px;
+    margin-left: -70px;
     padding: 20px 0px 20px 15px;
     margin-right: -90px;
   }
@@ -29,7 +30,7 @@ export const ContactHeading = styled.h1`
   color: rgba(61, 61, 61, 1);
   padding-right: 200px;
   margin: 10px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 16px;
     padding-right: 0px;
   }
@@ -55,9 +56,9 @@ export const ContactTextarea = styled.textarea`
     color: #8c8c8c;
     font-size: 13px;
   }
-  @media screen and (max-width:455px){
-    width:60%;
-    height:90px;
+  @media screen and (max-width: 455px) {
+    width: 60%;
+    height: 90px;
   }
 `;
 
@@ -104,7 +105,7 @@ export const SepnotyContact = styled.input`
     color: #4e4e4e;
     margin: 10px;
   }
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     & + label {
       font-size: 8px;
       color: #4e4e4e;
@@ -120,12 +121,11 @@ export const RequestSepnoty = styled.input`
     color: #4e4e4e;
     margin: 10px;
   }
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     & + label {
       font-size: 8px;
       color: #4e4e4e;
       margin: 0px 0px 0px 10px;
-      
     }
   }
 `;
@@ -156,13 +156,13 @@ export const ContactUsHeading = styled.h1`
 
 export const ContactContactssContainer = styled.div`
   background-image: linear-gradient(#244887, #69aca5, #b7bac0);
-  padding: 30px 30px 0px 0px;
+  padding: 30px 30px 0px 30px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  @media screen and (max-width:455px){
-    display:none;
+  width: 25%;
+  @media screen and (max-width: 455px) {
+    display: none;
   }
-  
 `;
 
 export const ContactContactUsItems = styled.ul`
@@ -172,8 +172,7 @@ export const ContactContactUsItems = styled.ul`
   padding: 0px;
   margin: 0px;
   color: #777777;
-  @media screen and (max-width:455px){
-    
+  @media screen and (max-width: 455px) {
   }
 `;
 
@@ -220,12 +219,11 @@ export const BottomCon = styled.div`
   padding: 30px;
   margin-bottom: 0px;
   width: 30%;
-  align-items:center;
-  @media screen and (max-width:455px){
+  align-items: center;
+  @media screen and (max-width: 455px) {
     width: 100%;
-    margin-top:-120px;
+    margin-top: -120px;
   }
-  
 `;
 
 export const BottomHeading = styled.h1`
@@ -243,7 +241,7 @@ export const BottomDesc = styled.p`
   line-height: 1.25em;
   margin-top: 20px;
   margin-bottom: 10px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 18px;
   }
 `;
@@ -263,17 +261,17 @@ export const Button = styled.button`
 export const Image = styled.img`
   height: 300px;
   width: 60%;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     height: 200px;
-  width: 60%;
+    width: 60%;
   }
 `;
 
 export const QueryContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color:rgba(12, 17, 31, 1);
-  @media screen and (max-width:455px){
+  background-color: rgba(12, 17, 31, 1);
+  @media screen and (max-width: 455px) {
     flex-direction: column;
   }
 `;

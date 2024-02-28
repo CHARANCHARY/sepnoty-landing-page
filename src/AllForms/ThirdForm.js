@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
+
 import ThirdPage from '../AllForms/Website/ThirdPage';
+
+import ThirdPage from './SoftwareSection/Website/ThirdPage';
+
 
 class YourIndustry extends Component {
   continue = e => {
@@ -69,6 +73,7 @@ class YourIndustry extends Component {
 }
 
 export default YourIndustry;
+
 const Button = Styled.div`
 display:flex;
 justify-content:end;

@@ -40,6 +40,7 @@ border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 font-size: 20px;
 padding: 10px;
+color: #ffffff;
 height:45px;
 `;
 

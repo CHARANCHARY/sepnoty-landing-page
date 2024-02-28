@@ -1,6 +1,8 @@
 import service from "./images/service.svg";
 import search from "./images/search.svg";
-import {Link} from "react-router-dom";
+
+import { Link } from "react-router-dom";
+
 import {
   ServiceContainer,
   ServiceItemsContainer,
@@ -37,20 +39,36 @@ const ServiceSection = () => {
           <Services>Services</Services>
           <Border />
           <ServiceItemContainer>
-          <Link to="/services/software-development">
-          <ServiceItem>Software development</ServiceItem>
-          </Link>
-            <ServiceItem>Web development</ServiceItem>
-            <ServiceItem>Mobile App development</ServiceItem>
-            <ServiceItem> UI/UX Design</ServiceItem>
-            <Link to="/services/digital-marketing">
-          <ServiceItem>Digital Marketing</ServiceItem>
-          </Link>
-            <ServiceItem>Graphic Designing</ServiceItem>
-            <ServiceItem>Video Editing</ServiceItem>
-            <ServiceItem>Cloud services integration</ServiceItem>
-            <ServiceItem>Cyber Security Provision</ServiceItem>
-            <ServiceItem>AI Technology services integration</ServiceItem>
+            <Link to="/Services/Software-Development">
+              <ServiceItem>Software development</ServiceItem>
+            </Link>
+            <Link to="/Services/Web-Development">
+              <ServiceItem>Web development</ServiceItem>
+            </Link>
+            <Link to="/Services/Mobile-App-Development">
+              <ServiceItem>Mobile App development</ServiceItem>
+            </Link>
+            <Link to="/services/uiux-design">
+              <ServiceItem> UI/UX Design</ServiceItem>
+            </Link>
+            <Link to="/Services/Digital-Marketing">
+              <ServiceItem>Digital Marketing</ServiceItem>
+            </Link>
+            <Link to="/Services/Graphic-Designing">
+              <ServiceItem>Graphic Designing</ServiceItem>
+            </Link>
+            <Link to="/Services/Video-Editing">
+              <ServiceItem>Video Editing</ServiceItem>
+            </Link>
+            <Link to="/Services/Cloud-services-integration">
+              <ServiceItem>Cloud services integration</ServiceItem>
+            </Link>
+            <Link to="/Services/Cyber-Security-Provision">
+              <ServiceItem>Cyber Security Provision</ServiceItem>
+            </Link>
+            <Link to="/Services/AI-Technology-services-integration">
+              <ServiceItem>AI Technology services integration</ServiceItem>
+            </Link>
           </ServiceItemContainer>
         </Items>
       </ServiceItemsContainer>

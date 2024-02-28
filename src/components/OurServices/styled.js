@@ -14,10 +14,10 @@ export const ImgContainer = styled.div`
   margin-left: 10%;
   width: 80%;
   margin-top: 10vh;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     width: 100%;
     margin-left: 0%;
-    height:20px;
+    height: 20px;
     margin-top: 5vh;
     margin-left: 1%;
   }
@@ -28,7 +28,7 @@ export const Image = styled.img`
   width: 30%;
   padding: 0px 30px 0px 30px;
   border-right: 1px solid #abaaaa;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     height: 20px;
     width: 55px;
     padding: 0px 10px 0px 10px;
@@ -53,10 +53,10 @@ export const Heading = styled.h1`
   font-weight: bold;
   margin-top: 40px;
   margin-bottom: 10px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 18px;
     margin-top: 10px;
-    margin-left:-30px;
+    margin-left: -30px;
     margin-bottom: 0px;
   }
 `;
@@ -69,13 +69,13 @@ export const Description = styled.p`
   padding-right: 30px;
   padding-top: 60px;
   line-height: 1.5em;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 15px;
     width: 320px;
     padding-right: 10px;
     padding-top: 30px;
-  line-height: 1.5em;
-  margin-left:-30px;
+    line-height: 1.5em;
+    margin-left: -30px;
   }
 `;
 
@@ -85,7 +85,7 @@ export const Pattern = styled.img`
   right: 0;
   z-index: 0;
   height: 50%;
-  width: 30%
+  width: 30%;
 `;
 
 export const CuateImage = styled.img`
@@ -95,8 +95,8 @@ export const CuateImage = styled.img`
   margin-top: 80px;
   margin-left: 200px;
   z-index: 1;
-  @media screen and (max-width:455px){
-    display:none;
+  @media screen and (max-width: 455px) {
+    display: none;
   }
 `;
 
@@ -106,12 +106,11 @@ export const CuateImage11 = styled.img`
   position: relative;
   margin-top: -150px;
   margin-left: auto;
-  display:none;
-  margin-right:-60px;
-  @media screen and (max-width:455px){
-    display:flex;
+  display: none;
+  margin-right: -60px;
+  @media screen and (max-width: 455px) {
+    display: flex;
   }
-
 `;
 
 export const PatternCon = styled.div`
