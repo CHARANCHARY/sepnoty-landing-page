@@ -113,6 +113,9 @@ import DataProtection from "./components/Services/DataProtection";
 import DataPreparation from "./components/Services/DataPreparation";
 //import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
+import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
+import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
 
 const App = () => {
   return (
@@ -154,6 +157,11 @@ const AppRoutes = () => {
         path="/services/software-development"
         component={SoftDevPage}
       />
+      <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
+      <Route exact path="/services/software-development" component={SoftDevPage} />
+      <Route exact path="/services/web-development" component={WebDevPage} />
+      <Route exact path="/services/mobile-app-development" component={MobDevPage} />
+      <Route exact path="/services/uiux-design" component={UiUxDesPage} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

@@ -68,6 +68,7 @@ import TechCard from '../TechCard/TechCard';
 import InqContact from '../../InquiryContact/InquiryContactSection';
 import ExpImg from '../assets/ExpImg.png';
 import ExpertCardDetail from '../ExpertDetailCard/ExpertDetailCard';
+import FooterSection from '../../Footer/FooterSection';
 const OurExpertsDetails=[
   {
     id:1,
@@ -332,6 +333,7 @@ Our experts are always open to sharing their knowledge with reporters, bloggers,
       ))}
       </ExpContainer>
       <InqContact />
+      <FooterSection />
     </InquirySection>
   )
 }
