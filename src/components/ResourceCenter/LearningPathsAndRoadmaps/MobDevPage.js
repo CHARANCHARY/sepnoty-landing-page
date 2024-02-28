@@ -43,7 +43,7 @@ const AppDetails=[
 const LearningRoadsMaps = () => {
   return (
     <MobSection>
-    <WebPageTitle>Services &gt; <WebSpan>Mobile App development</WebSpan></WebPageTitle>
+    <WebPageTitle>Resource centre &gt; <WebSpan>Learning Paths and Roadmaps</WebSpan></WebPageTitle>
     <WebHeading>Services</WebHeading>
     <MobSectionOne />
     <CapabilityHeading>App Development Capabilities</CapabilityHeading>
