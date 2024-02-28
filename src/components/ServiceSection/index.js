@@ -23,7 +23,12 @@ import {
   Items,
 } from "./styled";
 
-const ServiceSection = () => {
+const ServiceSection = (props) => {
+  const { closeOtherSections } = props;
+
+  const handleLinkClick = () => {
+    closeOtherSections();
+  };
   return (
     <ServiceContainer>
       <ServiceItemsContainer>
@@ -40,34 +45,50 @@ const ServiceSection = () => {
           <Border />
           <ServiceItemContainer>
             <Link to="/Services/Software-Development">
-              <ServiceItem>Software development</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Software development
+              </ServiceItem>
             </Link>
             <Link to="/Services/Web-Development">
-              <ServiceItem>Web development</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Web development
+              </ServiceItem>
             </Link>
             <Link to="/Services/Mobile-App-Development">
-              <ServiceItem>Mobile App development</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Mobile App development
+              </ServiceItem>
             </Link>
             <Link to="/services/uiux-design">
               <ServiceItem> UI/UX Design</ServiceItem>
             </Link>
             <Link to="/Services/Digital-Marketing">
-              <ServiceItem>Digital Marketing</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Digital Marketing
+              </ServiceItem>
             </Link>
             <Link to="/Services/Graphic-Designing">
-              <ServiceItem>Graphic Designing</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Graphic Designing
+              </ServiceItem>
             </Link>
             <Link to="/Services/Video-Editing">
-              <ServiceItem>Video Editing</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>Video Editing</ServiceItem>
             </Link>
             <Link to="/Services/Cloud-services-integration">
-              <ServiceItem>Cloud services integration</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Cloud services integration
+              </ServiceItem>
             </Link>
             <Link to="/Services/Cyber-Security-Provision">
-              <ServiceItem>Cyber Security Provision</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                Cyber Security Provision
+              </ServiceItem>
             </Link>
             <Link to="/Services/AI-Technology-services-integration">
-              <ServiceItem>AI Technology services integration</ServiceItem>
+              <ServiceItem onClick={handleLinkClick}>
+                AI Technology services integration
+              </ServiceItem>
             </Link>
           </ServiceItemContainer>
         </Items>

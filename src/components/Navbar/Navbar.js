@@ -159,7 +159,7 @@ const Navbar = () => {
             </ListComponent>
             {isServiceOpen && (
               <ServiceCon>
-                <ServiceSection />
+                <ServiceSection closeOtherSections={closeOtherSections} />
               </ServiceCon>
             )}
           </DropdownContainer>
@@ -261,7 +261,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-
 export const ListComponent = styled.li`
-list-style-type: none;
+  list-style-type: none;
 `;
