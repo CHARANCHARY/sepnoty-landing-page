@@ -105,7 +105,7 @@ import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
 import VideoTutorials from "./components/ResourceCenter/VideoTutorails";
-import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index";
+import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/MobDevPage";
 import SEOPage from "./components/Services/SEOPage";
 import CorporatePage from "./components/Services/CorporatePage";
 import AppIntegration from "./components/Services/ApplicationIntegration";
@@ -116,6 +116,9 @@ import DataPreparation from "./components/Services/DataPreparation";
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
 import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
+import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index"
+import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/"
+
 
 const App = () => {
   return (
@@ -213,6 +216,16 @@ const AppRoutes = () => {
         exact
         path="/resource-center/learning-paths-and-roadmaps"
         component={LearningRoadsMaps}
+      />
+      <Route
+        exact
+        path="/resource-center/feedback-and-improvement"
+        component={FeedbackAndImprovement}
+      />
+        <Route
+        exact
+        path="/resource-center/events-and-workshop"
+        component={EventsAndWorkshop}
       />
       <Route
         exact
