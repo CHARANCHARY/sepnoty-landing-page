@@ -39,6 +39,7 @@ import {
   PatternCon,
 } from "./styled";
 
+import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
@@ -79,26 +80,28 @@ const VideoEditing = () => {
           <Rectangle1 src={rectangle1} alt="not-found" />
         </ContentRecomContainer>
         <ServiceItemCon>
-          <ItemCon>
-            <ServiceItemDetails>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Corporate Videos</ListHeading>
-              </PatternCon>
+          <Link to="/Services/Video-editing/Corporate-videos">
+            <ItemCon>
+              <ServiceItemDetails>
+                <PatternCon>
+                  <SmallPattern></SmallPattern>
+                  <ListHeading>Corporate Videos</ListHeading>
+                </PatternCon>
 
-              <ServiceItemDesc>
-                Leverage videos to attract eyeballs and get visible among your
-                targeted audience. Our expertise lies in making and editing
-                promo videos, training videos, product demos, instructional
-                videos, and videos capturing moments from a recent conference or
-                meeting.
-              </ServiceItemDesc>
-              <ImageCon>
-                <ServiceItemImg src={CV} alt="cv" />
-                <ServiceItemButton>Learn More</ServiceItemButton>
-              </ImageCon>
-            </ServiceItemDetails>
-          </ItemCon>
+                <ServiceItemDesc>
+                  Leverage videos to attract eyeballs and get visible among your
+                  targeted audience. Our expertise lies in making and editing
+                  promo videos, training videos, product demos, instructional
+                  videos, and videos capturing moments from a recent conference
+                  or meeting.
+                </ServiceItemDesc>
+                <ImageCon>
+                  <ServiceItemImg src={CV} alt="cv" />
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </ImageCon>
+              </ServiceItemDetails>
+            </ItemCon>
+          </Link>
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>

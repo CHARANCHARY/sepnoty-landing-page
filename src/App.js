@@ -106,7 +106,12 @@ import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
 import VideoTutorials from "./components/ResourceCenter/VideoTutorails";
 import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index";
-// import DigitalMarketing from "./components/Services/DigitalMarketing";
+import SEOPage from "./components/Services/SEOPage";
+import CorporatePage from "./components/Services/CorporatePage";
+import AppIntegration from "./components/Services/ApplicationIntegration";
+import DataProtection from "./components/Services/DataProtection";
+import DataPreparation from "./components/Services/DataPreparation";
+//import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 
 const App = () => {
@@ -165,7 +170,6 @@ const AppRoutes = () => {
         path="/resource-center/technical-articles-and-blogs"
         component={TechnicalArticals}
       />
-
       <Route
         exact
         path="/services/digital-marketing"
@@ -208,7 +212,6 @@ const AppRoutes = () => {
         component={DigitalMarketing}
       />
       <Route exact path="/services/video-editing" component={VideoEditing} />
-
       <Route
         exact
         path="/Services/AI-Technology-services-integration"
@@ -223,6 +226,27 @@ const AppRoutes = () => {
         exact
         path="/Services/Cloud-services-integration"
         component={CloudService}
+      />
+      <Route exact path="/Services/Digital-Marketing/SEO" component={SEOPage} />
+      <Route
+        exact
+        path="/Services/Video-editing/Corporate-videos"
+        component={CorporatePage}
+      />
+      <Route
+        exact
+        path="/Services/Cloud-integration/application-integration"
+        component={AppIntegration}
+      />
+      <Route
+        exact
+        path="/Services/Cyber-security/DataProtection"
+        component={DataProtection}
+      />
+      <Route
+        exact
+        path="/Services/AITechnologyServices/DataPreparation"
+        component={DataPreparation}
       />
     </Switch>
   );

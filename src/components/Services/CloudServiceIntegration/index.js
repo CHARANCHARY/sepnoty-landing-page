@@ -22,14 +22,11 @@ import {
   SmallPattern,
 } from "./styled";
 
+import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import DM from "../Images/Digitalmarketing.svg";
-import SEO from "../Images/seo.svg";
-import SMM from "../Images/smm.svg";
 import security from "../Images/endpoint.svg";
-import CM from "../Images/ContentMarketing.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 import communication from "../Images/communication.svg";
@@ -75,24 +72,27 @@ const CloudService = () => {
               </ImageCon>
             </ServiceItemDetails>
           </div>
-          <div>
-            <PatternCon>
-              <SmallPattern></SmallPattern>
-              <ListHeading>Application Integration</ListHeading>
-            </PatternCon>
+          <Link to="/Services/Cloud-integration/application-integration">
+            <div>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Application Integration</ListHeading>
+              </PatternCon>
 
-            <ServiceItemDetails>
-              <ServiceItemDesc>
-                Application integration involves connecting and orchestrating
-                workflows between different cloud-based applications and systems
-                to automate business processes and ensure smooth data flow.
-              </ServiceItemDesc>
-              <ImageCon>
-                <ServiceItemImg src={app} alt="app" />
-                <ServiceItemButton>Learn More</ServiceItemButton>
-              </ImageCon>
-            </ServiceItemDetails>
-          </div>
+              <ServiceItemDetails>
+                <ServiceItemDesc>
+                  Application integration involves connecting and orchestrating
+                  workflows between different cloud-based applications and
+                  systems to automate business processes and ensure smooth data
+                  flow.
+                </ServiceItemDesc>
+                <ImageCon>
+                  <ServiceItemImg src={app} alt="app" />
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </ImageCon>
+              </ServiceItemDetails>
+            </div>
+          </Link>
           <div>
             <PatternCon>
               <SmallPattern></SmallPattern>
