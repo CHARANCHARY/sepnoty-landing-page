@@ -43,9 +43,13 @@ const ServiceSection = () => {
           <Link to="/services/web-development">
           <ServiceItem>Web development</ServiceItem>
           </Link>
+          <Link to="/services/mobile-app-development">
+          <ServiceItem>Mobile App development</ServiceItem>
+          </Link>
+          <Link to="/services/uiux-design">
+          <ServiceItem>UI/UX Design</ServiceItem>
+          </Link>
             
-            <ServiceItem>Mobile App development</ServiceItem>
-            <ServiceItem> UI/UX Design</ServiceItem>
             <Link to="/services/digital-marketing">
           <ServiceItem>Digital Marketing</ServiceItem>
           </Link>
