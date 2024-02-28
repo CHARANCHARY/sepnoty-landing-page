@@ -105,7 +105,7 @@ import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
 import VideoTutorials from "./components/ResourceCenter/VideoTutorails";
-import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index";
+import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/MobDevPage";
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";

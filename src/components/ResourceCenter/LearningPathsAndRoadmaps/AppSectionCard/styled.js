@@ -5,6 +5,7 @@ flex-direction:column;
 padding:10px;
 width:75%;
 margin-bottom:30px;
+margin-top: 40px;
 `;
 export const WebSectionTwoHeading=styled.h2`
 color:rgba(43, 69, 155, 1);
@@ -27,6 +28,7 @@ color:white;
 margin-left:40px;
 margin-top:15px;
 margin-bottom:15px;
+line-height:1.6;
 `;
 export const ImgCon = styled.div`
   display: flex;
@@ -34,9 +36,11 @@ export const ImgCon = styled.div`
   width: 30%;
   position: relative; /* Add this line */
   justify-content: flex-end; /* Add this line */
-  margin-left:40px;
+  margin-left: 10px;
+  margin-top:20px;
 `;
 export const InsertImg=styled.img`
+height:230px;
 
 `;
 export const WebTechButton = styled.button`

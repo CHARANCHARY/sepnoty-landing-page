@@ -11,8 +11,8 @@ const MobSectionOne = () => {
     <WebSectionOneCon>
     <BackgroundShapeOne />
     <BackgroundShapeTwo />
-    <WebSectionOneHeading>Mobile App Development</WebSectionOneHeading>
-    <WebSectionDescription>Mobile app development is the process of creating software applications that run on mobile devices such as smartphones and tablets. It encompasses a range of tasks including designing, developing, testing, deploying, and maintaining mobile applications tailored to specific platforms or devices.</WebSectionDescription>
+    <WebSectionOneHeading> Learning Paths</WebSectionOneHeading>
+    <WebSectionDescription>It seems like you're asking for resources about "Learning Paths." Learning paths are curated sets of courses or resources designed to help individuals achieve specific learning goals or develop skills in a particular area.</WebSectionDescription>
     </WebSectionOneCon>
   )
 }

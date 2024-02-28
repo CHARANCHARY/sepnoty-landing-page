@@ -5,12 +5,13 @@ background-color:rgba(12, 17, 31, 1);
 width:100vw;
 `;
 export const WebPageTitle=styled.h2`
-font-size:22px;
+font-size:16px;
+font-weight:600;
 color:white;
-padding:65px 0px 10px 30px;
+padding:105px 0px 10px 30px;
 `;
 export const WebSpan=styled.span`
-color:rgba(43, 69, 155, 1);
+color: #fff;
 `;
 export const WebHeading=styled.h1`
 font-size:28px;

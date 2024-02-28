@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 export const WebSectionOneCon=styled.div`
 background-color:rgba(37, 73, 137, 1);
-padding:40px 0px 20px 30px;
+padding:40px 0px 0px 30px;
 width:100%;
 min-height: 40vh;
+margin-bottom: 30px;
 `;
 export const WebSectionOneHeading=styled.h2`
 font-size:20px;
@@ -13,8 +14,8 @@ width:30%;
 `;
 export const WebSectionDescription=styled.p`
 font-size:17px;
-margin-top:20px;
-width:70%;
+margin-top:60px;
+width:50%;
 color:white;
 text-align:justify;
 `;
