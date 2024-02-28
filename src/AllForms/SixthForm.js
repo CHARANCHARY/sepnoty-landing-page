@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import Styled from "styled-components"
 import './App.css';
-import SixthPage from "./Forms/SixthPage"
+import SixthPage from "./Website/SixthPage"
 
 // import MaterialTable from 'material-table';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';

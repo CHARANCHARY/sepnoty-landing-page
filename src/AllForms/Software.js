@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 
-import FirstForm from "./AllForms/Software/SoftFirst/first";
-import SecondForm from './AllForms/Software/SoftSecond/second';
-import YourIndustry from './AllForms/ThirdForm';
-import Summary from './AllForms/FourthForm';
-import FormNo5 from './AllForms/SixthForm';
-import ThirdForm from "./AllForms/ThirdForm";
-import FourthForm from "./AllForms/FourthForm"
+import FirstForm from "./Software/SoftFirst/first";
+import SecondForm from './Software/SoftSecond/Second';
+import YourIndustry from './ThirdForm';
+import Summary from './FourthForm';
+import SecondForm1 from "./FifthForm"
+import FormNo5 from './SixthForm';
+import SeventhForm from './SeventhForm';
+import CourseDetails1 from './EightthForm';
+import EightthPage from './Website/EightthPage';
 //Sample data
 const coursesData = [
   {
@@ -243,7 +245,7 @@ class Software extends Component {
               )
           case 5:
                 return (
-                  <SecondForm  nextStep={this.nextStep}
+                  <SecondForm1  nextStep={this.nextStep}
                   prevStep={this.prevStep}
                   addCourse={this.addCourse}
                   coursesOptions={coursesOptions}
@@ -267,7 +269,7 @@ class Software extends Component {
                 )
           case 7:
             return (
-              <ThirdForm 
+              <SeventhForm
               nextStep={this.nextStep}
               prevStep={this.prevStep}
               firstname={firstname}
@@ -281,7 +283,7 @@ class Software extends Component {
             )
           case 8:
             return(
-              <FourthForm 
+              <CourseDetails1 
               nextStep={this.nextStep}
               prevStep={this.prevStep}
               firstname={firstname}

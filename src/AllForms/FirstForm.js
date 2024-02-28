@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Stepper } from 'react-form-stepper';
 import Styled from "styled-components"
 import './App.css';
-import FirstStep from "./Forms/FirstPage"
+import FirstStep from "./Website/FirstPage"
 
 class PersonalDetails extends Component {
   continue = e => {
     e.preventDefault();
-    this.props.nextStep(); 
+    this.props.nextStep();
     // const isFirstNameValid = this.props.validateFirstName();
     // const isLastNameValid = this.props.validateLastName();
     // if (isFirstNameValid && isLastNameValid) {

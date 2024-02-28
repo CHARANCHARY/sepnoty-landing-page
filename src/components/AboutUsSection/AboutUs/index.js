@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import behance from "../assets/behance.svg";
 import insta from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
@@ -60,7 +61,7 @@ class AboutUsSection extends Component {
           <CompanyContainer>
             <Section>Company</Section>
             <Border />
-            <SectionItem>About Company</SectionItem>
+            <Link to="/AboutUs/AboutCompany"><SectionItem>About Company</SectionItem></Link>
             <SectionItem>Leadership</SectionItem>
             <SectionItem>Experts</SectionItem>
             <SectionItem>Portfolio</SectionItem>
