@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import FirstForm from "./AllForms/Software/SoftFirst/first";
-import SecondForm from './AllForms/Software/SoftSecond/second';
-import YourIndustry from './AllForms/ThirdForm';
-import Summary from './AllForms/FourthForm';
-import FormNo5 from './AllForms/SixthForm';
-import ThirdForm from "./AllForms/ThirdForm";
-import FourthForm from "./AllForms/FourthForm"
+import FirstForm from "./SoftwareSection/SoftFirst/FirstPage";
+import SecondForm from './SoftwareSection/SoftSecond/Second';
+import YourIndustry from './ThirdForm';
+import Summary from './/FourthForm';
+import FormNo5 from './SixthForm';
+import ThirdForm from "./ThirdForm";
+import FourthForm from "./FourthForm"
 //Sample data
 const coursesData = [
   {
