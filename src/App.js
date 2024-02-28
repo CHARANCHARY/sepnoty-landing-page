@@ -115,6 +115,8 @@ import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadm
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
 import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
+import AboutLeadership from "./components/AboubtUsComponents/AboutLeadership/index";
+import AboutExpert from "./components/AboubtUsComponents/AboutExperts";
 
 const App = () => {
   return (
@@ -122,6 +124,7 @@ const App = () => {
       <Router>
         <Navbar />
         <AppRoutes />
+       
       </Router>
     </>
   );
