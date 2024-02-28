@@ -39,17 +39,15 @@ import {
   PatternCon,
 } from "./styled";
 
+import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import data from "../Images/data.svg";
-import framework from "../Images/framework.svg";
-import monitoring from "../Images/monitoring.svg";
-import usecases from "../Images/usecases.svg";
+
 import risk from "../Images/risk.svg";
 import endpoint from "../Images/endpoint.svg";
 import protection from "../Images/protection.svg";
-import outsource from "../Images/outsource.svg";
+
 import MSS from "../Images/MSS.svg";
 import network from "../Images/network.svg";
 import ContactForm from "../../ContactUs/ContactForm";
@@ -136,26 +134,28 @@ const CyberSecurity = () => {
               </ImageCon>
             </ServiceItemDetails>
           </ItemCon>
-          <ItemCon>
-            <ServiceItemDetails>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Data Protection and Encryption</ListHeading>
-              </PatternCon>
+          <Link to="/Services/Cyber-security/DataProtection">
+            <ItemCon>
+              <ServiceItemDetails>
+                <PatternCon>
+                  <SmallPattern></SmallPattern>
+                  <ListHeading>Data Protection and Encryption</ListHeading>
+                </PatternCon>
 
-              <ServiceItemDesc>
-                Protecting sensitive data from unauthorized access is crucial.
-                Cybersecurity providers implement data protection measures such
-                as encryption, access controls, data loss prevention (DLP)
-                solutions, and secure data storage practices to safeguard
-                sensitive information.
-              </ServiceItemDesc>
-              <ImageCon>
-                <ServiceItemImg src={protection} alt="protection" />
-                <ServiceItemButton>Learn More</ServiceItemButton>
-              </ImageCon>
-            </ServiceItemDetails>
-          </ItemCon>
+                <ServiceItemDesc>
+                  Protecting sensitive data from unauthorized access is crucial.
+                  Cybersecurity providers implement data protection measures
+                  such as encryption, access controls, data loss prevention
+                  (DLP) solutions, and secure data storage practices to
+                  safeguard sensitive information.
+                </ServiceItemDesc>
+                <ImageCon>
+                  <ServiceItemImg src={protection} alt="protection" />
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </ImageCon>
+              </ServiceItemDetails>
+            </ItemCon>
+          </Link>
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>

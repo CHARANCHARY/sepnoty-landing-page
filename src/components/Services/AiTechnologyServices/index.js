@@ -18,27 +18,11 @@ import {
   ServiceItemCon,
   ConatctCon,
   ItemCon,
-  CardContainer,
-  Logo,
-  CardTitle,
-  TitleContainer,
-  PostCon,
-  PostHeading,
-  CardHolder,
-  ToolsCon,
-  ToolsCardCon,
-  ToolsCard,
-  ToolTitle,
-  TrimBg,
-  CropBg,
-  EditerBg,
-  ClipBg,
-  FocusBg,
-  GradingBg,
   SmallPattern,
   PatternCon,
 } from "./styled";
 
+import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
@@ -46,9 +30,7 @@ import data from "../Images/data.svg";
 import framework from "../Images/framework.svg";
 import monitoring from "../Images/monitoring.svg";
 import usecases from "../Images/usecases.svg";
-import CV from "../Images/CorporateVideo.svg";
-import SM from "../Images/socialmedia.svg";
-import outsource from "../Images/outsource.svg";
+
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
@@ -92,26 +74,28 @@ const AiTechnologyServices = () => {
               </ImageCon>
             </ServiceItemDetails>
           </ItemCon>
-          <ItemCon>
-            <ServiceItemDetails>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Data Preparation and Quality</ListHeading>
-              </PatternCon>
+          <Link to="/Services/AITechnologyServices/DataPreparation">
+            <ItemCon>
+              <ServiceItemDetails>
+                <PatternCon>
+                  <SmallPattern></SmallPattern>
+                  <ListHeading>Data Preparation and Quality</ListHeading>
+                </PatternCon>
 
-              <ServiceItemDesc>
-                AI systems rely heavily on data. Integrating AI services often
-                involves preparing and cleaning datasets to ensure they are of
-                high quality and suitable for training machine learning models.
-                Data privacy and security considerations are also critical at
-                this stage.
-              </ServiceItemDesc>
-              <ImageCon>
-                <ServiceItemImg src={data} alt="data" />
-                <ServiceItemButton>Learn More</ServiceItemButton>
-              </ImageCon>
-            </ServiceItemDetails>
-          </ItemCon>
+                <ServiceItemDesc>
+                  AI systems rely heavily on data. Integrating AI services often
+                  involves preparing and cleaning datasets to ensure they are of
+                  high quality and suitable for training machine learning
+                  models. Data privacy and security considerations are also
+                  critical at this stage.
+                </ServiceItemDesc>
+                <ImageCon>
+                  <ServiceItemImg src={data} alt="data" />
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </ImageCon>
+              </ServiceItemDetails>
+            </ItemCon>
+          </Link>
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>

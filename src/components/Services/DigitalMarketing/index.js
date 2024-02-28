@@ -31,6 +31,8 @@ import {
   // Container,
 } from "./styled";
 
+import { Link } from "react-router-dom";
+
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
@@ -81,25 +83,29 @@ const DigitalMarketing = () => {
               </ImageCon>
             </ServiceItemDetails>
           </div>
-          <div>
-            <PatternCon>
-              <SmallPattern></SmallPattern>
-              <ListHeading>Search Engine Optimization (SEO)</ListHeading>
-            </PatternCon>
 
-            <ServiceItemDetails>
-              <ServiceItemDesc>
-                Optimizing a website to rank higher in search engine results
-                pages (SERPs) for relevant keywords. This involves on-page
-                optimization, content creation, link building, and technical
-                SEO.
-              </ServiceItemDesc>
-              <ImageCon>
-                <ServiceItemImg src={SEO} alt="seo" />
-                <ServiceItemButton>Learn More</ServiceItemButton>
-              </ImageCon>
-            </ServiceItemDetails>
-          </div>
+          <Link to="/Services/Digital-Marketing/SEO">
+            {" "}
+            <div>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Search Engine Optimization (SEO)</ListHeading>
+              </PatternCon>
+
+              <ServiceItemDetails>
+                <ServiceItemDesc>
+                  Optimizing a website to rank higher in search engine results
+                  pages (SERPs) for relevant keywords. This involves on-page
+                  optimization, content creation, link building, and technical
+                  SEO.
+                </ServiceItemDesc>
+                <ImageCon>
+                  <ServiceItemImg src={SEO} alt="seo" />
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </ImageCon>
+              </ServiceItemDetails>
+            </div>
+          </Link>
           <div>
             <PatternCon>
               <SmallPattern></SmallPattern>

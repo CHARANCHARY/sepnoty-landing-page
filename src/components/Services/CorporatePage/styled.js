@@ -103,7 +103,6 @@ export const ServiceItemDesc = styled.p`
   color: #ffffff;
   width: 80%;
   text-align: justify;
-
   padding-left: 2.5%;
 `;
 
@@ -129,9 +128,6 @@ export const ServiceItemButton = styled.button`
 `;
 
 export const ServiceItemDetails = styled.div`
-  margin-top: 20px;
-
-  margin-right: 5%;
   margin: 20px 5% 4% 5%;
 `;
 
@@ -284,6 +280,7 @@ export const SmallPattern = styled.div`
   background-color: rgba(129, 150, 219, 0.25);
   height: 50px;
   width: 60px;
+  border-radius: 3px;
 `;
 
 export const PatternCon = styled.div`
@@ -291,4 +288,10 @@ export const PatternCon = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+`;
+
+export const CorporateItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
 `;

@@ -96,12 +96,12 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 16px;
   color: #ffffff;
 `;
 
 export const ImageCon = styled.div`
-  width: 16%;
+  width: 20%;
   margin: 0px;
   display: flex;
   flex-direction: column;

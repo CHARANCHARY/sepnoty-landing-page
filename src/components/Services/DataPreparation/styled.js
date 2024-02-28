@@ -45,17 +45,6 @@ export const ConRecDesc = styled.p`
   padding: 20px 30px 30px 0px;
 `;
 
-export const Button = styled.button`
-  background-image: linear-gradient(to right, #ffffff, #fff741);
-  padding: 5px 25px 5px 25px;
-  border-radius: 20px;
-  color: #234581;
-  border: 0px;
-  outline: none;
-  font-size: 13px;
-  margin-top: 20px;
-`;
-
 export const Rectangle1 = styled.img`
   position: absolute;
   right: 0;
@@ -88,21 +77,26 @@ export const ListHeading = styled.h1`
   font-size: 20px;
   color: #2b459b;
   font-weight: bold;
-  margin-left: -20px;
+  margin-left: -25px;
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 5.9%;
+  margin-top: 20px;
 `;
+
+export const ItemCon = styled.div``;
+
 export const ServiceItemDesc = styled.p`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 17px;
   color: #ffffff;
+  width: 80%;
+  text-align: justify;
+  padding-left: 2.5%;
 `;
 
 export const ImageCon = styled.div`
   width: 20%;
-  margin: 0px;
   display: flex;
   flex-direction: column;
 `;
@@ -113,16 +107,17 @@ export const ServiceItemImg = styled.img`
 
 export const ServiceItemButton = styled.button`
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: #a4a4a4;
   margin-top: -13px;
   color: #2b459b;
   font-size: 15px;
-  border-radius: 7px;
-  padding: 3px 0 3px 0;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 10px 0 10px 0;
 `;
 
 export const ServiceItemDetails = styled.div`
-  margin: 20px 5% 20px 12%;
+  margin: 20px 5% 4% 5%;
 `;
 
 export const ConatctCon = styled.div`
@@ -144,25 +139,11 @@ export const PatternCon = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 0px;
-  margin-left: 5em;
+  margin-bottom: 20px;
 `;
 
-export const SeoItemsCon = styled.div`
+export const CorporateItems = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-export const SeoItemsList = styled.ul`
-  margin: 10px 0px 10px 0px;
-  padding: 0px;
-  list-style-type: disc;
-  line-height: 1.5;
-`;
-
-export const SeolistItem = styled.li`
-  font-size: 17px;
-  color: #ffffff;
-  margin-left: 12%;
-  padding-right: 7%;
+  margin-left: 5%;
 `;
