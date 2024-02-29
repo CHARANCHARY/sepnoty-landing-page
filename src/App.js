@@ -89,7 +89,7 @@ import Home from "./pages/Home";
 import AboutUs from "./components/AboutUsSection/AboutUs/index"
 import Services from "./pages/Services";
 import BlogSection from "./pages/BlogSection/index";
-import CareerOpportunities from "./pages/CareerOpportunities";
+ import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
 import BlogTought from "./components/BlogThought/BlogSection/Blogs";
@@ -116,6 +116,9 @@ import AppIntegration from "./components/Services/ApplicationIntegration";
 import DataProtection from "./components/Services/DataProtection";
 import DataPreparation from "./components/Services/DataPreparation";
 //import DigitalMarketing from "./components/Services/DigitalMarketing";
+import Designerforhire from "./components/CareerOppurtunities/Designersforhire";
+import Developerforhire from "./components/CareerOppurtunities/DevelopersforHire";
+// import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
@@ -199,6 +202,8 @@ const AppRoutes = () => {
       <Route exact path="/AboutUsComponents/SoftwareDevelopment" component={Software}/>
       <Route exact path="/AboutUsComponents/OurPatner" component={OurPatner}/>
 
+      <Route exact path="/CareerOppurtunities/Designersforhire" component={Designerforhire} />
+      <Route exact path="/CareerOppurtunities/DevelopersforHire" component={Developerforhire} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact
