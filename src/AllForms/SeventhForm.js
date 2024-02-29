@@ -3,12 +3,16 @@ import { Stepper } from 'react-form-stepper';
 import Styled from "styled-components"
 import './App.css';
 // import SecondPage from "./Forms/SevenPage"
-import SevenPage from './SoftwareSection/Website/SevenPage';
+
+import SevenPage from './Website/SevenPage';
+
+
+
 
 // import MaterialTable from 'material-table';
 // import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
 
-class CourseDetails extends Component {
+class SeventhForm extends Component {
   shouldComponentUpdate(nextProps) {
     if (this.props.addCourse !== nextProps.addCourse || this.props.level !== nextProps.level ) {
       return true;
@@ -184,7 +188,7 @@ class CourseDetails extends Component {
   }
 }
 
-export default CourseDetails;
+export default SeventhForm;
 
 const Button = Styled.div`
 display:flex;

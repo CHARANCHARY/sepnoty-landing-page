@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 
-import FirstForm from "./SoftwareSection/SoftFirst/FirstPage";
-import SecondForm from './SoftwareSection/SoftSecond/Second';
+
+import FirstForm from "./Software/SoftFirst/first";
+import SecondForm from './Software/SoftSecond/Second';
 import YourIndustry from './ThirdForm';
-import Summary from './/FourthForm';
+import Summary from './FourthForm';
+import SecondForm1 from "./FifthForm"
 import FormNo5 from './SixthForm';
-import ThirdForm from "./ThirdForm";
-import FourthForm from "./FourthForm"
-//Sample data
+import SeventhForm from './SeventhForm';
+import CourseDetails1 from './EightthForm';
+import EightthPage from './Website/EightthPage';
+
 const coursesData = [
   {
     id: 1,
@@ -243,7 +246,7 @@ class Software extends Component {
               )
           case 5:
                 return (
-                  <SecondForm  nextStep={this.nextStep}
+                  <SecondForm1  nextStep={this.nextStep}
                   prevStep={this.prevStep}
                   addCourse={this.addCourse}
                   coursesOptions={coursesOptions}
@@ -267,7 +270,7 @@ class Software extends Component {
                 )
           case 7:
             return (
-              <ThirdForm 
+              <SeventhForm
               nextStep={this.nextStep}
               prevStep={this.prevStep}
               firstname={firstname}
@@ -281,7 +284,7 @@ class Software extends Component {
             )
           case 8:
             return(
-              <FourthForm 
+              <CourseDetails1 
               nextStep={this.nextStep}
               prevStep={this.prevStep}
               firstname={firstname}

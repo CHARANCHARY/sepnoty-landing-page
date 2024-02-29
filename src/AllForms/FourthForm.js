@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Styled from "styled-components"
 import { Stepper } from 'react-form-stepper';
 import './App.css';
-import FourthPage from './SoftwareSection/Website/FourthPage';
+
+import FourthPage from './Website/FourthPage';
+
 class Summary extends Component {
   continue = e => {
     e.preventDefault();

@@ -44,3 +44,10 @@ flex-wrap:wrap;
 justify-content:center;
 margin-bottom:40px;
 `;
+export const ContactCon = styled.div`
+  background-color: #d4daf0;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

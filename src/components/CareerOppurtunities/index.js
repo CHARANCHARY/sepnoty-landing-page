@@ -1,5 +1,6 @@
 import job from "./Images/job-offers.svg";
 import search from "./Images/search.svg";
+import { Link } from "react-router-dom";
 
 import {
   CareerContainer,
@@ -15,8 +16,7 @@ import {
   Input,
   SearchIcon,
   DeveloperItems,
-  Developer,
-  Item,
+  ServiceItem,
   Border,
   SectionContainer,
 } from "./styled";

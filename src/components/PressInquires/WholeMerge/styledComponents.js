@@ -239,3 +239,10 @@ background-color:rgba(129, 150, 219, 0.25);
 z-index:0;
 border-radius:1px;
 `;
+export const ContactCon = styled.div`
+  background-color: #d4daf0;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

@@ -9,6 +9,7 @@ import {
     WebSectionTwoHeading,
     HeadingSpan,
     WebSectionTwoCardsCon,
+    ContactCon,
 } from './styled';
 import tech1 from './images/tech1.png';
 import tech2 from './images/tech2.png';
@@ -19,8 +20,8 @@ import tech6 from './images/tech6.png';
 import tech7 from './images/tech7.png';
 import tech8 from './images/tech8.png';
 import tech9 from './images/tech9.png';
-import InqContact from '../../InquiryContact/InquiryContactSection';
 import FooterSection from '../../Footer/FooterSection';
+import ContactForm from '../../ContactUs/ContactForm';
 
 const techDetails=[
    {
@@ -84,7 +85,9 @@ const WebDevPage = () => {
       ))}
       </WebSectionTwoCardsCon>
     </WebSectionTwo>
-    <InqContact />
+    <ContactCon>
+    <ContactForm />
+    </ContactCon>
     <FooterSection />
     </WebDevelopmentPage>
   )

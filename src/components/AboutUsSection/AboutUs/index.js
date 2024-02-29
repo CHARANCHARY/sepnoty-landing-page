@@ -1,4 +1,4 @@
-
+import { Component } from "react";
 import behance from "../assets/behance.svg";
 import insta from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
@@ -41,75 +41,73 @@ const followUsList = [
   { id: 5, image: fig, name: "Figma" },
 ];
 
-const AboutUsSection =(props)=>{
+const AboutUsSection = (props) => {
   const { closeOtherSections } = props;
 
   const handleLinkClick = () => {
     closeOtherSections();
   };
 
- 
-    return (
-      <Container>
-        <SubContainer>
-          <MvContainer>
-            <Heading>Mission & Vision</Heading>
-            <Description>
-              Sepnoty is commited to unlocking oppurtunities solely based on
-              skills, valuing them over mere degree or graduate certificates. We
-              firmly belive in your potential and affirm that with Sepnoty, you
-              can make it happen!
-            </Description>
-            <MvImg src={MV} alt="M&V" />
-          </MvContainer>
+  return (
+    <Container>
+      <SubContainer>
+        <MvContainer>
+          <Heading>Mission & Vision</Heading>
+          <Description>
+            Sepnoty is commited to unlocking oppurtunities solely based on
+            skills, valuing them over mere degree or graduate certificates. We
+            firmly belive in your potential and affirm that with Sepnoty, you
+            can make it happen!
+          </Description>
+          <MvImg src={MV} alt="M&V" />
+        </MvContainer>
 
-          <CompanyContainer>
-            <Section>Company</Section>
-            <Border />
-            <SectionItem onClick={handleLinkClick}>About Company</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Leadership</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Experts</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Portfolio</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Client review</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Our Partners</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Locations</SectionItem>
-          </CompanyContainer>
-          <CompanyContainer>
-            <Section>Approach</Section>
-            <ApproachBorder />
-            <Item onClick={handleLinkClick}>Pricing Models at Sepnoty</Item>
-            <Item onClick={handleLinkClick}>Our approach to Software development</Item>
-            <Item onClick={handleLinkClick}> Sustainability Policy</Item>
-          </CompanyContainer>
+        <CompanyContainer>
+          <Section>Company</Section>
+          <Border />
+          <SectionItem>About Company</SectionItem>
+          <SectionItem>Leadership</SectionItem>
+          <SectionItem>Experts</SectionItem>
+          <SectionItem>Portfolio</SectionItem>
+          <SectionItem>Client review</SectionItem>
+          <SectionItem>Our Partners</SectionItem>
+          <SectionItem>Locations</SectionItem>
+        </CompanyContainer>
+        <CompanyContainer>
+          <Section>Approach</Section>
+          <ApproachBorder />
+          <Item>Pricing Models at Sepnoty</Item>
+          <Item>Our approach to Software development</Item>
+          <Item> Sustainability Policy</Item>
+        </CompanyContainer>
 
-          <CompanyContainer>
-            <Section>Recognition</Section>
-            <Border />
-            <SectionItem onClick={handleLinkClick}>Testimonials</SectionItem>
-            <SectionItem onClick={handleLinkClick}>Awards</SectionItem>
-          </CompanyContainer>
-          <div>
-            <Section>Join us</Section>
-            <Border />
-            <FollowUsCon>
-              {followUsList.map((item) => (
-                <FollowUs key={item.id} followUsDetails={item} />
-              ))}
-            </FollowUsCon>
-          </div>
-        </SubContainer>
-        <BreakLine />
-        <SearchSuggestionContainer>
-          <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
+        <CompanyContainer>
+          <Section>Recognition</Section>
+          <Border />
+          <SectionItem>Testimonials</SectionItem>
+          <SectionItem>Awards</SectionItem>
+        </CompanyContainer>
+        <div>
+          <Section>Join us</Section>
+          <Border />
+          <FollowUsCon>
+            {followUsList.map((item) => (
+              <FollowUs key={item.id} followUsDetails={item} />
+            ))}
+          </FollowUsCon>
+        </div>
+      </SubContainer>
+      <BreakLine />
+      <SearchSuggestionContainer>
+        <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
 
-          <SearchContainer>
-            <Input type="search" placeholder="Search" />
-            <SearchIcon src={search} alt="search" />
-          </SearchContainer>
-        </SearchSuggestionContainer>
-      </Container>
-    );
-  }
-
+        <SearchContainer>
+          <Input type="search" placeholder="Search" />
+          <SearchIcon src={search} alt="search" />
+        </SearchContainer>
+      </SearchSuggestionContainer>
+    </Container>
+  );
+};
 
 export default AboutUsSection;
