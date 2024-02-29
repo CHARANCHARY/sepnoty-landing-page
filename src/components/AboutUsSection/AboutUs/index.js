@@ -1,4 +1,3 @@
-import { Component } from "react";
 import behance from "../assets/behance.svg";
 import insta from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
@@ -6,7 +5,7 @@ import facebook from "../assets/facebook-logo.svg";
 import fig from "../assets/figma.svg";
 import search from "../assets/search.svg";
 import MV from "../assets/M&V.svg";
-
+import { Link } from "react-router-dom";
 import FollowUs from "../FollowUs";
 
 import {
@@ -65,63 +64,47 @@ const AboutUsSection = (props) => {
         <CompanyContainer>
           <Section>Company</Section>
           <Border />
-          <SectionItem>About Company</SectionItem>
-          <SectionItem>Leadership</SectionItem>
-          <SectionItem>Experts</SectionItem>
-          <SectionItem>Portfolio</SectionItem>
-          <SectionItem>Client review</SectionItem>
-          <SectionItem>Our Partners</SectionItem>
-          <SectionItem>Locations</SectionItem>
-        </CompanyContainer>
-        <CompanyContainer>
-          <Section>Approach</Section>
-          <ApproachBorder />
-          <Item>Pricing Models at Sepnoty</Item>
-          <Item>Our approach to Software development</Item>
-          <Item> Sustainability Policy</Item>
-        </CompanyContainer>
-        <CompanyContainer>
-          <Section>Company</Section>
-          <Border />
           <Link to="/AboutUsComponents/AboutCompany">
-            <SectionItem>About Company</SectionItem>
+            <SectionItem onClick={handleLinkClick}>About Company</SectionItem>
           </Link>
           <Link to="/AboutUsComponents/AboutLeadership">
-            <SectionItem>Leadership</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Leadership</SectionItem>
           </Link>
           <Link to="/AboutUsComponents/AboutExperts">
-            <SectionItem>Experts</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Experts</SectionItem>
           </Link>
           <Link to="/AboutUsComponents/AboutPortfolio">
-            <SectionItem>Portfolio</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Portfolio</SectionItem>
           </Link>
           <Link to="/AboutUsComponents/ClientReviews">
-            <SectionItem>Client review</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Client review</SectionItem>
           </Link>
           <Link to="/AboutUsComponents/OurPatner">
-            <SectionItem>Our Partners</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Our Partners</SectionItem>
           </Link>
-          <SectionItem>Locations</SectionItem>
+          <SectionItem onClick={handleLinkClick}>Locations</SectionItem>
         </CompanyContainer>
         <CompanyContainer>
           <Section>Approach</Section>
           <ApproachBorder />
           <Link to="/AboutUsComponents/PricingModels">
-            <Item>Pricing Models at Sepnoty</Item>
+            <Item onClick={handleLinkClick}>Pricing Models at Sepnoty</Item>
           </Link>
           <Link to="/AboutUsComponents/SoftwareDevelopment">
-            <Item>Our approach to Software development</Item>
+            <Item onClick={handleLinkClick}>
+              Our approach to Software development
+            </Item>
           </Link>
           <Link to="/AboutUsComponents/Sustainability">
-            <Item> Sustainability Policy</Item>
+            <Item onClick={handleLinkClick}> Sustainability Policy</Item>
           </Link>
         </CompanyContainer>
 
         <CompanyContainer>
           <Section>Recognition</Section>
           <Border />
-          <SectionItem>Testimonials</SectionItem>
-          <SectionItem>Awards</SectionItem>
+          <SectionItem onClick={handleLinkClick}>Testimonials</SectionItem>
+          <SectionItem onClick={handleLinkClick}>Awards</SectionItem>
         </CompanyContainer>
         <div>
           <Section>Join us</Section>

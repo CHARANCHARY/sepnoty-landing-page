@@ -16,7 +16,8 @@ import {
   Input,
   SearchIcon,
   DeveloperItems,
-  ServiceItem,
+  Item,
+  Developer,
   Border,
   SectionContainer,
 } from "./styled";
