@@ -29,9 +29,10 @@ import {
     StaticToolsCon,
     StaticToolImg,
     StaticToolImgCon,
+    ContactCon,
 } from './styled';
-import InqContact from '../../InquiryContact/InquiryContactSection';
 import FooterSection from '../../Footer/FooterSection';
+import ContactForm from '../../ContactUs/ContactForm';
 const DesignDetails=[
     {
         id:1,
@@ -108,7 +109,9 @@ const UiUxDesPage = () => {
     <StaticToolImg src={animation2}/>
     </StaticToolImgCon>
     </StaticToolsCon>
-    <InqContact />
+    <ContactCon>
+    <ContactForm />
+    </ContactCon>
     <FooterSection />
     </UiUxDesignPage>
   )

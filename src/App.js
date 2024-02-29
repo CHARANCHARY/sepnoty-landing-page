@@ -103,8 +103,8 @@ import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blo
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
 import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
+import GraphicDesignPage from "./components/Services/GraphicDesign/GraphicDesignPage";
 import AiTechnologyServices from "./components/Services/AiTechnologyServices";
-
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
@@ -178,6 +178,7 @@ const AppRoutes = () => {
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
 
       <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/>
+      <Route exact path="/services/Graphic-Designing" component={GraphicDesignPage} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

@@ -30,12 +30,13 @@ import {
     SpanFive,
     WorksCon,
     SectionSix,
+    ContactCon,
  } from "./styled"
 import ChooseCard from "./SectionFour/ChooseCard"
 import WorkCard from "./SectionFive/WorkCard"
-import InqContact from "../../InquiryContact/InquiryContactSection"
 import FooterSection from "../../Footer/FooterSection"
 import Slider from "./SectionSix/Slider"
+import ContactForm from "../../ContactUs/ContactForm"
 
 
 
@@ -169,8 +170,10 @@ const SoftDevPage = () => {
     <SectionFiveTitle>We're Trusted by <SpanFive>Clients</SpanFive></SectionFiveTitle>
     <Slider />
     </SectionSix>
-    <InqContact />
-    <FooterSection />
+    <ContactCon>
+    <ContactForm />
+    </ContactCon>
+   
     </SoftDevSection>
     
   )

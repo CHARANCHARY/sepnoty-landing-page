@@ -35,6 +35,7 @@ import {
   TrustWorthyText,
   ExpContainer,
   TransparentBg,
+  ContactCon,
 } from './styledComponents'
 import InTouch from '../GetInTouch/InTouch';
 import image5 from '../assets/image5.svg';
@@ -65,10 +66,10 @@ import techimg8 from '../assets/techimg8.svg';
 import techimg9 from '../assets/techimg9.svg';
 import techimg10 from '../assets/techimg10.svg';
 import TechCard from '../TechCard/TechCard';
-import InqContact from '../../InquiryContact/InquiryContactSection';
 import ExpImg from '../assets/ExpImg.png';
 import ExpertCardDetail from '../ExpertDetailCard/ExpertDetailCard';
 import FooterSection from '../../Footer/FooterSection';
+import ContactForm from '../../ContactUs/ContactForm';
 const OurExpertsDetails=[
   {
     id:1,
@@ -332,7 +333,9 @@ Our experts are always open to sharing their knowledge with reporters, bloggers,
         <ExpertCardDetail key={eachItem.uniqueNo} details={eachItem} />
       ))}
       </ExpContainer>
-      <InqContact />
+      <ContactCon>
+    <ContactForm />
+    </ContactCon>
       <FooterSection />
     </InquirySection>
   )
