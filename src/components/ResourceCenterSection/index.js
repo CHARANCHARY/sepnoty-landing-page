@@ -36,7 +36,9 @@ const ResourceCenterSection = () => (
         <Resources>Resources</Resources>
         <Border />
         <ResourcesContainer>
+          <Link to="/resource-center/analytics-and-reporting">
           <ResourceItem>Analytics and Reporting</ResourceItem>
+          </Link>
           <Link to="/resource-center/content-recommendations">
               <ResourceItem>Content Recommendations</ResourceItem>
           </Link>
@@ -55,9 +57,9 @@ const ResourceCenterSection = () => (
           <Link to="/resource-center/events-and-workshop">
           <ResourceItem>Events and Workshop</ResourceItem>
           </Link>
-        
-          <ResourceItem>Career Resources and Job Listings</ResourceItem>
+          <Link to="/resource-center/case-studies-and-success-stories">
           <ResourceItem>Case Studies and Success Stories</ResourceItem>
+          </Link>
           <Link to="/resource-center/feedback-and-improvement">
           <ResourceItem>Feedback and Improvement Mechanisms</ResourceItem>
           </Link>

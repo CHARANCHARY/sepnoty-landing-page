@@ -65,7 +65,6 @@ class AboutUsSection extends Component {
             <Link to="/AboutUsComponents/AboutLeadership"><SectionItem>Leadership</SectionItem></Link>
             <Link to="/AboutUsComponents/AboutExperts"><SectionItem >Experts</SectionItem></Link>
             <Link to="/AboutUsComponents/AboutPortfolio"><SectionItem >Portfolio</SectionItem></Link>
-            
           <Link to="/AboutUsComponents/ClientReviews"><SectionItem >Client review</SectionItem></Link>
             <Link to="/AboutUsComponents/OurPatner"><SectionItem >Our Partners</SectionItem></Link>
             <SectionItem>Locations</SectionItem>
