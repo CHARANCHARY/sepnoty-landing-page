@@ -123,17 +123,25 @@ import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
 import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index"
 import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/"
 
+// import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
 import AboutLeadership from "./components/AboubtUsComponents/AboutLeadership/index";
 import AboutExpert from "./components/AboubtUsComponents/AboutExperts";
+import ClientReviews from "./components/AboubtUsComponents/ClientReviews/index";
+import Testimonial from "./components/AboubtUsComponents/Testimonial";
+import AboutPortFolio from "./components/AboubtUsComponents/AboutPortFolio/index";
+import Awards from "./components/AboubtUsComponents/Awards";
+import OurPatner from "./components/AboubtUsComponents/OurPatner"
+import PriceModel from "./components/AboubtUsComponents/PricingModels";
+import Sustainability from "./components/AboubtUsComponents/Sustainability";
+import Software from "./components/AboubtUsComponents/SoftwareDevelopment";
 
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-
-        
-        <AppRoutes />
+      <AppRoutes/>
+       
        
       </Router>
     </>
@@ -148,7 +156,8 @@ const AppRoutes = () => {
       <Route exact path="/" component={Home} />
       
       <Route exact path="/Services" component={Services} />
-      <Route exact path="/AboutUs" component={Services}/>
+      <Route exact path="/AboutUs" component={AboutUs}/>
+      <Route exact path="/AboutUsComponents/AboutLeadership" component={AboutLeadership}/>
       <Route exact path="/blog" component={BlogSection} />
       <Route
         exact
@@ -177,8 +186,19 @@ const AppRoutes = () => {
       <Route exact path="/services/mobile-app-development" component={MobDevPage} />
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
 
-      <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/>
+      {/* <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/> */}
       <Route exact path="/services/Graphic-Designing" component={GraphicDesignPage} />
+      <Route exact path="/AboutUsComponents/AboutCompany" component={AboutCompany}/>
+      <Route exact path="/AboutUsComponents/AboutExperts" component={AboutExpert}/>
+      <Route exact path="/AboutUsComponents/AboutPortfolio" component={AboutPortFolio}/>
+      <Route exact path="/AboutUsComponents/Awards" component={Awards}/>
+      <Route exact path="/AboutUsComponents/ClientReviews" component={ClientReviews}/>
+      <Route exact path="/AboutUsComponents/Testiomial" component={Testimonial}/>
+      <Route exact path="/AboutUsComponents/Sustainability" component={Sustainability}/>
+      <Route exact path="/AboutUsComponents/PricingModels" component={PriceModel}/>
+      <Route exact path="/AboutUsComponents/SoftwareDevelopment" component={Software}/>
+      <Route exact path="/AboutUsComponents/OurPatner" component={OurPatner}/>
+
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

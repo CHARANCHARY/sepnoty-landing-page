@@ -81,6 +81,7 @@ export const Rectangle3 = styled.img`
   width: 17%;
   top: 38%;
   z-index: 0;
+  background:transparent;
   margun-bottom: 20px;
 `;
 
@@ -104,13 +105,11 @@ export const ImageCon = styled.div`
   width: 16%;
   margin: 0px;
   display: flex;
-  flex-direction: row;
-  gap:200px;
-  padding:20px;
+  flex-direction: column;
 `;
 export const ServiceItemImg = styled.img`
-width:200px;
-margin-left:-70px;
+  width: 200px;
+  margin-left: 300%;
 `;
 
 export const ServiceItemButton = styled.button`
