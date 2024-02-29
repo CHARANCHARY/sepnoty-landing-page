@@ -1,5 +1,5 @@
+import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
-import InqContact from "../../InquiryContact/InquiryContactSection";
 import AppSectionCard from "./AppSectionCard/AppSectionCard";
 import MobSectionOne from "./MobSectionOne/MobSectionOne";
 import appimg1 from './images/appimg1.svg';
@@ -13,6 +13,7 @@ import {
     WebHeading,
     CapabilityHeading,
     AppDetailsContainer,
+    ContactCon,
 } from './styled';
 const AppDetails=[
     {
@@ -52,7 +53,9 @@ const MobDevPage = () => {
         <AppSectionCard key={eachItem.id} details={eachItem} />
       ))}
     </AppDetailsContainer>
-    <InqContact />
+    <ContactCon>
+    <ContactForm />
+    </ContactCon>
     <FooterSection />
     </MobSection>
   )

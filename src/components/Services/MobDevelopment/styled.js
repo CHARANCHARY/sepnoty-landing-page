@@ -30,3 +30,10 @@ display:flex;
 flex-direction:column;
 padding:10px 0px 30px 30px;
 `;
+export const ContactCon = styled.div`
+  background-color: #d4daf0;
+  padding: 20px 0px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
