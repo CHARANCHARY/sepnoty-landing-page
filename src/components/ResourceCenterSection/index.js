@@ -22,6 +22,56 @@ import {
   Items,
 } from "./styled";
 
+const ResourceCenterSection = () => (
+  <ResourceCenterContainer>
+    <ResourceItemsContainer>
+      <ResourceCenter>
+        <Heading>Resource Center</Heading>
+        <Description>
+          "Discover, Learn, Grow: Navigate Our Resource Center"
+        </Description>
+        <SerImg src={resource} alt="service" />
+      </ResourceCenter>
+      <Items>
+        <Resources>Resources</Resources>
+        <Border />
+        <ResourcesContainer>
+          <Link to="/resource-center/analytics-and-reporting">
+          <ResourceItem>Analytics and Reporting</ResourceItem>
+          </Link>
+          <Link to="/resource-center/content-recommendations">
+              <ResourceItem>Content Recommendations</ResourceItem>
+          </Link>
+          <Link to="/resource-center/collaboration-and-community-features">
+            <ResourceItem>Collaboration and Community Features</ResourceItem>
+          </Link>
+          <Link to="/resource-center/technical-articles-and-blogs">
+          <ResourceItem> Technical Aricles and Blogs</ResourceItem>
+          </Link>
+          <Link to="/resource-center/video-tutorials">
+              <ResourceItem>Video Tutorials</ResourceItem>
+          </Link>
+          <Link to="/resource-center/learning-paths-and-roadmaps">
+          <ResourceItem>Learning Paths and Roadmaps</ResourceItem>
+          </Link>
+          <Link to="/resource-center/events-and-workshop">
+          <ResourceItem>Events and Workshop</ResourceItem>
+          </Link>
+          <Link to="/resource-center/case-studies-and-success-stories">
+          <ResourceItem>Case Studies and Success Stories</ResourceItem>
+          </Link>
+          <Link to="/resource-center/feedback-and-improvement">
+          <ResourceItem>Feedback and Improvement Mechanisms</ResourceItem>
+          </Link>
+
+
+          
+        </ResourcesContainer>
+      </Items>
+    </ResourceItemsContainer>
+    <BreakLine />
+    <SearchSuggestionContainer>
+      <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
 const ResourceCenterSection = (props) => {
   const { closeOtherSections } = props;
 

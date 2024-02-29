@@ -80,6 +80,42 @@ const AboutUsSection = (props) => {
           <Item>Our approach to Software development</Item>
           <Item> Sustainability Policy</Item>
         </CompanyContainer>
+        <CompanyContainer>
+          <Section>Company</Section>
+          <Border />
+          <Link to="/AboutUsComponents/AboutCompany">
+            <SectionItem>About Company</SectionItem>
+          </Link>
+          <Link to="/AboutUsComponents/AboutLeadership">
+            <SectionItem>Leadership</SectionItem>
+          </Link>
+          <Link to="/AboutUsComponents/AboutExperts">
+            <SectionItem>Experts</SectionItem>
+          </Link>
+          <Link to="/AboutUsComponents/AboutPortfolio">
+            <SectionItem>Portfolio</SectionItem>
+          </Link>
+          <Link to="/AboutUsComponents/ClientReviews">
+            <SectionItem>Client review</SectionItem>
+          </Link>
+          <Link to="/AboutUsComponents/OurPatner">
+            <SectionItem>Our Partners</SectionItem>
+          </Link>
+          <SectionItem>Locations</SectionItem>
+        </CompanyContainer>
+        <CompanyContainer>
+          <Section>Approach</Section>
+          <ApproachBorder />
+          <Link to="/AboutUsComponents/PricingModels">
+            <Item>Pricing Models at Sepnoty</Item>
+          </Link>
+          <Link to="/AboutUsComponents/SoftwareDevelopment">
+            <Item>Our approach to Software development</Item>
+          </Link>
+          <Link to="/AboutUsComponents/Sustainability">
+            <Item> Sustainability Policy</Item>
+          </Link>
+        </CompanyContainer>
 
         <CompanyContainer>
           <Section>Recognition</Section>

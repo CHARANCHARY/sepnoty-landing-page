@@ -21,11 +21,11 @@ line-height: 1.3;
 text-align:justify;
 `;
 export const BackgroundShapeOne=styled.span`
-position: absolute;
+position:absolute;
 background-color:rgba(129, 150, 219, 0.25);
 width:200px;
 height:220px;
-top: 2;
+top:7;
 left:0;
 bottom:20;
 z-index:0;
@@ -42,19 +42,4 @@ top:-25;
 right:0;
 gap:0;
 z-index:0;
-`;
-
-export const Button = styled.button`
-  background-image: linear-gradient(to right, #ffffff, #fff741);
-  padding: 5px 25px 5px 25px;
-  border-radius: 8px;
-  color: #234581;
-  border: 0px;
-  height: 40px;
-  width:150px;
-  font-size: 18px;
-  cursor: pointer;
-  font-weight: 600;
-  margin-top: 20px;
-  margin-left: 150px;
 `;

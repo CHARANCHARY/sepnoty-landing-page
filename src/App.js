@@ -125,6 +125,10 @@ import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
 import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
 import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index"
 import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/"
+import CaseStudiesandSuccessStories from "./components/ResourceCenter/CaseStudiesandSuccessStories"
+import AnalyticsAndReporting from "./components/ResourceCenter/AnalyticsAndReporting"
+
+
 
 // import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
 import AboutLeadership from "./components/AboubtUsComponents/AboutLeadership/index";
@@ -256,6 +260,13 @@ const AppRoutes = () => {
         path="/resource-center/learning-paths-and-roadmaps"
         component={LearningRoadsMaps}
       />
+
+<Route
+        exact
+        path="/resource-center/analytics-and-reporting"
+        component={AnalyticsAndReporting}
+      />
+
       <Route
         exact
         path="/resource-center/feedback-and-improvement"
@@ -266,6 +277,15 @@ const AppRoutes = () => {
         path="/resource-center/events-and-workshop"
         component={EventsAndWorkshop}
       />
+
+
+      <Route
+        exact
+        path="/resource-center/case-studies-and-success-stories"
+        component={CaseStudiesandSuccessStories}
+      />
+
+
       <Route
         exact
         path="/services/digital-marketing"
