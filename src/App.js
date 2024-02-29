@@ -85,7 +85,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import BlogSection from "./pages/BlogSection/index";
-import CareerOpportunities from "./pages/CareerOpportunities";
+ import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
 import BlogTought from "./components/BlogThought/BlogSection/Blogs";
@@ -99,6 +99,8 @@ import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blo
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
+import Designerforhire from "./components/CareerOppurtunities/Designersforhire";
+import Developerforhire from "./components/CareerOppurtunities/DevelopersforHire";
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 
@@ -135,6 +137,8 @@ const AppRoutes = () => {
       <Route exact path="/blog/Article" component={BlogArticles} />
       <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
       <Route exact path="/services/software-development" component={SoftDevPage} />
+      <Route exact path="/CareerOppurtunities/Designersforhire" component={Designerforhire} />
+      <Route exact path="/CareerOppurtunities/DevelopersforHire" component={Developerforhire} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact

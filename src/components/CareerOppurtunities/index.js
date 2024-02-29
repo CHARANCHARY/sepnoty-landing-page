@@ -1,5 +1,6 @@
 import job from "./Images/job-offers.svg";
 import search from "./Images/search.svg";
+import { Link } from "react-router-dom";
 
 import {
   CareerContainer,
@@ -15,60 +16,75 @@ import {
   Input,
   SearchIcon,
   DeveloperItems,
-  Developer,
-  Item,
+  ServiceItem,
   Border,
+ 
   SectionContainer,
 } from "./styled";
+const CareerOppurtunities = () => {
+  
+  return (
 
-const CareerOppurtunities = () => (
-  <CareerContainer>
-    <SubContainer>
-      <Career>
-        <Heading>Career Oppurtunities</Heading>
-        <Description>
-          Our Proficiency encampasses a wide array of leading technologies and
-          platforms, extending to embrace cutting-edge trends in innovative
-          technology.
-        </Description>
-        <CareerImg src={job} alt="job" />
-      </Career>
-      <SectionContainer>
-        <Developer>Developers for Hire</Developer>
-        <Border />
-        <DeveloperItems>
-          <Item>Java</Item>
-          <Item>.net</Item>
-          <Item>Python</Item>
-          <Item>PhP</Item>
-          <Item>C++</Item>
-          <Item>Node.js</Item>
-          <Item>Java Script</Item>
-          <Item>React Native</Item>
-          <Item>Cloud</Item>
-          <Item>Artificial Intelligence</Item>
-          <Item>Machine Learning</Item>
-        </DeveloperItems>
-      </SectionContainer>
-      <div>
-        <Developer>Designers for hire</Developer>
-        <Border />
-        <Item>UI/UX design</Item>
-        <Item>Digital Marketing</Item>
-        <Item>Graphic Designing</Item>
-        <Item>Video editing</Item>
-      </div>
-    </SubContainer>
-    <BreakLine />
-    <SearchSuggestionContainer>
-      <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
 
-      <SearchContainer>
-        <Input type="search" placeholder="Search" />
-        <SearchIcon src={search} alt="search" />
-      </SearchContainer>
-    </SearchSuggestionContainer>
-  </CareerContainer>
-);
+    <CareerContainer>
+      <SubContainer>
+        <Career>
+          <Heading>Career Oppurtunities</Heading>
+          <Description>
+            Our Proficiency encampasses a wide array of leading technologies and
+            platforms, extending to embrace cutting-edge trends in innovative
+            technology.
+          </Description>
+          <CareerImg src={job} alt="job" />
+        </Career>
+        <SectionContainer>
+        <Link to="/CareerOppurtunities/DevelopersforHire">
+              <ServiceItem>Developers for Hire</ServiceItem>
+            </Link>
+          {/* <Developer>Developers for Hire</Developer> */}
+          <Border />
+          <DeveloperItems>
+            <ServiceItem>Java</ServiceItem>
+            <ServiceItem>.net</ServiceItem>
+            <ServiceItem>Python</ServiceItem>
+            <ServiceItem>PhP</ServiceItem>
+            <ServiceItem>C++</ServiceItem>
+            <ServiceItem>Node.js</ServiceItem>
+            <ServiceItem>Java Script</ServiceItem>
+            <ServiceItem>React Native</ServiceItem>
+            <ServiceItem>Cloud</ServiceItem>
+            <ServiceItem>Artificial Intelligence</ServiceItem>
+            <ServiceItem>Machine Learning</ServiceItem>
+          </DeveloperItems>
+        </SectionContainer>
+        <SectionContainer>
 
+          <div>
+          <Link to="/CareerOppurtunities/Designersforhire">
+              <ServiceItem >Designers for hire</ServiceItem>
+            </Link>
+            {/* <Developer>Designers for hire</Developer> */}
+            <Border />
+            <ServiceItem>UI/UX Design</ServiceItem>
+            <ServiceItem>Digital Marketing</ServiceItem>
+            <ServiceItem>Digital Marketing</ServiceItem>
+            <ServiceItem>Video editing</ServiceItem>
+           
+
+          </div>
+        </SectionContainer>
+
+      </SubContainer>
+      <BreakLine />
+      <SearchSuggestionContainer>
+        <SearchSuggestion>Type here what you're looking for</SearchSuggestion>
+
+        <SearchContainer>
+          <Input type="search" placeholder="Search" />
+          <SearchIcon src={search} alt="search" />
+        </SearchContainer>
+      </SearchSuggestionContainer>
+    </CareerContainer>
+  );
+}
 export default CareerOppurtunities;
