@@ -1,4 +1,4 @@
-import { Component } from "react";
+
 import behance from "../assets/behance.svg";
 import insta from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
@@ -41,8 +41,14 @@ const followUsList = [
   { id: 5, image: fig, name: "Figma" },
 ];
 
-class AboutUsSection extends Component {
-  render() {
+const AboutUsSection =(props)=>{
+  const { closeOtherSections } = props;
+
+  const handleLinkClick = () => {
+    closeOtherSections();
+  };
+
+ 
     return (
       <Container>
         <SubContainer>
@@ -60,27 +66,27 @@ class AboutUsSection extends Component {
           <CompanyContainer>
             <Section>Company</Section>
             <Border />
-            <SectionItem>About Company</SectionItem>
-            <SectionItem>Leadership</SectionItem>
-            <SectionItem>Experts</SectionItem>
-            <SectionItem>Portfolio</SectionItem>
-            <SectionItem>Client review</SectionItem>
-            <SectionItem>Our Partners</SectionItem>
-            <SectionItem>Locations</SectionItem>
+            <SectionItem onClick={handleLinkClick}>About Company</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Leadership</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Experts</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Portfolio</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Client review</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Our Partners</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Locations</SectionItem>
           </CompanyContainer>
           <CompanyContainer>
             <Section>Approach</Section>
             <ApproachBorder />
-            <Item>Pricing Models at Sepnoty</Item>
-            <Item>Our approach to Software development</Item>
-            <Item> Sustainability Policy</Item>
+            <Item onClick={handleLinkClick}>Pricing Models at Sepnoty</Item>
+            <Item onClick={handleLinkClick}>Our approach to Software development</Item>
+            <Item onClick={handleLinkClick}> Sustainability Policy</Item>
           </CompanyContainer>
 
           <CompanyContainer>
             <Section>Recognition</Section>
             <Border />
-            <SectionItem>Testimonials</SectionItem>
-            <SectionItem>Awards</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Testimonials</SectionItem>
+            <SectionItem onClick={handleLinkClick}>Awards</SectionItem>
           </CompanyContainer>
           <div>
             <Section>Join us</Section>
@@ -104,6 +110,6 @@ class AboutUsSection extends Component {
       </Container>
     );
   }
-}
+
 
 export default AboutUsSection;
