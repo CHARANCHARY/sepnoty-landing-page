@@ -98,9 +98,8 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
-
+import GraphicDesignPage from "./components/Services/GraphicDesign/GraphicDesignPage";
 import AiTechnologyServices from "./components/Services/AiTechnologyServices";
-
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
@@ -165,6 +164,7 @@ const AppRoutes = () => {
       <Route exact path="/services/web-development" component={WebDevPage} />
       <Route exact path="/services/mobile-app-development" component={MobDevPage} />
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
+      <Route exact path="/services/Graphic-Designing" component={GraphicDesignPage} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact
