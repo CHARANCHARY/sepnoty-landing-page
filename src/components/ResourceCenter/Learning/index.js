@@ -2,6 +2,7 @@
 import LearingPathImg from "./images/Rectangle 6638.png"
 import MapImage from "./images/Rectangle 6636.png"
 
+import SearchSection from "../SearchContainer"
 
 import {
     MainContainer,
@@ -121,6 +122,7 @@ const LearningRoadsMaps = () => {
                  ))}
             </ListItemSection>
             <LearnPara11>Remember, the key isn’t to memorize but to understand and apply the concepts in real-world scenarios. By consistently practicing and building projects, you’ll solidify your knowledge and skills in the IT sector.</LearnPara11>
+            <SearchSection />
         </MainContainer>
 
         </>

@@ -52,10 +52,18 @@ const ResourceCenterSection = () => (
           <Link to="/resource-center/learning-paths-and-roadmaps">
           <ResourceItem>Learning Paths and Roadmaps</ResourceItem>
           </Link>
+          <Link to="/resource-center/events-and-workshop">
           <ResourceItem>Events and Workshop</ResourceItem>
+          </Link>
+        
           <ResourceItem>Career Resources and Job Listings</ResourceItem>
           <ResourceItem>Case Studies and Success Stories</ResourceItem>
+          <Link to="/resource-center/feedback-and-improvement">
           <ResourceItem>Feedback and Improvement Mechanisms</ResourceItem>
+          </Link>
+
+
+          
         </ResourcesContainer>
       </Items>
     </ResourceItemsContainer>
