@@ -31,7 +31,10 @@ import {
     // Container,
   } from "./Styled";
   
-  import ProfileImg from "../images/Profile.svg"
+  import ProfileImg from "../images/Profile.svg";
+  import rectangle1 from "../images/Rectangle 1.svg"
+  import rectangle2 from "../images/Rectangle2.svg";
+  import rectangle3 from "../images/Rectangle3.svg";
   
   import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
@@ -49,9 +52,9 @@ import {
             <ConRecDesc>
             Leadership is a multifaceted concept that encompasses the ability to influence, inspire, and guide individuals or groups towards a common goal or vision. It's not just about holding a position of authority; rather, it involves demonstrating certain qualities and behaviors that motivate others to follow willingly.
             </ConRecDesc>
-            {/* <Rectangle3 src={rectangle3} alt="not-found" />
+            <Rectangle3 src={rectangle3} alt="not-found" />
             <Rectangle2 src={rectangle2} alt="not-found" />
-            <Rectangle1 src={rectangle1} alt="not-found" /> */}
+            <Rectangle1 src={rectangle1} alt="not-found" /> 
           </ContentRecomContainer>
           <ServiceItemCon>
             <div>

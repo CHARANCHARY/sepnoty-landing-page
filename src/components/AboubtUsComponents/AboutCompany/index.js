@@ -30,6 +30,9 @@ import {
     // ContactItem,
     // Container,
   } from "./Styled";
+  import rectangle1 from "../images/Rectangle 1.svg"
+  import rectangle2 from "../images/Rectangle2.svg";
+  import rectangle3 from "../images/Rectangle3.svg";
   
   import GroupImg from "../images/Group.svg"
   
@@ -49,9 +52,9 @@ import {
             <ConRecDesc>
             "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
             </ConRecDesc>
-            {/* <Rectangle3 src={rectangle3} alt="not-found" />
+            <Rectangle3 src={rectangle3} alt="not-found" />
             <Rectangle2 src={rectangle2} alt="not-found" />
-            <Rectangle1 src={rectangle1} alt="not-found" /> */}
+            <Rectangle1 src={rectangle1} alt="not-found" />
           </ContentRecomContainer>
           <ServiceItemCon>
             <div>

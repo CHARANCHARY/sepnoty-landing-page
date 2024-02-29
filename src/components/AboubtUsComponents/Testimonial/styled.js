@@ -104,13 +104,11 @@ export const ImageCon = styled.div`
   width: 16%;
   margin: 0px;
   display: flex;
-  flex-direction: row;
-  gap:200px;
-  padding:20px;
+  flex-direction: column;
 `;
 export const ServiceItemImg = styled.img`
-width:200px;
-margin-left:-70px;
+  width: 500px;
+  margin-left: -30%;
 `;
 
 export const ServiceItemButton = styled.button`

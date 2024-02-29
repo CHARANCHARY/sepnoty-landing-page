@@ -31,6 +31,10 @@ import {
     // ContactItem,
     // Container,
   } from "./Styled";
+
+  import rectangle1 from "../images/Rectangle 1.svg"
+  import rectangle2 from "../images/Rectangle2.svg";
+  import rectangle3 from "../images/Rectangle3.svg";
   
   import Export from "../images/Expert.svg"
   import Export1 from "../images/Expert1.svg"
@@ -51,9 +55,9 @@ import {
             <ConRecDesc>
             It seems like you're looking for information about experts. Experts are individuals who possess a high level of knowledge, skill, or proficiency in a particular field or subject. They are often recognized for their expertise through education, experience, training, or a combination of these factors.
             </ConRecDesc>
-            {/* <Rectangle3 src={rectangle3} alt="not-found" />
+            <Rectangle3 src={rectangle3} alt="not-found" />
             <Rectangle2 src={rectangle2} alt="not-found" />
-            <Rectangle1 src={rectangle1} alt="not-found" /> */}
+            <Rectangle1 src={rectangle1} alt="not-found" /> 
           </ContentRecomContainer>
           <ServiceItemCon>
             <div>
