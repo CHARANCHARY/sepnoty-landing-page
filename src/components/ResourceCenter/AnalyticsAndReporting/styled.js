@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Ellipse1 from "./Ellipse 853.png";
-import Ellipse2 from "./Ellipse 855.png";
+// import Ellipse1 from "./Ellipse 853.png";
+// import Ellipse2 from "./Ellipse 855.png";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
