@@ -105,11 +105,11 @@ export const ImageCon = styled.div`
   width: 16%;
   margin: 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 `;
 export const ServiceItemImg = styled.img`
-  width: 500px;
-  margin-left: -30%;
+  width: 300px;
+  margin-left: 30%;
 `;
 
 export const ServiceItemButton = styled.button`
