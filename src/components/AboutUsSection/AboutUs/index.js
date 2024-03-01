@@ -61,6 +61,7 @@ const AboutUsSection = (props) => {
           <MvImg src={MV} alt="M&V" />
         </MvContainer>
 
+
         <CompanyContainer>
           <Section>Company</Section>
           <Border />
@@ -99,7 +100,6 @@ const AboutUsSection = (props) => {
             <Item onClick={handleLinkClick}> Sustainability Policy</Item>
           </Link>
         </CompanyContainer>
-
         <CompanyContainer>
           <Section>Recognition</Section>
           <Border />
