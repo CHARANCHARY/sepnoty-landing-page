@@ -89,7 +89,7 @@ import Home from "./pages/Home";
 import AboutUs from "./components/AboutUsSection/AboutUs/index"
 import Services from "./pages/Services";
 import BlogSection from "./pages/BlogSection/index";
-import CareerOpportunities from "./pages/CareerOpportunities";
+ import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
 import BlogTought from "./components/BlogThought/BlogSection/Blogs";
@@ -102,19 +102,35 @@ import ContentRecommendation from "./components/ResourceCenter/ContentRecommenda
 import TechnicalArticals from "./components/ResourceCenter/TechnicalArticals&Blogs";
 import DigitalMarketing from "./components/Services/DigitalMarketing";
 import VideoEditing from "./components/Services/VideoEditing";
+import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
+import GraphicDesignPage from "./components/Services/GraphicDesign/GraphicDesignPage";
 import AiTechnologyServices from "./components/Services/AiTechnologyServices";
-
 import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import CyberSecurity from "./components/Services/CyberSecurity";
 import CloudService from "./components/Services/CloudServiceIntegration";
 import VideoTutorials from "./components/ResourceCenter/VideoTutorails";
-import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/index";
+import LearningRoadsMaps from "./components/ResourceCenter/LearningPathsAndRoadmaps/MobDevPage";
+import SEOPage from "./components/Services/SEOPage";
+import CorporatePage from "./components/Services/CorporatePage";
+import AppIntegration from "./components/Services/ApplicationIntegration";
+import DataProtection from "./components/Services/DataProtection";
+import DataPreparation from "./components/Services/DataPreparation";
+//import DigitalMarketing from "./components/Services/DigitalMarketing";
+import Designerforhire from "./components/CareerOppurtunities/Designersforhire";
+import Developerforhire from "./components/CareerOppurtunities/DevelopersforHire";
 // import DigitalMarketing from "./components/Services/DigitalMarketing";
 // import SoftDevPage from "./components/Services/SoftwareDevelopment/SoftDevPage";
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
 import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
-import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
+import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index"
+import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/"
+import CaseStudiesandSuccessStories from "./components/ResourceCenter/CaseStudiesandSuccessStories"
+import AnalyticsAndReporting from "./components/ResourceCenter/AnalyticsAndReporting"
+
+
+
+// import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
 import AboutLeadership from "./components/AboubtUsComponents/AboutLeadership/index";
 import AboutExpert from "./components/AboubtUsComponents/AboutExperts";
 import ClientReviews from "./components/AboubtUsComponents/ClientReviews/index";
@@ -179,6 +195,8 @@ const AppRoutes = () => {
       <Route exact path="/services/mobile-app-development" component={MobDevPage} />
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
 
+      {/* <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/> */}
+      <Route exact path="/services/Graphic-Designing" component={GraphicDesignPage} />
       <Route exact path="/AboutUsComponents/AboutCompany" component={AboutCompany}/>
       <Route exact path="/AboutUsComponents/AboutExperts" component={AboutExpert}/>
       <Route exact path="/AboutUsComponents/AboutPortfolio" component={AboutPortFolio}/>
@@ -192,6 +210,8 @@ const AppRoutes = () => {
       <Route exact path="/AboutUsComponents/Location" component={Location}/>
       <Route exact path="/portfolio"  component={SubSection}/>
 
+      <Route exact path="/CareerOppurtunities/Designersforhire" component={Designerforhire} />
+      <Route exact path="/CareerOppurtunities/DevelopersforHire" component={Developerforhire} />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact
@@ -208,7 +228,6 @@ const AppRoutes = () => {
         path="/resource-center/technical-articles-and-blogs"
         component={TechnicalArticals}
       />
-
       <Route
         exact
         path="/services/digital-marketing"
@@ -245,13 +264,38 @@ const AppRoutes = () => {
         path="/resource-center/learning-paths-and-roadmaps"
         component={LearningRoadsMaps}
       />
+
+<Route
+        exact
+        path="/resource-center/analytics-and-reporting"
+        component={AnalyticsAndReporting}
+      />
+
+      <Route
+        exact
+        path="/resource-center/feedback-and-improvement"
+        component={FeedbackAndImprovement}
+      />
+        <Route
+        exact
+        path="/resource-center/events-and-workshop"
+        component={EventsAndWorkshop}
+      />
+
+
+      <Route
+        exact
+        path="/resource-center/case-studies-and-success-stories"
+        component={CaseStudiesandSuccessStories}
+      />
+
+
       <Route
         exact
         path="/services/digital-marketing"
         component={DigitalMarketing}
       />
       <Route exact path="/services/video-editing" component={VideoEditing} />
-
       <Route
         exact
         path="/Services/AI-Technology-services-integration"
@@ -266,6 +310,27 @@ const AppRoutes = () => {
         exact
         path="/Services/Cloud-services-integration"
         component={CloudService}
+      />
+      <Route exact path="/Services/Digital-Marketing/SEO" component={SEOPage} />
+      <Route
+        exact
+        path="/Services/Video-editing/Corporate-videos"
+        component={CorporatePage}
+      />
+      <Route
+        exact
+        path="/Services/Cloud-integration/application-integration"
+        component={AppIntegration}
+      />
+      <Route
+        exact
+        path="/Services/Cyber-security/DataProtection"
+        component={DataProtection}
+      />
+      <Route
+        exact
+        path="/Services/AITechnologyServices/DataPreparation"
+        component={DataPreparation}
       />
     </Switch>
   );

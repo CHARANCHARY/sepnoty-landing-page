@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 // import required modules
 import { Pagination } from 'swiper/modules';
-export default function App() {
+export default function CommentsSection() {
   return (
     <>
       <Swiper

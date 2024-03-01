@@ -142,7 +142,7 @@ const Navbar = () => {
 
             {isAboutUsOpen && (
               <AboutCon>
-                <AboutUsSection />
+                <AboutUsSection closeOtherSections={closeOtherSections} />
               </AboutCon>
             )}
           </DropdownContainer>
@@ -159,7 +159,7 @@ const Navbar = () => {
             </ListComponent>
             {isServiceOpen && (
               <ServiceCon>
-                <ServiceSection />
+                <ServiceSection closeOtherSections={closeOtherSections} />
               </ServiceCon>
             )}
           </DropdownContainer>
@@ -194,7 +194,7 @@ const Navbar = () => {
             </ListComponent>
             {isCareerOpen && (
               <CareerCon>
-                <CareerOppurtunities />
+                <CareerOppurtunities closeOtherSections={closeOtherSections} />
               </CareerCon>
             )}
           </DropdownContainer>
@@ -211,7 +211,9 @@ const Navbar = () => {
             </ListComponent>
             {isResourceOpen && (
               <ResourceCon>
-                <ResourceCenterSection />
+                <ResourceCenterSection
+                  closeOtherSections={closeOtherSections}
+                />
               </ResourceCon>
             )}
           </DropdownContainer>
@@ -261,7 +263,6 @@ const Navbar = () => {
 
 export default Navbar;
 
-
 export const ListComponent = styled.li`
-list-style-type: none;
+  list-style-type: none;
 `;

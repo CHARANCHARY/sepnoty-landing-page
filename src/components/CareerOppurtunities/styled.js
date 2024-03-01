@@ -5,8 +5,20 @@ export const CareerContainer = styled.div`
   padding: 40px 0px 20px 0px;
   width: 100vw;
   border-radius: 10px;
+  cursor: pointer;
 `;
 
+export const ServiceItem = styled.p`
+  font-weight: 500;
+  font-size: 13px;
+  color: #263238;
+  margin-bottom: 15px;
+  margin-right: 30px;
+
+  &:hover {
+    color: #2b459b;
+  }
+`;
 export const SubContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -130,4 +142,11 @@ export const SectionContainer = styled.div`
   margin-right: 20px;
   padding-right: 30px;
   margin-right: 30px;
+`;
+
+export const CareerCon = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 30px 40px 40px;
+  width: 55%;
 `;

@@ -96,12 +96,12 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
 `;
 
 export const ImageCon = styled.div`
-  width: 16%;
+  width: 20%;
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -122,10 +122,7 @@ export const ServiceItemButton = styled.button`
 `;
 
 export const ServiceItemDetails = styled.div`
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 5%;
-  margin: 20px 5% 28px 10%;
+  margin: 20px 5% 20px 12%;
 `;
 
 export const ConatctCon = styled.div`
@@ -147,7 +144,7 @@ export const PatternCon = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-left: 5em;
 `;
 
@@ -157,10 +154,15 @@ export const SeoItemsCon = styled.div`
 `;
 
 export const SeoItemsList = styled.ul`
-  color: white;
-  list-style-type: disc !important;
+  margin: 10px 0px 10px 0px;
+  padding: 0px;
+  list-style-type: disc;
+  line-height: 1.5;
 `;
 
 export const SeolistItem = styled.li`
+  font-size: 17px;
   color: #ffffff;
+  margin-left: 12%;
+  padding-right: 7%;
 `;

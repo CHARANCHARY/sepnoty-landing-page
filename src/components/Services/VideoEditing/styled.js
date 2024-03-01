@@ -99,7 +99,7 @@ export const ItemCon = styled.div``;
 
 export const ServiceItemDesc = styled.p`
   margin-bottom: 30px;
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
   width: 80%;
   text-align: justify;
@@ -108,7 +108,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 16%;
+  width: 20%;
   display: flex;
   flex-direction: column;
 `;
@@ -147,7 +147,7 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #d9d9d9;
-  width: 25%;
+  width: 330px;
   height: 200px;
   border-radius: 7px;
   padding: 20px 15px 20px 30px;
@@ -175,9 +175,11 @@ export const PostHeading = styled.h1`
 `;
 export const PostCon = styled.div`
   background-color: #000000;
-  margin: 10px 5%;
+  ${"" /*   //margin: 10px 7%; */}
   padding-top: 40px;
   border-radius: 5px;
+  width: 80%;
+  align-self: center;
 `;
 export const TitleContainer = styled.div`
   display: flex;
@@ -217,6 +219,7 @@ export const ToolsCard = styled.div`
 export const ToolTitle = styled.h1`
   font-size: 16px;
   color: #000000;
+  margin-left: 5px;
 `;
 
 export const CropBg = styled.div`
