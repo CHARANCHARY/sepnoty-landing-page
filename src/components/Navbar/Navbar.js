@@ -142,7 +142,7 @@ const Navbar = () => {
 
             {isAboutUsOpen && (
               <AboutCon>
-                <AboutUsSection />
+                <AboutUsSection closeOtherSections={closeOtherSections} />
               </AboutCon>
             )}
           </DropdownContainer>
@@ -194,7 +194,7 @@ const Navbar = () => {
             </ListComponent>
             {isCareerOpen && (
               <CareerCon>
-                <CareerOppurtunities />
+                <CareerOppurtunities closeOtherSections={closeOtherSections} />
               </CareerCon>
             )}
           </DropdownContainer>
@@ -211,7 +211,9 @@ const Navbar = () => {
             </ListComponent>
             {isResourceOpen && (
               <ResourceCon>
-                <ResourceCenterSection />
+                <ResourceCenterSection
+                  closeOtherSections={closeOtherSections}
+                />
               </ResourceCon>
             )}
           </DropdownContainer>

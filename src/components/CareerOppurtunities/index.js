@@ -16,16 +16,19 @@ import {
   Input,
   SearchIcon,
   DeveloperItems,
-  ServiceItem,
+  Item,
+  Developer,
   Border,
- 
   SectionContainer,
 } from "./styled";
-const CareerOppurtunities = () => {
-  
+
+const CareerOppurtunities = (props) => {
+  const { closeOtherSections } = props;
+
+  const handleLinkClick = () => {
+    closeOtherSections();
+  };
   return (
-
-
     <CareerContainer>
       <SubContainer>
         <Career>
@@ -38,42 +41,30 @@ const CareerOppurtunities = () => {
           <CareerImg src={job} alt="job" />
         </Career>
         <SectionContainer>
-        <Link to="/CareerOppurtunities/DevelopersforHire">
-              <ServiceItem>Developers for Hire</ServiceItem>
-            </Link>
-          {/* <Developer>Developers for Hire</Developer> */}
+          <Developer>Developers for Hire</Developer>
           <Border />
           <DeveloperItems>
-            <ServiceItem>Java</ServiceItem>
-            <ServiceItem>.net</ServiceItem>
-            <ServiceItem>Python</ServiceItem>
-            <ServiceItem>PhP</ServiceItem>
-            <ServiceItem>C++</ServiceItem>
-            <ServiceItem>Node.js</ServiceItem>
-            <ServiceItem>Java Script</ServiceItem>
-            <ServiceItem>React Native</ServiceItem>
-            <ServiceItem>Cloud</ServiceItem>
-            <ServiceItem>Artificial Intelligence</ServiceItem>
-            <ServiceItem>Machine Learning</ServiceItem>
+            <Item onClick={handleLinkClick}>Java</Item>
+            <Item onClick={handleLinkClick}>.net</Item>
+            <Item onClick={handleLinkClick}>Python</Item>
+            <Item onClick={handleLinkClick}>PhP</Item>
+            <Item onClick={handleLinkClick}>C++</Item>
+            <Item onClick={handleLinkClick}>Node.js</Item>
+            <Item onClick={handleLinkClick}>Java Script</Item>
+            <Item onClick={handleLinkClick}>React Native</Item>
+            <Item onClick={handleLinkClick}>Cloud</Item>
+            <Item onClick={handleLinkClick}>Artificial Intelligence</Item>
+            <Item onClick={handleLinkClick}>Machine Learning</Item>
           </DeveloperItems>
         </SectionContainer>
-        <SectionContainer>
-
-          <div>
-          <Link to="/CareerOppurtunities/Designersforhire">
-              <ServiceItem >Designers for hire</ServiceItem>
-            </Link>
-            {/* <Developer>Designers for hire</Developer> */}
-            <Border />
-            <ServiceItem>UI/UX Design</ServiceItem>
-            <ServiceItem>Digital Marketing</ServiceItem>
-            <ServiceItem>Digital Marketing</ServiceItem>
-            <ServiceItem>Video editing</ServiceItem>
-           
-
-          </div>
-        </SectionContainer>
-
+        <div>
+          <Developer>Designers for hire</Developer>
+          <Border />
+          <Item onClick={handleLinkClick}>UI/UX design</Item>
+          <Item onClick={handleLinkClick}>Digital Marketing</Item>
+          <Item> onClick={handleLinkClick}Graphic Designing</Item>
+          <Item onClick={handleLinkClick}>Video editing</Item>
+        </div>
       </SubContainer>
       <BreakLine />
       <SearchSuggestionContainer>
@@ -86,5 +77,5 @@ const CareerOppurtunities = () => {
       </SearchSuggestionContainer>
     </CareerContainer>
   );
-}
+};
 export default CareerOppurtunities;
