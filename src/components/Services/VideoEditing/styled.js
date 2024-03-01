@@ -79,7 +79,7 @@ export const Rectangle3 = styled.img`
   left: 0%;
   height: 40%;
   width: 17%;
-  top: 38%;
+  top: 34%;
   z-index: 0;
   margun-bottom: 20px;
 `;
@@ -103,7 +103,7 @@ export const ServiceItemDesc = styled.p`
   color: #ffffff;
   width: 80%;
   text-align: justify;
-
+  line-height: 1.5;
   padding-left: 2.5%;
 `;
 
@@ -111,6 +111,7 @@ export const ImageCon = styled.div`
   width: 20%;
   display: flex;
   flex-direction: column;
+  padding-left: 2.5%;
 `;
 export const ServiceItemImg = styled.img`
   width: 100%;
@@ -130,7 +131,6 @@ export const ServiceItemButton = styled.button`
 
 export const ServiceItemDetails = styled.div`
   margin-top: 20px;
-
   margin-right: 5%;
   margin: 20px 5% 4% 5%;
 `;
@@ -148,9 +148,9 @@ export const CardContainer = styled.div`
   flex-direction: column;
   background-color: #d9d9d9;
   width: 330px;
-  height: 200px;
+  height: 230px;
   border-radius: 7px;
-  padding: 20px 15px 20px 30px;
+  padding: 20px 15px 30px 30px;
   margin: 30px 1px 30px 01px;
 `;
 
@@ -190,9 +190,15 @@ export const TitleContainer = styled.div`
 export const CardTitle = styled.p`
   color: #171717;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1.5;
 `;
 
+export const CardHeading = styled.h1`
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+`;
 export const ToolsCon = styled.div`
   margin: 20px 5% 4% 5%;
 `;
@@ -210,9 +216,9 @@ export const ToolsCard = styled.div`
   flex-direction: column;
   background-color: #d9d9d9;
   width: 33%;
-  height: 200px;
+  height: 230px;
   border-radius: 7px;
-  padding: 20px 15px 20px 30px;
+  padding: 30px 20px 30px 30px;
   margin: 30px 30px 30px 30px;
 `;
 

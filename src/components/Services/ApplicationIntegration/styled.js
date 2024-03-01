@@ -48,7 +48,7 @@ export const ConRecDesc = styled.p`
 export const Rectangle1 = styled.img`
   position: absolute;
   right: 0;
-  height: 65%;
+  height: 63%;
   width: 37%;
   top: 12%;
   z-index: 0;
@@ -56,10 +56,10 @@ export const Rectangle1 = styled.img`
 
 export const Rectangle2 = styled.img`
   position: absolute;
-  right: 16%;
-  height: 78%;
+  right: 16.1%;
+  height: 80%;
   width: 60%;
-  top: -5%;
+  top: -11%;
   z-index: 0;
 `;
 
@@ -68,7 +68,7 @@ export const Rectangle3 = styled.img`
   left: 0%;
   height: 40%;
   width: 17%;
-  top: 38%;
+  top: 34%;
   z-index: 0;
   margun-bottom: 20px;
 `;
@@ -91,9 +91,10 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 5px;
   font-size: 17px;
   color: #ffffff;
-  width: 80%;
+  width: 60%;
   text-align: justify;
   margin-left: 5%;
+  margin-bottom: 30px;
 `;
 
 export const ImageCon = styled.div`
@@ -101,6 +102,7 @@ export const ImageCon = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 5%;
+  margin-bottom: 30px;
 `;
 export const ServiceItemImg = styled.img`
   width: 100%;

@@ -134,28 +134,30 @@ const CyberSecurity = () => {
               </ImageCon>
             </ServiceItemDetails>
           </ItemCon>
-          <Link to="/Services/Cyber-security/DataProtection">
-            <ItemCon>
-              <ServiceItemDetails>
-                <PatternCon>
-                  <SmallPattern></SmallPattern>
-                  <ListHeading>Data Protection and Encryption</ListHeading>
-                </PatternCon>
 
-                <ServiceItemDesc>
-                  Protecting sensitive data from unauthorized access is crucial.
-                  Cybersecurity providers implement data protection measures
-                  such as encryption, access controls, data loss prevention
-                  (DLP) solutions, and secure data storage practices to
-                  safeguard sensitive information.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={protection} alt="protection" />
+          <ItemCon>
+            <ServiceItemDetails>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Data Protection and Encryption</ListHeading>
+              </PatternCon>
+
+              <ServiceItemDesc>
+                Protecting sensitive data from unauthorized access is crucial.
+                Cybersecurity providers implement data protection measures such
+                as encryption, access controls, data loss prevention (DLP)
+                solutions, and secure data storage practices to safeguard
+                sensitive information.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={protection} alt="protection" />
+                <Link to="/Services/Cyber-security/DataProtection">
                   <ServiceItemButton>Learn More</ServiceItemButton>
-                </ImageCon>
-              </ServiceItemDetails>
-            </ItemCon>
-          </Link>
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </ItemCon>
+
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>

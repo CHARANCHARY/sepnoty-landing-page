@@ -11,10 +11,6 @@ import {
   Span,
   DigitalContainer,
   ListHeading,
-  Small,
-  Small1,
-  Small2,
-  Small3,
   ServiceItemDesc,
   ImageCon,
   ServiceItemImg,
@@ -36,8 +32,6 @@ import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-
-import small from "../Images/Rectanglesmall.svg";
 
 import DM from "../Images/Digitalmarketing.svg";
 import SEO from "../Images/seo.svg";
@@ -84,28 +78,29 @@ const DigitalMarketing = () => {
             </ServiceItemDetails>
           </div>
 
-          <Link to="/Services/Digital-Marketing/SEO">
-            {" "}
-            <div>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Search Engine Optimization (SEO)</ListHeading>
-              </PatternCon>
+          <div>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Search Engine Optimization (SEO)</ListHeading>
+            </PatternCon>
 
-              <ServiceItemDetails>
-                <ServiceItemDesc>
-                  Optimizing a website to rank higher in search engine results
-                  pages (SERPs) for relevant keywords. This involves on-page
-                  optimization, content creation, link building, and technical
-                  SEO.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={SEO} alt="seo" />
-                  <ServiceItemButton>Learn More</ServiceItemButton>
-                </ImageCon>
-              </ServiceItemDetails>
-            </div>
-          </Link>
+            <ServiceItemDetails>
+              <ServiceItemDesc>
+                Optimizing a website to rank higher in search engine results
+                pages (SERPs) for relevant keywords. This involves on-page
+                optimization, content creation, link building, and technical
+                SEO.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={SEO} alt="seo" />
+                <Link to="/Services/Digital-Marketing/SEO">
+                  {" "}
+                  <ServiceItemButton>Learn More</ServiceItemButton>{" "}
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </div>
+
           <div>
             <PatternCon>
               <SmallPattern></SmallPattern>

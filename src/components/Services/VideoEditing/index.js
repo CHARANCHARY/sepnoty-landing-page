@@ -37,6 +37,8 @@ import {
   FocusBg,
   SmallPattern,
   PatternCon,
+  CardHeading,
+  GradingBg,
 } from "./styled";
 
 import { Link } from "react-router-dom";
@@ -80,7 +82,7 @@ const VideoEditing = () => {
           <Rectangle1 src={rectangle1} alt="not-found" />
         </ContentRecomContainer>
         <ServiceItemCon>
-          <Link to="/Services/Video-editing/Corporate-videos">
+          
             <ItemCon>
               <ServiceItemDetails>
                 <PatternCon>
@@ -97,11 +99,11 @@ const VideoEditing = () => {
                 </ServiceItemDesc>
                 <ImageCon>
                   <ServiceItemImg src={CV} alt="cv" />
-                  <ServiceItemButton>Learn More</ServiceItemButton>
+                  <Link to="/Services/Video-editing/Corporate-videos"><ServiceItemButton>Learn More</ServiceItemButton></Link>
                 </ImageCon>
               </ServiceItemDetails>
             </ItemCon>
-          </Link>
+          
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>
@@ -154,7 +156,7 @@ const VideoEditing = () => {
                 <TrimBg>
                   <Logo src={trim} alt="trim" />
                 </TrimBg>
-                <CardTitle>Video Trimming</CardTitle>
+                <CardHeading>Video Trimming</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video trimming is the process of removing unwanted parts or
@@ -169,7 +171,7 @@ const VideoEditing = () => {
                 <EditerBg>
                   <Logo src={editer} alt="editer" />
                 </EditerBg>
-                <CardTitle>Video Compositing</CardTitle>
+                <CardHeading>Video Compositing</CardHeading>
               </TitleContainer>
               <CardTitle>
                 A Video Composition service helps combine multiple frames of
@@ -182,7 +184,7 @@ const VideoEditing = () => {
                 <ClipBg>
                   <Logo src={clipping} alt="clipping" />
                 </ClipBg>
-                <CardTitle>Video Clipping</CardTitle>
+                <CardHeading>Video Clipping</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video clipping refers to the process of selecting and trimming
@@ -195,7 +197,7 @@ const VideoEditing = () => {
                 <FocusBg>
                   <Logo src={focus} alt="focus" />
                 </FocusBg>
-                <CardTitle>Video Stabilization</CardTitle>
+                <CardHeading>Video Stabilization</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video stabilization is the process of reducing shakiness and
@@ -208,7 +210,7 @@ const VideoEditing = () => {
                 <CropBg>
                   <Logo src={crop} alt="crop" />
                 </CropBg>
-                <CardTitle>Video Cropping </CardTitle>
+                <CardHeading>Video Cropping </CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video cropping is the process of removing unwanted portions of a
@@ -220,8 +222,10 @@ const VideoEditing = () => {
             </CardContainer>
             <CardContainer>
               <TitleContainer>
-                <Logo src={grading} alt="grading" />
-                <CardTitle>Video Color grading</CardTitle>
+                <GradingBg>
+                  <Logo src={grading} alt="grading" />
+                </GradingBg>
+                <CardHeading>Video Color grading</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Color grading is the process of enhancing and manipulating the

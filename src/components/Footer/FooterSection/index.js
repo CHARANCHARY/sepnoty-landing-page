@@ -7,6 +7,8 @@ import facebook from "../Images/facebook.svg";
 import figma from "../Images/figma.svg";
 import instagram from "../Images/instagram.svg";
 import twitter from "../Images/twitter.svg";
+import copyright from "../Images/copyright.svg";
+import sepnotyLogo from "../Images/sepnoty-logo.svg";
 
 import {
   GlobalStyle,
@@ -74,7 +76,7 @@ class FooterSection extends Component {
           <FooterContainer>
             <LogoContainer>
               <div className="logo-section">
-                <SepnotyLogo src="./images/image 20.svg" alt="sepnoty" />
+                <SepnotyLogo src={sepnotyLogo} alt="sepnoty" />
               </div>
               <SepnotyDescription>
                 We're happy to speak to businesses at any stage of their journey
@@ -129,7 +131,7 @@ class FooterSection extends Component {
           </FooterContainer>
           <BottomContainer>
             <CopywriteContainer>
-              <Copyright src="./images/copyright.svg" alt="cr" />
+              <Copyright src={copyright} alt="cr" />
               <CopywriteContent>
                 2024 Sepnoty.All rights received.
               </CopywriteContent>

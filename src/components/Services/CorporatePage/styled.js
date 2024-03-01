@@ -101,15 +101,17 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 30px;
   font-size: 17px;
   color: #ffffff;
-  width: 80%;
+  width: 60%;
   text-align: justify;
   padding-left: 2.5%;
+  line-height: 1.5;
 `;
 
 export const ImageCon = styled.div`
   width: 20%;
   display: flex;
   flex-direction: column;
+  padding-left: 2.5%;
 `;
 export const ServiceItemImg = styled.img`
   width: 100%;

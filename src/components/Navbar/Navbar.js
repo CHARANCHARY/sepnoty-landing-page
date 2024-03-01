@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 // import { useHistory } from "react-router-dom";
 
-/* import { Link } from "react-router-dom"; */
+import { Link } from "react-router-dom";
 /* import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im"; */
 import logo from "../Navbar/assets/logo.svg";
@@ -115,7 +115,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <LogoImg src={logo} alt="not found"></LogoImg>
+        <Link to="/">
+          <LogoImg src={logo} alt="not found"></LogoImg>
+        </Link>
         {/*
         if large screen ma xa bhane Mobile add huxa
         if mobile screen ma xa bhane nav-links-mobile add huxa
@@ -128,6 +130,9 @@ const Navbar = () => {
             e.stopPropagation();
           }}
         >
+          <Link to="/">
+            <ListComponent>Home</ListComponent>
+          </Link>
           <DropdownContainer ref={aboutUsRef}>
             <ListComponent onClick={toggleAboutUs}>
               {isAboutUsOpen ? (
