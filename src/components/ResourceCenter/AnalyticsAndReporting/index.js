@@ -7,6 +7,10 @@ import {
     Header,
     MobSection,
     Span,
+    CirclesContainer,
+    CircleOne,
+    CircleTwo,
+    CircleThree,
    
 } from "./styled"
 
@@ -124,7 +128,7 @@ const AnalyticsAndReporting = () => {
       const CustomBarShape2 = ({ x, y, width, height }) => (
         <rect x={x} y={y} fill={"url(#grad2)"} width={width} height={height} rx={5} ry={5} />
       );
-
+     const progress = "50";
 
     return(
         <>
@@ -161,6 +165,21 @@ const AnalyticsAndReporting = () => {
                     <Bar dataKey="uv"  shape={<CustomBarShape2 />} />
                 </BarChart>
             </ResponsiveContainer>
+
+
+            <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
+                <div style={{ backgroundColor: '#007bff', height: '20px', width: `${progress}%`,borderRadius: '10px', }} />
+            </div>
+            <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
+                <div style={{ backgroundColor: '#007bff', height: '20px', width: `${progress}%`,borderRadius: '10px', }} />
+            </div>
+
+
+            <CirclesContainer>
+                <CircleOne>23%</CircleOne>
+                <CircleTwo>87%</CircleTwo>
+                <CircleThree></CircleThree>
+            </CirclesContainer>
 
             </MobSection>
            

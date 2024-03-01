@@ -5,6 +5,7 @@ export const CareerContainer = styled.div`
   padding: 40px 0px 20px 0px;
   width: 100vw;
   border-radius: 10px;
+  cursor: pointer;
 `;
 
 export const ServiceItem = styled.p`
@@ -143,10 +144,9 @@ export const SectionContainer = styled.div`
   margin-right: 30px;
 `;
 
-export const CareerCon=styled.div`
-display:flex;
-flex-wrap:wrap;
-margin:10px 30px 40px 40px;
-width:55%;
-
+export const CareerCon = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 30px 40px 40px;
+  width: 55%;
 `;
