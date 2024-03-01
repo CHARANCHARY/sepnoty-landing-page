@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import UiSectionOne from './UiSectionOne/WebSectionOne';
 import worksimg from './images/worksimg.svg';
 import designimg1 from './images/designimg1.svg';
@@ -31,8 +32,10 @@ import {
     StaticToolImgCon,
     ContactCon,
 } from './styled';
+
 import FooterSection from '../../Footer/FooterSection';
 import ContactForm from '../../ContactUs/ContactForm';
+import SubCard from './UiSubPage/SubCard/SubCard';
 const DesignDetails=[
     {
         id:1,
@@ -59,21 +62,71 @@ const DesignDetails=[
         img:designimg4,
     },
 ];
+const SubPageList = [
+  {
+    id: 1,
+    name: 'Padma',
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 2,
+    name: 'Yamini',
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+  {
+    id: 3,
+    name: 'Charan',
+    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  },
+];
 const UiUxDesPage = () => {
+  const [selectedDetail, setSelectedDetail] = useState(null);
+  const [selectedSubPageDetail, setSelectedSubPageDetail] = useState(null);
+
+  const handleLearnMoreClick = (detail) => {
+    const matchingSubPageDetail = SubPageList.find((item) => item.id === detail.id);
+    setSelectedSubPageDetail(matchingSubPageDetail);
+    setSelectedDetail(detail);
+  };
+
+  const handleBackClick = () => {
+    setSelectedDetail(null);
+    setSelectedSubPageDetail(null);
+  };
+    
   return (
     <UiUxDesignPage>
     <WebPageTitle>Services &gt; <WebSpan>UI & UX Design</WebSpan></WebPageTitle>
     <WebHeading>Services</WebHeading>
     <UiSectionOne />
     <HeadingSpan />
-    <WebSectionTwoHeading>How it all works?</WebSectionTwoHeading>
+        {selectedDetail ? (
+          <>
+          {selectedSubPageDetail ? (
+            <SubCard details={selectedSubPageDetail} onBackClick={handleBackClick} />
+          ) : (
+            <DesignSectionCard
+              details={selectedDetail}
+              onLearnMoreClick={() => handleLearnMoreClick(selectedDetail)}
+            />
+          )}
+        </>
+      )  : (
+      <>
+      <WebSectionTwoHeading>How it all works?</WebSectionTwoHeading>
     <WorksImg src={worksimg}></WorksImg>
     <DesProcessHeading>Our UI/UX design process</DesProcessHeading>
-    <DesignDetailsContainer>
-    {DesignDetails.map((eachItem) => (
-        <DesignSectionCard key={eachItem.id} details={eachItem} />
-      ))}
-    </DesignDetailsContainer>
+
+        <DesignDetailsContainer>
+          {DesignDetails.map((eachItem) => (
+            <DesignSectionCard
+              key={eachItem.id}
+              details={eachItem}
+              onLearnMoreClick={() => handleLearnMoreClick(eachItem)}
+            />
+          ))}
+        </DesignDetailsContainer>
+        <DesignTitleSpan />
     <DesignTitleSpan />
     <DesignToolsTitle>Our expertise in software design tools</DesignToolsTitle>
     <StaticToolsTitle>Static Tools</StaticToolsTitle>
@@ -109,10 +162,14 @@ const UiUxDesPage = () => {
     <StaticToolImg src={animation2}/>
     </StaticToolImgCon>
     </StaticToolsCon>
+      </>
+    )}
+          
     <ContactCon>
     <ContactForm />
     </ContactCon>
     <FooterSection />
+    
     </UiUxDesignPage>
   )
 }
