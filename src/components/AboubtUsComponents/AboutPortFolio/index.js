@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Styled from "styled-components"
 import {
     Header,
@@ -75,9 +76,9 @@ import {
                 <WebsiteContainer>
                     <Image src={Export1} alt="not-found"/>
                     <X>
-                        <Heading>
+                        <Link to="/portfolio"><Heading>
                         Website development can be a fascinating & rewarding endeavor.
-                        </Heading>
+                        </Heading></Link>
                         <Para1>
                         Throughout the development process, it is = essential to consider factors like user experience, search engine optimization (SEO), accessibility, and security to create  a successful and effective website.
                         </Para1>

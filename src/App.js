@@ -141,6 +141,8 @@ import OurPatner from "./components/AboubtUsComponents/OurPatner"
 import PriceModel from "./components/AboubtUsComponents/PricingModels";
 import Sustainability from "./components/AboubtUsComponents/Sustainability";
 import Software from "./components/AboubtUsComponents/SoftwareDevelopment";
+import Location from "./components/AboubtUsComponents/Location"
+import SubSection from "./components/AboubtUsComponents/AboutPortfolioSub";
 
 const App = () => {
   return (
@@ -205,6 +207,8 @@ const AppRoutes = () => {
       <Route exact path="/AboutUsComponents/PricingModels" component={PriceModel}/>
       <Route exact path="/AboutUsComponents/SoftwareDevelopment" component={Software}/>
       <Route exact path="/AboutUsComponents/OurPatner" component={OurPatner}/>
+      <Route exact path="/AboutUsComponents/Location" component={Location}/>
+      <Route exact path="/portfolio"  component={SubSection}/>
 
       <Route exact path="/CareerOppurtunities/Designersforhire" component={Designerforhire} />
       <Route exact path="/CareerOppurtunities/DevelopersforHire" component={Developerforhire} />
