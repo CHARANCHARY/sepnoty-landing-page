@@ -53,3 +53,15 @@ export const CircleThree = styled.div`
   color: #ffffff;
   background: linear-gradient(#224F83, #224F8300);
 `;
+
+export const GraphsContainer = styled.div`
+`;
+
+export const CardSection = styled.div`
+`;
+
+
+// export const ResponsiveContainer = styled.div`
+//     background-color: #C1CAE7;
+//     height: 90%;
+// `;
