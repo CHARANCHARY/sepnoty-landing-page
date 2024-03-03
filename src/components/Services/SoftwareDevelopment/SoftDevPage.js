@@ -16,7 +16,7 @@ import ServiceCard from "./SectionThree/ServiceCard"
 import { 
     SoftDevSection,
     PageTitle,
-    TitleSpan,
+    
     SectionThreeHeading,
     SectionThreeDescription,
     SectionThree,
@@ -137,7 +137,7 @@ imgUrl:workimg3,
 const SoftDevPage = () => {
   return (
     <SoftDevSection>
-    <PageTitle>Services<TitleSpan> &gt; Software Development</TitleSpan></PageTitle>
+    <PageTitle>Services &gt; Software Development</PageTitle>
     <SectionOne />
     <SectionTwo />
     <SectionThreeHeading>Explore Our <SpanThree>Software Development</SpanThree> Offering</SectionThreeHeading>

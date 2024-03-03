@@ -10,16 +10,17 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-padding:15px;
+padding:20px;
 border:1px solid rgba(255, 255, 255, 1);
 border-radius:10px;
 width:20%;
 `;
 export const ComponentHeading=styled.h2`
 color:rgba(254, 129, 34, 1);
-font-size:26px;
-font-weight:600;
+font-size:28px;
+font-weight:800;
 `;
 export const ComponentTitle=styled.p`
 color:white;
+font-size:20px;
 `;

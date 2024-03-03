@@ -8,25 +8,26 @@ margin-bottom:30px;
 `;
 export const WebSectionTwoHeading=styled.h2`
 color:rgba(43, 69, 155, 1);
-font-size:24px;
+font-size:26px;
 margin:0px 0px 20px 30px;
 `;
 export const HeadingSpan=styled.span`
 width:65px;
 height:8%;
-margin-top: -6px;
+margin-top:-9px;
 margin-left:15px;
 position:absolute;
 background-color:rgba(129, 150, 219, 0.25);
 z-index:0;
 `;
 export const AppAbout=styled.p`
-font-size:16px;
+font-size:19px;
+line-height:25px;
 width:65%;
 color:white;
 margin-left:40px;
-margin-top:15px;
-margin-bottom:15px;
+margin-top:18px;
+margin-bottom:18px;
 `;
 export const ImgCon = styled.div`
   display: flex;

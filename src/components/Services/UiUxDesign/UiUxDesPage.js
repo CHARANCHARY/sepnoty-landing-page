@@ -17,7 +17,6 @@ import DesignSectionCard from './DesignSectionCard/DesignSectionCard';
 import {
     UiUxDesignPage,
     WebPageTitle,
-    WebSpan,
     WebHeading,
     HeadingSpan,
     WebSectionTwoHeading,
@@ -65,19 +64,77 @@ const DesignDetails=[
 const SubPageList = [
   {
     id: 1,
-    name: 'Padma',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    title:'Research',
+    about: 'Wireframing is one of the key parts of product design. Designers create a wireframe for each screen in the app and interconnect them to make a User Journey.After that, they turn the User Journey into a clickable prototype so that customers could experience their app and suggest adjustments if needed.',
+    pic:designimg1,
+    headingOne:'Purpose',
+    aboutOne:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingTwo:'Basic Elements',
+    aboutTwo:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingThree:'Low Fidelity vs. High Fidelity:',
+    aboutThree:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFour:'Tools',
+    aboutFour:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFive:'Iterative Process',
+    aboutFive:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingSix:'Communication Tool',
+    aboutSix:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+
   },
   {
     id: 2,
-    name: 'Yamini',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    title:'Wireframing',
+    about: 'Wireframing is one of the key parts of product design. Designers create a wireframe for each screen in the app and interconnect them to make a User Journey.After that, they turn the User Journey into a clickable prototype so that customers could experience their app and suggest adjustments if needed.',
+    pic:designimg2,
+    headingOne:'Purpose',
+    aboutOne:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingTwo:'Basic Elements',
+    aboutTwo:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingThree:'Low Fidelity vs. High Fidelity:',
+    aboutThree:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFour:'Tools',
+    aboutFour:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFive:'Iterative Process',
+    aboutFive:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingSix:'Communication Tool',
+    aboutSix:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
   },
   {
     id: 3,
-    name: 'Charan',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
+    title:'Visual style',
+    about: 'Wireframing is one of the key parts of product design. Designers create a wireframe for each screen in the app and interconnect them to make a User Journey.After that, they turn the User Journey into a clickable prototype so that customers could experience their app and suggest adjustments if needed.',
+    pic:designimg3,
+    headingOne:'Purpose',
+    aboutOne:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingTwo:'Basic Elements',
+    aboutTwo:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingThree:'Low Fidelity vs. High Fidelity:',
+    aboutThree:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFour:'Tools',
+    aboutFour:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFive:'Iterative Process',
+    aboutFive:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingSix:'Communication Tool',
+    aboutSix:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    },
+    {
+      id: 4,
+      title:'Design & Delivery',
+      about: 'Wireframing is one of the key parts of product design. Designers create a wireframe for each screen in the app and interconnect them to make a User Journey.After that, they turn the User Journey into a clickable prototype so that customers could experience their app and suggest adjustments if needed.',
+      pic:designimg4,
+      headingOne:'Purpose',
+    aboutOne:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingTwo:'Basic Elements',
+    aboutTwo:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingThree:'Low Fidelity vs. High Fidelity:',
+    aboutThree:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFour:'Tools',
+    aboutFour:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingFive:'Iterative Process',
+    aboutFive:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    headingSix:'Communication Tool',
+    aboutSix:'Wireframes serve as a blueprint for the final design, helping designers and stakeholders visualize the layout, content hierarchy, and functionality of a digital product before investing time and resources into detailed design and development.',
+    },
 ];
 const UiUxDesPage = () => {
   const [selectedDetail, setSelectedDetail] = useState(null);
@@ -96,10 +153,10 @@ const UiUxDesPage = () => {
     
   return (
     <UiUxDesignPage>
-    <WebPageTitle>Services &gt; <WebSpan>UI & UX Design</WebSpan></WebPageTitle>
+    <WebPageTitle>Services &gt; UI & UX Design</WebPageTitle>
     <WebHeading>Services</WebHeading>
     <UiSectionOne />
-    <HeadingSpan />
+    
         {selectedDetail ? (
           <>
           {selectedSubPageDetail ? (
@@ -113,6 +170,7 @@ const UiUxDesPage = () => {
         </>
       )  : (
       <>
+      <HeadingSpan />
       <WebSectionTwoHeading>How it all works?</WebSectionTwoHeading>
     <WorksImg src={worksimg}></WorksImg>
     <DesProcessHeading>Our UI/UX design process</DesProcessHeading>

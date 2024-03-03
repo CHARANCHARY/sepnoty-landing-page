@@ -291,3 +291,9 @@ export const ServiceCon = styled.div`
     margin-right: 0px;
   }
 `;
+export const ContactCon = styled.div`
+  margin-right: 80px;
+  @media screen and (max-width: 455px) {
+    margin-right: 0px;
+  }
+`;

@@ -9,23 +9,6 @@ import {
   InsertImg,
   WebTechButton,
 } from './styled';
-const SubPageList = [
-  {
-    id: 1,
-    name: 'Padma',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  {
-    id: 2,
-    name: 'Yamini',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  {
-    id: 3,
-    name: 'Charan',
-    about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-];
 
 const DesignSectionCard = (props) => {
   const { details, onLearnMoreClick } = props;
@@ -34,9 +17,9 @@ const DesignSectionCard = (props) => {
   const [matchingDetail, setMatchingDetail] = useState(null);
 
   const handleLearnMoreClick = () => {
-    const matchingDetail = SubPageList.find((item) => item.id === id);
-    setMatchingDetail(matchingDetail);
-    onLearnMoreClick(); // Notify the parent component
+    // Assuming onLearnMoreClick is a callback provided by the parent component
+    // to handle the "Learn More" click and update the UI accordingly.
+    onLearnMoreClick(details);
   };
 
   return (

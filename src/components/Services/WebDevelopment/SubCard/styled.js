@@ -23,9 +23,10 @@ export const SubHeadSpan = styled.span`
   z-index:0;
 `;
 export const SubPageImg=styled.img`
-width:300px;
-height:300px;
-margin-left:40px;
+width:80px;
+height:80px;
+margin-bottom:10px;
+align-self:center;
 `;
 export const SubPara=styled.p`
 font-size:18px;
@@ -41,4 +42,21 @@ height:50px;
 border-radius:5px;
 cursor:pointer;
 margin-left:30px;
+`;
+export const SubPageCardCon=styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+background-color:rgba(217, 217, 217, 1);
+border-radius:10px;
+width:24%;
+margin-top:25px;
+margin-right:25px;
+margin-left:30px;
+padding:25px;
+`;
+export const SubCardText=styled.p`
+font-size:18px;
+color:black;
+text-align:justify;
 `;

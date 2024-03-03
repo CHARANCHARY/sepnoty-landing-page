@@ -1,10 +1,11 @@
 import WebSectionOne from './WebSectionOne/WebSectionOne';
 import WebTechCard from './WebSectionTwo/WebTechCard';
+import React, { useState } from 'react';
 import {
     WebDevelopmentPage,
     WebHeading,
     WebPageTitle,
-    WebSpan,
+    
     WebSectionTwo,
     WebSectionTwoHeading,
     HeadingSpan,
@@ -22,6 +23,7 @@ import tech8 from './images/tech8.png';
 import tech9 from './images/tech9.png';
 import FooterSection from '../../Footer/FooterSection';
 import ContactForm from '../../ContactUs/ContactForm';
+import SubCard from './SubCard/SubCard';
 
 const techDetails=[
    {
@@ -70,21 +72,210 @@ const techDetails=[
     techAbout:'Flutter is an open-source UI software development kit (SDK) created by Google. It is used to develop applications for various platforms, including Android, iOS, Windows, Mac, Linux, and the web, from a single codebase. Flutter uses the Dart programming language, also developed by Google. ',
    },
 ];
+const SubPageList = [
+  {
+    id: 1,
+    pic:tech1,
+    cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+    headingOne:'TypeScript',
+  aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+  headingTwo:'Component-based architecture',
+  aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+  headingThree:'Dependency injection',
+  aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+  headingFour:'Directives',
+  aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+  headingFive:'Services',
+  aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+  headingSix:'Routing',
+  aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+
+  },
+  {
+    id: 2,
+     pic:tech2,
+    cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+    headingOne:'TypeScript',
+  aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+  headingTwo:'Component-based architecture',
+  aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+  headingThree:'Dependency injection',
+  aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+  headingFour:'Directives',
+  aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+  headingFive:'Services',
+  aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+  headingSix:'Routing',
+  aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+},
+  {
+    id: 3,
+    pic:tech3,
+    cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+    headingOne:'TypeScript',
+  aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+  headingTwo:'Component-based architecture',
+  aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+  headingThree:'Dependency injection',
+  aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+  headingFour:'Directives',
+  aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+  headingFive:'Services',
+  aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+  headingSix:'Routing',
+  aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+},
+    {
+      id: 4,
+      pic:tech4,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+    {
+      id: 5,
+      pic:tech5,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+    {
+      id: 6,
+      pic:tech6,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+    {
+      id:7,
+      pic:tech7,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+    {
+      id: 8,
+      pic:tech8,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+    {
+      id: 9,
+      pic:tech9,
+      cardText:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers',
+      headingOne:'TypeScript',
+    aboutOne:'Angular is built using TypeScript, a superset of JavaScript that adds static typing and other features to the language. This allows for better tooling, error checking, and maintainability of code.',
+    headingTwo:'Component-based architecture',
+    aboutTwo:'Angular applications are built using a component-based architecture. Components are reusable building blocks that encapsulate the data, logic, and presentation layers of a web application.',
+    headingThree:'Dependency injection',
+    aboutThree:'Angular has a built-in dependency injection system that helps manage the dependencies between different parts of an application. This promotes modularity and makes it easier to write and test code.',
+    headingFour:'Directives',
+    aboutFour:'Angular provides a set of built-in directives that extend HTML with additional functionality. Directives such as ngIf, ngFor, and ngModel allow developers to add dynamic behavior to HTML elements.',
+    headingFive:'Services',
+    aboutFive:'Angular services are singleton objects that are used to organize and share code across different parts of an application. Services are often used to encapsulate business logic, data access, and other common tasks.',
+    headingSix:'Routing',
+    aboutSix:'Angular includes a powerful routing module that allows developers to define navigation paths and load different components based on the current URL. This enables the creation of single-page applications with multiple views.',
+    },
+];
 const WebDevPage = () => {
+  const [selectedDetail, setSelectedDetail] = useState(null);
+  const [selectedSubPageDetail, setSelectedSubPageDetail] = useState(null);
+
+  const handleLearnMoreClick = (detail) => {
+    const matchingSubPageDetail = SubPageList.find((item) => item.id === detail.id);
+    setSelectedSubPageDetail(matchingSubPageDetail);
+    setSelectedDetail(detail);
+  };
+
+  const handleBackClick = () => {
+    setSelectedDetail(null);
+    setSelectedSubPageDetail(null);
+  };
   return (
     <WebDevelopmentPage>
-    <WebPageTitle>Services &gt; <WebSpan>Web development</WebSpan></WebPageTitle>
+    <WebPageTitle>Services &gt;Web development</WebPageTitle>
     <WebHeading>Services</WebHeading>
     <WebSectionOne />
+    {selectedDetail ? (
+      <>
+      {selectedSubPageDetail ? (
+        <SubCard details={selectedSubPageDetail} onBackClick={handleBackClick} />
+      ) : (
+        <WebTechCard
+          details={selectedDetail}
+          onLearnMoreClick={() => handleLearnMoreClick(selectedDetail)}
+        />
+      )}
+    </>
+  )  : (
+  <>
     <WebSectionTwo>
     <HeadingSpan />
     <WebSectionTwoHeading>Technologies that we majorly use for</WebSectionTwoHeading>
     <WebSectionTwoCardsCon>
     {techDetails.map((eachItem) => (
-        <WebTechCard key={eachItem.id} details={eachItem} />
+        <WebTechCard
+        key={eachItem.id} 
+        details={eachItem} 
+        onLearnMoreClick={() => handleLearnMoreClick(eachItem)} 
+        />
       ))}
       </WebSectionTwoCardsCon>
     </WebSectionTwo>
+    </>
+    )}
+       
     <ContactCon>
     <ContactForm />
     </ContactCon>
