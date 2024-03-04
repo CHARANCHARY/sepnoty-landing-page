@@ -20,12 +20,14 @@ import {
   CareerCon,
   ResourceCon,
   DownArrow,
+  ContactCon,
 } from "./styledComponents";
 import AboutUsSection from "../AboutUsSection/AboutUs";
 import ServiceSection from "../ServiceSection";
 import BlogSection from "../../pages/BlogSection/";
 import CareerOppurtunities from "../CareerOppurtunities";
 import ResourceCenterSection from "../ResourceCenterSection";
+import Contact from "../ContactUsSection";
 // import AboutUs from "../../pages/AboutUs";
 // import Services from "../../pages/Services";
 
@@ -36,6 +38,7 @@ const Navbar = () => {
   const [isCareerOpen, setCareerOpen] = useState(false);
   const [isBlogOpen, setBlogOpen] = useState(false);
   const [isResourceOpen, setResourceOpen] = useState(false);
+  const [isButtonOpen, setButtonOpen] = useState(false);
 
   // const history = useHistory();
 
@@ -44,6 +47,7 @@ const Navbar = () => {
   const careerRef = useRef(null);
   const blogRef = useRef(null);
   const resourceRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
     // Attach event listener to the document when any dropdown is open
@@ -53,7 +57,8 @@ const Navbar = () => {
         !serviceRef.current.contains(e.target) &&
         !careerRef.current.contains(e.target) &&
         !blogRef.current.contains(e.target) &&
-        !resourceRef.current.contains(e.target)
+        !resourceRef.current.contains(e.target) &&
+        !buttonRef.current.contains(e.target)
       ) {
         closeOtherSections();
       }
@@ -64,7 +69,8 @@ const Navbar = () => {
       isServiceOpen ||
       isCareerOpen ||
       isBlogOpen ||
-      isResourceOpen
+      isResourceOpen ||
+      isButtonOpen
     ) {
       document.addEventListener("click", closeDropdownOutside);
     } else {
@@ -75,7 +81,14 @@ const Navbar = () => {
     return () => {
       document.removeEventListener("click", closeDropdownOutside);
     };
-  }, [isAboutUsOpen, isServiceOpen, isCareerOpen, isBlogOpen, isResourceOpen]);
+  }, [
+    isAboutUsOpen,
+    isServiceOpen,
+    isCareerOpen,
+    isBlogOpen,
+    isResourceOpen,
+    isButtonOpen,
+  ]);
 
   const toggleAboutUs = (e) => {
     closeOtherSections();
@@ -103,12 +116,18 @@ const Navbar = () => {
     setResourceOpen(!isResourceOpen);
   };
 
+  const toggleContact = () => {
+    closeOtherSections();
+    setButtonOpen(!isButtonOpen);
+  };
+
   const closeOtherSections = () => {
     setResourceOpen(false);
     setServiceOpen(false);
     setAboutUsOpen(false);
     setCareerOpen(false);
     setBlogOpen(false);
+    setButtonOpen(false);
     // history.push("/");
   };
 
@@ -222,10 +241,16 @@ const Navbar = () => {
               </ResourceCon>
             )}
           </DropdownContainer>
-
-          <ListComponent class="list-item">
-            <button className="contact-button">Contact Us</button>
-          </ListComponent>
+          <DropdownContainer ref={buttonRef}>
+            <ListComponent class="list-item" onClick={toggleContact}>
+              <button className="contact-button">Contact Us</button>
+            </ListComponent>
+            {isButtonOpen && (
+              <ContactCon>
+                <Contact />
+              </ContactCon>
+            )}
+          </DropdownContainer>
         </ul>
         {/* <ul
           className={Mobile ? "nav-links-mobile" : "nav-links"}

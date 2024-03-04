@@ -1,13 +1,16 @@
-import contact from "../images/contact";
+import contact from "./images/contact.svg";
+import { ContactImg, Container, Data } from "./styled";
 
 const Contact = () => {
   return (
-    <div>
-      <img src={contact} />
+    <Container>
+      <ContactImg src={contact} alt="contact" />
       <div>
-        <p>contact.us@sepnoty.in</p>
-        <p>(+91) 84659 97345</p>
+        <Data>contact.us@sepnoty.in</Data>
+        <Data>(+91) 84659 97345</Data>
       </div>
-    </div>
+    </Container>
   );
 };
+
+export default Contact;

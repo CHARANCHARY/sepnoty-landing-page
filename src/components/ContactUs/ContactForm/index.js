@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FiUploadCloud } from "react-icons/fi";
 
 import ContactSection from "../ContactSection";
@@ -66,6 +66,7 @@ const ContactForm = () => {
   const [sepnotyContactChecked, setSepnotyContactChecked] = useState(false);
   const [requestSepnotyChecked, setRequestSepnotyChecked] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
+  const fileInputRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -84,6 +85,17 @@ const ContactForm = () => {
   const handleRequestSepnotyChange = (e) => {
     setRequestSepnotyChecked(e.target.checked);
     setIsFormValid(sepnotyContactChecked && e.target.checked);
+  };
+
+  const handleBrowseClick = () => {
+    // Trigger click event of the file input element
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (e) => {
+    // Handle file selection
+    const selectedFile = e.target.files[0];
+    console.log("Selected file:", selectedFile);
   };
 
   return (
@@ -106,10 +118,16 @@ const ContactForm = () => {
             ></ContactTextarea>
           </div>
           <ContactDragAndDrop>
-            <FiUploadCloud className="icon" />
+            <FiUploadCloud className="icon" onClick={handleBrowseClick} />
+            <input
+              type="file"
+              ref={fileInputRef}
+              style={{ display: "none" }}
+              onChange={handleFileChange}
+            />
             <DragHead>
               Drag and drop or{" "}
-              <ContactAnchorEle href="https://www.example.com">
+              <ContactAnchorEle onClick={handleBrowseClick}>
                 browse
               </ContactAnchorEle>{" "}
               to upload your file(s)?
