@@ -247,7 +247,7 @@ const Navbar = () => {
             </ListComponent>
             {isButtonOpen && (
               <ContactCon>
-                <Contact />
+                <Contact closeOtherSections={closeOtherSections} />
               </ContactCon>
             )}
           </DropdownContainer>
