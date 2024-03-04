@@ -5,13 +5,11 @@ background-color:rgba(12, 17, 31, 1);
 width:100vw;
 `;
 export const GdPageTitle=styled.h2`
-font-size:22px;
+font-size:26px;
 color:white;
-padding:65px 0px 10px 30px;
+padding:65px 0px 10px 40px;
 `;
-export const GdSpan=styled.span`
-color:rgba(43, 69, 155, 1);
-`;
+
 export const GdHeading=styled.h1`
 font-size:28px;
 font-weight:700;
@@ -20,7 +18,7 @@ color:white;
 `;
 export const GdSectionTwoHeading=styled.h2`
 color:rgba(43, 69, 155, 1);
-font-size:24px;
+font-size:26px;
 margin:60px 0px 20px 30px;
 `;
 export const TransparentSpan=styled.span`
@@ -39,7 +37,7 @@ margin-top:30px;
 margin-bottom:20px;
 `;
 export const CapabilityHeading=styled.h2`
-font-size:24px;
+font-size:26px;
 color:rgba(43, 69, 155, 1);
 margin-top:50px;
 margin-bottom:30px;

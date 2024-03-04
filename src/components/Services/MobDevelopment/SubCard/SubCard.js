@@ -7,6 +7,7 @@ import {
   SubPageImg,
   SubPara,
   BackButton,
+  
 } from './styled';
 
 
