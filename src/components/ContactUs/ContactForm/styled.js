@@ -80,7 +80,7 @@ export const DragHead = styled.p`
   font-size: 13px;
 `;
 
-export const ContactAnchorEle = styled.a`
+export const ContactAnchorEle = styled.span`
   color: #0285ff;
 `;
 

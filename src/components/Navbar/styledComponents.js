@@ -81,3 +81,14 @@ export const DownArrow = styled.img`
   width: 8px;
   margin-left: 5px;
 `;
+
+export const ContactCon = styled.div`
+  display: block;
+  position: fixed;
+  background-color: #f9f9f9;
+  top: 10;
+  border-radius: 10px;
+  right: 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+`;
