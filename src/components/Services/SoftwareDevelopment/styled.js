@@ -10,11 +10,9 @@ export const SoftDevSection = styled.div`
 export const PageTitle=styled.h2`
 color:white;
 font-size:20px;
-margin:65px 30px 20px 30px;
+padding:60px 30px 20px 40px;
 `;
-export const TitleSpan=styled.span`
-color:rgba(43, 69, 155, 1);
-`;
+
 export const SectionThreeHeading=styled.h2`
 font-size:28px;
 text-align:center;
@@ -23,21 +21,22 @@ export const SpanThree=styled.span`
 color:rgba(43, 69, 155, 1);
 `;
 export const SectionThreeDescription=styled.p`
-font-size:16px;
+font-size:20px;
 line-height:25px;
 width:55%;
-margin:30px;
+margin:40px;
+margin-left:40px;
 `;
 export const SectionThree=styled.div`
 display:flex;
 flex-wrap:wrap;
-padding:30px;
+padding:40px;
 justify-content:center;
 `;
 export const SectionFour=styled.div`
 background-color:rgba(37, 73, 137, 1);
 text-align:center!important;
-padding:20px;
+padding:40px;
 `;
 export const SectionFourHeading=styled.h2`
 color:white;
@@ -45,8 +44,8 @@ color:white;
 export const SectionFourDescription=styled.p`
 color:white;
 padding:10px 30px 20px 100px;
-line-height:20px;
-font-size:16px;
+line-height:22px;
+font-size:18px;
 text-align:justify;
 width:90%;
 `;

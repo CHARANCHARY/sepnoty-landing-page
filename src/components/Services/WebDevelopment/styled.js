@@ -9,9 +9,7 @@ font-size:22px;
 color:white;
 padding:65px 0px 10px 30px;
 `;
-export const WebSpan=styled.span`
-color:rgba(43, 69, 155, 1);
-`;
+
 export const WebHeading=styled.h1`
 font-size:28px;
 font-weight:700;
@@ -31,7 +29,7 @@ margin:60px 0px 20px 30px;
 export const HeadingSpan=styled.span`
 width:65px;
 height:8%;
-margin-top: 45px;
+margin-top: 48px;
 margin-left:15px;
 position:absolute;
 background-color:rgba(129, 150, 219, 0.25);

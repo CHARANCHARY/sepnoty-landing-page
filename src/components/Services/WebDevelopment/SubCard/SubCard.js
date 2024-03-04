@@ -7,6 +7,8 @@ import {
   SubPageImg,
   SubPara,
   BackButton,
+  SubPageCardCon,
+  SubCardText,
 } from './styled';
 
 
@@ -14,7 +16,7 @@ const SubCard = (props) => {
 
 const history = useHistory();
 const { details, onBackClick } = props; 
-  const {title,about,pic,headingOne,aboutOne,headingTwo,aboutTwo,headingThree,aboutThree,headingFour,aboutFour,headingFive,aboutFive,headingSix,aboutSix,} = details;
+  const {pic,cardText,headingOne,aboutOne,headingTwo,aboutTwo,headingThree,aboutThree,headingFour,aboutFour,headingFive,aboutFive,headingSix,aboutSix,} = details;
   const handleBackClick = () => {
     if (onBackClick) {
       // If onBackClick is provided, call it
@@ -27,11 +29,10 @@ const { details, onBackClick } = props;
 
   return (
     <SubCardSection>
-    <div>
-    <SubHeadSpan />
-    <SubHead>{title}</SubHead>
-    <SubPara>{about}</SubPara></div>
+    <SubPageCardCon>
     <SubPageImg src={pic} />
+    <SubCardText>{cardText}</SubCardText>
+    </SubPageCardCon>
     <div>
     <SubHeadSpan />
     <SubHead>{headingOne}</SubHead>

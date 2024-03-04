@@ -36,6 +36,7 @@ import {
   FollowUsContainer,
   Copyright,
   ServiceCon,
+  ContactCon,
 } from "./styled";
 
 const followUsElements = [
@@ -112,13 +113,13 @@ class FooterSection extends Component {
                 <ServiceItems>Customer Software Development </ServiceItems>
                 <ServiceItems>Web Development</ServiceItems>
               </ServiceCon>
-              <div>
+              <ContactCon>
                 <ContactHeading>Contact Us</ContactHeading>
                 <ServiceItems>Call us</ServiceItems>
                 <ServiceItems>Live Chat</ServiceItems>
                 <ServiceItems>WhatsApp</ServiceItems>
                 <ServiceItems>Email us</ServiceItems>
-              </div>
+              </ContactCon>
             </ServiceContact>
             <FollowUsContainer>
               <ContactHeading>Follow Us</ContactHeading>

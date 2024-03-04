@@ -4,24 +4,23 @@ export const WebTechCardCon=styled.div`
 display:flex;
 flex-direction:column;
 justify-content:center;
-
 background-color:rgba(217, 217, 217, 1);
 border-radius:10px;
-width:25%;
-margin-top:20px;
-margin-right:20px;
+width:24%;
+margin-top:25px;
+margin-right:25px;
 `;
 export const WebTechImg=styled.img`
-width:60px;
-height:60px;
+width:70px;
+height:70px;
 align-self:center;
-padding:10px;
+padding-top:20px;
 `;
 export const WebTechAbout=styled.p`
 color:black;
 text-align:left;
-font-size:14px;
-padding:10px;
+font-size:16px;
+padding:20px;
 `;
 export const WebTechButton=styled.button`
 margin-bottom:0px;
