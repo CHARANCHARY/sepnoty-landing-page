@@ -45,7 +45,7 @@ import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import small from "../Images/Rectanglesmall.svg";
+
 import trim from "../Images/trim.svg";
 import CV from "../Images/CorporateVideo.svg";
 import SM from "../Images/socialmedia.svg";
@@ -82,28 +82,29 @@ const VideoEditing = () => {
           <Rectangle1 src={rectangle1} alt="not-found" />
         </ContentRecomContainer>
         <ServiceItemCon>
-          
-            <ItemCon>
-              <ServiceItemDetails>
-                <PatternCon>
-                  <SmallPattern></SmallPattern>
-                  <ListHeading>Corporate Videos</ListHeading>
-                </PatternCon>
+          <ItemCon>
+            <ServiceItemDetails>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Corporate Videos</ListHeading>
+              </PatternCon>
 
-                <ServiceItemDesc>
-                  Leverage videos to attract eyeballs and get visible among your
-                  targeted audience. Our expertise lies in making and editing
-                  promo videos, training videos, product demos, instructional
-                  videos, and videos capturing moments from a recent conference
-                  or meeting.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={CV} alt="cv" />
-                  <Link to="/Services/Video-editing/Corporate-videos"><ServiceItemButton>Learn More</ServiceItemButton></Link>
-                </ImageCon>
-              </ServiceItemDetails>
-            </ItemCon>
-          
+              <ServiceItemDesc>
+                Leverage videos to attract eyeballs and get visible among your
+                targeted audience. Our expertise lies in making and editing
+                promo videos, training videos, product demos, instructional
+                videos, and videos capturing moments from a recent conference or
+                meeting.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={CV} alt="cv" />
+                <Link to="/Services/Video-editing/Corporate-videos">
+                  <ServiceItemButton>Learn More</ServiceItemButton>
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </ItemCon>
+
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>
