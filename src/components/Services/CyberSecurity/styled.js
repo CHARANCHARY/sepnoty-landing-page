@@ -80,7 +80,7 @@ export const Rectangle3 = styled.img`
   left: 0%;
   height: 40%;
   width: 17%;
-  top: 34%;
+  top: 38%;
   z-index: 0;
   margun-bottom: 20px;
 `;
@@ -92,7 +92,7 @@ export const ListHeading = styled.h1`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 3.5%;
+  margin-top: 2.3%;
 `;
 
 export const ItemCon = styled.div``;
@@ -108,7 +108,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 20%;
+  width: 40%;
   padding-left: 2.5%;
   display: flex;
   flex-direction: column;

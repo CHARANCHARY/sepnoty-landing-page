@@ -79,7 +79,7 @@ export const Rectangle3 = styled.img`
   left: 0%;
   height: 40%;
   width: 17%;
-  top: 34%;
+  top: 38%;
   z-index: 0;
   margun-bottom: 20px;
 `;
@@ -92,7 +92,7 @@ export const ListHeading = styled.h1`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 6.8%;
+  margin-top: 6%;
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
@@ -103,7 +103,8 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 20%;
+  width: 50%;
+
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -120,7 +121,7 @@ export const ServiceItemButton = styled.button`
   color: #2b459b;
   font-size: 15px;
   border-radius: 7px;
-  padding: 3px 0 3px 0;
+  padding: 7px 0 7px 0;
 `;
 
 export const ServiceItemDetails = styled.div`
