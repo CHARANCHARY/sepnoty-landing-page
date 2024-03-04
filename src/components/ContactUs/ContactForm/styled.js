@@ -88,7 +88,7 @@ export const ContactInputContainer = styled.div`
   margin-bottom: 10px;
 `;
 
-export const ContactInputList = styled.form`
+export const ContactInputList = styled.div`
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
