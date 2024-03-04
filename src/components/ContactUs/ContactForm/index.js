@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FiUploadCloud } from "react-icons/fi";
 
-import axios from "axios";
 import ContactSection from "../ContactSection";
 
 import call from "../Images/call.svg";
@@ -117,7 +116,7 @@ const ContactForm = () => {
             </DragHead>
           </ContactDragAndDrop>
           <ContactInputContainer>
-            <ContactInputList id="userForm" onSubmit={handleSubmit}>
+            <ContactInputList id="userForm">
               <div>
                 <ContactUsInput placeholder="Full Name" type="text" />
               </div>
@@ -155,7 +154,9 @@ const ContactForm = () => {
               </div>
             </ContactInputList>
             <ContactButtonCon>
-              <ContactButton type="submit">Send</ContactButton>
+              <ContactButton type="submit" disabled={!isFormValid}>
+                Send
+              </ContactButton>
             </ContactButtonCon>
           </ContactInputContainer>
         </form>
