@@ -41,8 +41,9 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width: 50%;
+  width: 1300px;;
   padding: 20px 30px 30px 0px;
+
 `;
 
 export const Button = styled.button`

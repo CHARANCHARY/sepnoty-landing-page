@@ -192,9 +192,6 @@ related information for your article or would want to speak with one of our prof
             </ExpertContainer>
 
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
         <FooterSection />
       </>
     );
@@ -235,6 +232,7 @@ related information for your article or would want to speak with one of our prof
   flex-direction:column;
   gap : 10px;
   margin-left:100px;
+  margin-top:-20px;
  
  `;
  const Z =  Styled.div`

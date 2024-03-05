@@ -1,8 +1,8 @@
 import Styled from "styled-components";
 import Button from "./Button"
-const Image = "./images/Stars.svg"
-const Stars = "./images/Stars2.svg"
-const image2 = "./images/Standing.svg"
+import Image from "./images/Stars.svg"
+import Stars from "./images/Stars2.svg"
+import image2 from "./images/Standing.svg"
 
 
 const CostHome = () => {
@@ -57,8 +57,7 @@ const Main = Styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width:100%;
-margin-right:-50%;
+width:-100%;
 background-color:#0C111F;
 font-family:'Roboto';
 @media screen and (max-width: 768px) {

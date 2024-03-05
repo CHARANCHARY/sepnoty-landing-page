@@ -58,6 +58,12 @@ import {
             <Rectangle2 src={rectangle2} alt="not-found" />
             <Rectangle1 src={rectangle1} alt="not-found" />
           </ContentRecomContainer>
+          <He>
+            About OurPatner
+          </He>
+          <Par>      Our fruitful partnership with the suppliers regarding IT Products and Services creates new avenues for expansion and offers our 
+clients access to the latest technological advancements. We can confidently rely on the caliber of tech goods we recommend because 
+we have collaborations with industry leaders in cloud technologies, data management systems, and corporate software applications</Par>
             <Main>
                 <Main1>
                   <Img src={Line1}/>
@@ -133,6 +139,9 @@ import {
                 </Main1>
             </Main>
         </DigitalContainer>
+        <ConatctCon>
+          <ContactForm />
+        </ConatctCon>
         <FooterSection />
       </>
     );
@@ -140,13 +149,21 @@ import {
   };
   
   export default OurPatner;
+
+  const He = Styled.h1`
+  margin-left:100px;
+  margin-top:120px;
+  font-size:22px;
+  margin-bottom:-59px;
+  `
   
   const Main = Styled.div`
   display:flex;
   flex-wrap : wrap;
   margin-left:100px;
   gap:180px;
-  margin-top:180px;
+  margin-top:190px;
+  margin-bottom:130px;
   `
   const Main1 = Styled.div`
  
@@ -155,6 +172,7 @@ import {
   justify-content:center;
   height:300px;
   border-radius:20px;
+  margin-bottom:-179px;
   `
   const Heading = Styled.h1`
   margin-top:20px;
@@ -171,4 +189,10 @@ import {
   `
   const Img = Styled.img`
   width:300px;
+  `
+  const Par = Styled.p`
+  margin-left:100px;
+  width:1200px;
+  margin-top:100px;
+  margin-bottom:-109px;
   `

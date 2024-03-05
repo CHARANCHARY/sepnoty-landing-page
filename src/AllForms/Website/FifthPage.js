@@ -47,7 +47,7 @@ const FifthPage = () => {
                 </Form>
             </FormContainer>
             <FormContainer>
-                <Form>
+                <Form1>
                     
                     <CheckBoxCon>
                         <input type="checkbox" id="7st"/>
@@ -70,10 +70,10 @@ const FifthPage = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="10st"/>
                         <Label htmlfor="10st">
-                           <input placeholder="Others (Please Specify)"/>
+                        Others (Please Specify)
                         </Label>
                     </CheckBoxCon>
-                </Form>
+                </Form1>
             </FormContainer>
         </Main>
     )
@@ -102,12 +102,13 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
-height:300px;
-width:300px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:20px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
+height:350px;
+width:400px;
 `
 const CheckBoxCon = Styled.div`
 gap:30px;
@@ -116,10 +117,16 @@ justify-content:space-between;
 margin-top:13px;
 `
 const Label = Styled.label`
-font-size:15px;
-font-weight:500;
+font-size:18px;
+font-family: Inter;
+font-weight: 500;
 color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
 
+`
+const Form1 = Styled.form`
+margin-top:100px;
 `

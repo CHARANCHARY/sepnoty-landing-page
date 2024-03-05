@@ -1,154 +1,180 @@
-import Styled from "styled-components"
+import styled from "styled-components";
+
 const EightthPage = () => {
     return(
-        <Main>
-            <Main2>
-                <Para1>
-                Almost done!
-                </Para1>
-                <Para2>
-                Please let us know where we should send your estimate. Our experts may need to ask a few extra questions to calculate a precise quote for your case.
-                </Para2>
-                <Para3>
-                Your contact data
-                </Para3>
-                <Main3>
-                    <Main4>
-                        <label>
-                        *Full name
-                        </label>
-                        <Input type="text"/>
-                    </Main4>
-                    <Main4>
-                        <para3>
-                        *Company name
-                        </para3>
-                        <div>
-                        <Input type="text"/>
-                        </div>
-                    </Main4>
-                </Main3>
-                <Main3>
-                    <Main4>
-                        <label htmlFor="Fullname">
-                        *Work email
-                        </label>
-                        <Input type="text" id="Fullname"/>
-                    </Main4>
-                    <Main4>
-                        <para3>
-                        *Phone number
-                        </para3>
-                        <div>
-                        <Input type="text"/>
-                        </div>
-                    </Main4>
-                </Main3>
-                <Main3>
-                <para3>
-                Preferred way of communication:
-                </para3>
-                <ButtonCon>
-      <ActiveButton>Website</ActiveButton>
-      <div>
-        <Buttonel>Application</Buttonel>
-        <Butt>Software</Butt>
-      </div>
-    </ButtonCon>
+        <M> 
+        <Main><P1>
+        Almost done!
+        </P1>
+        <P2>
+        Please let us know where we should send your estimate. Our experts may need to ask a few extra questions to calculate a precise quote for your case.
+        </P2>
+        <P3>Your contact data</P3>
+        <M2>
+            <M3>
+                <P4>*Full name</P4>
+                <Input/>
+            </M3>
+            <M3>
+                <P4>*Company name</P4>
+                <Input/>
+            </M3>
 
-                </Main3>
-                
+        </M2>
+        <br/>
+        <br/>
+        <M2>
+            <M3>
+                <P4>*Work email</P4>
+                <Input/>
+            </M3>
+            <M3>
+                <P4>*Phone number</P4>
+                <Input/>
+            </M3>
 
-            </Main2>
-            <label> <Input2 type="checkbox" />I agree to have Sepnoty contact me Via email, Phone, Messenger.</label>
-            
-            <label><Input2 type="checkbox"/>I agree to have Sepnoty provide my request information to sepnoty affiliated development
-centres.</label>
-<para1>Your personal data will be stored for ten years on US servers in accordance with GDPR, and erased thereafter. 
+        </M2><br/>
+        <M3>
+            <P4>Preferred way of communication:</P4>
+            <Button1>Any</Button1>
+            <Button2>Email</Button2>
+            <Button3>Phone</Button3>
+        </M3>
+        <br/>
+        <M3>
+            <Input1 type="checkbox" id="1" />
+            <Label htmlFor="1">I agree to have Sepnoty contact me Via email, Phone, Messenger.</Label>
+
+        </M3>
+        <br/>
+        <M3>
+            <Input1 type="checkbox" id="1" />
+            <Label htmlFor="1">I agree to have Sepnoty provide my request information to sepnoty affiliated development
+centres.</Label>
+
+
+        </M3>
+        <br/>
+        <P5>Your personal data will be stored for ten years on US servers in accordance with GDPR, and erased thereafter. 
 We'll share it with our development centre to address your request, ensuring GDPR compliance at both locations. 
-Refer to our Privacy Policy for details.</para1>
+Refer to our <Span>Privacy Policy</Span> for details.</P5>
         </Main>
+        
+        </M>
     )
-
 }
 export default EightthPage;
 
-const ActiveButton = Styled.button`
-  background-color: #2b459b;
-  border-radius:10px;
-  margin-right:-20px;
-  font-size: 10px;
-  color: #ffffff;
-  height:30px;
-`;
-
-const Buttonel =    Styled.button`
-  font-size: 10px;
-  background-color: #d9d9d9;
-  margin-left: 10px;
-  border-right: 1px solid #9e9898;
-  height:30px;
-`;
-
- const Butt = Styled.button`
-  background-color: #d9d9d9;
-  font-size: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  height:30px;
-`;
-const ButtonCon = Styled.div`
-  display: flex;
-  flex-direction: row;
-  margin-left:40px;
-
-`;
-
-const Main = Styled.div`
-    display:flex;
-    flex-direction:column;
-    padding:20px;
-background: #C1CAE7;
-gap:20px;
+const Input1 = styled.input`
+margin-left:-500px;
 `
-const Main2 = Styled.div`
+const M = styled.div`
 display:flex;
-    flex-direction:column;
-
+justify-content:center;
+align-items:center;
 `
-const Para1 = Styled.p`
+const Main = styled.div`
+height:500px;
+width:600px;
+background-color:#C1CAE7;
+display:flex;
+flex-direction:column;
+border: 1px solid #C1CAE7;
+margin-left:30px;
+`
+const P1 = styled.p`
+font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
 color:#2B459B;
+margin-left:30px;
+`
+const P2 = styled.div`
+margin-left:30px;
+margin-top:-10px;
+margin-right:30px;
+color:#263238;
 font-weight:500;
 `
-
-
-
-
-const Para2 = Styled.p`
+const P3 = styled.p`
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
 color:#263238;
-margin-top:-10px;
+margin-left:30px;
+margin-top:5px;
 `
-const Para3 = Styled.p`
-color:#263238;
-font-weight:700;
-font-family:inter;
-`
-const Main3 = Styled.div`
+const M2 = styled.div`
 display:flex;
 flex-direction:row;
-margin-top:10px;
+gap:40px;
 `
-const Main4 = Styled.div`
+const M3 = styled.div`
 display:flex;
-flex:direction:column;
+flex-direction:column;
 `
-const Input =  Styled.input`
+const P4 = styled.p`
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color:#263238;
+margin-left:30px;
+margin-top:-10px;
+`
+const Input = styled.input`
+margin-left:30px;
+margin-top:-15px;
 background:transparent;
+border: 1px solid #8C8C8C;
+width:200px;
 `
-const Input2 = Styled.input`
+const Button1 = styled.button`
+margin-left:330px;
+margin-top:-45px;
+background: #2B459B;
+width:60px;
+border-radius:5px;
+color:white;
+font-size:12px;
+height:20px;
 
 `
-
-
-
-
+const Button2 = styled.button`
+margin-left:380px;
+margin-top:-21px;
+background:transparent;
+border: 1px solid #8C8C8C;
+width:60px;
+left:-30px;
+`
+const Button3 = styled.button`
+margin-left:440px;
+margin-top:-23px;
+background:transparent;
+border: 1px solid #8C8C8C;
+width:60px;
+left:-30px;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+`
+const Label = styled.label`
+color:#263238;
+margin-left:60px;
+margin-top:-20px;
+`
+const Span = styled.span`
+color:#BC2424;
+`
+const P5 = styled.p`
+font-size:12px;
+margin-left:20px;
+`

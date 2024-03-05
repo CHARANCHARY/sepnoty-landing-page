@@ -67,101 +67,101 @@ import {
             <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
                 <Main2>
                    
                         <Image1 src={Image} alt="not-found"/>
-                        <p>Stinger Technologies, 
+                        <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                     
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
                 </Main2>
                 <Main2>
                    
                         <Image1 src={Image} alt="not-found"/>
-                        <p>Stinger Technologies, 
+                        <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                     
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
                 </Main2>
                 <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
            <Main2>
                    
                    <Image1 src={Image} alt="not-found"/>
-                   <p>Stinger Technologies, 
+                   <p><Spam></Spam>Stinger Technologies, 
 a global provider of Business Processes
 outsourcing services</p>
                
-               <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+               <P>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </P>
            </Main2>
             </Main1>
         </DigitalContainer>
@@ -173,6 +173,9 @@ outsourcing services</p>
   };
   
   export default Testimonial;
+  const Spam = Styled.span`
+  margin-left:50px;
+  `
 
   const Main1 = Styled.div`
   display:flex;
@@ -180,16 +183,22 @@ outsourcing services</p>
   flex-wrap : wrap;
   gap:180px;
   margin-left:100px;
+  margin-bottom:100px;
   `
   const Main2 = Styled.div`
   border: 0.99px solid #FFFFFF;
   background: #D9D9D917;
-  border-radius:20px;
+  border-radius:7px;
   padding:10px;
   height:300px;
   width:300px;
+  gap:30px;
+  padding:20px;
+  margin-bottom:-120px;
   `
   const Image1 = Styled.img`
-  
+  margin-bottom:10px;
   `
-  
+  const P = Styled.p`
+  margin-top:20px;
+  `

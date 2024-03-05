@@ -105,9 +105,6 @@ import styled from "styled-components";
 
             </OrderContainer>
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
         <FooterSection />
       </>
     );
@@ -117,10 +114,11 @@ import styled from "styled-components";
   export default Software;
   
   const OrderContainer = styled.ol`
-  margin-left:100px;
+  margin-left:60px;
   gap:10px;
   `
   const List = styled.li`
   margin-top:10px;
+  width:1200px;
   `
   

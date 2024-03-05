@@ -58,6 +58,10 @@ import {
             <Rectangle2 src={rectangle2} alt="not-found" />
             <Rectangle1 src={rectangle1} alt="not-found" />
           </ContentRecomContainer>
+          <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Pricing Models</ListHeading>
+              </PatternCon>
           <Main>
             <Main1>
                 <Heading1>
@@ -67,7 +71,7 @@ import {
                 Included free in all Sepnoty plans.
                 </Para1>
                 
-                <Main2>
+                <Main4>
                 <Main3>
                     <Rupee>₹0</Rupee>
                     <Rupee>Free forever</Rupee>
@@ -76,7 +80,7 @@ import {
                     Get Started
                 </Botton>
                 
-                </Main2>
+                </Main4>
             </Main1>
             <Main1>
                 <Heading1>
@@ -107,7 +111,7 @@ For individuals and teams who need more control over moving and managing their d
 For teams that want to collaborate and build for themselves and their customers.
                 </Para1>
                 
-                <Main2>
+                <Main5>
                 <Main3>
                     <Rupee>₹8,940</Rupee>
                     <Rupee>Free forever</Rupee>
@@ -116,13 +120,10 @@ For teams that want to collaborate and build for themselves and their customers.
                     Contact
                 </Botton>
                 
-                </Main2>
+                </Main5>
             </Main1>
           </Main>
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
         <FooterSection />
       </>
     );
@@ -148,27 +149,42 @@ padding:13px;
   const Main2 = Styled.div`
   display:flex;
   flex-direction:row;
+  justify-content:space-between;
+  margin-top:10px;
   `
   const Main3 = Styled.div`
   margin-top:50px;
   `
   const Heading1 = Styled.h1`
-  color:black;
-  font-size:30px;
+  color: #000000;
+  font-size:22px;
   font-weight:700;
   `
   const Para1 = Styled.p`
-  color:gray;
+  color:#000000;
   font-size:15px;
   font-weight:400;
   `
   const Rupee = Styled.p`
-  color:black;
+  color: #000000;
   `
   const Botton = Styled.button`
+  
   background: #89A4FF;
   height:25px;
   margin-top:50px;
   margin-left:90px;
 border-radius:10px;
+  `
+  const Main4 = Styled.div`
+  display:flex;
+  flex-direction:row;
+  margin-top:40px;
+  justify-content:space-between;
+  `
+  const Main5 = Styled.div`
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ margin-top:30px;
   `
