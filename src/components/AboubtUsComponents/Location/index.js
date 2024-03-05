@@ -83,6 +83,10 @@ import styled from "styled-components";
   flex-direction:column;
   padding:20px;
 
+
+
+  
+
   `
   const Img = styled.img`
   height:10px;
