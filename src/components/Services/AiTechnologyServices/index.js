@@ -30,11 +30,11 @@ import data from "../Images/data.svg";
 import framework from "../Images/framework.svg";
 import monitoring from "../Images/monitoring.svg";
 import usecases from "../Images/usecases.svg";
-
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
 const AiTechnologyServices = () => {
+  const heading = "Have a question to our Expertise?";
   return (
     <>
       <DigitalContainer>
@@ -142,7 +142,7 @@ const AiTechnologyServices = () => {
         </ServiceItemCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

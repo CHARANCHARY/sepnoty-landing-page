@@ -18,23 +18,6 @@ import {
   ServiceItemCon,
   ConatctCon,
   ItemCon,
-  CardContainer,
-  Logo,
-  CardTitle,
-  TitleContainer,
-  PostCon,
-  PostHeading,
-  CardHolder,
-  ToolsCon,
-  ToolsCardCon,
-  ToolsCard,
-  ToolTitle,
-  TrimBg,
-  CropBg,
-  EditerBg,
-  ClipBg,
-  FocusBg,
-  GradingBg,
   SmallPattern,
   PatternCon,
 } from "./styled";
@@ -43,17 +26,16 @@ import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-
 import risk from "../Images/risk.svg";
 import endpoint from "../Images/endpoint.svg";
 import protection from "../Images/protection.svg";
-
 import MSS from "../Images/MSS.svg";
 import network from "../Images/network.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
 const CyberSecurity = () => {
+  const heading = "Have a question to our Expertise?";
   return (
     <>
       <DigitalContainer>
@@ -181,7 +163,7 @@ const CyberSecurity = () => {
         </ServiceItemCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

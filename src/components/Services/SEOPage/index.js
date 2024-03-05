@@ -7,14 +7,9 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
-  Small,
-  Small1,
-  Small2,
-  Small3,
   ServiceItemDesc,
   ImageCon,
   ServiceItemImg,
@@ -22,31 +17,22 @@ import {
   ServiceItemDetails,
   ServiceItemCon,
   ConatctCon,
-  ContactItem,
-  Container,
   PatternCon,
   SmallPattern,
   SeoItemsCon,
   SeoItemsList,
   SeolistItem,
-  /* ContactItem,
- Container, */
 } from "./styled";
 
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-
-import small from "../Images/Rectanglesmall.svg";
-
-import DM from "../Images/Digitalmarketing.svg";
 import SEO from "../Images/seo.svg";
-import SMM from "../Images/smm.svg";
-import CM from "../Images/ContentMarketing.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
 const SEOPage = () => {
+  const heading = "Have a question to our team or need help with your project?";
   return (
     <>
       <DigitalContainer>
@@ -189,7 +175,7 @@ const SEOPage = () => {
         </ServiceItemCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

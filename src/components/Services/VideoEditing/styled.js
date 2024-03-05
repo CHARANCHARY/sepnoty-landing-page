@@ -108,7 +108,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 45%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   padding-left: 2.5%;
@@ -116,7 +116,7 @@ export const ImageCon = styled.div`
 export const ServiceItemImg = styled.img`
   width: 100%;
 
-  margin-bottom: -20px;
+  margin: 0px;
 `;
 
 export const ServiceItemButton = styled.button`
@@ -191,7 +191,7 @@ export const TitleContainer = styled.div`
 export const CardTitle = styled.p`
   color: #171717;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
 `;
 

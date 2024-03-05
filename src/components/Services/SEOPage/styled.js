@@ -92,7 +92,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 50%;
+  width: 20%;
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -113,7 +113,7 @@ export const ServiceItemButton = styled.button`
 `;
 
 export const ServiceItemDetails = styled.div`
-  margin: 20px 5% 20px 12%;
+  margin: 20px 5% 20px 8.2%;
 `;
 
 export const ConatctCon = styled.div`
@@ -154,7 +154,7 @@ export const SeoItemsList = styled.ul`
 export const SeolistItem = styled.li`
   font-size: 17px;
   color: #ffffff;
-  margin-left: 12%;
+  margin-left: 9.5%;
   padding-right: 7%;
   width: 60%;
 `;
