@@ -83,7 +83,9 @@ const AboutUsSection = (props) => {
           <Link to="/AboutUsComponents/OurPatner">
             <SectionItem onClick={handleLinkClick}>Our Partners</SectionItem>
           </Link>
-          <SectionItem onClick={handleLinkClick}>Locations</SectionItem>
+          <Link to="/AboutUsComponents/Location">
+            <SectionItem onClick={handleLinkClick}>Locations</SectionItem>
+          </Link>
         </CompanyContainer>
         <CompanyContainer>
           <Section>Approach</Section>

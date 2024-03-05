@@ -42,7 +42,13 @@ const ResourceCenterSection = (props) => {
           <Resources>Resources</Resources>
           <Border />
           <ResourcesContainer>
-            <ResourceItem>Analytics and Reporting</ResourceItem>
+            <Link to="/resource-center/analytics-and-reporting">
+              <ResourceItem onClick={handleLinkClick}>
+                Analytics and Reporting
+              </ResourceItem>
+            </Link>
+
+            <ResourceItem></ResourceItem>
             <Link to="/resource-center/content-recommendations">
               <ResourceItem onClick={handleLinkClick}>
                 Content Recommendations
@@ -68,18 +74,21 @@ const ResourceCenterSection = (props) => {
                 Learning Paths and Roadmaps
               </ResourceItem>
             </Link>
-            <ResourceItem onClick={handleLinkClick}>
-              Events and Workshop
-            </ResourceItem>
-            <ResourceItem onClick={handleLinkClick}>
-              Career Resources and Job Listings
-            </ResourceItem>
-            <ResourceItem onClick={handleLinkClick}>
-              Case Studies and Success Stories
-            </ResourceItem>
-            <ResourceItem onClick={handleLinkClick}>
-              Feedback and Improvement Mechanisms
-            </ResourceItem>
+            <Link to="/resource-center/events-and-workshop">
+              <ResourceItem onClick={handleLinkClick}>
+                Events and Workshop
+              </ResourceItem>
+            </Link>
+            <Link to="/resource-center/case-studies-and-success-stories">
+              <ResourceItem onClick={handleLinkClick}>
+                Case Studies and Success Stories
+              </ResourceItem>
+            </Link>
+            <Link to="/resource-center/feedback-and-improvement">
+              <ResourceItem onClick={handleLinkClick}>
+                Feedback and Improvement Mechanisms
+              </ResourceItem>
+            </Link>
           </ResourcesContainer>
         </Items>
       </ResourceItemsContainer>

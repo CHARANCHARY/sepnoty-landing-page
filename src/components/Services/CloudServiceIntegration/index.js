@@ -72,27 +72,28 @@ const CloudService = () => {
               </ImageCon>
             </ServiceItemDetails>
           </div>
-          <Link to="/Services/Cloud-integration/application-integration">
-            <div>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Application Integration</ListHeading>
-              </PatternCon>
 
-              <ServiceItemDetails>
-                <ServiceItemDesc>
-                  Application integration involves connecting and orchestrating
-                  workflows between different cloud-based applications and
-                  systems to automate business processes and ensure smooth data
-                  flow.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={app} alt="app" />
-                  <ServiceItemButton>Learn More</ServiceItemButton>
-                </ImageCon>
-              </ServiceItemDetails>
-            </div>
-          </Link>
+          <div>
+            <PatternCon>
+              <SmallPattern></SmallPattern>
+              <ListHeading>Application Integration</ListHeading>
+            </PatternCon>
+
+            <ServiceItemDetails>
+              <ServiceItemDesc>
+                Application integration involves connecting and orchestrating
+                workflows between different cloud-based applications and systems
+                to automate business processes and ensure smooth data flow.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={app} alt="app" />
+                <Link to="/Services/Cloud-integration/application-integration">
+                  <ServiceItemButton>Learn More</ServiceItemButton>{" "}
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </div>
+
           <div>
             <PatternCon>
               <SmallPattern></SmallPattern>

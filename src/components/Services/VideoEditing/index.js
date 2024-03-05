@@ -37,13 +37,15 @@ import {
   FocusBg,
   SmallPattern,
   PatternCon,
+  CardHeading,
+  GradingBg,
 } from "./styled";
 
 import { Link } from "react-router-dom";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import small from "../Images/Rectanglesmall.svg";
+
 import trim from "../Images/trim.svg";
 import CV from "../Images/CorporateVideo.svg";
 import SM from "../Images/socialmedia.svg";
@@ -80,28 +82,29 @@ const VideoEditing = () => {
           <Rectangle1 src={rectangle1} alt="not-found" />
         </ContentRecomContainer>
         <ServiceItemCon>
-          <Link to="/Services/Video-editing/Corporate-videos">
-            <ItemCon>
-              <ServiceItemDetails>
-                <PatternCon>
-                  <SmallPattern></SmallPattern>
-                  <ListHeading>Corporate Videos</ListHeading>
-                </PatternCon>
+          <ItemCon>
+            <ServiceItemDetails>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Corporate Videos</ListHeading>
+              </PatternCon>
 
-                <ServiceItemDesc>
-                  Leverage videos to attract eyeballs and get visible among your
-                  targeted audience. Our expertise lies in making and editing
-                  promo videos, training videos, product demos, instructional
-                  videos, and videos capturing moments from a recent conference
-                  or meeting.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={CV} alt="cv" />
+              <ServiceItemDesc>
+                Leverage videos to attract eyeballs and get visible among your
+                targeted audience. Our expertise lies in making and editing
+                promo videos, training videos, product demos, instructional
+                videos, and videos capturing moments from a recent conference or
+                meeting.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={CV} alt="cv" />
+                <Link to="/Services/Video-editing/Corporate-videos">
                   <ServiceItemButton>Learn More</ServiceItemButton>
-                </ImageCon>
-              </ServiceItemDetails>
-            </ItemCon>
-          </Link>
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </ItemCon>
+
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>
@@ -154,7 +157,7 @@ const VideoEditing = () => {
                 <TrimBg>
                   <Logo src={trim} alt="trim" />
                 </TrimBg>
-                <CardTitle>Video Trimming</CardTitle>
+                <CardHeading>Video Trimming</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video trimming is the process of removing unwanted parts or
@@ -169,7 +172,7 @@ const VideoEditing = () => {
                 <EditerBg>
                   <Logo src={editer} alt="editer" />
                 </EditerBg>
-                <CardTitle>Video Compositing</CardTitle>
+                <CardHeading>Video Compositing</CardHeading>
               </TitleContainer>
               <CardTitle>
                 A Video Composition service helps combine multiple frames of
@@ -182,7 +185,7 @@ const VideoEditing = () => {
                 <ClipBg>
                   <Logo src={clipping} alt="clipping" />
                 </ClipBg>
-                <CardTitle>Video Clipping</CardTitle>
+                <CardHeading>Video Clipping</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video clipping refers to the process of selecting and trimming
@@ -195,7 +198,7 @@ const VideoEditing = () => {
                 <FocusBg>
                   <Logo src={focus} alt="focus" />
                 </FocusBg>
-                <CardTitle>Video Stabilization</CardTitle>
+                <CardHeading>Video Stabilization</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video stabilization is the process of reducing shakiness and
@@ -208,7 +211,7 @@ const VideoEditing = () => {
                 <CropBg>
                   <Logo src={crop} alt="crop" />
                 </CropBg>
-                <CardTitle>Video Cropping </CardTitle>
+                <CardHeading>Video Cropping </CardHeading>
               </TitleContainer>
               <CardTitle>
                 Video cropping is the process of removing unwanted portions of a
@@ -220,8 +223,10 @@ const VideoEditing = () => {
             </CardContainer>
             <CardContainer>
               <TitleContainer>
-                <Logo src={grading} alt="grading" />
-                <CardTitle>Video Color grading</CardTitle>
+                <GradingBg>
+                  <Logo src={grading} alt="grading" />
+                </GradingBg>
+                <CardHeading>Video Color grading</CardHeading>
               </TitleContainer>
               <CardTitle>
                 Color grading is the process of enhancing and manipulating the

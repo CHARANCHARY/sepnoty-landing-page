@@ -10,7 +10,11 @@ import article9 from '../assets/article9.svg';
 import article1 from '../assets/article1.png';
 import {
     ArticlesContainer,
+    SeeMoreButton,
+    SeeMoreCon,
+    HrLine,
 } from './styledComponents';
+import { useState } from "react";
 const articlesList = [
     {
       id: 1,
@@ -84,14 +88,73 @@ const articlesList = [
       description:"The tech giant Google invests in new tech products every year.Research and development of various tech solutions.",
       time:"Jun 10 2023",
     },
-  ]
+    {
+      id: 10,
+      title:'UI/UX',
+      name: 'The Importance of UI/UX for your Online Business',
+      imgUrl:article3,
+      description:"Imagine sitting down to watch a highly anticipated action movie, only to find that it lacks excitement, meaningful plot twists.",
+      time:"NOV 08 2024",
+    },
+    {
+      id: 11,
+      title:'CRM',
+      name: 'Top Reasons to Migrate from Zoho CRM to Dynamics 365 Sales',
+      imgUrl:article4,
+      description:"Customer Relationship Management (CRM) systems play a crucial role in modern business operations. They help organizations manage customer data, streamline.",
+      time:"Jan 10 2024",
+    },
+    {
+      id: 12,
+      title:'CRM',
+      name: 'Boosting Efficiency & Driving Growth: The Role of ERP in the Fastener Industry',
+      imgUrl:article5,
+      description:"In today's fast-paced business environment, companies across industries are constantly seeking ways to improve efficiency, streamline operations, and foster growth.",
+      time:"Jul 11 2023",
+    },
+    {
+      id: 13,
+      title:'Mobile App Development',
+      name: 'How Much Does It Cost to Build an App like My Little Food Critic?',
+      imgUrl:article8,
+      description:"In today's digital age, food enthusiasts and culinary adventurers are constantly on the lookout for reliable recommendations and reviews.",
+      time:"Feb 12 2023",
+    },
+    {
+      id: 14,
+      title:'Mobile App Development',
+      name: 'How Much Does It Cost to Build an App Like Netflix?',
+      imgUrl:article7,
+      description:"Did you sleep well? These words often greet us at the break of the day, carrying with them a shared.",
+      time:"Feb 10 2024",
+    },
+    {
+      id: 15,
+      title:'UI/UX',
+      name: 'The Importance of UI/UX for your Online Business',
+      imgUrl:article3,
+      description:"Imagine sitting down to watch a highly anticipated action movie, only to find that it lacks excitement, meaningful plot twists.",
+      time:"NOV 08 2024",
+    },
+    
+  ];
 const AllArticles = () => {
+  const [noOfElements,setnoOfElements]=useState(9);
+  const loadMore=()=>{
+    setnoOfElements(noOfElements+3);
+  }
+  const slice=articlesList.slice(0,noOfElements);
   return (
     <ArticlesContainer>
     
-    {articlesList.map((eachItem) => (
+    {slice.map((eachItem) => (
         <CardArticle key={eachItem.uniqueNo} details={eachItem} />
       ))}
+    <SeeMoreCon>
+    <HrLine />
+    <SeeMoreButton onClick={loadMore}>See More Articles</SeeMoreButton>
+    <HrLine />
+    </SeeMoreCon>
     </ArticlesContainer>
   )
 }

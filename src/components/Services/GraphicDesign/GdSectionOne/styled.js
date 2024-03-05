@@ -2,17 +2,17 @@ import styled from "styled-components";
 
 export const WebSectionOneCon=styled.div`
 background-color:rgba(37, 73, 137, 1);
-padding:40px 0px 20px 30px;
+padding:40px 0px 20px 40px;
 width:100%;
 min-height: 40vh;
 `;
 export const WebSectionOneHeading=styled.h2`
-font-size:20px;
+font-size:26px;
 color:white;
 width:30%;
 `;
 export const WebSectionDescription=styled.p`
-font-size:17px;
+font-size:20px;
 margin-top:20px;
 width:70%;
 color:white;

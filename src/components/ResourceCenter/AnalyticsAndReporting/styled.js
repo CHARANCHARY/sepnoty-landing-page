@@ -1,11 +1,18 @@
 import styled from "styled-components";
-import Ellipse1 from "./Ellipse 853.png";
-import Ellipse2 from "./Ellipse 855.png";
+// import Ellipse1 from "./Ellipse 853.png";
+// import Ellipse2 from "./Ellipse 855.png";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
 width: auto;
-height: 150vw;
+height: auto;
+`;
+export const MobSection1=styled.div`
+background-color:rgba(12, 17, 31, 1);
+width: ;
+height: 100vw;
+display: flex;
+flex-wrap: wrap;
 `;
 
 export const Header = styled.h1`
@@ -22,10 +29,8 @@ export const Span = styled.span`
 
 export const CirclesContainer = styled.div`
   background-color: #C1CAE7;
-  height: 20%;
-  width:30%;
-  margin-left: 100px;
-  padding: 90px;
+  height: 15%;
+      width: 25%;
 `;
 export const CircleOne = styled.div`
   
@@ -53,3 +58,19 @@ export const CircleThree = styled.div`
   color: #ffffff;
   background: linear-gradient(#224F83, #224F8300);
 `;
+
+export const GraphsContainer = styled.div`
+`;
+
+export const CardSection = styled.div`
+`;
+
+
+export const PercentageContainer = styled.div`
+      background-color: #C1CAE7;
+      padding: 30px 0px 10px 30px;
+      color: black;
+      border-radius: 10px;
+      height: 15%;
+      width: 25%;
+      `;

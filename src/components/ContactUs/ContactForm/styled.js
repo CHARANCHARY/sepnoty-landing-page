@@ -80,7 +80,7 @@ export const DragHead = styled.p`
   font-size: 13px;
 `;
 
-export const ContactAnchorEle = styled.a`
+export const ContactAnchorEle = styled.span`
   color: #0285ff;
 `;
 
@@ -88,7 +88,7 @@ export const ContactInputContainer = styled.div`
   margin-bottom: 10px;
 `;
 
-export const ContactInputList = styled.form`
+export const ContactInputList = styled.div`
   display: flex;
   flex-direction: row;
   flex-flow: wrap;

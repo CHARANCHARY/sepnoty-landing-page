@@ -121,15 +121,12 @@ button {
 }
 
 .contact-button {
-  background-color: rgba(37, 73, 137, 1);
-  color: white;
-  height: 30px;
-  width: 90px;
-  padding: 10px;
-  border: 0.5px solid white;
-  border-radius: 30px;
-  font-size: 10px;
-  font-weight: bold;
+  background-image: linear-gradient(to right, #ffffff, #fff741);
+  color: #234581;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 15px;
   cursor: pointer;
-  margin-top: -10px;
+  outline: none;
 }
