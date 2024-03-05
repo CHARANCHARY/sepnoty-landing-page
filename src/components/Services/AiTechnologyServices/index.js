@@ -74,28 +74,31 @@ const AiTechnologyServices = () => {
               </ImageCon>
             </ServiceItemDetails>
           </ItemCon>
-          <Link to="/Services/AITechnologyServices/DataPreparation">
-            <ItemCon>
-              <ServiceItemDetails>
-                <PatternCon>
-                  <SmallPattern></SmallPattern>
-                  <ListHeading>Data Preparation and Quality</ListHeading>
-                </PatternCon>
 
-                <ServiceItemDesc>
-                  AI systems rely heavily on data. Integrating AI services often
-                  involves preparing and cleaning datasets to ensure they are of
-                  high quality and suitable for training machine learning
-                  models. Data privacy and security considerations are also
-                  critical at this stage.
-                </ServiceItemDesc>
-                <ImageCon>
-                  <ServiceItemImg src={data} alt="data" />
+          <ItemCon>
+            <ServiceItemDetails>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Data Preparation and Quality</ListHeading>
+              </PatternCon>
+
+              <ServiceItemDesc>
+                AI systems rely heavily on data. Integrating AI services often
+                involves preparing and cleaning datasets to ensure they are of
+                high quality and suitable for training machine learning models.
+                Data privacy and security considerations are also critical at
+                this stage.
+              </ServiceItemDesc>
+              <ImageCon>
+                <ServiceItemImg src={data} alt="data" />
+                <Link to="/Services/AITechnologyServices/DataPreparation">
+                  {" "}
                   <ServiceItemButton>Learn More</ServiceItemButton>
-                </ImageCon>
-              </ServiceItemDetails>
-            </ItemCon>
-          </Link>
+                </Link>
+              </ImageCon>
+            </ServiceItemDetails>
+          </ItemCon>
+
           <ItemCon>
             <ServiceItemDetails>
               <PatternCon>

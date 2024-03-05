@@ -69,6 +69,10 @@ WX7M+8CG, Udayagiri Rd, <br/>
 Vaddi Palem, Janathapet,<br/> 
 Kavali, Andhra Pradesh 524201</p>
               </Main>
+                    WX7M+8CG, Udayagiri Rd, <br/>
+                    Vaddi Palem, Janathapet,<br/> 
+                    Kavali, Andhra Pradesh 524201</p>
+                </Main>
             </ServiceItemCon>
         </DigitalContainer>
         <FooterSection />

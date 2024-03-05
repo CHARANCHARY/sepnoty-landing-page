@@ -3,12 +3,11 @@ import styled from "styled-components";
 export const ServiceCardCon=styled.div`
 display:flex;
 flex-direction:column;
-padding:15px;
+padding:25px;
 color:black;
 border-radius:7px;
 background-color:white;
-width:28%;
-
+width:25%;
 margin-right:23px;
 margin-bottom:23px;
 position: relative;
@@ -24,7 +23,7 @@ height:70px;
 export const ServiceName=styled.h3`
 font-weight:500;
 margin-left:5%;
-font-weight:700;
+font-weight:800;
 `;
 export const ServiceDescription=styled.p`
 width:95%;
