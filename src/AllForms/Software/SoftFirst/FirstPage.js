@@ -125,8 +125,8 @@ const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
 padding:20px;
-height:300px;
-width:400px;
+height:350px;
+width:600px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
 gap:20px;
@@ -138,7 +138,7 @@ align-items:start;
 justify-content:space-between;
 `
 const Label = Styled.label`
-font-size:15px;
+font-size:18px;
 font-family: Inter;
 font-weight: 500;
 color:#263238;

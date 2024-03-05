@@ -6,7 +6,7 @@ const FirstStep = () => {
             <FormContainer>
                 <Form>
                     <Heading>
-                    *Choose the type of website/App you need:
+                    *Choose the type of Software you need:
                     </Heading>
                     <CheckBoxCon>
                         <input type="checkbox" id="1st"/>
@@ -17,7 +17,7 @@ const FirstStep = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="2st"/>
                         <Label htmlfor="2st">
-                        Portfolio Website/App
+                         Portfolio Website/App
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
@@ -40,67 +40,64 @@ const FirstStep = () => {
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="6st"/>
-                        <Label htmlfor="6st">
-                        <input placeholder="others (please specify)" />
-                        </Label>
+                        <Input1 type="text" placeholder="others (please specify"/>
                     </CheckBoxCon>
                 </Form>
             </FormContainer>
             <FormContainer>
                 <Form>
                     <Heading>
-                    *How many pages will your website/App have?
+                    *How many Tools will your Software have?
                     </Heading>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="1st"/>
-                        <Label htmlfor="1st">
-                        I am not sure
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon> 
-                        <input type="radio" name="first-page" id="2st"/>
-                        <Label htmlfor="2st">
-                        up to 50
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="3st"/>
-                        <Label htmlfor="3st">
-                        50-100
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="4st"/>
-                        <Label htmlfor="4st">
-                        100-500
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="5st"/>
-                        <Label htmlfor="5st">
-                        500-1,000
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="6st"/>
-                        <Label htmlfor="6st">
-                        1,000-5,000
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="6st"/>
-                        <Label htmlfor="6st">
-                        5,000-10,000
-                        </Label>
-                    </CheckBoxCon>
-                    <CheckBoxCon>
-                        <input type="radio" name="first-page" id="6st"/>
-                        <Label htmlfor="6st">
-                        more than 10,000
-                        </Label>
-                    </CheckBoxCon>
+                    <InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    I am not sure
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    up to 50
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    50-100
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    100-500
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    500-1,000
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    1,000-5,000
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    5,000-10,000
+    </Label>
+</InputContainer>
+<InputContainer>
+<Label>
+    <Input type='radio' name="industry" value="Healthcare"/>
+    more than 10,000
+    </Label>
+</InputContainer>
                 </Form>
-                
             </FormContainer>
         </Main>
     )
@@ -112,8 +109,7 @@ display:flex;
 flex-direction:row;
 justify-content:center;
 align-item:center;
-width:900px;
-gap:10px;
+gap:20px;
 `
 const Heading = Styled.h1`
 font-family: Inter;
@@ -128,21 +124,68 @@ color: #263238;
 const FormContainer = Styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
-height:450px;
-width:60vh;
+padding:20px;
+height:350px;
+width:600px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:20px;
+gap:30px;
+border-radius:10px;
 `
 const CheckBoxCon = Styled.div`
-margin-top:13px;
+margin-top:15px;
 align-items:start;
 justify-content:space-between;
 `
 const Label = Styled.label`
-font-size:15px;
+font-size:18px;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Form = Styled.form`
+
+`
+const Input1 = Styled.input`
+background:transparent;
+border: 1px solid gray;
+font-size:15px;
+color: #263238;
+font-weight:500;
+height:15px;
+`
+const Buttonel = Styled.button`
+  font-size: 20px;
+  background-color: #d9d9d9;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px;
+  width:60px;
+  height:30px;
+  margin-left: -10px;
+  border-right: 1px solid #9e9898;
+`;
+
+
+
+const Para1 = Styled.p`
+
+`
+const InputContainer=Styled.div`
+margin-top:5px;
+`
+// const Input1 = Styled.textarea`
+// background:transparent;
+// border: 1px solid #C1CAE7;
+// font-size:15px;
+// color: #263238;
+// font-weight:500;
+// height:15px;
+// `
+const Input = Styled.input`
 
 `

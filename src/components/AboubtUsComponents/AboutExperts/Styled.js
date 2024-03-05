@@ -41,7 +41,7 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width: 50%;
+  width: 1300px;
   padding: 20px 30px 30px 0px;
 `;
 
@@ -98,6 +98,8 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
   font-size: 20px;
   color: #ffffff;
+  width:1200px;
+  font-weight:400;
 `;
 
 export const ImageCon = styled.div`

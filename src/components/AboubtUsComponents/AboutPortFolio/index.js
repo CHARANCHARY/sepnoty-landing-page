@@ -179,6 +179,7 @@ on various technical aspects of a business, project, or initiative.
   flex-direction:row;
   gap : 40px;
 
+
   `
   const Heading = Styled.div`
   font-size: 18px;
@@ -189,18 +190,17 @@ on various technical aspects of a business, project, or initiative.
  const X = Styled.div`
  display:flex;
   flex-direction:column;
-  gap : 30px;
+  gap:20px;
   margin-top:20px;
-  
-
-
+  height:200px;
+  width:700px;
  `;
  const Y = Styled.div`
  display:flex;
   flex-direction:row;
   gap : 10px;
-  margin-left:100px;
-  margin-top:70px;
+  
+
  
  `;
  const Z =  Styled.div`
@@ -212,12 +212,13 @@ margin-left:100px;
  `;
  const Image = Styled.img`
 margin-top:10px;
-height:250px;
+height:200px;
 margin-left:-600px;
  `
  const Para1 = Styled.p`
 `
 const Para2 = Styled.p`
+
 
 `
 const Image1 = Styled.img`

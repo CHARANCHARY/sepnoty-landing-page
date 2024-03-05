@@ -77,9 +77,6 @@ import {
             </div>
             </ServiceItemCon>
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
         <FooterSection />
       </>
     );

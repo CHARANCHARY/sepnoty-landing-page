@@ -68,10 +68,10 @@ import styled from "styled-components";
             <Main>
                 <Main1>
                 <Main2>
-                    <Para>
+                    <Para1>
                     About Our Sustainability Policy
-                    </Para>
-                    <Para>
+                    </Para1>
+                    <Para><Spam></Spam>
                     A sustainability policy outlines an organization's commitment to environmental, social, and economic sustainability. It serves as a guiding framework that articulates the organization's values, goals, & strategies for integrating sustainability into its operations, decision-making  processes, and overall business practices.
                     </Para>
                     </Main2>
@@ -79,10 +79,10 @@ import styled from "styled-components";
                         <Image src={GroupImg} alt="not-found"/>
                    
                 </Main1>
-                <Para>
+                <Para1>
                 Our Commitment:
-                </Para>
-                <Para>
+                </Para1>
+                <Para><Spam></Spam>
 Sepnoty is committed to promoting sustainability in all aspects of our operations. We recognize that our activities have social, environmental, and economic impacts, and we are dedicated to minimizing our negative impacts while maximizing positive contributions to society and the planet.
 Sustainability Policy is classified into five divisions.
                 </Para>
@@ -96,14 +96,11 @@ Economic Prosperity
 <Para>Continuous Improvement:
 </Para>
 <Para>Implementation:</Para>
-<Para>
+<Para><Spam></Spam>
                    This sustainability policy applies to all employees, contractors, suppliers, & partners of Sepnoty. All individuals associated with our organization are expected to adhere to this policy and actively contribute to our sustainability efforts. The management is responsible for overseeing the implementation of this policy and ensuring that it remains relevant and effective over time.</Para>
                 
             </Main>
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
         <FooterSection />
       </>
     );
@@ -114,12 +111,13 @@ Economic Prosperity
 
   const Para = styled.p`
   font-weight:500;
+  width:1100px;
   `
   const Main = styled.div`
   display:flex;
   flex-direction:column;
   margin-left:100px;
-  gap:20px;
+  gap:10px;
   `
   const Main1 = styled.div`
   display:flex;
@@ -132,4 +130,11 @@ Economic Prosperity
   const Image = styled.img`
   height:200px;
   margin-right:10px;
+  `
+  const Para1 = styled.p`
+  font-size:20px;
+  margin-bottom:10px;
+  `
+  const Spam = styled.span`
+  margin-left:50px;
   `

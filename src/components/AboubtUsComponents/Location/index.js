@@ -49,7 +49,7 @@ import styled from "styled-components";
           </Header>
           <Service>About Us</Service>
           <ContentRecomContainer>
-            <ConRecHead>About Our Partners</ConRecHead>
+            <ConRecHead>About Our Location</ConRecHead>
             <ConRecDesc>
             Sepnoty is headquartered in Bangalore, In order to effectively collaborate with regional industry leaders and startups and to access   local talent, we are constantly broadening our global reach.
             </ConRecDesc>
@@ -81,6 +81,7 @@ import styled from "styled-components";
   const Main = styled.div`
   display:flex;
   flex-direction:column;
+  padding:20px;
 
   `
   const Img = styled.img`

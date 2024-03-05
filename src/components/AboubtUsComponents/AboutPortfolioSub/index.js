@@ -115,6 +115,28 @@ on various technical aspects of a business, project, or initiative.
                 </ServiceItemDesc>
               </ServiceItemDetails>
             </div>
+            <div>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Job Opportunities</ListHeading>
+              </PatternCon>
+              <ServiceItemDetails>
+                <ServiceItemDesc>
+                With the increasing importance of having an online presence, the demand for skilled web developers is consistently high. This means there are plenty of jobopportunities and freelance gigs available in the field.
+                </ServiceItemDesc>
+              </ServiceItemDetails>
+            </div>
+            <div>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Remote Work</ListHeading>
+              </PatternCon>
+              <ServiceItemDetails>
+                <ServiceItemDesc>
+                Website development often allows for remote work opportunities, giving you the flexibility to work from anywhere with an internet connection.
+                </ServiceItemDesc>
+              </ServiceItemDetails>
+            </div>
             </ServiceItemCon>
         </DigitalContainer>
         <FooterSection />
