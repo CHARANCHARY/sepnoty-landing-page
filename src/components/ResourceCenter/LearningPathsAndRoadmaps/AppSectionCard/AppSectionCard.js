@@ -9,8 +9,8 @@ import {
 } from './styled';
 
 const AppSectionCard = (props) => {
-    const {details}=props;
-    const {title,about,img}=details;
+    const {details, toggleContent}=props;
+    const {title,about,img , content}=details;
   return (
     <AppCardCon>
     <HeadingSpan />
@@ -18,7 +18,7 @@ const AppSectionCard = (props) => {
     <AppAbout>{about}</AppAbout>
     <ImgCon>
     <InsertImg src={img}></InsertImg>
-    <WebTechButton>Learn More</WebTechButton>
+    <WebTechButton onClick={() => toggleContent(content)} >Learn More</WebTechButton>
     </ImgCon>
     </AppCardCon>
   )

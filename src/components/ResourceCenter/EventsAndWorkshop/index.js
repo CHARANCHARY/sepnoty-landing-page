@@ -1,7 +1,8 @@
 
-
+import React, { useState } from 'react';
 import MobSectionOne from "./MobSectionOne/MobSectionOne"
 import FooterSection from "../../Footer/FooterSection";
+import EventsApplySection from "./ApplySection/index"
 
 import {
     MobSection,
@@ -21,6 +22,13 @@ import {
 } from "./styled"
 
 const EventsAndWorkshop = () => {
+ 
+    const [isVisible, setIsVisible] = useState(false);
+
+    const toggleVisibility = () => {
+      setIsVisible(!isVisible);
+    };
+
 
   const data = [
     {
@@ -65,43 +73,58 @@ const EventsAndWorkshop = () => {
       <MobSection>
       <WebPageTitle>Resource centre &gt; <WebSpan>Events and Workshops</WebSpan></WebPageTitle>
       <WebHeading>Resources</WebHeading>
-      <MobSectionOne />
-      <ServiceItemDetails>
-              <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Events</ListHeading>
-              </PatternCon>
+      <MobSectionOne toggleVisibility={toggleVisibility} />
 
-              <ServiceItemDesc>
-              An event is a planned or spontaneous occurrence that typically involves a gathering of people or activities centered around a specific purpose, theme, or objective. Events can range from small, informal gatherings to large-scale conferences, festivals, or ceremonies. They can be organized for various reasons, including entertainment,celebration, education, networking, marketing, fundraising, or awareness-raising.
-              </ServiceItemDesc>
-      </ServiceItemDetails>
-      <ListItemSection>
-          <PatternCon>
-                <SmallPattern></SmallPattern>
-                <ListHeading>Key characteristics of workshops include:</ListHeading>
-          </PatternCon>
-                 {data.map((item, index) => (
-                    <li key={index}>
-                        <ListHead>{item.heading}</ListHead>
-                        <LearnPara1>{item.para}</LearnPara1>
-                    </li>
-                 ))}
-                 
-            </ListItemSection>
-           
-            <OrderListSection>
-                 <li>Leadership development workshops</li>
-                 <li>Team-building exercises</li>
-                 <li>Creative writing workshops</li>
-                 <li>Design thinking workshops</li>
-                 <li>Agile project management training</li>
-                 <li>Cooking or culinary workshops</li>
-                 <li>Photography or art workshops</li>
-                 <li>Technology or software training sessions</li>
-             </OrderListSection>
-             <LearnPara11>Overall, workshops provide valuable opportunities for participants to learn new skills, exchange ideas, gain insights, 
-and develop practical expertise in a collaborative and interactive setting.</LearnPara11>
+
+
+        {
+            isVisible ? (
+                <div>
+                <ServiceItemDetails>
+                        <PatternCon>
+                          <SmallPattern></SmallPattern>
+                          <ListHeading>Events</ListHeading>
+                        </PatternCon>
+          
+                        <ServiceItemDesc>
+                        An event is a planned or spontaneous occurrence that typically involves a gathering of people or activities centered around a specific purpose, theme, or objective. Events can range from small, informal gatherings to large-scale conferences, festivals, or ceremonies. They can be organized for various reasons, including entertainment,celebration, education, networking, marketing, fundraising, or awareness-raising.
+                        </ServiceItemDesc>
+                </ServiceItemDetails>
+                <ListItemSection>
+                    <PatternCon>
+                          <SmallPattern></SmallPattern>
+                          <ListHeading>Key characteristics of workshops include:</ListHeading>
+                    </PatternCon>
+                           {data.map((item, index) => (
+                              <li key={index}>
+                                  <ListHead>{item.heading}</ListHead>
+                                  <LearnPara1>{item.para}</LearnPara1>
+                              </li>
+                           ))}
+                           
+                      </ListItemSection>
+                     
+                      <OrderListSection>
+                           <li>Leadership development workshops</li>
+                           <li>Team-building exercises</li>
+                           <li>Creative writing workshops</li>
+                           <li>Design thinking workshops</li>
+                           <li>Agile project management training</li>
+                           <li>Cooking or culinary workshops</li>
+                           <li>Photography or art workshops</li>
+                           <li>Technology or software training sessions</li>
+                       </OrderListSection>
+                       <LearnPara11>Overall, workshops provide valuable opportunities for participants to learn new skills, exchange ideas, gain insights, 
+                          and develop practical expertise in a collaborative and interactive setting.</LearnPara11>
+                </div>
+            ) : (
+                <EventsApplySection />
+            )
+        }
+
+
+
+      
       <FooterSection />
       </MobSection>
     )

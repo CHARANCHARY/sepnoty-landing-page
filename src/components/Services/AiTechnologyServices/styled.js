@@ -60,7 +60,7 @@ export const Button = styled.button`
 export const Rectangle1 = styled.img`
   position: absolute;
   right: 0;
-  height: 65%;
+  height: 63%;
   width: 37%;
   top: 12%;
   z-index: 0;
@@ -68,10 +68,10 @@ export const Rectangle1 = styled.img`
 
 export const Rectangle2 = styled.img`
   position: absolute;
-  right: 16%;
-  height: 78%;
+  right: 16.1%;
+  height: 80%;
   width: 60%;
-  top: -5%;
+  top: -11%;
   z-index: 0;
 `;
 
@@ -82,9 +82,7 @@ export const Rectangle3 = styled.img`
   width: 17%;
   top: 38%;
   z-index: 0;
-  margun-bottom: 20px;
 `;
-
 export const ListHeading = styled.h1`
   font-size: 20px;
   color: #2b459b;
@@ -93,7 +91,7 @@ export const ListHeading = styled.h1`
 `;
 
 export const ServiceItemCon = styled.div`
-  margin-top: 35px;
+  margin-top: 2.3%;
 `;
 
 export const ItemCon = styled.div``;
@@ -102,14 +100,15 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 30px;
   font-size: 16px;
   color: #ffffff;
-  width: 80%;
+  width: 60%;
   text-align: justify;
   padding-left: 2.5%;
+  line-height: 1.5;
 `;
 
 export const ImageCon = styled.div`
-  width: 20%;
-
+  width: 40%;
+  padding-left: 2.5%;
   display: flex;
   flex-direction: column;
 `;
