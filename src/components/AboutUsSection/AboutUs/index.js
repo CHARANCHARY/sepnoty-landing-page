@@ -61,6 +61,7 @@ const AboutUsSection = (props) => {
           <MvImg src={MV} alt="M&V" />
         </MvContainer>
 
+
         <CompanyContainer>
           <Section>Company</Section>
           <Border />
