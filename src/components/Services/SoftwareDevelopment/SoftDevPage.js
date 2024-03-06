@@ -31,6 +31,7 @@ import {
     WorksCon,
     SectionSix,
     ContactCon,
+    ServiceSpan,
  } from "./styled"
 import ChooseCard from "./SectionFour/ChooseCard"
 import WorkCard from "./SectionFive/WorkCard"
@@ -137,7 +138,7 @@ imgUrl:workimg3,
 const SoftDevPage = () => {
   return (
     <SoftDevSection>
-    <PageTitle>Services &gt; Software Development</PageTitle>
+    <PageTitle>Services &gt;<ServiceSpan>Software Development</ServiceSpan></PageTitle>
     <SectionOne />
     <SectionTwo />
     <SectionThreeHeading>Explore Our <SpanThree>Software Development</SpanThree> Offering</SectionThreeHeading>

@@ -4,6 +4,10 @@ export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
 width:100vw;
 `;
+export const ServiceSpan=styled.span`
+font-weight:normal;
+font-size:20px;
+`;
 export const WebPageTitle=styled.h2`
 font-size:24px;
 color:white;

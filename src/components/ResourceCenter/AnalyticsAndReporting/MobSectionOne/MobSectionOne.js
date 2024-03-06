@@ -1,19 +1,24 @@
+import React from 'react'
 import {
-    WebSectionOneCon,
+    SectionOneCon,
+    SectionOneHeading,
+    SectionOneDescription,
+    IntroProposalText,
     BackgroundShapeOne,
     BackgroundShapeTwo,
-    WebSectionOneHeading,
-    WebSectionDescription
 } from './styled';
+
 
 const MobSectionOne = () => {
   return (
-    <WebSectionOneCon>
-    <BackgroundShapeTwo />
-    <WebSectionOneHeading>Analytics and Reporting</WebSectionOneHeading>
+    <SectionOneCon>
     <BackgroundShapeOne />
-    <WebSectionDescription>"Data-Driven Decisions: Harness the power of analytics and reporting to drive your business forward."</WebSectionDescription>
-    </WebSectionOneCon>
+    <BackgroundShapeTwo />
+    <SectionOneHeading>Analytics and Reporting</SectionOneHeading>
+    <SectionOneDescription>Data-Driven Decisions: Harness the power of analytics and reporting to drive your business forward.</SectionOneDescription>
+    <IntroProposalText>Get Data</IntroProposalText>
+
+    </SectionOneCon>
   )
 }
 

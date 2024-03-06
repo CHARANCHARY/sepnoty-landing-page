@@ -21,6 +21,7 @@ import {
   GdDetailsContainer,
   GdDesignTechns,
   ContactCon,
+  ServiceSpan,
 } from './styled';
 const SwDesignTools=[
 {
@@ -151,7 +152,7 @@ const GraphicDesignPage = () => {
   };
   return (
     <GraphicDesign>
-    <GdPageTitle>Services &gt;Graphic Designing</GdPageTitle>
+    <GdPageTitle>Services &gt;<ServiceSpan>Graphic Designing</ServiceSpan></GdPageTitle>
     <GdHeading>Services</GdHeading>
     <GdSectionOne />
     {selectedDetail ? (

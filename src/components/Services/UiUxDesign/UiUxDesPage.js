@@ -30,6 +30,7 @@ import {
     StaticToolImg,
     StaticToolImgCon,
     ContactCon,
+    ServiceSpan,
 } from './styled';
 
 import FooterSection from '../../Footer/FooterSection';
@@ -153,7 +154,7 @@ const UiUxDesPage = () => {
     
   return (
     <UiUxDesignPage>
-    <WebPageTitle>Services &gt; UI & UX Design</WebPageTitle>
+    <WebPageTitle>Services &gt;<ServiceSpan>UI & UX Design</ServiceSpan></WebPageTitle>
     <WebHeading>Services</WebHeading>
     <UiSectionOne />
     
