@@ -37,7 +37,7 @@ const CostHome = () => {
             </RightContainer> 
         </Main>
         <div>
-          <Button/>
+          <Button />
         </div>
         </Main2>
     )
@@ -47,9 +47,10 @@ export default CostHome;
 const Main2 = Styled.div`
 display:flex;
 flex-direction:column;
-width:191.5vh;
+width: 100.8%;
+margin-left: -6px;
 background:#0C111F;
-background-size:cover;
+background-size: cover;
 
 `
 
@@ -57,11 +58,11 @@ const Main = Styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width:-100%;
+width: auto;
 background-color:#0C111F;
 font-family:'Roboto';
 @media screen and (max-width: 768px) {
-      flex-direction: column;
+     
   }
 `
 // const Button =Styled.div`
@@ -80,10 +81,7 @@ margin-top:20px;
 // `
 const StarsImage = Styled.img`
 margin-top:50px;
-height: 70%;
-width:70%;
-opacity: 0.4px;
-magrin-left:-110px;
+width: 60%;
 `
 const DevelopContainer = Styled.div`
 margin-top:0px;
@@ -127,13 +125,10 @@ height:650px;
 position:relative;
 z-index:1;
 
-
-
-
 `
 const Image3 = Styled.img`
 position:absolute;
-width:70%;
+width:40%;
 height:50%;
 top:70%;
 left:50%;
