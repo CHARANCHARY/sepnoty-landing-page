@@ -11,8 +11,8 @@ margin-top:25px;
 margin-right:25px;
 `;
 export const WebTechImg=styled.img`
-width:70px;
-height:70px;
+width:55px;
+height:65px;
 align-self:center;
 padding-top:20px;
 `;
@@ -25,7 +25,7 @@ padding:20px;
 export const WebTechButton=styled.button`
 margin-bottom:0px;
 padding-bottom:0px;
-height:14%;
+height:7vh;
 cursor:pointer;
 gap:0;
 padding:8px;

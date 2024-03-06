@@ -50,5 +50,5 @@ export const WebTechButton = styled.button`
   background-color: rgba(164, 164, 164, 1);
   color: rgba(43, 69, 155, 1);
   margin-top: -20px; 
-   
+  height:6vh;
 `;
