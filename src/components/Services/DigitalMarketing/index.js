@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -18,13 +17,8 @@ import {
   ServiceItemDetails,
   ServiceItemCon,
   ConatctCon,
-  ContactItem,
-  Container,
   PatternCon,
   SmallPattern,
-
-  // ContactItem,
-  // Container,
 } from "./styled";
 
 import { Link } from "react-router-dom";
@@ -41,6 +35,7 @@ import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
 const DigitalMarketing = () => {
+  const heading = "Have a question to our team or need help with your project?";
   return (
     <>
       <DigitalContainer>
@@ -142,7 +137,7 @@ const DigitalMarketing = () => {
         </ServiceItemCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

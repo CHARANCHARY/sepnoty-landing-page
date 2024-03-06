@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -63,6 +62,7 @@ import premier from "../Images/premier.svg";
 import crop from "../Images/crop.svg";
 
 const VideoEditing = () => {
+  const heading = "Have a question to our team or need help with your project?";
   return (
     <>
       <DigitalContainer>
@@ -299,7 +299,7 @@ const VideoEditing = () => {
         </ToolsCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -18,23 +17,6 @@ import {
   ServiceItemDetails,
   ServiceItemCon,
   ConatctCon,
-  ItemCon,
-  CardContainer,
-  Logo,
-  CardTitle,
-  TitleContainer,
-  PostCon,
-  PostHeading,
-  CardHolder,
-  ToolsCon,
-  ToolsCardCon,
-  ToolsCard,
-  ToolTitle,
-  TrimBg,
-  CropBg,
-  EditerBg,
-  ClipBg,
-  FocusBg,
   SmallPattern,
   PatternCon,
   CorporateItems,
@@ -49,6 +31,7 @@ import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 
 const AppIntegration = () => {
+  const heading = "Have a question about our Service?";
   return (
     <>
       <DigitalContainer>
@@ -194,7 +177,7 @@ const AppIntegration = () => {
         </CorporateItems>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

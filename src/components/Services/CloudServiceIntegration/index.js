@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -36,6 +35,7 @@ import IAM from "../Images/IAM.svg";
 import workflow from "../Images/workflow.svg";
 
 const CloudService = () => {
+  const heading = "Have a question about our Service?";
   return (
     <>
       <DigitalContainer>
@@ -187,7 +187,7 @@ const CloudService = () => {
         </ServiceItemCon>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>
