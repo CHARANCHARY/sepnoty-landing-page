@@ -12,19 +12,19 @@ import {
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
     ServiceItemDesc,
-    ImageCon,
-    ServiceItemImg,
-    ServiceItemButton,
+    // ImageCon,
+    // ServiceItemImg,
+    // ServiceItemButton,
     ServiceItemDetails,
     ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -32,13 +32,13 @@ import {
     // Container,
   } from "./Styled";
   
-  import GroupImg from "../images/Rectangle 6121.png"
-  import Image from "../images/Rectangle 6122.svg;"
-  import rectangle1 from "../images/Rectangle 1.svg"
+  import GroupImg from "../images/Rectangle 6121.png";
+  import Image from "../images/Rectangle 6122.svg";
+  import rectangle1 from "../images/Rectangle 1.svg";
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
   
-  import ContactForm from "../../ContactUs/ContactForm";
+//   import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
   
   const ClientReviews= () => {

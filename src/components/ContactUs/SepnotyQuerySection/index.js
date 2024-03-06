@@ -10,6 +10,7 @@ import {
 import ContactForm from "../ContactForm";
 
 function Contact() {
+  const heading = "Have a question to our team or need help with your project?";
   return (
     <QueryContainer>
       <BottomCon>
@@ -24,7 +25,7 @@ function Contact() {
         <Image src="./images/remote-meeting.svg" />
       </BottomCon>
 
-      <ContactForm />
+      <ContactForm heading={heading} />
     </QueryContainer>
   );
 }

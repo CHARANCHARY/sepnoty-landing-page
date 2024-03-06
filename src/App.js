@@ -82,14 +82,13 @@ import FooterSection from "./components/Footer/FooterSection"; */
 
  */
 
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
-import AboutUs from "./components/AboutUsSection/AboutUs/index"
+import AboutUs from "./components/AboutUsSection/AboutUs/index";
 import Services from "./pages/Services";
 import BlogSection from "./pages/BlogSection/index";
- import CareerOpportunities from "./pages/CareerOpportunities";
+import CareerOpportunities from "./pages/CareerOpportunities";
 import ResourceCenter from "./pages/ResourceCenter";
 import Navbar from "./components/Navbar/Navbar";
 import BlogTought from "./components/BlogThought/BlogSection/Blogs";
@@ -123,12 +122,10 @@ import Developerforhire from "./components/CareerOppurtunities/DevelopersforHire
 import WebDevPage from "./components/Services/WebDevelopment/WebDevPage";
 import MobDevPage from "./components/Services/MobDevelopment/MobDevPage";
 import UiUxDesPage from "./components/Services/UiUxDesign/UiUxDesPage";
-import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index"
-import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/"
-import CaseStudiesandSuccessStories from "./components/ResourceCenter/CaseStudiesandSuccessStories"
-import AnalyticsAndReporting from "./components/ResourceCenter/AnalyticsAndReporting"
-
-
+import FeedbackAndImprovement from "./components/ResourceCenter/FeedBackAndImprovement/index";
+import EventsAndWorkshop from "./components/ResourceCenter/EventsAndWorkshop/";
+import CaseStudiesandSuccessStories from "./components/ResourceCenter/CaseStudiesandSuccessStories";
+import AnalyticsAndReporting from "./components/ResourceCenter/AnalyticsAndReporting";
 
 // import AboutCompany from "./components/AboubtUsComponents/AboutCompany";
 import AboutLeadership from "./components/AboubtUsComponents/AboutLeadership/index";
@@ -137,21 +134,20 @@ import ClientReviews from "./components/AboubtUsComponents/ClientReviews/index";
 import Testimonial from "./components/AboubtUsComponents/Testimonial";
 import AboutPortFolio from "./components/AboubtUsComponents/AboutPortFolio/index";
 import Awards from "./components/AboubtUsComponents/Awards";
-import OurPatner from "./components/AboubtUsComponents/OurPatner"
+import OurPatner from "./components/AboubtUsComponents/OurPatner";
 import PriceModel from "./components/AboubtUsComponents/PricingModels";
 import Sustainability from "./components/AboubtUsComponents/Sustainability";
 import Software from "./components/AboubtUsComponents/SoftwareDevelopment";
-import Location from "./components/AboubtUsComponents/Location"
+import Location from "./components/AboubtUsComponents/Location";
 import SubSection from "./components/AboubtUsComponents/AboutPortfolioSub";
+import Portfolio from "./components/MyPortfolio/ChangeByDesign";
 
 const App = () => {
   return (
     <>
       <Router>
         <Navbar />
-      <AppRoutes/>
-       
-       
+        <AppRoutes />
       </Router>
     </>
   );
@@ -163,10 +159,14 @@ const AppRoutes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      
+
       <Route exact path="/Services" component={Services} />
-      <Route exact path="/AboutUs" component={AboutUs}/>
-      <Route exact path="/AboutUsComponents/AboutLeadership" component={AboutLeadership}/>
+      <Route exact path="/AboutUs" component={AboutUs} />
+      <Route
+        exact
+        path="/AboutUsComponents/AboutLeadership"
+        component={AboutLeadership}
+      />
       <Route exact path="/blog" component={BlogSection} />
       <Route
         exact
@@ -189,29 +189,85 @@ const AppRoutes = () => {
         path="/services/software-development"
         component={SoftDevPage}
       />
-      <Route exact path="/services/digital-marketing" component={DigitalMarketing} />
-      <Route exact path="/services/software-development" component={SoftDevPage} />
+      <Route
+        exact
+        path="/services/digital-marketing"
+        component={DigitalMarketing}
+      />
+      <Route
+        exact
+        path="/services/software-development"
+        component={SoftDevPage}
+      />
       <Route exact path="/services/web-development" component={WebDevPage} />
-      <Route exact path="/services/mobile-app-development" component={MobDevPage} />
+      <Route
+        exact
+        path="/services/mobile-app-development"
+        component={MobDevPage}
+      />
       <Route exact path="/services/uiux-design" component={UiUxDesPage} />
 
       {/* <Route exact path="/AboutUs/AboutCompany" Component={AboutCompany}/> */}
-      <Route exact path="/services/Graphic-Designing" component={GraphicDesignPage} />
-      <Route exact path="/AboutUsComponents/AboutCompany" component={AboutCompany}/>
-      <Route exact path="/AboutUsComponents/AboutExperts" component={AboutExpert}/>
-      <Route exact path="/AboutUsComponents/AboutPortfolio" component={AboutPortFolio}/>
-      <Route exact path="/AboutUsComponents/Awards" component={Awards}/>
-      <Route exact path="/AboutUsComponents/ClientReviews" component={ClientReviews}/>
-      <Route exact path="/AboutUsComponents/Testiomial" component={Testimonial}/>
-      <Route exact path="/AboutUsComponents/Sustainability" component={Sustainability}/>
-      <Route exact path="/AboutUsComponents/PricingModels" component={PriceModel}/>
-      <Route exact path="/AboutUsComponents/SoftwareDevelopment" component={Software}/>
-      <Route exact path="/AboutUsComponents/OurPatner" component={OurPatner}/>
-      <Route exact path="/AboutUsComponents/Location" component={Location}/>
-      <Route exact path="/portfolio"  component={SubSection}/>
+      <Route
+        exact
+        path="/services/Graphic-Designing"
+        component={GraphicDesignPage}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/AboutCompany"
+        component={AboutCompany}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/AboutExperts"
+        component={AboutExpert}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/AboutPortfolio"
+        component={AboutPortFolio}
+      />
+      <Route exact path="/AboutUsComponents/Awards" component={Awards} />
+      <Route
+        exact
+        path="/AboutUsComponents/ClientReviews"
+        component={ClientReviews}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/Testiomial"
+        component={Testimonial}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/Sustainability"
+        component={Sustainability}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/PricingModels"
+        component={PriceModel}
+      />
+      <Route
+        exact
+        path="/AboutUsComponents/SoftwareDevelopment"
+        component={Software}
+      />
+      <Route exact path="/AboutUsComponents/OurPatner" component={OurPatner} />
+      <Route exact path="/AboutUsComponents/Location" component={Location} />
+      <Route exact path="/portfolio" component={SubSection} />
 
-      <Route exact path="/CareerOppurtunities/Designersforhire" component={Designerforhire} />
-      <Route exact path="/CareerOppurtunities/DevelopersforHire" component={Developerforhire} />
+      <Route
+        exact
+        path="/CareerOppurtunities/Designersforhire"
+        component={Designerforhire}
+      />
+      <Route
+        exact
+        path="/CareerOppurtunities/DevelopersforHire"
+        component={Developerforhire}
+      />
       {/* <Route path="*" component={Home} /> */}
       <Route
         exact
@@ -265,7 +321,7 @@ const AppRoutes = () => {
         component={LearningRoadsMaps}
       />
 
-<Route
+      <Route
         exact
         path="/resource-center/analytics-and-reporting"
         component={AnalyticsAndReporting}
@@ -276,19 +332,17 @@ const AppRoutes = () => {
         path="/resource-center/feedback-and-improvement"
         component={FeedbackAndImprovement}
       />
-        <Route
+      <Route
         exact
         path="/resource-center/events-and-workshop"
         component={EventsAndWorkshop}
       />
-
 
       <Route
         exact
         path="/resource-center/case-studies-and-success-stories"
         component={CaseStudiesandSuccessStories}
       />
-
 
       <Route
         exact
@@ -332,9 +386,9 @@ const AppRoutes = () => {
         path="/Services/AITechnologyServices/DataPreparation"
         component={DataPreparation}
       />
+      <Route exact path="/ProjectPortfolio" component={Portfolio} />
     </Switch>
   );
 };
 
 export default App;
-

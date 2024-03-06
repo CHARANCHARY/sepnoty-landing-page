@@ -1,6 +1,6 @@
 import job from "./Images/job-offers.svg";
 import search from "./Images/search.svg";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   CareerContainer,
@@ -41,7 +41,9 @@ const CareerOppurtunities = (props) => {
           <CareerImg src={job} alt="job" />
         </Career>
         <SectionContainer>
-          <Developer>Developers for Hire</Developer>
+          <Link to="/CareerOppurtunities/Designersforhire">
+              <Developer onClick={handleLinkClick}>Developers for Hire</Developer>
+          </Link>
           <Border />
           <DeveloperItems>
             <Item onClick={handleLinkClick}>Java</Item>
@@ -58,7 +60,9 @@ const CareerOppurtunities = (props) => {
           </DeveloperItems>
         </SectionContainer>
         <div>
-          <Developer>Designers for hire</Developer>
+          <Link to="/CareerOppurtunities/DevelopersforHire">
+              <Developer onClick={handleLinkClick}>Designers for hire</Developer>
+          </Link>
           <Border />
           <Item onClick={handleLinkClick}>UI/UX design</Item>
           <Item onClick={handleLinkClick}>Digital Marketing</Item>
