@@ -27,6 +27,7 @@ export const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-flow: wrap;
   }
 `;
 
@@ -175,11 +176,12 @@ export const CopywriteContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   & .copywrite-icon {
     font-size: 10px;
   }
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     width: 100%;
     margin-left: -20px;
   }
@@ -196,7 +198,7 @@ export const Copyright = styled.img`
 export const CopywriteContent = styled.p`
   font-size: 10px;
   color: #d9d9d9;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     font-size: 8px;
   }
 `;
@@ -213,7 +215,7 @@ export const BottomContainer = styled.div`
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     width: 160px;
   }
 `;
@@ -226,7 +228,7 @@ export const Sections = styled.p`
   margin-right: 10px;
   padding-right: 10px;
   height: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550 px) {
     font-size: 6px;
     width: 48px;
     margin-right: 0px;

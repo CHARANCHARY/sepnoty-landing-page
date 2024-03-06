@@ -8,7 +8,7 @@ import {
 } from "./styled";
 
 import ContactForm from "../ContactForm";
-
+import meeting from "../Images/remote-meeting.svg";
 function Contact() {
   const heading = "Have a question to our team or need help with your project?";
   return (
@@ -22,7 +22,7 @@ function Contact() {
           innovation that is measurable, mature, and meaningful.
         </BottomDesc>
         <Button>Schedule Meeting</Button>
-        <Image src="./images/remote-meeting.svg" />
+        <Image src={meeting} alt="meeting" />
       </BottomCon>
 
       <ContactForm heading={heading} />
