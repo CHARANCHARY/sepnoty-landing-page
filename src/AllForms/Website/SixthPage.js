@@ -1,5 +1,11 @@
 import Styled from "styled-components"
+import { useState } from "react";
 const SixthPage = () => {
+    const [current,setCurrent] = useState("Yes")
+    const handleButtonClick = (page) => {
+        setCurrent(page);
+       
+      };
     return(
         
 <Main>
@@ -42,8 +48,8 @@ const SixthPage = () => {
                     Should your website or App support payments?
                     </Para1>
                     <Main5>
-                        <ActiveButton>Yes</ActiveButton>
-                        <Buttonel>No</Buttonel>
+                        <ActiveButton active={current === 'Yes'}  onClick={() => handleButtonClick('Yes')}>Yes</ActiveButton>
+                        <Buttonel active={current === 'No'}  onClick={() => handleButtonClick('No')}>No</Buttonel>
                     </Main5>
                     
                 </Form>
@@ -114,18 +120,20 @@ display:flex;
 flex-direction:row;
 `
 const ActiveButton = Styled.button`
-  background-color: #2b459b;
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   font-size: 20px;
   width:60px;
   height:30px;
-  color: #ffffff;
+  
 `;
 
 const Buttonel = Styled.button`
   font-size: 20px;
-  background-color: #d9d9d9;
+  background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;

@@ -88,7 +88,7 @@ const InputContainer=Styled.div`
 margin-top:10px;
 `
 const Label = Styled.label`
-font-size:18px;
+font-size:17px;
 font-family: Inter;
 font-weight: 500;
 color:#263238;

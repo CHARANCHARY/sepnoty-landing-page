@@ -43,6 +43,14 @@ export const ConRecDesc = styled.p`
   color: #ffffff;
   width: 50%;
   padding: 20px 30px 30px 0px;
+  font-family: Inter;
+font-size: 24px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: left;
+
+
 `;
 
 export const Button = styled.button`

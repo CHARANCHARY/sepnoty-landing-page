@@ -80,7 +80,7 @@ import {
                         Website development can be a fascinating & rewarding endeavor.
                         </Heading></Link>
                         <Para1>
-                        Throughout the development process, it is = essential to consider factors like user experience, search engine optimization (SEO), accessibility, and security to create  a successful and effective website.
+                        Throughout the development process, it is = essential to consider factors like user experience, search engine optimization (SEO), accessibility, and security to create a successful and effective website.
                         </Para1>
                         <Y>
                             <Para2>Learn More </Para2>
@@ -98,7 +98,23 @@ on various technical aspects of a business, project, or initiative.
 
                         
                         <Para1>
-                        Technical consulting requires a deep understanding of technologies and, strong analytical  skills, effective communication, & the ability of translation of complex technical concepts  into actionable recommendations for the non-technical stakeholders. 
+                        Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 
+                        </Para1>
+                        <Y>
+                            <Para2>Learn More </Para2>
+                            <Image1 src={Export}/>
+                        </Y>
+                    </X>
+                </WebsiteContainer>
+                <WebsiteContainer>
+                    <Image src={Export1} alt="not-found"/>
+                    <X>
+                        <Heading>
+                        Redesigning the User Interface (UI) & User Experience (UX) 
+of a website or application can significantly improve its usability,aesthetics, and overall effectiveness.
+                        </Heading>
+                        <Para1>
+                        Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 
                         </Para1>
                         <Y>
                             <Para2>Learn More </Para2>
@@ -115,7 +131,7 @@ on various technical aspects of a business, project, or initiative.
 
                         </Heading>
                         <Para1>
-                        Technical consulting requires a deep understanding of technologies and, strong analytical  skills, effective communication, & the ability of translation of complex technical concepts  into actionable recommendations for the non-technical stakeholders. 
+                        Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 
                         </Para1>
                         <Y>
                             <Para2>Learn More </Para2>
@@ -132,24 +148,7 @@ on various technical aspects of a business, project, or initiative.
 
                         </Heading>
                         <Para1>
-                        Technical consulting requires a deep understanding of technologies and, strong analytical  skills, effective communication, & the ability of translation of complex technical concepts  into actionable recommendations for the non-technical stakeholders. 
-                        </Para1>
-                        <Y>
-                            <Para2>Learn More </Para2>
-                            <Image1 src={Export}/>
-                        </Y>
-                    </X>
-                </WebsiteContainer>
-                <WebsiteContainer>
-                    <Image src={Export1} alt="not-found"/>
-                    <X>
-                        <Heading>
-                        Technical consulting involves providing expert advice & guidance 
-on various technical aspects of a business, project, or initiative.
-
-                        </Heading>
-                        <Para1>
-                        Technical consulting requires a deep understanding of technologies and, strong analytical  skills, effective communication, & the ability of translation of complex technical concepts  into actionable recommendations for the non-technical stakeholders. 
+                        Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 
                         </Para1>
                         <Y>
                             <Para2>Learn More </Para2>

@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 const EightthPage = () => {
+    const [current,setCurrent] = useState("Any");
+    const handleButtonClick = (page) => {
+        setCurrent(page)
+    }
     return(
         <M> 
         <Main><P1>
@@ -36,9 +41,9 @@ const EightthPage = () => {
         </M2><br/>
         <M3>
             <P4>Preferred way of communication:</P4>
-            <Button1>Any</Button1>
-            <Button2>Email</Button2>
-            <Button3>Phone</Button3>
+            <Button1 active={current === 'Any'}  onClick={() => handleButtonClick('Any')}>Any</Button1>
+            <Button2 active={current === 'Email'}  onClick={() => handleButtonClick('Email')}>Email</Button2>
+            <Button3 active={current === 'Phone'}  onClick={() => handleButtonClick('Phone')} >Phone</Button3>
         </M3>
         <br/>
         <M3>
@@ -140,7 +145,8 @@ width:200px;
 const Button1 = styled.button`
 margin-left:330px;
 margin-top:-45px;
-background: #2B459B;
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 width:60px;
 border-radius:5px;
 color:white;
@@ -151,7 +157,8 @@ height:20px;
 const Button2 = styled.button`
 margin-left:380px;
 margin-top:-21px;
-background:transparent;
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 border: 1px solid #8C8C8C;
 width:60px;
 left:-30px;
@@ -159,7 +166,8 @@ left:-30px;
 const Button3 = styled.button`
 margin-left:440px;
 margin-top:-23px;
-background:transparent;
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 border: 1px solid #8C8C8C;
 width:60px;
 left:-30px;

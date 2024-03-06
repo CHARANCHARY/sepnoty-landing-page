@@ -112,7 +112,7 @@ justify-content:space-between;
 margin-top:13px;
 `
 const Label = Styled.label`
-font-size:18px;
+font-size:16px;
 font-family: Inter;
 font-weight: 500;
 color:#263238;

@@ -105,8 +105,8 @@ const AboutUsSection = (props) => {
         <CompanyContainer>
           <Section>Recognition</Section>
           <Border />
-          <SectionItem onClick={handleLinkClick}>Testimonials</SectionItem>
-          <SectionItem onClick={handleLinkClick}>Awards</SectionItem>
+          <Link to="/AboutUsComponents/Testiomial"><SectionItem onClick={handleLinkClick}>Testimonials</SectionItem></Link>
+          <Link to="/AboutUsComponents/Awards"><SectionItem onClick={handleLinkClick}>Awards</SectionItem></Link>
         </CompanyContainer>
         <div>
           <Section>Join us</Section>

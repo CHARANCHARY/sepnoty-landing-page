@@ -24,7 +24,7 @@ export default function CommentsSection() {
             <MainContainer>
             <CardContainer>
                 <Stars>
-                ⭐⭐⭐⭐
+                ⭐⭐⭐⭐⭐
                 </Stars>
                 <Para1>
                 Modern look & trending design
@@ -50,7 +50,7 @@ export default function CommentsSection() {
             <MainContainer>
             <CardContainer>
                 <Stars>
-                ⭐⭐⭐⭐
+                ⭐⭐⭐⭐⭐
                 </Stars>
                 <Para1>
                 Design Quality & performance
@@ -76,7 +76,7 @@ export default function CommentsSection() {
             <MainContainer>
             <CardContainer>
                 <Stars>
-                ⭐⭐⭐⭐
+                ⭐⭐⭐⭐⭐
                 </Stars>
                 <Para1>
                 Layout and organized layers
@@ -102,7 +102,7 @@ export default function CommentsSection() {
             <MainContainer>
             <CardContainer>
                 <Stars>
-                ⭐⭐⭐⭐
+                ⭐⭐⭐⭐⭐
                 </Stars>
                 <Para1>
                 Modern look & trending design
