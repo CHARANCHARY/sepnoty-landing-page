@@ -33,7 +33,7 @@ import {
   } from "./Styled";
   
   import GroupImg from "../images/Rectangle 6121.png"
-  import Image from "../images/Rectangle 6122.svg";
+  import Image from "../images/Rectangle 6122.svg;"
   import rectangle1 from "../images/Rectangle 1.svg"
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
