@@ -126,6 +126,10 @@ width:600px;
 height:650px;
 position:relative;
 z-index:1;
+
+
+
+
 `
 const Image3 = Styled.img`
 position:absolute;
