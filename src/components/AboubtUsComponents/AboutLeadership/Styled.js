@@ -96,7 +96,7 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   font-weight:400;
   width:1200px;
@@ -107,7 +107,7 @@ export const ImageCon = styled.div`
   margin: 0px;
   display: flex;
   flex-direction: row;
-  gap:300px;
+  gap:350px;
   padding:20px;
 `;
 export const ServiceItemImg = styled.img`

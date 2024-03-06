@@ -53,8 +53,8 @@ const EightthPage = () => {
         </M3>
         <br/>
         <M3>
-            <Input1 type="checkbox" id="1" />
-            <Label htmlFor="1">I agree to have Sepnoty provide my request information to sepnoty affiliated development
+            <Input1 type="checkbox" id="2" />
+            <Label htmlFor="2">I agree to have Sepnoty provide my request information to sepnoty affiliated development
 centres.</Label>
 
 
@@ -69,6 +69,9 @@ Refer to our <Span>Privacy Policy</Span> for details.</P5>
     )
 }
 export default EightthPage;
+const M0 = styled.div`
+
+`
 
 const Input1 = styled.input`
 margin-left:-500px;
@@ -96,6 +99,7 @@ letter-spacing: 0em;
 text-align: left;
 color:#2B459B;
 margin-left:30px;
+margin-top:15px;
 `
 const P2 = styled.div`
 margin-left:30px;
@@ -103,6 +107,7 @@ margin-top:-10px;
 margin-right:30px;
 color:#263238;
 font-weight:500;
+margin-top:15px;
 `
 const P3 = styled.p`
 font-family: Inter;
@@ -114,6 +119,7 @@ text-align: left;
 color:#263238;
 margin-left:30px;
 margin-top:5px;
+margin-bottom:10px;
 `
 const M2 = styled.div`
 display:flex;
@@ -133,7 +139,7 @@ letter-spacing: 0em;
 text-align: left;
 color:#263238;
 margin-left:30px;
-margin-top:-10px;
+margin-bottom:10px;
 `
 const Input = styled.input`
 margin-left:30px;
@@ -185,4 +191,5 @@ color:#BC2424;
 const P5 = styled.p`
 font-size:12px;
 margin-left:20px;
+color:#263238;
 `

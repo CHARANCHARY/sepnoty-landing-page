@@ -43,7 +43,6 @@ export const ConRecDesc = styled.p`
   color: #ffffff;
   width: 1300px;
   padding: 20px 30px 30px 0px;
-
 `;
 
 export const Button = styled.button`
@@ -97,9 +96,10 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   width:1200px;
+  font-family:Inter;
 `;
 
 export const ImageCon = styled.div`

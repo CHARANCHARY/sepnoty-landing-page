@@ -109,7 +109,7 @@ export const ImageCon = styled.div`
   flex-direction: column;
 `;
 export const ServiceItemImg = styled.img`
-  width: 200px;
+  width: 300px;
   margin-left: 300%;
 `;
 

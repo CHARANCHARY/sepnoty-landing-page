@@ -61,52 +61,52 @@ const SixthPage = () => {
                     </Heading>
                     
                     <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     I am not sure
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     up to 50
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     50-100
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     100-500
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     500-1,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     1,000-5,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     5,000-10,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     more than 10,000
-    </Label>
+    </Label1>
 </InputContainer>
                 </Form>
             </FormContainer>
@@ -114,6 +114,18 @@ const SixthPage = () => {
     )
 }
 export default SixthPage;
+const Input1 = Styled.input`
+margin-top:10px;
+`
+const Label1 = Styled.label`
+font-size:18px;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
+margin-top:20px;
+`
 
 const Main5 = Styled.div`
 display:flex;
@@ -191,7 +203,9 @@ const Form = Styled.form`
 
 `
 const Para1 = Styled.p`
-
+color:#263238;
+margin-top:30px;
+margin-bottom:20px;
 `
 const InputContainer=Styled.div`
 margin-top:5px;
