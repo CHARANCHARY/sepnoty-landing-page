@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import styled from "styled-components";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer } from 'recharts';
+import MobSectionOne from './MobSectionOne/MobSectionOne';
 
 
-import MobSectionOne from "./MobSectionOne/MobSectionOne"
 import {
     Header,
     MobSection,
@@ -16,6 +16,11 @@ import {
     GraphsContainer,
     PercentageContainer,
     MobSection1,
+    
+    AnalyticsPage,
+    GdPageTitle,
+    ServiceSpan,
+    GdHeading,
 } from "./styled"
 
 
@@ -136,34 +141,31 @@ const AnalyticsAndReporting = () => {
         <rect x={x} y={y} fill={"url(#grad2)"} width={width} height={height} rx={5} ry={5} />
       );
      const progress = "50";
-     const CustomResponsiveContainer = styled(ResponsiveContainer)`
+     const CustomResponsiveContainer = styled.div`
         background-color: #C1CAE7;
-        padding: 30px 0px 0px 30px;
-        margin: 0px 0px 100px 0px;
+        padding: 30px 10px 0px 30px;
+        margin: 0px 10px 10px auto; /* Adjust the margin for spacing and align to the right */
         color: black;
+        width:auto;
+        height:auto;
         border-radius: 10px;
-      `;
-  
-
+        
+    `;
     return(
-        <>
-            <MobSection>
-            <Header> Resource centre &gt; <Span>Learning Paths and Roadmaps</Span> </Header>
-            <MobSectionOne />
-            </MobSection>
+        <AnalyticsPage>
+            
+        <GdPageTitle>Resource Center &gt;<ServiceSpan>Learning Paths and Road Maps</ServiceSpan></GdPageTitle>
+        <GdHeading>Resources</GdHeading>
+        <MobSectionOne />
+         
              <MobSection1>
-             
-
-           
-
-
             {/* <GraphsContainer> */}
-                    <CustomResponsiveContainer width="25%" height="15%" >
-                        <BarChart width={250} height={240} data={ActivityData}  
+                    <CustomResponsiveContainer width="25%" >
+                        <BarChart width={700} height={200} data={ActivityData}  
                            margin={{
                             top: 20,
-                            right: 30,
-                            left: 20,
+                            right: 10,
+                            left: 50,
                             bottom: 5,
                           }}
                         >
@@ -175,74 +177,38 @@ const AnalyticsAndReporting = () => {
                                     <stop offset="100%" stopColor="#FFF85400" />
                                 </linearGradient>
                             </defs>
-
-
-
-                           
-
-
-
                             <Bar dataKey="uv"   shape={<CustomBarShape />} />
                         </BarChart>
                     </CustomResponsiveContainer>
-
-
                     <CustomResponsiveContainer width="25%" height="18%">
-                        <BarChart width={150} height={90} data={projectsData}>
+                        <BarChart width={550} height={590} data={projectsData}>
                             <defs>
                                 <linearGradient id="grad2" x1="0" y1="" x2="0" y2="1">
                                     <stop offset="0%" stopColor="#545BFF" />
                                     <stop offset="100%" stopColor="#FFF85400" />
                                 </linearGradient>
-                            </defs>
-
-
-
-                            
+                            </defs>                  
                             <Bar dataKey="uv" label={{ position: 'top' }}  shape={<CustomBarShape2 />} />
-
-
-                          
-
-
-
-
                         </BarChart>
                     </CustomResponsiveContainer>
                   <PercentageContainer>
                       <div>
                         <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
-                            <div style={{ backgroundColor: '#007bff', height: '20px', width: `${progress}%`,borderRadius: '10px', }} />
+                            <div style={{ backgroundColor: '#007bff', height: '200px', width: `${progress}%`,borderRadius: '10px',margin:'5px' }} />
                         </div>
                         <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
-                            <div style={{ backgroundColor: '#007bff', height: '20px', width: `${progress}%`,borderRadius: '10px', }} />
+                            <div style={{ backgroundColor: '#007bff', height: '200px', width: `${progress}%`,borderRadius: '10px', }} />
                         </div>
                       </div>
                   </PercentageContainer>
-
-
                     <CirclesContainer>
-                        <CircleOne>23%</CircleOne>
-                        <CircleTwo>87%</CircleTwo>
-                        <CircleThree></CircleThree>
+                        <CircleOne>4%</CircleOne>
+                        <CircleTwo>86%</CircleTwo>
+                        <CircleThree>4%;</CircleThree>
                     </CirclesContainer>
             {/* </GraphsContainer> */}
-
-
-
-
-
-
-
-
-
-
-            </MobSection1>
-           
-           
-        </>
+            </MobSection1>    
+        </AnalyticsPage>
     )
 };
-
-
 export default AnalyticsAndReporting;
