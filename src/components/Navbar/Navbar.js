@@ -121,6 +121,10 @@ const Navbar = () => {
     setButtonOpen(!isButtonOpen);
   };
 
+  const toggleHome = () => {
+    closeOtherSections();
+  };
+
   const closeOtherSections = () => {
     setResourceOpen(false);
     setServiceOpen(false);
@@ -150,7 +154,7 @@ const Navbar = () => {
           }}
         >
           <Link to="/">
-            <ListComponent>Home</ListComponent>
+            <ListComponent onClick={toggleHome}>Home</ListComponent>
           </Link>
           <DropdownContainer ref={aboutUsRef}>
             <ListComponent onClick={toggleAboutUs}>

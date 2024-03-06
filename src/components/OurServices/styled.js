@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   background-color: #0c111f;
-  padding: 30px;
+  padding: 10px;
 `;
 
 export const ImgContainer = styled.div`
@@ -11,8 +11,8 @@ export const ImgContainer = styled.div`
   background-color: #dfe3f0;
   align-items: center;
   border-radius: 10px;
-  margin-left: 10%;
-  width: 80%;
+  margin: 0 10%;
+  ${"" /* width: 80%; */}
   margin-top: 10vh;
   @media screen and (max-width: 455px) {
     width: 100%;
@@ -44,7 +44,7 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-left: 30px;
-  margin-top: 30vh;
+  margin-top: 7%;
 `;
 
 export const Heading = styled.h1`
