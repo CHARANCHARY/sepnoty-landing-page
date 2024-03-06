@@ -108,7 +108,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 40%;
+  width: 20%;
   padding-left: 2.5%;
   display: flex;
   flex-direction: column;

@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -19,22 +18,6 @@ import {
   ServiceItemCon,
   ConatctCon,
   ItemCon,
-  CardContainer,
-  Logo,
-  CardTitle,
-  TitleContainer,
-  PostCon,
-  PostHeading,
-  CardHolder,
-  ToolsCon,
-  ToolsCardCon,
-  ToolsCard,
-  ToolTitle,
-  TrimBg,
-  CropBg,
-  EditerBg,
-  ClipBg,
-  FocusBg,
   SmallPattern,
   PatternCon,
   CorporateItems,
@@ -43,24 +26,12 @@ import {
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import small from "../Images/Rectanglesmall.svg";
-import trim from "../Images/trim.svg";
 import CV from "../Images/CorporateVideo.svg";
-import SM from "../Images/socialmedia.svg";
-import outsource from "../Images/outsource.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
-import editer from "../Images/editer.svg";
-import clipping from "../Images/videoclipping.svg";
-import grading from "../Images/grading.svg";
-import focus from "../Images/focus.svg";
-import cut from "../Images/cut.svg";
-import resolve from "../Images/resolve.svg";
-import rush from "../Images/rush.svg";
-import premier from "../Images/premier.svg";
-import crop from "../Images/crop.svg";
 
 const CorporatePage = () => {
+  const heading = "Have a question to our team or need help with your project?";
   return (
     <>
       <DigitalContainer>
@@ -161,7 +132,7 @@ const CorporatePage = () => {
         </CorporateItems>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

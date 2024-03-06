@@ -62,7 +62,8 @@ const contactListItem = [
 //   { id: 4, inputType: "Phone" },
 // ];
 
-const ContactForm = () => {
+const ContactForm = (props) => {
+  const { heading } = props;
   const [sepnotyContactChecked, setSepnotyContactChecked] = useState(false);
   const [requestSepnotyChecked, setRequestSepnotyChecked] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false);
@@ -103,9 +104,7 @@ const ContactForm = () => {
       <ContactQueryContainer>
         <form onSubmit={handleSubmit}>
           <div>
-            <ContactHeading>
-              Have a question to our team or need help with your project?
-            </ContactHeading>
+            <ContactHeading>{heading}</ContactHeading>
             <ContactDescription>
               our team is ready to provide client references, estimate your
               project, or answer any other question related to your IT

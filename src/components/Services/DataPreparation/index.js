@@ -7,7 +7,6 @@ import {
   Rectangle1,
   Rectangle2,
   Rectangle3,
-  // Button,
   Span,
   DigitalContainer,
   ListHeading,
@@ -24,15 +23,15 @@ import {
   CorporateItems,
 } from "./styled";
 
-import protection from "../Images/protection.svg";
 import rectangle1 from "../Images/Rectangle 1.svg";
 import rectangle2 from "../Images/Rectangle2.svg";
 import rectangle3 from "../Images/Rectangle3.svg";
-import CV from "../Images/CorporateVideo.svg";
 import ContactForm from "../../ContactUs/ContactForm";
 import FooterSection from "../../Footer/FooterSection";
 import data from "../Images/data.svg";
+
 const DataPreparation = () => {
+  const heading = "Have a question to our Expertise?";
   return (
     <>
       <DigitalContainer>
@@ -121,7 +120,7 @@ const DataPreparation = () => {
         </CorporateItems>
       </DigitalContainer>
       <ConatctCon>
-        <ContactForm />
+        <ContactForm heading={heading} />
       </ConatctCon>
       <FooterSection />
     </>

@@ -92,7 +92,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 50%;
+  width: 20%;
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@ export const ServiceItemDetails = styled.div`
   margin-top: 20px;
   margin-left: 10%;
   margin-right: 5%;
-  margin: 20px 5% 28px 10%;
+  margin: 20px 5% 28px 8.2%;
 `;
 
 export const ConatctCon = styled.div`

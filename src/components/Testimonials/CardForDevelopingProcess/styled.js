@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   margin: 20px 40px 30px 40px;
 
   padding: 30px 10px 30px 10px;
@@ -21,7 +21,7 @@ export const CardContainer = styled.div`
   &:hover p {
     color: #263238;
   }
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     border-radius: 3px;
     flex: 40%;
     width: 55px;
@@ -38,9 +38,8 @@ export const CardHeader = styled.div`
 export const CardNumber = styled.h1`
   font-size: 20px;
   color: #33499e;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 15px;
-    
   }
 `;
 
@@ -49,21 +48,20 @@ export const CardTitle = styled.h1`
   font-size: 16px;
   color: #2b459b;
   padding-top: 3px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 15px;
-    margin-top:-20px;
+    margin-top: -20px;
     align-self: flex-end;
-  } 
+  }
 `;
 
 export const CardParagraph = styled.p`
   margin: 50px 0 50px 0;
   font-size: 13px;
   line-height: 1.5em;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     font-size: 12px;
     line-height: 1.5em;
-    
   }
 `;
 
@@ -87,7 +85,7 @@ export const PopupContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     width: 90%;
     left: 0%;
     top: 5%;
@@ -99,7 +97,7 @@ export const PopupContent = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     flex-direction: column;
   }
 `;
@@ -122,10 +120,10 @@ export const PopupImage = styled.img`
   height: 120px;
   width: 120px;
   margin: 0px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width: 455px) {
     height: 80px;
     width: 80px;
-    align-self:center;
+    align-self: center;
   }
 `;
 
@@ -146,8 +144,7 @@ export const Header = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 30px;
-  @media screen and (max-width:455px){
-    
+  @media screen and (max-width: 455px) {
   }
 `;
 

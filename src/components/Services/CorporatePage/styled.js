@@ -108,7 +108,7 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const ImageCon = styled.div`
-  width: 45%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   padding-left: 2.5%;
@@ -116,7 +116,7 @@ export const ImageCon = styled.div`
 export const ServiceItemImg = styled.img`
   width: 100%;
   margin: 0px;
-  margin-bottom: -20px;
+  margin-bottom: 0px;
 `;
 
 export const ServiceItemButton = styled.button`

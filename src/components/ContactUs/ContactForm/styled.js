@@ -28,7 +28,7 @@ export const ContactQueryContainer = styled.div`
 export const ContactHeading = styled.h1`
   font-size: 16px;
   color: rgba(61, 61, 61, 1);
-  padding-right: 200px;
+
   margin: 10px;
   @media screen and (max-width: 455px) {
     font-size: 16px;
@@ -140,7 +140,7 @@ export const ContactButtonCon = styled.div`
 `;
 
 export const ContactButton = styled.button`
-  background-color: #5368a3;
+  background-color: #254989;
   border-width: 0px;
   border-radius: 50px;
   color: #ffffff;
