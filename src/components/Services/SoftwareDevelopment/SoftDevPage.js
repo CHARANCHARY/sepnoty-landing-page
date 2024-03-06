@@ -34,7 +34,7 @@ import {
  } from "./styled"
 import ChooseCard from "./SectionFour/ChooseCard"
 import WorkCard from "./SectionFive/WorkCard"
-import FooterSection from "../../Footer/FooterSection"
+// import FooterSection from "../../Footer/FooterSection"
 import Slider from "./SectionSix/Slider"
 import ContactForm from "../../ContactUs/ContactForm"
 

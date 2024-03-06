@@ -11,19 +11,19 @@ import {
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
     ServiceItemDesc,
     ImageCon,
     ServiceItemImg,
-    ServiceItemButton,
+    // ServiceItemButton,
     ServiceItemDetails,
     ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -36,7 +36,7 @@ import {
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
   
-  import ContactForm from "../../ContactUs/ContactForm";
+  // import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
   
   const Leadership= () => {

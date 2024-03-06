@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react';
+// import React, { PureComponent } from 'react';
 import styled from "styled-components";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Text, ResponsiveContainer } from 'recharts';
 
-
+// Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 import MobSectionOne from "./MobSectionOne/MobSectionOne"
 import {
     Header,
@@ -12,8 +12,8 @@ import {
     CircleOne,
     CircleTwo,
     CircleThree,
-    CardSection,
-    GraphsContainer,
+    // CardSection,
+    // GraphsContainer,
     PercentageContainer,
     MobSection1,
 } from "./styled"
@@ -111,7 +111,7 @@ const AnalyticsAndReporting = () => {
       ];
 
 
-      const textColor = "#ffffff";
+      // const textColor = "#ffffff";
     
       const CustomBarShape = ({ x, y, width, height }) => (
         <>

@@ -10,8 +10,8 @@ import {
 const WebTechCard = (props) => {
     const {details,onLearnMoreClick}=props;
     const {img,techAbout}=details;
-    const [matchingDetail, setMatchingDetail] = useState(null);
-
+    const [matchingDetail] = useState(null);
+    // setMatchingDetail
   const handleLearnMoreClick = () => {
     // Assuming onLearnMoreClick is a callback provided by the parent component
     // to handle the "Learn More" click and update the UI accordingly.
