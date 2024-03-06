@@ -76,9 +76,7 @@ a pioneer in your field.
             </div>
             </ServiceItemCon>
         </DigitalContainer>
-        <ConatctCon>
-          <ContactForm />
-        </ConatctCon>
+        
         <FooterSection />
       </>
     );

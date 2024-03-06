@@ -41,8 +41,10 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width: 50%;
+  width: 1300px;
+  margin-left:30px;
   padding: 20px 30px 30px 0px;
+
 `;
 
 export const Button = styled.button`
@@ -90,6 +92,7 @@ export const ListHeading = styled.h1`
   color: #2b459b;
   font-weight: bold;
   margin-left: -20px;
+  margin-top:50px;
 `;
 
 export const ServiceItemCon = styled.div`
@@ -99,6 +102,7 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
   font-size: 20px;
   color: #ffffff;
+  margin-top:50px;
 `;
 
 export const ImageCon = styled.div`
@@ -142,6 +146,7 @@ export const SmallPattern = styled.div`
   height: 50px;
   width: 60px;
   border-radius: 3px;
+  margin-top:50px;
 `;
 
 export const PatternCon = styled.div`

@@ -33,7 +33,7 @@ import {
   } from "./Styled";
   
   import GroupImg from "../images/Rectangle 6121.png"
-  import Image from "../images/Rectangle 6122.svg";
+  import Image from "../images/Rectangle 6122.svg;"
   import rectangle1 from "../images/Rectangle 1.svg"
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
@@ -200,29 +200,32 @@ outsourcing services</p>
   flex-wrap : wrap;
   gap:180px;
   margin-left:100px;
+  margin-top:20px;
+  margin-bottom:120px;
   `
   const Main2 = Styled.div`
   display:flex;
   flex-direction:column;
   border: 0.99px solid #FFFFFF;
   background: #D9D9D917;
-  gap:10px;
-  border-radius:20px;
-  padding:10px;
-  height:300px;
+  gap:20px;
+  border-radius:7px;
+  padding:20px;
+  height:260px;
   width:300px;
+  margin-bottom:-120px;
   `
   const Main3 = Styled.div`
   display:flex;
   flex-direction:row;
-  gap:20px;
+  gap:16px;
   
   `
   const Image1 = Styled.img`
-  
+  height:80px;
   `
   const Image2 = Styled.img`
-  height:40px;
-  width:100px;
+  height:30px;
+  width:80px;
   `
   

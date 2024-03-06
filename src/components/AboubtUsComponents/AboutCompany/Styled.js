@@ -90,6 +90,7 @@ export const ListHeading = styled.h1`
   color: #2b459b;
   font-weight: bold;
   margin-left: -20px;
+  margin-top:20px;
 `;
 
 export const ServiceItemCon = styled.div`
@@ -99,6 +100,14 @@ export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
   font-size: 20px;
   color: #ffffff;
+  width:1200px;
+font-family: Inter;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: left;
+
+
 `;
 
 export const ImageCon = styled.div`
@@ -142,6 +151,7 @@ export const SmallPattern = styled.div`
   height: 50px;
   width: 60px;
   border-radius: 3px;
+  margin-top:20px;
 `;
 
 export const PatternCon = styled.div`

@@ -171,6 +171,7 @@ including websites, apps, social media, video, podcasts, & more, across various 
   flex-wrap : wrap;
   margin-left:100px;
   gap:180px;
+  margin-bottom:120px;
   `
   const Main1 = Styled.div`
   border: 1px solid #FFFFFF;
@@ -178,23 +179,25 @@ including websites, apps, social media, video, podcasts, & more, across various 
   width:300px;
   align-item:center;
   justify-content:center;
-  height:300px;
+  height:250px;
   border-radius:20px;
+  margin-bottom:-120px;
   `
   const Heading = Styled.h1`
-  margin-top:20px;
   text-align:center;
   font-size: 20px;
   color: #2b459b;
   font-weight: bold;
+  margin-top:10px;
   `
   const Image5 = Styled.img`
+  height:90px;
   align-item:center;
   justify-content:start;
   margin-left:100px;
   margin-top:10px;
   `
   const Para1 = Styled.p`
-  margin-top:50px;
+  margin-top:10px;
   text-align:center;
   `

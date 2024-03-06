@@ -43,8 +43,7 @@ No
 <InputContainer>
 <Label>
     <Input type='radio' name="industry" value="Finanacial"/>
-  
-  <Input1 placeholder="Yes (Please Specify)"/>
+    <Input1 type="text" placeholder="Yes (Please Specify)"/>
     </Label>
 </InputContainer>
 
@@ -65,13 +64,13 @@ gap:20px;
 const Form1 = Styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
-align-items:center;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-padding:10px;
-height:300px;
-width:300px;
+gap:-20px;
+border-radius:10px;
+padding:20px;
+height:350px;
+width:400px;
 `
 const Heading = Styled.h1`
 color:#263238;
@@ -86,20 +85,21 @@ const Input = Styled.input`
 
 `
 const InputContainer=Styled.div`
-margin-top:20px;
+margin-top:10px;
 `
 const Label = Styled.label`
-font-size:15px;
-color: #263238;
-font-weight:500;
+font-size:18px;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
 `
 const Input1 = Styled.input`
-background:transparent;
-border: 1px solid black;
-font-size:15px;
-color: #263238;
-font-weight:500;
-height:15px;
+background: #C1CAE7;
+border: 1px solid #8C8C8C;
+width:250px;
+border-radius:4px;
 `
 // const Input2 = Styled.input`
 // background: #C1CAE7;

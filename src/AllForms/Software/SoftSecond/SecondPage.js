@@ -109,8 +109,8 @@ background: #C1CAE7;
 gap:-20px;
 border-radius:10px;
 padding:20px;
-height:300px;
-width:300px;
+height:350px;
+width:600px;
 `
 const Form3 = Styled.div`
 margin-top:40px;
@@ -131,7 +131,7 @@ const InputContainer=Styled.div`
 margin-top:13px;
 `
 const Label = Styled.label`
-font-size:15px;
+font-size:18px;
 font-family: Inter;
 font-weight: 500;
 color:#263238;

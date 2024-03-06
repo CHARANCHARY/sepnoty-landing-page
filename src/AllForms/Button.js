@@ -36,11 +36,11 @@ export default MainPage;
 const ActiveButton = Styled.button`
 background-color: ${(props) => (props.active ? 'blue' : 'white')};
 color: ${(props) => (props.active ? 'white' : 'black')};
+border-radius : ${(props) => (props.active ? '10px' : '')};
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 font-size: 20px;
 padding: 10px;
-color: #ffffff;
 height:45px;
 `;
 
@@ -48,6 +48,7 @@ const Buttonel = Styled.button`
 font-size: 20px;
 background-color: ${(props) => (props.active ? 'blue' : 'white')};
 color: ${(props) => (props.active ? 'white' : 'black')};
+border-radius : ${(props) => (props.active ? '10px' : '')};
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 padding: 10px;
@@ -63,6 +64,8 @@ padding: 10px;
 font-size: 20px;
 border-top-right-radius: 10px;
 border-bottom-right-radius: 10px;
+border-radius : ${(props) => (props.active ? '10px' : '')};
+
 height:45px;
 `;
 const ButtonCon = Styled.div`

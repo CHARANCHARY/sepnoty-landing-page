@@ -41,7 +41,7 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width: 50%;
+  width: 1300px;
   padding: 20px 30px 30px 0px;
 `;
 
@@ -149,5 +149,6 @@ export const PatternCon = styled.div`
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
-  margin-left: 5em;
+  margin-left: 100px;
+  margin-top:5em;
 `;
