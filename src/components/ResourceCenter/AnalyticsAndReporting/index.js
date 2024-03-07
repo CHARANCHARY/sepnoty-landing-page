@@ -1,13 +1,13 @@
 // import React, { PureComponent } from 'react';
 import styled from "styled-components";
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar,Text  } from 'recharts';
 import MobSectionOne from './MobSectionOne/MobSectionOne';
-
+// Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer
 
 import {
-    Header,
-    MobSection,
-    Span,
+    // Header,
+    // MobSection,
+    // Span,
     CirclesContainer,
     CircleOne,
     CircleTwo,
@@ -122,17 +122,17 @@ const AnalyticsAndReporting = () => {
         <>
         <rect x={x} y={y} fill={"url(#grad)"} width={width} height={height} rx={5} ry={5} />
 
-        {ActivityData.map((entry, index) => (
-                <Text
-                  key={`label-${index}`}
-                  x={(index + 0.5) * 250 / ActivityData.length} // Position text in the middle of each bar
-                  y={220} // Adjust the y-coordinate as needed
-                  textAnchor="middle"
-                  fill="black"
-                >
-                  {entry.name}
-                </Text>
-          ))}
+        {/* {ActivityData.map((entry, index) => (
+                // <Text
+                //   key={`label-${index}`}
+                //   // x={(index + 0.5) * 250 / ActivityData.length} // Position text in the middle of each bar
+                //   y={220} // Adjust the y-coordinate as needed
+                //   textAnchor="middle"
+                //   fill="black"
+                // >
+                //   {entry.name}
+                // </Text>
+          ))} */}
        
         </>
       );
@@ -160,14 +160,14 @@ const AnalyticsAndReporting = () => {
          
              <MobSection1>
             {/* <GraphsContainer> */}
-                    <CustomResponsiveContainer width="25%" >
-                        <BarChart width={700} height={200} data={ActivityData}  
-                           margin={{
-                            top: 20,
-                            right: 10,
-                            left: 50,
-                            bottom: 5,
-                          }}
+                    <CustomResponsiveContainer width="15%" height="5%">
+                        <BarChart width={400} height={300} data={ActivityData}  
+                          //  margin={{
+                          //   top: 20,
+                          //   right: 10,
+                          //   left: 50,
+                          //   bottom: 5,
+                          // }}
                         >
                         {/* <XAxis dataKey="name" /> */}
                           
@@ -177,11 +177,13 @@ const AnalyticsAndReporting = () => {
                                     <stop offset="100%" stopColor="#FFF85400" />
                                 </linearGradient>
                             </defs>
-                            <Bar dataKey="uv"   shape={<CustomBarShape />} />
+                            <Bar dataKey="uv" label={{ position: 'top' }}   shape={<CustomBarShape />} />
                         </BarChart>
                     </CustomResponsiveContainer>
-                    <CustomResponsiveContainer width="25%" height="18%">
-                        <BarChart width={550} height={590} data={projectsData}>
+                    <CustomResponsiveContainer width="15%" height="12%">
+                        <BarChart width={550} height={590} data={projectsData}
+                          
+                        >
                             <defs>
                                 <linearGradient id="grad2" x1="0" y1="" x2="0" y2="1">
                                     <stop offset="0%" stopColor="#545BFF" />
