@@ -52,26 +52,30 @@ const FifthPage = () => {
                     <CheckBoxCon>
                         <input type="checkbox" id="7st"/>
                         <Label htmlfor="7st">
-                        Collaboration features
+                        User generated content
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="8st"/>
                         <Label htmlfor="8st">
-                        Integration features
+                        Mobile compatibility
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="9st"/>
                         <Label htmlfor="9st">
-                        Security features
+                        Social media Sharing functionality
+                        </Label>
+                    </CheckBoxCon>
+                    <CheckBoxCon>
+                        <input type="checkbox" id="0st"/>
+                        <Label htmlfor="0st">
+                        Web Analytics
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="10st"/>
-                        <Label htmlfor="10st">
-                        Others (Please Specify)
-                        </Label>
+                        <In type="text" placeholder='others (please specify)'/>
                     </CheckBoxCon>
                 </Form1>
             </FormContainer>
@@ -90,8 +94,8 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
-font-size: 20px;
+font-family: Roboto;
+font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
@@ -110,6 +114,11 @@ padding:20px;
 height:350px;
 width:400px;
 `
+const In = Styled.input`
+background:transparent;
+border: 1px solid gray;
+margin-left:10px;
+`
 const CheckBoxCon = Styled.div`
 gap:30px;
 align-items:start;
@@ -117,16 +126,17 @@ justify-content:space-between;
 margin-top:13px;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+margin-left:10px;
 `
 const Form = Styled.form`
 
 `
 const Form1 = Styled.form`
-margin-top:100px;
+margin-top:60px;
 `

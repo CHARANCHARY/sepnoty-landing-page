@@ -116,15 +116,17 @@ const SixthPage = () => {
 export default SixthPage;
 const Input1 = Styled.input`
 margin-top:10px;
+margin-right:10px;
 `
 const Label1 = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
 margin-top:20px;
+margin-right:10px;
 `
 
 const Main5 = Styled.div`
@@ -165,8 +167,8 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
-font-size: 20px;
+font-family: Roboto;
+font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
@@ -182,7 +184,7 @@ background: #C1CAE7;
 gap:-20px;
 border-radius:10px;
 padding:20px;
-height:400px;
+height:350px;
 width:600px;
 `
 const CheckBoxCon = Styled.div`
@@ -192,18 +194,19 @@ justify-content:space-between;
 margin-top:5px;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+margin-left:10px;
 `
 const Form = Styled.form`
 
 `
 const Para1 = Styled.p`
-color: #263238;
+color: black;
 margin-top:30px;
 margin-bottom:20px;
 `
@@ -223,4 +226,5 @@ background: #C1CAE7;
 border: 1px solid #8C8C8C;
 width:250px;
 border-radius:4px;
+margin-left:10px;
 `

@@ -132,7 +132,7 @@ flex-direction:column;
 `
 const P4 = styled.p`
 font-family: Inter;
-font-size: 20px;
+font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
@@ -150,12 +150,11 @@ width:200px;
 `
 const Button1 = styled.button`
 margin-left:330px;
-margin-top:-45px;
+margin-top:-35px;
 background-color: ${(props) => (props.active ? 'blue' : 'white')};
 color: ${(props) => (props.active ? 'white' : 'black')};
 width:60px;
 border-radius:5px;
-color:white;
 font-size:12px;
 height:20px;
 
@@ -183,13 +182,13 @@ border-bottom-right-radius:10px;
 const Label = styled.label`
 color:#263238;
 margin-left:60px;
-margin-top:-20px;
+margin-top:-15px;
 `
 const Span = styled.span`
 color:#BC2424;
 `
 const P5 = styled.p`
 font-size:12px;
-margin-left:20px;
+margin-left:40px;
 color:#263238;
 `

@@ -15,7 +15,6 @@ justify-content:center;
 align-items:center;
 margin-bottom:30px;
 margin-right:30px;
-
 `
 export const Heading = Styled.h1`
 color: #2B459B;
@@ -24,7 +23,6 @@ margin-bottom: 0px;
 font-family: Lexend;
   @media screen and (max-width:455px){
     font-size: 20px;
-
     font-family: "roboto";
     text-align: center;
   }
