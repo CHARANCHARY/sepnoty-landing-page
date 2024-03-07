@@ -45,7 +45,7 @@ export const CardNumber = styled.h1`
 
 export const CardTitle = styled.h1`
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 17px;
   color: #2b459b;
   padding-top: 3px;
   @media screen and (max-width: 455px) {
@@ -57,7 +57,7 @@ export const CardTitle = styled.h1`
 
 export const CardParagraph = styled.p`
   margin: 50px 0 50px 0;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5em;
   @media screen and (max-width: 455px) {
     font-size: 12px;
