@@ -39,10 +39,18 @@ export const ConRecHead = styled.h1`
 `;
 
 export const ConRecDesc = styled.p`
-  font-size: 20px;
+  font-size: 24px;
   color: #ffffff;
-  width: 50%;
+  width: 1300px;
   padding: 20px 30px 30px 0px;
+  font-family: Inter;
+  margin-left:100px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: left;
+
+
 `;
 
 export const Button = styled.button`
@@ -98,7 +106,7 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   width:1200px;
 font-family: Inter;

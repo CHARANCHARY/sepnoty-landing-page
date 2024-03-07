@@ -175,6 +175,8 @@ padding:13px;
   margin-top:50px;
   margin-left:90px;
 border-radius:10px;
+color: #000000;
+
   `
   const Main4 = Styled.div`
   display:flex;

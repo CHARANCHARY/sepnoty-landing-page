@@ -135,6 +135,7 @@ border-radius:10px;
 const CheckBoxCon = Styled.div`
 margin-top:15px;
 align-items:start;
+gap:20px;
 justify-content:space-between;
 `
 const Label = Styled.label`
@@ -146,7 +147,6 @@ letter-spacing: 0em;
 text-align: left;
 `
 const Form = Styled.form`
-
 `
 const Input1 = Styled.input`
 background:transparent;

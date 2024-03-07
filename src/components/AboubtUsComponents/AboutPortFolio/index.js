@@ -94,9 +94,7 @@ import {
                         <Heading>
                         Technical consulting involves providing expert advice & guidance 
 on various technical aspects of a business, project, or initiative.
-</Heading>
-
-                        
+</Heading>          
                         <Para1>
                         Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 
                         </Para1>
@@ -110,9 +108,8 @@ on various technical aspects of a business, project, or initiative.
                     <Image src={Export1} alt="not-found"/>
                     <X>
                         <Heading>
-                        Technical consulting involves providing expert advice & guidance 
-on various technical aspects of a business, project, or initiative.
-
+                        Redesigning the User Interface (UI) & User Experience (UX) 
+of a website or application can significantly improve its usability,aesthetics, and overall effectiveness.
                         </Heading>
                         <Para1>
                         Technical consulting requires a deep understanding of technologies and, strong analytical skills, effective communication, & the ability of translation of complex technical concepts into actionable recommendations for the non-technical stakeholders. 

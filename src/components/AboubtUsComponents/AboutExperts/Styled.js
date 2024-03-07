@@ -23,6 +23,11 @@ export const Service = styled.h1`
   color: #ffffff;
   font-weight: 600;
   padding: 10px 30px 20px 5%;
+  font-family: Inter;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0px;
+text-align: left;
 `;
 
 export const ContentRecomContainer = styled.div`
