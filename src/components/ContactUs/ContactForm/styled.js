@@ -4,14 +4,13 @@ export const ContactContainer = styled.div`
   display: flex;
   border-radius: 30px;
   align-self: center;
-
   background-color: rgba(0, 0, 0, 0.25);
   width: 65%;
-  margin-left: 30px;
+  margin: 20px 5% 10px 0px;
 `;
 
 export const ContactQueryContainer = styled.div`
-  padding: 20px 15px 20px 15px;
+  padding: 20px 15px 0px 15px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: rgba(250, 250, 250, 1);
@@ -189,7 +188,7 @@ export const ContactImageContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-self: flex-end;
-  margin-top: 85px;
+  margin-top: 30%;
 `;
 
 export const ContactImage = styled.img`

@@ -6,10 +6,8 @@ import {
   ContentContainer,
   Heading,
   Description,
-  Pattern,
   CuateImage,
   CuateImage11,
-  PatternCon,
 } from "./styled";
 
 import django from "./Images/django-logo.svg";
@@ -19,8 +17,11 @@ import Python from "./Images/Python-Logo 2.svg";
 import Symfony from "./Images/Symfony-logo.svg";
 import net from "./Images/net-logo.svg";
 import Php from "./Images/PhP.svg";
-import cuate from "./Images/cuate.svg";
-import pattern from "./Images/pattern.svg";
+// import cuate from "./Images/cuate.svg";
+// import pattern from "./Images/pattern.svg";
+/* import cuate from "./Images/cuate.svg"; */
+
+import idea from "./Images/idea.svg";
 
 const Idea = () => (
   <>
@@ -36,7 +37,7 @@ const Idea = () => (
       </ImgContainer>
       <ContentContainer>
         <div>
-          <CuateImage11 src={cuate} alt="Idea" />
+          <CuateImage11 src={idea} alt="Idea" />
           <Heading>From Idea-To-Development</Heading>
           <Description>
             we are a development agency focused on delivering top-tier solution
@@ -47,10 +48,7 @@ const Idea = () => (
             quality works to our clients.
           </Description>
         </div>
-        <PatternCon>
-          <Pattern src={pattern} />
-          <CuateImage src={cuate} alt="cuate" />
-        </PatternCon>
+        <CuateImage src={idea} alt="idea" />
       </ContentContainer>
     </Container>
   </>

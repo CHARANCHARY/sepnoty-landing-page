@@ -68,7 +68,6 @@ const DevelopingProcess = () => (
         ))}
       </CardListContainer>
     </BgContainer>
-    {/*     <Testimonials /> */}
   </>
 );
 

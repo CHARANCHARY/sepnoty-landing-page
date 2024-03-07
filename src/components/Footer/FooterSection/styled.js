@@ -38,9 +38,9 @@ export const LogoContainer = styled.div`
 `;
 
 export const SepnotyLogo = styled.img`
-  height: 96px;
+  height: 90px;
   width: 360px;
-  margin: -40px -25px 0px -22px;
+  margin: -50px -25px 0px -22px;
 
   @media screen and (max-width: 455px) {
     height: 96px;
@@ -51,6 +51,8 @@ export const SepnotyLogo = styled.img`
 export const SepnotyDescription = styled.p`
   font-size: 14px;
   width: 398px;
+  margin-top: 20px;
+
   @media screen and (max-width: 455px) {
     font-size: 14px;
     width: 258px;
@@ -59,6 +61,7 @@ export const SepnotyDescription = styled.p`
 `;
 
 export const SepnotyDescription1 = styled.p`
+  margin-top: 10px;
   @media screen and (max-width: 455px) {
     display: none;
   }
@@ -109,6 +112,7 @@ export const ContactHeading = styled.h1`
 export const NewsHeading = styled.h1`
   font-size: 17px;
   color: #b44555;
+  margin-bottom: 10px;
   @media screen and (max-width: 455px) {
     margin-top: 20px;
     margin-bottom: 5px;
