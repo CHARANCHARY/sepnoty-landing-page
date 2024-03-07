@@ -4,6 +4,7 @@ export const ServiceCards=styled.div`
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
+
 padding: 0px 60px 0px 60px;
 justify-content:space-around;
 @media screen and (max-width:555px){

@@ -4,8 +4,8 @@ import Image from "./images/Stars.svg"
 
 import image2 from "./images/Group 1261153425.svg";
 
-import Stars from "./images/Stars2.svg"
-import image2 from "./images/Standing.svg";
+// import Stars from "./images/Stars2.svg"
+// import image2 from "./images/Standing.svg";
 
 import FooterSection from "../components/Footer/FooterSection";
 
@@ -134,13 +134,13 @@ position:relative;
 z-index:1;
 
 `
-const Image3 = Styled.img`
-position:absolute;
-width:40%;
-height:50%;
-top:70%;
-left:50%;
-`
+// const Image3 = Styled.img`
+// position:absolute;
+// width:40%;
+// height:50%;
+// top:70%;
+// left:50%;
+// `
 const SideContainer =   Styled.div`
 display:flex;
 flex-direction:row;

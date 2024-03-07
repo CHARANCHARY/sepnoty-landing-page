@@ -91,9 +91,11 @@ const ContactForm = (props) => {
     } else if (type === "agreement" && e.target.id === "requestInfo") {
       setAgreement({ ...agreement, requestInfo: !agreement.requestInfo });
     } else {
+      const { value } = e.target;
       switch (type) {
         case "message":
-          setMessage(e.target.value);
+          
+          setMessage(value);
           break;
         case "email":
           setEmail(e.target.value);
@@ -154,7 +156,7 @@ const ContactForm = (props) => {
               placeholder="How can we help you?"
               id="message"
               value={message}
-              onChange={(e) => changeHandler("message", e)}
+              onBlur={(e) => changeHandler("message", e)}
             ></ContactTextarea>
           </div>
           <ContactDragAndDrop>
@@ -163,7 +165,7 @@ const ContactForm = (props) => {
               type="file"
               ref={fileInputRef}
               style={{ display: "none" }}
-              onChange={(e) => fileHandler(e)}
+              onBlur={(e) => fileHandler(e)}
             />
             <DragHead>
               Drag and drop or{" "}
