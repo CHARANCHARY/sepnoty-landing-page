@@ -50,7 +50,7 @@ export const Introhd1 = styled.h1`
   color: white;
   margin-top: 30px;
   letter-spacing: 2px;
-  width: 80%;
+  width: 70%;
   font-size:42px;
   margin-bottom:20px;
   @media screen and (max-width: 555px) {
