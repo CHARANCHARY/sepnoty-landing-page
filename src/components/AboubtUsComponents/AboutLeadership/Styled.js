@@ -100,6 +100,7 @@ export const ServiceItemDesc = styled.p`
   color: #ffffff;
   font-weight:400;
   width:1200px;
+  font-family:Inter;
 `;
 
 export const ImageCon = styled.div`
