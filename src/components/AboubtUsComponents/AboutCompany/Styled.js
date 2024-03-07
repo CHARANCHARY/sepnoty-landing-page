@@ -44,7 +44,9 @@ export const ConRecDesc = styled.p`
   width: 1300px;
   padding: 20px 30px 30px 0px;
 
+
   margin-left:40px;
+
   font-family: Inter;
   margin-left:100px;
 font-weight: 400;

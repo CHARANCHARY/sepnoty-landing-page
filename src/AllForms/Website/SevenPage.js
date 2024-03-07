@@ -78,9 +78,12 @@ No
 export default SevenPage;
 const Heading1 = Styled.h1`
 
+
 font-family: Roboto;
 font-size: 18px;
 
+font-family: Inter;
+font-size: 20px;
 font-family: Inter;
 font-size: 20px;
 
@@ -129,6 +132,7 @@ margin-top:13px;
 `
 const Label = Styled.label`
 font-size:16px;
+
 
 font-family: Roboto;
 
