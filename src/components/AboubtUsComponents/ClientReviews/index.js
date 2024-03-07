@@ -198,7 +198,7 @@ outsourcing services</p>
   display:flex;
   flex-direction:row;
   flex-wrap : wrap;
-  gap:180px;
+  gap:140px;
   margin-left:100px;
   margin-top:20px;
   margin-bottom:120px;

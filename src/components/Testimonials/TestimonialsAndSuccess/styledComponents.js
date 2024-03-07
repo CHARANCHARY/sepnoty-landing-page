@@ -21,7 +21,7 @@ export const Heading = Styled.h1`
 color: #2B459B;
 font-size: 40px;
 margin-bottom: 0px;
-  font-family: "Inter", "serif sans";
+font-family: Lexend;
   @media screen and (max-width:455px){
     font-size: 20px;
 
@@ -45,7 +45,7 @@ left: 770px;
 color:#244886;
 font-size: 40px;
 margin: 0px;
-font-family: "Inter", serif sans;
+font-family: Lexend;
 `
 export const Con = Styled.div`
 display: flex;
@@ -59,14 +59,14 @@ export const CrEle = Styled.p`
   padding: 0px;
   color: #244886;
   font-size: 17px;
-  font-family: "Inter", serif sans;
+  font-family: Lexend;
 `
 export const Desc = Styled.p`
   color: #B7B6BD;
   font-size: 20px;
   margin-top:50px
   font-weight: 500;
-  font-family: "Inter", serif sans;
+  font-family: Lexend;
   margin-top:100px;
   @media screen and (max-width:455px){
     font-size: 15px;

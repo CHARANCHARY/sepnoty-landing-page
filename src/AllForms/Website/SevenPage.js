@@ -63,9 +63,9 @@ No
     <Input1 type="text" placeholder="Yes (Please Specify)"/>
     </Label>
 </InputContainer>
-<Heading>
+<Heading1>
             *Do you need integration with any external or internal systems?
-                    </Heading>
+                    </Heading1>
 
                 </Form2>
                 <Input3 type="text" placeholder="Yes (Please Specify)"/>
@@ -76,6 +76,17 @@ No
     )
 }
 export default SevenPage;
+const Heading1 = Styled.h1`
+font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+color: #263238;
+margin-top:20px;
+margin-bottom:10px;
+`
 
 const Main = Styled.div`
 display:flex;
@@ -112,7 +123,7 @@ justify-content:space-between;
 margin-top:13px;
 `
 const Label = Styled.label`
-font-size:18px;
+font-size:16px;
 font-family: Inter;
 font-weight: 500;
 color:#263238;

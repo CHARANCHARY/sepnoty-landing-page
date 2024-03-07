@@ -1,5 +1,11 @@
 import Styled from "styled-components"
+import { useState } from "react";
 const SixthPage = () => {
+    const [current,setCurrent] = useState("Yes")
+    const handleButtonClick = (page) => {
+        setCurrent(page);
+       
+      };
     return(
         
 <Main>
@@ -34,16 +40,16 @@ const SixthPage = () => {
                     </CheckBoxCon>
                     <CheckBoxCon>
                         <input type="checkbox" id="five"/>
-                        <Label htmlfor="five">
-                        Others (Please Specify)
-                        </Label>
+                        <Input type="text" htmlfor="five" placeholder="Others (Please Specify)"/>
+                        
+                        
                     </CheckBoxCon>
                     <Para1>
                     Should your website or App support payments?
                     </Para1>
                     <Main5>
-                        <ActiveButton>Yes</ActiveButton>
-                        <Buttonel>No</Buttonel>
+                        <ActiveButton active={current === 'Yes'}  onClick={() => handleButtonClick('Yes')}>Yes</ActiveButton>
+                        <Buttonel active={current === 'No'}  onClick={() => handleButtonClick('No')}>No</Buttonel>
                     </Main5>
                     
                 </Form>
@@ -55,52 +61,52 @@ const SixthPage = () => {
                     </Heading>
                     
                     <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     I am not sure
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     up to 50
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     50-100
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     100-500
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     500-1,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     1,000-5,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     5,000-10,000
-    </Label>
+    </Label1>
 </InputContainer>
 <InputContainer>
-<Label>
-    <Input type='radio' name="industry" value="Healthcare"/>
+<Label1>
+    <Input1 type='radio' name="industry" value="Healthcare"/>
     more than 10,000
-    </Label>
+    </Label1>
 </InputContainer>
                 </Form>
             </FormContainer>
@@ -108,24 +114,38 @@ const SixthPage = () => {
     )
 }
 export default SixthPage;
+const Input1 = Styled.input`
+margin-top:10px;
+`
+const Label1 = Styled.label`
+font-size:18px;
+font-family: Inter;
+font-weight: 500;
+color:#263238;
+letter-spacing: 0em;
+text-align: left;
+margin-top:20px;
+`
 
 const Main5 = Styled.div`
 display:flex;
 flex-direction:row;
 `
 const ActiveButton = Styled.button`
-  background-color: #2b459b;
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   font-size: 20px;
   width:60px;
   height:30px;
-  color: #ffffff;
+  
 `;
 
 const Buttonel = Styled.button`
   font-size: 20px;
-  background-color: #d9d9d9;
+  background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -183,7 +203,9 @@ const Form = Styled.form`
 
 `
 const Para1 = Styled.p`
-
+color: #263238;
+margin-top:30px;
+margin-bottom:20px;
 `
 const InputContainer=Styled.div`
 margin-top:5px;
@@ -197,5 +219,8 @@ margin-top:5px;
 // height:15px;
 // `
 const Input = Styled.input`
-
+background: #C1CAE7;
+border: 1px solid #8C8C8C;
+width:250px;
+border-radius:4px;
 `
