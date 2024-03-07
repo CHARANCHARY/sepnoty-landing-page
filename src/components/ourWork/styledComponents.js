@@ -114,11 +114,11 @@ export const OurWorkText=styled.span`
 color:  #2B459B;
 `;
 export const  OurWorkPara=styled.p`
-font-size: 16px;
+font-size: 22px;
 font-family: Roboto;
 color:#B7B6BD;
-line-height: 20px;
-margin-top: 10px;
+line-height: 40px;
+margin-top: 30px;
 @media screen and (max-width: 555px) {
   margin-top: 30px;
   font-size: 15px;
@@ -169,4 +169,16 @@ color:black;
 export const Details2=styled.h4`
 font-weight:500;
 color:black;
+`;
+
+export const AdServRightDots = styled.img`
+  position: absolute;
+  right: 300px;
+  margin-right: 57%;
+  margin-top: -250px;
+  height: 330px;
+  width: 350px;
+  @media screen and (max-width: 555px) {
+    display: none;
+  }
 `;

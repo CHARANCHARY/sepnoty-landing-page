@@ -2,12 +2,19 @@ import styled from "styled-components";
 import circleImage from "../assets/circleimg.png";
 import circleImage2 from "../assets/circleimage2.png";
 
+export const Intro = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+
+
 export const Intro1 = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 50px;
-  padding: 50px 30px 0px 60px;
+  padding: 90px 30px 0px 60px;
   background-color: #0c111f;
   line-height: 1.5;
   height:100%;
@@ -43,7 +50,8 @@ export const Introhd1 = styled.h1`
   color: white;
   margin-top: 30px;
   letter-spacing: 2px;
-  width:400px;
+  width: 80%;
+  font-size:42px;
   margin-bottom:20px;
   @media screen and (max-width: 555px) {
       font-size:15px;
@@ -51,9 +59,13 @@ export const Introhd1 = styled.h1`
   }
 `;
 export const Introp1 = styled.p`
-  color: white;
+  color: #ECECEC;
   line-height: 1.5;
   margin-top: 10px;
+  width: 80%;
+ font-weight: 500;
+ letter-height: 5px;
+ letter-spacing: 1.5px;
   margin-bottom:20px;
   @media screen and (max-width: 555px) {
     display:none;
@@ -210,7 +222,7 @@ export const IntroExplorePart = styled.div`
   padding: 0px 60px 60px 0px;
   background-color: #0c111f;
   line-height: 1.5;
-  margin-top:-40px;
+  margin-top:-20px;
   @media screen and (max-width: 555px) {
     padding: 30px 0px 50px 30px;
     justify-content: space-between;
@@ -247,9 +259,11 @@ export const IntroExploreText = styled.a`
 `;
 export const IntroRightPart = styled.div``;
 export const IntroRightImg = styled.img`
-  width: 700px;
-  height: 450px;
-  margin-right: 50px;
+  width: 570px;
+  height: 400px;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 100px;
   @media screen and (max-width: 555px) {
     width: 430px;
     height: 300px;
@@ -278,8 +292,4 @@ export const TransparentImgss = styled.img`
   top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0.7;
-`;
-export const Intro = styled.div`
-  display: flex;
-  flex-direction: column;
 `;

@@ -47,6 +47,8 @@ export const AdServiceLeftDescript = styled.p`
   line-height: 35px;
   margin-top: 20px;
   font-size: 20px;
+  width: 60%;
+  letter-spacing: 1px;
   @media screen and (max-width: 768px) {
     font-size: 15px;
     line-height: 20px;

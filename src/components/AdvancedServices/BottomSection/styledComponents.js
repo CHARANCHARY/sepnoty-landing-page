@@ -4,6 +4,7 @@ export const ServiceCards=styled.div`
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
+padding: 0px 60px 0px 60px;
 justify-content:space-around;
 @media screen and (max-width:555px){
     justify-content:space-between;
@@ -15,13 +16,16 @@ justify-content:space-around;
 
 export const ServiceCardContainer=styled.div`
 display:flex;
+background-color: #2B459B26;
 flex-direction:column;
-border:1px solid white;
+border:1px solid #CECECE;
 border-radius:15px;
 padding:25px;
+justify-content: center;
 text-align:center;
-width:38vh;
+width: 20%;
 height:50vh;
+
 margin-bottom: 50px;
 transition: transform 0.3s, background-color 0.3s;
 &:hover {
@@ -32,7 +36,7 @@ transition: transform 0.3s, background-color 0.3s;
     flex: 45%;
     width:40%;
     margin:10px;
-    height:55vh;
+    height:25vh;
     background-color: #D6DAE7;
     border-radius:5px;
 }
@@ -55,6 +59,9 @@ export const ServiceTitle=styled.h2`
  font-size:22px;
  color:#79A3EC;
  margin-bottom:15px;
+ ${ServiceCardContainer}:hover & {
+  color: #fff;
+}
  @media screen and (max-width:555px){
   font-size:15px;
 }
@@ -66,7 +73,7 @@ font-weight: bold;
 line-height:20px;
 @media screen and (max-width:555px){
   font-size:12px;
-  line-height:2.8;
+  line-height:1.8;
 }
 `;
 export const ServiceButton=styled.button`
@@ -81,9 +88,14 @@ background-color:#251989;
 border-radius:30px;
 margin-top:15px;
 transition: transform 0.3s, background-color 0.3s;
+${ServiceCardContainer}:hover & {
+  color:#254989;
+  background-color: #fff;
+}
+
 &:hover {
   transform: scale(1.05); /* Zoom out effect */
-  background-color: #251989; /* Change color on hover */
+  
 }
 @media screen and (max-width:555px){
   border-radius:10px;

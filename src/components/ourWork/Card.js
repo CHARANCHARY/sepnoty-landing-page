@@ -7,12 +7,17 @@ import {
   OurWorkThreeCol,
   Details,
   Details2,
+  AdServRightDots,
 } from "./styledComponents";
 import { Link } from "react-router-dom";
+import rightpattern from "../AdvancedServices/assets/rightpattern.png";
+
 
 function Card() {
   return (
     <OurWorkCard>
+            <AdServRightDots src={rightpattern} alt="not found"></AdServRightDots>
+
       <OurWorkCardTitle>Our project</OurWorkCardTitle>
       <br />
       <OurWorkSideHeading>Software products development</OurWorkSideHeading>

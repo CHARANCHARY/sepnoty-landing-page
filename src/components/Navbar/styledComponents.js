@@ -4,7 +4,7 @@ export const LogoImg = styled.img`
   width: 180px;
   cursor: pointer;
   display: flex;
-  top: -12px;
+  top: -6px;
   left: 35px;
   @media screen and (max-width: 555px) {
     position: static;
