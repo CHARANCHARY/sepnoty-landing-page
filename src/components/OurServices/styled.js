@@ -11,9 +11,9 @@ export const ImgContainer = styled.div`
   background-color: #dfe3f0;
   align-items: center;
   border-radius: 10px;
-  margin-left: 10%;
-  width: 80%;
-  margin-top: 10vh;
+  margin: 30px 5% 0px 5%;
+  ${"" /* width: 80%; */}
+
   @media screen and (max-width: 455px) {
     width: 100%;
     margin-left: 0%;
@@ -43,8 +43,13 @@ export const Img = styled(Image)`
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   margin-left: 30px;
-  margin-top: 30vh;
+  margin-top: 7%;
+=======
+  justify-content: space-between;
+  margin: 5% 0 5% 5%;
+>>>>>>> Savva
 `;
 
 export const Heading = styled.h1`
