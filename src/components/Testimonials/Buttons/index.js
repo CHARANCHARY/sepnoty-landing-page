@@ -20,7 +20,7 @@ const SwiperButtons = () =>{
 
 export default SwiperButtons;
 
-const Button = Styled.button`
+const Button1 = Styled.p`
 background: transparent;
 border: 0px;
 `
@@ -29,6 +29,6 @@ display: flex;
 flex-direction:row;
 align-items:center;
 justify-content:center;
-gap:20px;
+gap:40px;
 margin-top:10px;
 `

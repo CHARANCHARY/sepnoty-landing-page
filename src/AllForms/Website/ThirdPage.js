@@ -76,8 +76,8 @@ Migration to a new CMS
     </Label>
 </InputContainer>
 <InputContainer>
-<Label>
-Please provide a link to your existing website if you have one</Label>
+<P>
+Please provide a link to your existing website if you have one</P>
 <Input2 type="text" placeholder="Please add here"/></InputContainer>
 
                 </Form3>
@@ -86,6 +86,11 @@ Please provide a link to your existing website if you have one</Label>
     )
 }
 export default ThirdPage;
+const P = Styled.p`
+color:#000000;
+font-size:15px;
+margin-bottom:10px;
+`
 
 const Main = Styled.div`
 display:flex;
@@ -103,26 +108,27 @@ gap:-20px;
 border-radius:10px;
 padding:20px;
 height:350px;
-width:600px;
+width:700px;
 `
 const Heading = Styled.h1`
 color:#263238;
-font-size:20px;
+font-size:18px;
 font-weight:700;
 margin-bottom:20px;
+font-family:Roboto;
 `
 const Form2 = Styled.form`
 
 `
 const Input = Styled.input`
-
+margin-right:10px;
 `
 const InputContainer=Styled.div`
 margin-top:20px;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family:Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
@@ -134,6 +140,7 @@ border: 1px solid gray;
 font-size:15px;
 color: #263238;
 font-weight:500;
+margin-left:10px;
 `
 const Input2 = Styled.input`
 background: #C1CAE7;
