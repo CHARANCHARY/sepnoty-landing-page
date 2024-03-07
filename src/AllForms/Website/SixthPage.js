@@ -165,8 +165,8 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
-font-size: 20px;
+font-family: Roboto;
+font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
@@ -182,7 +182,7 @@ background: #C1CAE7;
 gap:-20px;
 border-radius:10px;
 padding:20px;
-height:400px;
+height:350px;
 width:600px;
 `
 const CheckBoxCon = Styled.div`
@@ -192,12 +192,13 @@ justify-content:space-between;
 margin-top:5px;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+margin-left:10px;
 `
 const Form = Styled.form`
 

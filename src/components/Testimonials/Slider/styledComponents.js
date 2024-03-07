@@ -47,6 +47,11 @@ line-height: 33px;
 letter-spacing: 0px;
 text-align: left;
 margin-top:10px;
+
+
+@media screen and (max-width:455px){
+
+
 @media screen and (max-width:555px){
     font-size: 8px;
   }
@@ -60,6 +65,11 @@ line-height: 38px;
 letter-spacing: 0px;
 text-align: left;
 margin-top:10px;
+
+
+@media screen and (max-width:455px){
+
+
 @media screen and (max-width:555px){
     font-size: 8px;
     line-height: 18px;
@@ -87,7 +97,15 @@ export const Name = Styled.a`
 color:#2B459B;
 font-size:15px;
 font-family: Lexend;
+
+
+@media screen and (max-width:455px){
+
 @media screen and (max-width:555px){
+
+
+@media screen and (max-width:555px){
+
     font-size:10px;
   }
 `
@@ -95,7 +113,14 @@ export const Role = Styled.a`
 color:#2B459B;
 font-size:12px;
 font-family: Lexend;
+
+@media screen and (max-width:455px){
+
 @media screen and (max-width:555px){
+
+
+@media screen and (max-width:555px){
+
     font-size:8px;
   }
 `

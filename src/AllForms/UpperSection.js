@@ -1,8 +1,12 @@
 import Styled from "styled-components";
 import Button from "./Button"
 import Image from "./images/Stars.svg"
+
+import image2 from "./images/Group 1261153425.svg";
+
 import Stars from "./images/Stars2.svg"
 import image2 from "./images/Standing.svg";
+
 import FooterSection from "../components/Footer/FooterSection";
 
 
@@ -34,7 +38,6 @@ const CostHome = () => {
             </HomeContainer>
             <RightContainer>
             <Image2 src={image2}/>
-             <Image3 src={Stars}/>
             </RightContainer> 
         </Main>
         <D>

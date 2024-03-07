@@ -138,12 +138,13 @@ align-items:start;
 justify-content:space-between;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font:family:Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+margin-left:10px;
 
 `
 const Form = Styled.form`
@@ -156,6 +157,7 @@ font-size:15px;
 color: #263238;
 font-weight:500;
 height:15px;
+margin-right:10px;
 `
 const Buttonel = Styled.button`
   font-size: 20px;
@@ -188,5 +190,6 @@ margin-top:5px;
 // height:15px;
 // `
 const Input = Styled.input`
-
+margin-right:10px;
+margin-top:10px;
 `
