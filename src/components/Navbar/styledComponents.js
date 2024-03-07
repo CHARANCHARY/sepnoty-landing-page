@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const LogoImg = styled.img`
-  height: 230px;
   width: 180px;
   cursor: pointer;
-
-  @media screen and (max-width: 768px) {
-    display: flex;
-    position: absolute;
-
-    left: 35px;
+  display: flex;
+  top: -12px;
+  left: 35px;
+  @media screen and (max-width: 555px) {
+    position: static;
+    display: ;
   }
+  position: absolute;
 `;
 
 export const AboutCon = styled.div`

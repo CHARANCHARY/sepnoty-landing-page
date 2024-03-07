@@ -12,9 +12,9 @@ import {
 
 const DesignSectionCard = (props) => {
   const { details, onLearnMoreClick } = props;
-  const { title, about, img, id } = details;
+  const { title, about, img } = details;
 
-  const [matchingDetail, setMatchingDetail] = useState(null);
+  const [matchingDetail] = useState(null);
 
   const handleLearnMoreClick = () => {
     // Assuming onLearnMoreClick is a callback provided by the parent component

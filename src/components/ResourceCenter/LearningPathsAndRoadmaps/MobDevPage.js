@@ -15,7 +15,7 @@ import {
     WebHeading,
     // CapabilityHeading,
     AppDetailsContainer,
-    MainHeading,
+    // MainHeading,
     ListItemSection,
     ListHead,
     LearnPara1,

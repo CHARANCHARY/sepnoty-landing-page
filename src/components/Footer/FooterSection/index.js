@@ -33,6 +33,7 @@ import {
   SectionContainer,
   SepnotyDescription1,
   Sections,
+  Section,
   FollowUsContainer,
   Copyright,
   ServiceCon,
@@ -43,27 +44,27 @@ const followUsElements = [
   {
     id: 1,
     logoSrc: facebook,
-    logoName: "facebook",
+    logoName: "Facebook",
   },
   {
     id: 2,
     logoSrc: twitter,
-    logoName: "twitter",
+    logoName: "X",
   },
   {
     id: 3,
     logoSrc: instagram,
-    logoName: "instagram",
+    logoName: "Instagram",
   },
   {
     id: 4,
     logoSrc: behance,
-    logoName: "behance",
+    logoName: "Behance",
   },
   {
     id: 5,
     logoSrc: figma,
-    logoName: "figma",
+    logoName: "Figma",
   },
 ];
 const theme = {};
@@ -97,7 +98,7 @@ class FooterSection extends Component {
             <div>
               <NewsHeading>Our Newsletter</NewsHeading>
               <NewsDesc>
-                to stay on top of ever-changing world of business, subscribe now
+                To stay on top of ever-changing world of business, subscribe now
                 to our newsLetters.
               </NewsDesc>
               <div>
@@ -141,7 +142,7 @@ class FooterSection extends Component {
               <Sections>About</Sections>
               <Sections>Advertise</Sections>
               <Sections>Privacy & Policy</Sections>
-              <Sections>Contact Us</Sections>
+              <Section>Contact Us</Section>
             </SectionContainer>
           </BottomContainer>
         </Container>

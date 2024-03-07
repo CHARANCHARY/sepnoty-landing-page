@@ -5,7 +5,7 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content:space-around;
-@media screen and (max-width:455px){
+@media screen and (max-width:555px){
     justify-content:space-between;
     flex-wrap: wrap;
     
@@ -28,7 +28,7 @@ transition: transform 0.3s, background-color 0.3s;
     transform: scale(1.05); /* Zoom out effect */
     background-color: #254989; /* Change color on hover */
   }
-  @media screen and (max-width:455px){
+  @media screen and (max-width:555px){
     flex: 45%;
     width:40%;
     margin:10px;
@@ -45,7 +45,7 @@ export const ServiceImg=styled.img`
    height:70px;
    margin-bottom:10px;
    align-self:center;
-   @media screen and (max-width:455px){
+   @media screen and (max-width:555px){
     width:50px;
     height:50px;
 }
@@ -55,7 +55,7 @@ export const ServiceTitle=styled.h2`
  font-size:22px;
  color:#79A3EC;
  margin-bottom:15px;
- @media screen and (max-width:455px){
+ @media screen and (max-width:555px){
   font-size:15px;
 }
 `;
@@ -64,7 +64,7 @@ font-size:14px;
 color:#AB9F9F;
 font-weight: bold;
 line-height:20px;
-@media screen and (max-width:455px){
+@media screen and (max-width:555px){
   font-size:12px;
   line-height:2.8;
 }
@@ -85,7 +85,7 @@ transition: transform 0.3s, background-color 0.3s;
   transform: scale(1.05); /* Zoom out effect */
   background-color: #251989; /* Change color on hover */
 }
-@media screen and (max-width:455px){
+@media screen and (max-width:555px){
   border-radius:10px;
   height:30px;
   font-size:12px;

@@ -159,25 +159,25 @@ font-weight:500;
 height:20px;
 margin-left:10px;
 `
-const Buttonel = Styled.button`
-  font-size: 20px;
-  background-color: #d9d9d9;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 0px;
-  width:60px;
-  height:30px;
-  margin-left: -10px;
-  border-right: 1px solid #9e9898;
-`;
+// const Buttonel = Styled.button`
+//   font-size: 20px;
+//   background-color: #d9d9d9;
+//   border-bottom-right-radius: 10px;
+//   border-top-right-radius: 10px;
+//   border-top-left-radius: 10px;
+//   border-bottom-left-radius: 10px;
+//   padding: 0px;
+//   width:60px;
+//   height:30px;
+//   margin-left: -10px;
+//   border-right: 1px solid #9e9898;
+// `;
 
 
 
-const Para1 = Styled.p`
+// const Para1 = Styled.p`
 
-`
+// `
 const InputContainer=Styled.div`
 margin-top:5px;
 `

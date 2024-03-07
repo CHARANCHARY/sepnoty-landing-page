@@ -54,14 +54,14 @@ export const AdServiceLeftDescript = styled.p`
 `;
 export const AdServiceRightPart = styled.div`
   text-align: right;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
 export const AdServiceRightPart1 = styled.div`
   text-align: right;
   display: none;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: flex;
   }
 `;
@@ -70,7 +70,7 @@ export const AdServiceRightImg = styled.img`
   height: 650px;
   position: relative;
   z-index: 1;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 200px;
     height: 200px;
     margin-left: -100px;
@@ -82,7 +82,7 @@ export const AdServDots = styled.img`
   left: 0;
   width: 350px;
   height: 200px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     top: 920px;
     width: 330px;
     height: 220px;
@@ -95,7 +95,7 @@ export const AdServRightDots = styled.img`
   z-index: 0;
   margin-top: 250px;
   height: 450px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;

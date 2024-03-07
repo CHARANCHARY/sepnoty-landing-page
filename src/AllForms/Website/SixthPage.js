@@ -114,20 +114,6 @@ const SixthPage = () => {
     )
 }
 export default SixthPage;
-const Input1 = Styled.input`
-margin-top:10px;
-margin-right:10px;
-`
-const Label1 = Styled.label`
-font-size:16px;
-font-family: Roboto;
-font-weight: 500;
-color:#263238;
-letter-spacing: 0em;
-text-align: left;
-margin-top:20px;
-margin-right:10px;
-`
 
 const Main5 = Styled.div`
 display:flex;
@@ -206,9 +192,7 @@ const Form = Styled.form`
 
 `
 const Para1 = Styled.p`
-color: black;
-margin-top:30px;
-margin-bottom:20px;
+
 `
 const InputContainer=Styled.div`
 margin-top:5px;
@@ -222,9 +206,5 @@ margin-top:5px;
 // height:15px;
 // `
 const Input = Styled.input`
-background: #C1CAE7;
-border: 1px solid #8C8C8C;
-width:250px;
-border-radius:4px;
-margin-left:10px;
+
 `

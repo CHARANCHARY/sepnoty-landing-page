@@ -7,10 +7,14 @@ export const SoftDevSection = styled.div`
  color:white;
  width:100vw;
 `;
+export const ServiceSpan=styled.span`
+font-weight:normal;
+font-size:20px;
+`;
 export const PageTitle=styled.h2`
 color:white;
 font-size:20px;
-padding:60px 30px 20px 40px;
+padding:60px 0px 20px 40px;
 `;
 
 export const SectionThreeHeading=styled.h2`

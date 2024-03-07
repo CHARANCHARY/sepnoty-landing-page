@@ -27,6 +27,7 @@ export const FooterContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-flow: wrap;
   }
 `;
 
@@ -37,9 +38,9 @@ export const LogoContainer = styled.div`
 `;
 
 export const SepnotyLogo = styled.img`
-  height: 96px;
+  height: 90px;
   width: 360px;
-  margin: -40px -25px 0px -22px;
+  margin: -50px -25px 0px -22px;
 
   @media screen and (max-width: 455px) {
     height: 96px;
@@ -50,6 +51,8 @@ export const SepnotyLogo = styled.img`
 export const SepnotyDescription = styled.p`
   font-size: 14px;
   width: 398px;
+  margin-top: 20px;
+
   @media screen and (max-width: 455px) {
     font-size: 14px;
     width: 258px;
@@ -58,6 +61,7 @@ export const SepnotyDescription = styled.p`
 `;
 
 export const SepnotyDescription1 = styled.p`
+  margin-top: 10px;
   @media screen and (max-width: 455px) {
     display: none;
   }
@@ -108,6 +112,7 @@ export const ContactHeading = styled.h1`
 export const NewsHeading = styled.h1`
   font-size: 17px;
   color: #b44555;
+  margin-bottom: 10px;
   @media screen and (max-width: 455px) {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -175,11 +180,12 @@ export const CopywriteContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   & .copywrite-icon {
     font-size: 10px;
   }
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     width: 100%;
     margin-left: -20px;
   }
@@ -196,7 +202,7 @@ export const Copyright = styled.img`
 export const CopywriteContent = styled.p`
   font-size: 10px;
   color: #d9d9d9;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     font-size: 8px;
   }
 `;
@@ -213,7 +219,7 @@ export const BottomContainer = styled.div`
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550px) {
     width: 160px;
   }
 `;
@@ -226,7 +232,7 @@ export const Sections = styled.p`
   margin-right: 10px;
   padding-right: 10px;
   height: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 550 px) {
     font-size: 6px;
     width: 48px;
     margin-right: 0px;

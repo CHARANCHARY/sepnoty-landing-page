@@ -96,7 +96,7 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   font-weight:400;
   width:1200px;

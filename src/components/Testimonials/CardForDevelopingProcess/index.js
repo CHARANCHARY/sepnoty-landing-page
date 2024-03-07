@@ -17,6 +17,8 @@ import {
   PopupDesc,
 } from "./styled";
 
+import close from "./images/close.svg";
+import program from "./images/Programming-image.svg";
 const CardItem = ({ cardsList }) => {
   const { title, description, id } = cardsList;
   const [isPopupOpen, setPopupOpen] = useState(false);
@@ -38,13 +40,10 @@ const CardItem = ({ cardsList }) => {
       {isPopupOpen && (
         <PopupContainer>
           <Close onClick={togglePopup}>
-            <CloseImg src="./images/close.svg" alt="close" />
+            <CloseImg src={close} alt="close" />
           </Close>
           <PopupContent>
-            <PopupImage
-              src="./images/Programming-image.svg"
-              alt="programming"
-            />
+            <PopupImage src={program} alt="programming" />
             <Header>
               <PopupTitle>{title}</PopupTitle>
               <PopupHeading>

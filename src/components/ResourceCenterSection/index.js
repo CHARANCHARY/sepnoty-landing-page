@@ -48,7 +48,6 @@ const ResourceCenterSection = (props) => {
               </ResourceItem>
             </Link>
 
-            <ResourceItem></ResourceItem>
             <Link to="/resource-center/content-recommendations">
               <ResourceItem onClick={handleLinkClick}>
                 Content Recommendations

@@ -73,6 +73,8 @@ const M0 = styled.div`
 
 `
 
+
+
 const Input1 = styled.input`
 margin-left:-500px;
 `
@@ -150,7 +152,11 @@ width:200px;
 `
 const Button1 = styled.button`
 margin-left:330px;
+
 margin-top:-35px;
+
+margin-top:-45px;
+
 background-color: ${(props) => (props.active ? 'blue' : 'white')};
 color: ${(props) => (props.active ? 'white' : 'black')};
 width:60px;
@@ -189,6 +195,10 @@ color:#BC2424;
 `
 const P5 = styled.p`
 font-size:12px;
+
 margin-left:40px;
+
+margin-left:20px;
+
 color:#263238;
 `

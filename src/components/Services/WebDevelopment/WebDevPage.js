@@ -11,6 +11,7 @@ import {
     HeadingSpan,
     WebSectionTwoCardsCon,
     ContactCon,
+    ServiceSpan,
 } from './styled';
 import tech1 from './images/tech1.png';
 import tech2 from './images/tech2.png';
@@ -29,7 +30,7 @@ const techDetails=[
    {
     id:1,
     img:tech1,
-    techAbout:'ngular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers.',
+    techAbout:'Angular and its associated technologies are widely used for building modern web applications, ranging from small personal projects to large-scale enterprise applications. Its rich ecosystem, comprehensive documentation, and active community make it a popular choice among developers.',
    },
    {
     id:2,
@@ -244,7 +245,7 @@ const WebDevPage = () => {
   };
   return (
     <WebDevelopmentPage>
-    <WebPageTitle>Services &gt;Web development</WebPageTitle>
+    <WebPageTitle>Services &gt;<ServiceSpan>Web development</ServiceSpan></WebPageTitle>
     <WebHeading>Services</WebHeading>
     <WebSectionOne />
     {selectedDetail ? (
