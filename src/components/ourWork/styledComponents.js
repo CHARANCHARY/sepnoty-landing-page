@@ -17,7 +17,7 @@ padding: 15px;
 border-radius: 8px;
 margin-left: 30%;
 box-shadow:rgba(43, 69, 155, 1);
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 555px) {
   width: 100%;
   margin-left: 0%;
   height: 48vh;
@@ -37,7 +37,7 @@ export const OurWorkList=styled.ul`
   justify-content: center;
   list-style: none;
 
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
       flex-direction: row;
       flex-wrap:wrap;
       margin-left:-70px;
@@ -54,7 +54,7 @@ export const OurWorkServiceCardContainer=styled.li`
   box-sizing: border-box;
   width:28%;
   height:40%;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     flex:30%;
     margin-left: 0px;
     width: 90%;
@@ -119,7 +119,7 @@ font-family: Roboto;
 color:#B7B6BD;
 line-height: 20px;
 margin-top: 10px;
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 555px) {
   margin-top: 30px;
   font-size: 15px;
 }
@@ -143,7 +143,7 @@ border-radius:8px;
 border:none;
 font-size: 15px;
 background: rgba(43, 69, 155, 1);
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 555px) {
   border-radius:5px;
 }
 `;

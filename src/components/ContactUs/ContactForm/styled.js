@@ -15,7 +15,7 @@ export const ContactQueryContainer = styled.div`
   border-bottom-left-radius: 10px;
   background-color: rgba(250, 250, 250, 1);
   width: 72%;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 800px;
     border-radius: 10px;
     margin-left: -70px;
@@ -29,7 +29,7 @@ export const ContactHeading = styled.h1`
   color: rgba(61, 61, 61, 1);
 
   margin: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 16px;
     padding-right: 0px;
   }
@@ -56,7 +56,7 @@ export const ContactTextarea = styled.textarea`
     color: #8c8c8c;
     font-size: 13px;
   }
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 60%;
     height: 90px;
   }
@@ -105,7 +105,7 @@ export const SepnotyContact = styled.input`
     color: #4e4e4e;
     margin: 10px;
   }
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     & + label {
       font-size: 8px;
       color: #4e4e4e;
@@ -121,7 +121,7 @@ export const RequestSepnoty = styled.input`
     color: #4e4e4e;
     margin: 10px;
   }
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     & + label {
       font-size: 8px;
       color: #4e4e4e;
@@ -160,7 +160,7 @@ export const ContactContactssContainer = styled.div`
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 28%;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
@@ -172,7 +172,7 @@ export const ContactContactUsItems = styled.ul`
   padding: 0px;
   margin: 0px;
   color: #777777;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
   }
 `;
 

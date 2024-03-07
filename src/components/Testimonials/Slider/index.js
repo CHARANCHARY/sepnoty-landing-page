@@ -134,10 +134,10 @@ export default function CommentsSection() {
     </>
   );
 }
-const Main = Styled.div`
-position:on;
-background: linear-gradient(to left, #333, #333 55%, #eee 100%, #333 75%);
-`
+// const Main = Styled.div`
+// position:on;
+// background: linear-gradient(to left, #333, #333 55%, #eee 100%, #333 75%);
+// `
 
 
 

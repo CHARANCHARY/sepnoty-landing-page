@@ -25,13 +25,13 @@ export const Intro3 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display:none;
   }
 `;
 export const Intro33 = styled.div`
   display: none;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: flex;
     flex-direction: column;
     background-color: #0c111f;
@@ -45,7 +45,7 @@ export const Introhd1 = styled.h1`
   letter-spacing: 2px;
   width:400px;
   margin-bottom:20px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
       font-size:15px;
       letter-spacing: 0px;
   }
@@ -55,7 +55,7 @@ export const Introp1 = styled.p`
   line-height: 1.5;
   margin-top: 10px;
   margin-bottom:20px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display:none;
 }
 `;
@@ -65,7 +65,7 @@ export const Introp11 = styled.p`
   margin-top: 10px;
   width:90%;
   display:none;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: flex;
 }
 `;
@@ -90,7 +90,7 @@ export const IntroWhiteCircle = styled.li`
   justify-content: center;
   align-items: center;
   border: 2px solid whitesmoke;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 40px;
   height: 40px;
 }
@@ -109,7 +109,7 @@ export const IntroBlueCircle = styled.li`
   justify-content: center;
   align-items: center;
   border: 2px solid whitesmoke;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 40px;
   height: 40px;
 }
@@ -128,7 +128,7 @@ export const IntroButtonVideo = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display:none;
   }
   
@@ -138,7 +138,7 @@ export const IntroButtonVideo2 = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   margin-top: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
      display: flex;
      justify-content: center;
   }
@@ -161,7 +161,7 @@ export const IntroProposalText = styled.button`
   border: none;
   font-family: "roboto";
   cursor: pointer;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     height: 30px;
     align-self:center;
 }
@@ -172,7 +172,7 @@ export const IntroPlayVideo = styled.div`
   margin-top: 15px;
   margin-left: 10px;
   display: flex;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display:flex;
   }
 `;
@@ -181,7 +181,7 @@ export const IntroPlayVideo2 = styled.div`
   margin-top: 15px;
   margin-left: 10px;
   display: none;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display:flex;
   }
 `;
@@ -190,7 +190,7 @@ export const IntroPlayButton = styled.img`
   border-radius: 50%;
   height: 30px;
   width: 30px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     height: 20px;
   width: 20px;
   }
@@ -199,7 +199,7 @@ export const IntroVideoText = styled.p`
   margin-top: 3px;
   margin-left: 10px;
   color: white;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
    font-size: 10px;
   }
 `;
@@ -211,7 +211,7 @@ export const IntroExplorePart = styled.div`
   background-color: #0c111f;
   line-height: 1.5;
   margin-top:-40px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     padding: 30px 0px 50px 30px;
     justify-content: space-between;
     
@@ -220,14 +220,14 @@ export const IntroExplorePart = styled.div`
 export const IntroAchievements = styled.div`
   margin-right: 40px;
   text-align: center;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width:100px;
    }
 `;
 export const IntroOrangeText = styled.h2`
   color: white;
   font-weight: 800;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     color: white;
     font-weight: 800;
     font-size:15px;
@@ -235,7 +235,7 @@ export const IntroOrangeText = styled.h2`
 `;
 export const IntroBlackText = styled.p`
   color: white;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size:15px;
     font-weight:0;
     margin-top:10px;
@@ -250,7 +250,7 @@ export const IntroRightImg = styled.img`
   width: 700px;
   height: 450px;
   margin-right: 50px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 430px;
     height: 300px;
     margin-left: -50px;

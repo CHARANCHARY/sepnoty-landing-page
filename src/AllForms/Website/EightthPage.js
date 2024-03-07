@@ -69,9 +69,8 @@ Refer to our <Span>Privacy Policy</Span> for details.</P5>
     )
 }
 export default EightthPage;
-const M0 = styled.div`
 
-`
+
 
 const Input1 = styled.input`
 margin-left:-500px;
