@@ -1,0 +1,75 @@
+											Landing Page
+	
+	Navbar: 
+		1. Height should be increased slightly
+		2. Background should be transparent
+
+
+	
+	Hero Section:
+		1. Alignment of the left div box should be fixed
+		2. Font size should be increased
+		3. Paragraph text should be matched
+
+
+	
+	Advance Services:
+		This section is fine.
+
+
+	
+	4 cards:
+		1. Increase the margin-top slightly, such that there should be some gaps from the above image
+
+
+	
+	Slim Techcnology Section:
+		1. Logos aren't loading
+
+
+		
+	From Idea-to-Development
+		1. Left side starting should align with the above tech-logo section. Either Increase the Tech-Logo section width or decrease this section's width
+		2. Images aren't loading
+		3. Increase the margin-bottom such that the next part make some gap from it.
+
+
+	
+	We deliver clean code:
+		This section is fine.
+
+
+
+	Our recent work:
+		1. The start pattern image should be added.
+		2. Font-size should be increased.
+
+
+		
+	Our product development process:
+		1. Font-sizes aren't matching
+		2. Cards should be of 3 on each row
+
+
+
+	Testimonial:
+		1. Cards width can be minimized along with font-size
+
+
+
+
+	The brightest mindset:
+		1. Overall width should be matched
+		2. Get in touch: Whats app change it to WhatsApp and other texts accordingly 
+		3. Image is not loading
+
+
+
+	Footer:
+		1. Maintain some gap from the above section
+		2. On the left most part, maintain some gap between the logo, We're happy... and ~no query...
+		3. Our Newsletter: Introduce some space between the texts and input field.
+			Change the to -> To
+		4. Follow us: 	
+			Make the first letter capital of every social media names
+			Change the Twitter to X
