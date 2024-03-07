@@ -1,9 +1,10 @@
 // import React, { PureComponent } from 'react';
 import styled from "styled-components";
-import { BarChart, Bar,Text  } from 'recharts';
+import { BarChart, Bar  } from 'recharts';
 import MobSectionOne from './MobSectionOne/MobSectionOne';
 // Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer
-
+import DaimondImg from "./image 22.png";
+import Vector from "./Vector.png";
 import {
     // Header,
     // MobSection,
@@ -21,6 +22,13 @@ import {
     GdPageTitle,
     ServiceSpan,
     GdHeading,
+    ProMainDiv,
+    ProTop,
+    ProBottom,
+    ProTopHead,
+    ProTopImg,
+    ProBtn,
+    VectorImg,
 } from "./styled"
 
 
@@ -143,25 +151,37 @@ const AnalyticsAndReporting = () => {
      const progress = "50";
      const CustomResponsiveContainer = styled.div`
         background-color: #C1CAE7;
-        padding: 30px 10px 0px 30px;
-        margin: 0px 10px 10px auto; /* Adjust the margin for spacing and align to the right */
+        padding: 100px 10px 0px 30px;
+        margin: 0px 30px 10px 0px; /* Adjust the margin for spacing and align to the right */
         color: black;
-        width:auto;
+        width: auto;
         height:auto;
-        border-radius: 10px;
-        
+        border-radius: 10px; 
     `;
     return(
         <AnalyticsPage>
             
         <GdPageTitle>Resource Center &gt;<ServiceSpan>Learning Paths and Road Maps</ServiceSpan></GdPageTitle>
         <GdHeading>Resources</GdHeading>
+        
         <MobSectionOne />
-         
+        <ProMainDiv>
+                 <ProTop>
+                 <ProBtn> <VectorImg src={Vector} alt="Vector"/> 15 Days</ProBtn>
+
+                      <ProTopHead>
+                        Pro Version
+                      </ProTopHead>
+                      <ProTopImg src={DaimondImg} alt=" Pro version Get" />
+                 </ProTop>
+                 <ProBottom>
+
+                 </ProBottom>
+             </ProMainDiv>
              <MobSection1>
             {/* <GraphsContainer> */}
-                    <CustomResponsiveContainer width="15%" height="5%">
-                        <BarChart width={400} height={300} data={ActivityData}  
+                    <CustomResponsiveContainer width="9%" height="5%">
+                        <BarChart width={350} height={300} data={ActivityData}  
                           //  margin={{
                           //   top: 20,
                           //   right: 10,
@@ -180,8 +200,8 @@ const AnalyticsAndReporting = () => {
                             <Bar dataKey="uv" label={{ position: 'top' }}   shape={<CustomBarShape />} />
                         </BarChart>
                     </CustomResponsiveContainer>
-                    <CustomResponsiveContainer width="15%" height="12%">
-                        <BarChart width={550} height={590} data={projectsData}
+                    <CustomResponsiveContainer width="9%" height="5%">
+                        <BarChart width={350} height={300} data={projectsData}
                           
                         >
                             <defs>
@@ -195,18 +215,21 @@ const AnalyticsAndReporting = () => {
                     </CustomResponsiveContainer>
                   <PercentageContainer>
                       <div>
-                        <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
-                            <div style={{ backgroundColor: '#007bff', height: '200px', width: `${progress}%`,borderRadius: '10px',margin:'5px' }} />
+                        <div style={{ border: '0px solid #ccc', width: '200px', borderRadius: '30px', overflow: 'hidden' }}>
+                            <div  style={{ backgroundColor: '#D9D9D9', height: '30px', width: `${progress}%`,borderRadius: '30px',margin:'5px' }} >
+                              Dollar {progress}%
+                              </div>
+                      
                         </div>
-                        <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '10px', overflow: 'hidden' }}>
-                            <div style={{ backgroundColor: '#007bff', height: '200px', width: `${progress}%`,borderRadius: '10px', }} />
+                        <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '30px', overflow: 'hidden' }}>
+                            <div style={{ backgroundColor: '#D9D9D9', height: '30px', width: `${progress}%`,borderRadius: '30px', }} />
                         </div>
                       </div>
                   </PercentageContainer>
                     <CirclesContainer>
                         <CircleOne>4%</CircleOne>
-                        <CircleTwo>86%</CircleTwo>
-                        <CircleThree>4%;</CircleThree>
+                        <CircleTwo>4%</CircleTwo>
+                        <CircleThree>86%</CircleThree>
                     </CirclesContainer>
             {/* </GraphsContainer> */}
             </MobSection1>    
