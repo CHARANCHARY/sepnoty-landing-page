@@ -59,7 +59,8 @@ import Sustainability from "./components/AboubtUsComponents/Sustainability";
 import Software from "./components/AboubtUsComponents/SoftwareDevelopment";
 import Location from "./components/AboubtUsComponents/Location";
 import SubSection from "./components/AboubtUsComponents/AboutPortfolioSub";
-import Portfolio from "./components/MyPortfolio/ChangeByDesign";
+import PortfolioHome from "./components/MyPortfolio/PortfolioHome";
+import ChangeByDesign from "./components/MyPortfolio/ChangeByDesign";
 
 
 
@@ -343,7 +344,12 @@ const AppRoutes = () => {
         path="/Services/AITechnologyServices/DataPreparation"
         component={DataPreparation}
       />
-      <Route exact path="/ProjectPortfolio" component={Portfolio} />
+      <Route exact path="/ProjectPortfolio" component={PortfolioHome} />
+      <Route
+        exact
+        path="/ProjectPortfolio/change-by-design"
+        component={ChangeByDesign}
+      />
     </Switch>
   );
 };
