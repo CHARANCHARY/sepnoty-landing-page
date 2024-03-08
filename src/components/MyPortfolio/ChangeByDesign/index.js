@@ -45,7 +45,7 @@ const caseStudies = [
   },
 ];
 // import main from "../../assets/images/Capture.PNG"
-const Portfolio = () => {
+const ChangeByDesign = () => {
   return (
     <>
       <Container>
@@ -172,4 +172,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default ChangeByDesign;
