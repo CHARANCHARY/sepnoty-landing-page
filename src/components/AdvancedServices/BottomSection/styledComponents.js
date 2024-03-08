@@ -10,7 +10,7 @@ justify-content:space-around;
 @media screen and (max-width:555px){
     justify-content:space-between;
     flex-wrap: wrap;
-    
+    padding: 0px 10px 0px 0px;
 }
 `;
 
@@ -33,11 +33,11 @@ transition: transform 0.3s, background-color 0.3s;
     transform: scale(1.05); /* Zoom out effect */
     background-color: #254989; /* Change color on hover */
   }
-  @media screen and (max-width:555px){
-    flex: 45%;
+@media screen and (max-width:555px){
+    flex: 44%;
     width:40%;
     margin:10px;
-    height:25vh;
+    height:30vh;
     background-color: #D6DAE7;
     border-radius:5px;
 }

@@ -31,4 +31,5 @@ align-items:center;
 justify-content:center;
 gap:40px;
 margin-top:10px;
+margin-bottom: 80px;
 `

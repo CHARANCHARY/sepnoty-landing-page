@@ -22,6 +22,7 @@ import {
   IntroPlayButton,
   IntroVideoText,
   IntroExplorePart,
+  IntroExplorePart2,
   IntroAchievements,
   IntroOrangeText,
   IntroBlackText,
@@ -88,7 +89,7 @@ const HomeSection = () => {
           <IntroAchievements>
             <IntroOrangeText>{projects}</IntroOrangeText>
 
-            <IntroBlackText>Projects Complete</IntroBlackText>
+            <IntroBlackText>Projects Done</IntroBlackText>
           </IntroAchievements>
           <IntroAchievements>
             <IntroOrangeText>{active}</IntroOrangeText>
@@ -98,7 +99,7 @@ const HomeSection = () => {
           <IntroAchievements>
             <IntroOrangeText>{customer}</IntroOrangeText>
 
-            <IntroBlackText>Customer Support</IntroBlackText>
+            <IntroBlackText>Customers Support</IntroBlackText>
           </IntroAchievements>
         </IntroExplorePart>
           </IntroRightPart>
@@ -127,6 +128,24 @@ const HomeSection = () => {
                 1.8k People bought our services today.
               </IntroRightText>
             </Intro33>
+          
+            <IntroExplorePart2>
+                <IntroAchievements>
+                  <IntroOrangeText>{projects}</IntroOrangeText>
+
+                  <IntroBlackText>Projects Done</IntroBlackText>
+                </IntroAchievements>
+                <IntroAchievements>
+                  <IntroOrangeText>{active}</IntroOrangeText>
+
+                  <IntroBlackText>Active Customers</IntroBlackText>
+                </IntroAchievements>
+                <IntroAchievements>
+                  <IntroOrangeText>{customer}</IntroOrangeText>
+
+                  <IntroBlackText>Customers Support</IntroBlackText>
+                </IntroAchievements>
+            </IntroExplorePart2>
         
       </Intro>
     </>

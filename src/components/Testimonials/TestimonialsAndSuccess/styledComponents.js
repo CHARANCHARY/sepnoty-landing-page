@@ -23,9 +23,6 @@ font-size: 40px;
 margin-bottom: 0px;
 font-family: Lexend;
 
-
-  @media screen and (max-width:455px){
-
   @media screen and (max-width:555px){
     font-size: 20px;
     font-family: "roboto";
@@ -76,8 +73,9 @@ export const Desc = Styled.p`
   @media screen and (max-width:555px){
     font-size: 15px;
     font-family: "roboto";
-    margin-top:60px;
-    text-align: center;
+    margin: 60px 0 0 20px;
+    text-align: left;
+    width: 90%;
     text-shadow: 0px 0px 0px;
   }
 `;

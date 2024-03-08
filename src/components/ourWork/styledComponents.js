@@ -20,7 +20,7 @@ box-shadow:rgba(43, 69, 155, 1);
 @media screen and (max-width: 555px) {
   width: 100%;
   margin-left: 0%;
-  height: 48vh;
+  height: 50%;
 }
 `;
 export const OurWorkHeading=styled.h1`
@@ -50,7 +50,7 @@ export const OurWorkServiceCardContainer=styled.li`
   justify-content:center;
   align-items: center;
   padding: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
   box-sizing: border-box;
   width:28%;
   height:40%;
@@ -84,11 +84,15 @@ export const OurWorkServiceDetails=styled.div`
 `;
 
 export const OurWorkDescription=styled.p`
-font-size:80%;
+font-size: 15px;
 text-align:left;
 line-height: 18px;
 color:#B7B6BD;
 margin-left: 30px;
+@media screen and (max-width: 555px) {
+  width: 80%;
+  font-size: 8px;
+}
 `;
 
 export const OurWorkTextContainer=styled.div`

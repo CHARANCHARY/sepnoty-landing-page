@@ -33,7 +33,7 @@ import {
   SectionContainer,
   SepnotyDescription1,
   Sections,
-  Section,
+  // Section,
   FollowUsContainer,
   Copyright,
   ServiceCon,
@@ -142,10 +142,12 @@ class FooterSection extends Component {
               <Sections>About</Sections>
               <Sections>Advertise</Sections>
               <Sections>Privacy & Policy</Sections>
-              <Section>Contact Us</Section>
+              <Sections>Contact Us</Sections>
             </SectionContainer>
           </BottomContainer>
+          
         </Container>
+        
       </ThemeProvider>
     );
   }

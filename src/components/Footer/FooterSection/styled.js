@@ -42,8 +42,8 @@ export const SepnotyLogo = styled.img`
   width: 360px;
   margin: -50px -25px 0px -22px;
 
-  @media screen and (max-width: 455px) {
-    height: 96px;
+  @media screen and (max-width: 555px) {
+    height: 66px;
     width: 220px;
   }
 `;
@@ -53,7 +53,7 @@ export const SepnotyDescription = styled.p`
   width: 398px;
   margin-top: 20px;
 
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 14px;
     width: 258px;
     font-weight: 500px;
@@ -62,14 +62,14 @@ export const SepnotyDescription = styled.p`
 
 export const SepnotyDescription1 = styled.p`
   margin-top: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
 
 export const ServiceContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    margin-right: 0px;
+  @media screen and (max-width: 555px) {
+    
   }
 `;
 
@@ -101,7 +101,7 @@ export const ContactHeading = styled.h1`
   font-size: 17px;
   color: #cac7ee;
   margin-bottom: 16px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     margin-bottom: 6px;
     margin-top: 10px;
     text-align: center;
@@ -113,7 +113,7 @@ export const NewsHeading = styled.h1`
   font-size: 17px;
   color: #b44555;
   margin-bottom: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     margin-top: 20px;
     margin-bottom: 5px;
   }
@@ -124,7 +124,7 @@ export const NewsDesc = styled.p`
   color: #969595;
   padding: 10px 0px 10px;
   width: 316px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
@@ -151,7 +151,7 @@ export const EmailMsg = styled.p`
   font-size: 12px;
   color: #969595;
   padding-top: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     margin-bottom: 20px;
   }
 `;
@@ -180,14 +180,16 @@ export const CopywriteContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 
   & .copywrite-icon {
     font-size: 10px;
   }
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 555px) {
     width: 100%;
     margin-left: -20px;
+    justify-content: none;
+    align-items: flex-start;
+
   }
 `;
 
@@ -195,15 +197,19 @@ export const Copyright = styled.img`
   height: 18px;
   width: 18px;
   margin-right: 5px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 555px) {
+    height: 22px;
+    width: 22px;
+    
   }
 `;
 
 export const CopywriteContent = styled.p`
   font-size: 10px;
-  color: #d9d9d9;
-  @media screen and (max-width: 550px) {
-    font-size: 8px;
+  color: #D9D9D9;
+  @media screen and (max-width: 555px) {
+    font-size: 18px;
+
   }
 `;
 
@@ -212,31 +218,36 @@ export const BottomContainer = styled.div`
   flex-direction: row;
   justify-content: space-between;
   margin-top: 50px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 555px) {
+     flex-direction: column;
+     margin-top: 20px;
+     justify-content: flex-start;
   }
 `;
 
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 550px) {
-    width: 160px;
+  @media screen and (max-width: 555px) {
+    width: 90%;
+    justify-content: space-around;
+    margin: 10px 0 10px -15px;
   }
 `;
 
 export const Sections = styled.p`
   font-size: 10px;
   position: relative;
-  color: #ffffff;
+  color: #D9D9D9;
   border-right: 1px solid #ffffff;
   margin-right: 10px;
   padding-right: 10px;
   height: 10px;
-  @media screen and (max-width: 550 px) {
-    font-size: 6px;
-    width: 48px;
+  @media screen and (max-width: 555px) {
+    font-size: 16px;
+    height: 20px;
     margin-right: 0px;
-    padding-right: 0px;
+    padding-left: 6px;
     text-align: center;
   }
 `;
@@ -251,16 +262,14 @@ export const Section = styled.p`
 export const FollowUsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
 
 export const FollowUsContainer1 = styled.div`
-  @media screen and (min-width: 456px) {
-    display: none;
-  }
-  @media screen and (max-width: 455px) {
+  display:none;
+  @media screen and (max-width: 555px) {
     display: flex;
     flex-direction: column;
   }
@@ -272,16 +281,16 @@ export const FollowUsSection = styled.ul`
   list-style-type: none;
   padding: 0px;
   margin: 0px;
-  @media screen and (max-width: 455px) {
-    flex-direction: column;
-    justify-content: flex-start;
+  @media screen and (max-width: 555px) {
+    flex-direction: row;
+    justify-content: none;
   }
 `;
 
 export const ServiceContact = styled.div`
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -293,13 +302,13 @@ export const ServiceContact = styled.div`
 
 export const ServiceCon = styled.div`
   margin-right: 80px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     margin-right: 0px;
   }
 `;
 export const ContactCon = styled.div`
   margin-right: 80px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     margin-right: 0px;
   }
 `;

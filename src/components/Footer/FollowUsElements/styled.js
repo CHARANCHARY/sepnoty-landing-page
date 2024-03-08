@@ -7,6 +7,8 @@ height: 13px;
   @media screen and (max-width: 555px) {
       margin-bottom: 0px;
       margin-right: 0px;
+      height: 18px;
+      width: 18px;
   }
 `;
 
