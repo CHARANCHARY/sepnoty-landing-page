@@ -244,7 +244,7 @@ export const Sections = styled.p`
   padding-right: 10px;
   height: 10px;
   @media screen and (max-width: 555px) {
-    font-size: 16px;
+    font-size: 12px;
     height: 20px;
     margin-right: 0px;
     padding-left: 6px;

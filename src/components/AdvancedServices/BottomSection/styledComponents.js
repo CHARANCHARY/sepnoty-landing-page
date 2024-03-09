@@ -73,8 +73,8 @@ color:#AB9F9F;
 font-weight: bold;
 line-height:20px;
 @media screen and (max-width:555px){
-  font-size:12px;
-  line-height:1.8;
+  font-size: 10%;
+  line-height: 1.2;
 }
 `;
 export const ServiceButton=styled.button`
@@ -100,7 +100,8 @@ ${ServiceCardContainer}:hover & {
 }
 @media screen and (max-width:555px){
   border-radius:10px;
-  height:30px;
+  height: 15%;
+  width: 100%;
   font-size:12px;
   margin-top:auto;
 }
@@ -123,6 +124,14 @@ export const PopUpCardContainer = styled.div`
   flex-direction:column;
   
   color:white;
+  @media screen and (max-width:555px){
+    height: 40%;
+    width: auto;
+    top: 50%;
+    margin-left: -5%;
+    font-size: 100%;
+
+  }
 `;
 export const PopupLftRgt=styled.div`
 display:flex;
@@ -149,6 +158,9 @@ export const PopUpTitle = styled.h2`
 
   font-size: 18px;
   color:white;
+  @media screen and (max-width:555px){
+    font-size: 80%;
+  }
 
 `;
 
@@ -158,6 +170,9 @@ export const PopUpDescription = styled.p`
   color: white;
   line-height: 20px;
   margin-top:20px;
+  @media screen and (max-width:555px){
+    font-size: 10px;
+  }
   
 `;
 
@@ -176,6 +191,11 @@ line-height:20px;
 
 text-align:justify;
 padding:20px 35px 20px 35px;
+@media screen and (max-width:555px){
+  font-size: 20%;
+  padding:10px 5px 0px 5px;
+  line-height: 15px;
+}
 `;
 
 export const CloseIcon = styled.div`
