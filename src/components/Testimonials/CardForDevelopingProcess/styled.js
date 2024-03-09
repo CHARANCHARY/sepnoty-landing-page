@@ -130,6 +130,7 @@ export const Close = styled.button`
   border: 0px;
   outline: none;
   align-self: flex-end;
+  cursor: pointer;
 `;
 
 export const PopupTitle = styled.h1`
