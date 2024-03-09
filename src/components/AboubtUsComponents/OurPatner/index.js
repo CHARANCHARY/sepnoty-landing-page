@@ -11,22 +11,22 @@ import {
     // Button,
     Span,
     DigitalContainer,
-    ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
-    ServiceItemDesc,
-    ImageCon,
-    ServiceItemImg,
-    ServiceItemButton,
-    ServiceItemDetails,
-    ServiceItemCon,
+    // ListHeading,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
+    // ServiceItemDesc,
+    // ImageCon,
+    // ServiceItemImg,
+    // ServiceItemButton,
+    // ServiceItemDetails,
+    // ServiceItemCon,
     ConatctCon,
-    ContactItem,
-    Container,
-    PatternCon,
-    SmallPattern,
+    // ContactItem,
+    // Container,
+    // PatternCon,
+    // SmallPattern,
   
     // ContactItem,
     // Container,
@@ -174,13 +174,13 @@ we have collaborations with industry leaders in cloud technologies, data managem
   border-radius:20px;
   margin-bottom:-179px;
   `
-  const Heading = Styled.h1`
-  margin-top:20px;
-  text-align:center;
-  font-size: 20px;
-  color: #2b459b;
-  font-weight: bold;
-  `
+  // const Heading = Styled.h1`
+  // margin-top:20px;
+  // text-align:center;
+  // font-size: 20px;
+  // color: #2b459b;
+  // font-weight: bold;
+  // `
   const Image5 = Styled.img`
   height:50px;
   `

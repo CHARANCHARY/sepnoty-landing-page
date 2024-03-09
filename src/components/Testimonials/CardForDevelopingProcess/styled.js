@@ -5,6 +5,7 @@ export const CardContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 20px 40px 30px 0px;
+
   padding: 30px 10px 30px 10px;
   background-color: rgba(0, 0, 150, 0.15);
   border-radius: 8px;
@@ -22,18 +23,20 @@ export const CardContainer = styled.div`
     text-align: justify;
   }
 
-  @media screen and (max-width: 455px) {
-    border-radius: 5px;
-    height: 320px;
-    width: 47%;
-    margin: 10px auto;
-    padding: 20px 0px 20px 10px;
+  @media screen and (max-width: 555px) {
+    border-radius: 12px;
+    flex: 45%;
+    width: 70%;
+    height: 430px;
+    margin: 20px 10px 10px 0px;
   }
 `;
 
 export const CardHeader = styled.div`
   display: flex;
-  align-items: center;
+
+  justify-content: center;
+  align-items: flex-start;
   padding-left: 10px;
   @media screen and (max-width: 555px) {
     padding: 0px;
@@ -44,8 +47,10 @@ export const CardNumber = styled.h1`
   font-size: 20px;
   color: #33499e;
   @media screen and (max-width: 555px) {
-    font-size: 15px;
-    padding: 0px;
+
+    font-size: 18px;
+    margin-top: -18px;
+    align-self: flex-start;
   }
 `;
 
@@ -55,7 +60,9 @@ export const CardTitle = styled.h1`
   color: #2b459b;
   padding-top: 3px;
   @media screen and (max-width: 555px) {
-    font-size: 14px;
+
+    font-size: 18px;
+    margin-top: -20px;
     align-self: flex-end;
   }
 `;
@@ -63,12 +70,14 @@ export const CardTitle = styled.h1`
 export const CardParagraph = styled.p`
   margin: 50px 0 50px 0;
   font-size: 14px;
+  color: #B7B6BD;
   line-height: 1.5em;
-  @media screen and (max-width: 455px) {
-    font-size: 13px;
+
+  @media screen and (max-width: 555px) {
+    font-size: 18px;
     line-height: 1.5em;
-    margin: 0px;
-    padding-right: 5px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
   }
 `;
 

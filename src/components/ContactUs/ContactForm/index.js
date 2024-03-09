@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { FiUploadCloud } from "react-icons/fi";
 
 import ContactSection from "../ContactSection";
-
+import "./style.css";
 import call from "../Images/call.svg";
 import whatsapp from "../Images/whatsapp.svg";
 import livechat from "../Images/livechat.svg";
@@ -125,7 +125,7 @@ const ContactForm = (props) => {
     data.set("files", upload);
 
     const response = await fetch(
-      "http://localhost:8800/api/contact/contactus",
+      'http://localhost:8800/api/contact/contactus',
       {
         method: "POST",
         body: data,
@@ -134,7 +134,30 @@ const ContactForm = (props) => {
         },
       }
     );
+
+    // Common function for reseting the form fields after performing action
+    const resetForm = () => {
+      setMessage("");
+      setUsername("");
+      setCompanyName("");
+      setEmail("");
+      setPhoneNumber(0);
+      setAgreement({ contact: false, requestInfo: false });
+    };
+
     console.log(response);
+    if (response.status === 400) {
+      resetForm();
+      alert("Please fill all details");
+    } else if (response.ok) {
+      resetForm();
+      alert("Details have been sent");
+    } else {
+      resetForm();
+      alert(
+        "There is an error in sending data. Please try again after sometime"
+      );
+    }
   };
 
   return (
@@ -215,6 +238,7 @@ const ContactForm = (props) => {
                   type="checkbox"
                   id="contact"
                   name="contact"
+                  checked={agreement.contact}
                   onChange={(e) => changeHandler("agreement", e)}
                 />
                 <label htmlFor="sepnotyContact">
@@ -226,6 +250,7 @@ const ContactForm = (props) => {
                   type="Checkbox"
                   id="requestInfo"
                   name="requestInfo"
+                  checked={agreement.requestInfo}
                   onChange={(e) => changeHandler("agreement", e)}
                 />
                 <label htmlFor="requestSepnoty">
@@ -237,6 +262,11 @@ const ContactForm = (props) => {
             <ContactButtonCon>
               <ContactButton
                 type="submit"
+                className={
+                  !Object.values(agreement).every((elem) => elem === true)
+                    ? "disale"
+                    : null
+                }
                 disabled={
                   !Object.values(agreement).every((elem) => elem === true)
                 }

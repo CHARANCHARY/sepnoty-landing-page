@@ -5,26 +5,26 @@ import {
     ContentRecomContainer,
     ConRecHead,
     ConRecDesc,
-    Rectangle1,
-    Rectangle2,
-    Rectangle3,
+    // Rectangle1,
+    // Rectangle2,
+    // Rectangle3,
     // Button,
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
-    ServiceItemDesc,
-    ImageCon,
-    ServiceItemImg,
-    ServiceItemButton,
-    ServiceItemDetails,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
+    // ServiceItemDesc,
+    // ImageCon,
+    // ServiceItemImg,
+    // ServiceItemButton,
+    // ServiceItemDetails,
     ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -32,10 +32,10 @@ import {
     // Container,
   } from "./styled";
   
-  import GroupImg from "../images/Rectangle 6121.png"
+  // import GroupImg from "../images/Rectangle 6121.png"
   import Image from "../images/Rectangle 6122.svg"
   
-  import ContactForm from "../../ContactUs/ContactForm";
+  // import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
   
   const Testimonial= () => {
@@ -181,7 +181,7 @@ outsourcing services</p>
   display:flex;
   flex-direction:row;
   flex-wrap : wrap;
-  gap:180px;
+  gap:140px;
   margin-left:100px;
   margin-bottom:100px;
   `

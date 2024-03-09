@@ -9,8 +9,11 @@ import {
   OurWorkContainer,
   OurWorkHeading,
   OurWorkList,
+  // AdServRightDots
 }
 from "./styledComponents";
+// import rightpattern from "../AdvancedServices/assets/rightpattern.png";
+
 
 const serviceDetails = [
   {
@@ -45,8 +48,10 @@ function OurWork() {
           <Service key={eachItem.uniqueNo} details={eachItem} />
         ))}
       </OurWorkList>
+      
       <br/>
       <br/>
+
       <Content />
       <br />
       <Card />

@@ -17,8 +17,7 @@ a {
   flex-direction: row;
   color: white;
   padding: 0px 20px;
-  box-shadow: rgba(50, 50, 93, 0.23) 0px 30px 30px -20px;
-  background-color: #0c111f;
+  background-color: transparent;
   position: fixed;
   width: 100vw;
   z-index: 2;

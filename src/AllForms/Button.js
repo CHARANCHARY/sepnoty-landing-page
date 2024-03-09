@@ -17,8 +17,8 @@ function MainPage() {
 
   return (
     <ButtonCon >
-      <ActiveButton active={currentPage === 'website'}  onClick={() => handleButtonClick('website')}>Website</ActiveButton>
       <div>
+      <  ActiveButton active={currentPage === 'website'}  onClick={() => handleButtonClick('website')}>Website</ActiveButton>
         <Buttonel active={currentPage === 'application'}   onClick={() => handleButtonClick('application')}>Application</Buttonel>
         <Butt active={currentPage === 'software'}  onClick={() => handleButtonClick('software')}>Software</Butt>
       </div>
@@ -34,39 +34,39 @@ function MainPage() {
 export default MainPage;
 
 const ActiveButton = Styled.button`
-background-color: ${(props) => (props.active ? 'blue' : 'white')};
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
 color: ${(props) => (props.active ? 'white' : 'black')};
-border-radius : ${(props) => (props.active ? '10px' : '')};
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-font-size: 20px;
-padding: 10px;
-height:45px;
+width: 100px;
+border: 1px solid #8C8C8C;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+font-size:19px;
+height: 45px;
+
 `;
 
 const Buttonel = Styled.button`
-font-size: 20px;
-background-color: ${(props) => (props.active ? 'blue' : 'white')};
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
 color: ${(props) => (props.active ? 'white' : 'black')};
-border-radius : ${(props) => (props.active ? '10px' : '')};
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-padding: 10px;
-margin-left: -10px;
-border-right: 1px solid #9e9898;
-height:45px;
+width: 110px;
+border: 1px solid #8C8C8C;
+
+font-size:19px;
+height: 45px;
+
+
 `;
 
 const Butt = Styled.button`
-background-color: ${(props) => (props.active ? 'blue' : 'white')};
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
 color: ${(props) => (props.active ? 'white' : 'black')};
-padding: 10px;
-font-size: 20px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-border-radius : ${(props) => (props.active ? '10px' : '')};
+width: 100px;
+border: 1px solid #8C8C8C;
+border-top-right-radius:10px;
+border-bottom-right-radius:10px;
+font-size:19px;
+height: 45px;
 
-height:45px;
 `;
 const ButtonCon = Styled.div`
 display: flex;

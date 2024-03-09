@@ -17,10 +17,11 @@ padding: 15px;
 border-radius: 8px;
 margin-left: 30%;
 box-shadow:rgba(43, 69, 155, 1);
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 555px) {
   width: 100%;
   margin-left: 0%;
   ${'' /* height: 48vh; */}
+
 }
 `;
 export const OurWorkHeading=styled.h1`
@@ -37,7 +38,7 @@ export const OurWorkList=styled.ul`
   justify-content: center;
   list-style: none;
 
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
       flex-direction: row;
       flex-wrap:wrap;
       margin-left:-70px;
@@ -50,11 +51,11 @@ export const OurWorkServiceCardContainer=styled.li`
   justify-content:center;
   align-items: center;
   padding: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
   box-sizing: border-box;
   width:28%;
   height:40%;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     flex:30%;
     margin-left: 0px;
     width: 90%;
@@ -84,11 +85,15 @@ export const OurWorkServiceDetails=styled.div`
 `;
 
 export const OurWorkDescription=styled.p`
-font-size:80%;
+font-size: 15px;
 text-align:left;
 line-height: 18px;
 color:#B7B6BD;
 margin-left: 30px;
+@media screen and (max-width: 555px) {
+  width: 80%;
+  font-size: 8px;
+}
 `;
 
 export const OurWorkTextContainer=styled.div`
@@ -114,12 +119,12 @@ export const OurWorkText=styled.span`
 color:  #2B459B;
 `;
 export const  OurWorkPara=styled.p`
-font-size: 16px;
+font-size: 22px;
 font-family: Roboto;
 color:#B7B6BD;
-line-height: 20px;
-margin-top: 10px;
-@media screen and (max-width: 455px) {
+line-height: 40px;
+margin-top: 30px;
+@media screen and (max-width: 555px) {
   margin-top: 30px;
   font-size: 15px;
 }
@@ -143,7 +148,7 @@ border-radius:8px;
 border:none;
 font-size: 15px;
 background: rgba(43, 69, 155, 1);
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 555px) {
   border-radius:5px;
 }
 `;
@@ -169,4 +174,16 @@ color:black;
 export const Details2=styled.h4`
 font-weight:500;
 color:black;
+`;
+
+export const AdServRightDots = styled.img`
+  position: absolute;
+  right: 300px;
+  margin-right: 57%;
+  margin-top: -250px;
+  height: 330px;
+  width: 350px;
+  @media screen and (max-width: 555px) {
+    display: none;
+  }
 `;

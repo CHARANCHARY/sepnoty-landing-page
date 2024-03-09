@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: #0c111f;
   padding: 10px;
+  @media screen and (max-width: 555px) {
+    padding: 30px;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -14,7 +17,7 @@ export const ImgContainer = styled.div`
   margin: 30px 5% 0px 5%;
   ${"" /* width: 80%; */}
 
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 100%;
     margin-left: 0%;
     height: 20px;
@@ -25,10 +28,11 @@ export const ImgContainer = styled.div`
 
 export const Image = styled.img`
   height: 30px;
-  width: 30%;
-  padding: 0px 3% 0px 3%;
+
+  width: 200px;
+  padding: 0px 30px 0px 30px;
   border-right: 1px solid #abaaaa;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     height: 20px;
     width: 55px;
     padding: 0px 10px 0px 10px;
@@ -53,7 +57,7 @@ export const Heading = styled.h1`
   font-weight: bold;
 
   margin-bottom: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 18px;
     margin-top: 10px;
     margin-left: -30px;
@@ -69,7 +73,7 @@ export const Description = styled.p`
   padding-right: 0px;
   padding-top: 60px;
   line-height: 1.5em;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 15px;
     width: 320px;
     padding-right: 10px;
@@ -91,8 +95,8 @@ export const Pattern = styled.img`
 export const CuateImage = styled.img`
   width: 30%;
   z-index: 1;
-  @media screen and (max-width: 455px) {
-    display: none;
+  @media screen and (max-width: 555px) {
+    display: ;
   }
 `;
 
@@ -104,8 +108,8 @@ export const CuateImage11 = styled.img`
   margin-left: auto;
   display: none;
   margin-right: -60px;
-  @media screen and (max-width: 455px) {
-    display: flex;
+  @media screen and (max-width: 555px) {
+    display: none;
   }
 `;
 

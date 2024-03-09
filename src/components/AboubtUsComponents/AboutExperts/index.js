@@ -12,19 +12,19 @@ import {
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
     ServiceItemDesc,
     ImageCon,
     ServiceItemImg,
-    ServiceItemButton,
+    // ServiceItemButton,
     ServiceItemDetails,
     ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -39,7 +39,7 @@ import {
   import Export from "../images/Expert.svg"
   import Export1 from "../images/Expert1.svg"
   
-  import ContactForm from "../../ContactUs/ContactForm";
+  // import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
   
   const AboutExpert= () => {
@@ -99,12 +99,6 @@ related information for your article or would want to speak with one of our prof
                       
                         </Y>
                     </X>
-                </WebsiteContainer>
-                <WebsiteContainer>
-                <Heading>
-                Experts in Website Development
-
-                </Heading>
                     <X>
                       <Image src={Export1} alt="not-found"/>
                         <Y><Para1>
@@ -137,12 +131,70 @@ related information for your article or would want to speak with one of our prof
                       
                         </Y>
                     </X>
+                    <X>
+                      <Image src={Export1} alt="not-found"/>
+                        <Y><Para1>
+                        Nick Carter 
+
+                        </Para1>
+                        <Para2>
+                        Technical Consultant
+
+                        </Para2>
+                      
+                        </Y>
+                    </X>
                 </WebsiteContainer>
                 <WebsiteContainer>
                 <Heading>
                 Experts in Website Development
 
                 </Heading>
+                    <X>
+                      <Image src={Export1} alt="not-found"/>
+                        <Y><Para1>
+                        Nick Carter 
+
+                        </Para1>
+                        <Para2>
+                        Technical Consultant
+
+                        </Para2>
+                      
+                        </Y>
+                    </X>
+                    <X>
+                      <Image src={Export1} alt="not-found"/>
+                        <Y><Para1>
+                        Nick Carter 
+
+                        </Para1>
+                        <Para2>
+                        Technical Consultant
+
+                        </Para2>
+                      
+                        </Y>
+                    </X>
+                </WebsiteContainer>
+                <WebsiteContainer>
+                <Heading>
+                Experts in Website Development
+
+                </Heading>
+                    <X>
+                      <Image src={Export1} alt="not-found"/>
+                        <Y><Para1>
+                        Nick Carter 
+
+                        </Para1>
+                        <Para2>
+                        Technical Consultant
+
+                        </Para2>
+                      
+                        </Y>
+                    </X>
                     <X>
                       <Image src={Export1} alt="not-found"/>
                         <Y><Para1>
@@ -222,7 +274,7 @@ related information for your article or would want to speak with one of our prof
  const X = Styled.div`
  display:flex;
   flex-direction:column;
-  gap : 10px;
+  gap : 20px;
   margin-left:100px;
 
  
@@ -231,17 +283,17 @@ related information for your article or would want to speak with one of our prof
  display:flex;
   flex-direction:column;
   gap : 10px;
-  margin-left:100px;
+  margin-left:80px;
   margin-top:-20px;
  
  `;
- const Z =  Styled.div`
- display:flex;
-flex-direction:column;
-gap : 10px;
-margin-left:100px;
+//  const Z =  Styled.div`
+//  display:flex;
+// flex-direction:column;
+// gap : 10px;
+// margin-left:100px;
  
- `;
+//  `;
  const Image = Styled.img`
  margin-top:10px;
  margin-left:-110%;

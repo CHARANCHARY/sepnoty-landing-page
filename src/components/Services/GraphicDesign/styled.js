@@ -4,6 +4,10 @@ export const GraphicDesign=styled.div`
 background-color:rgba(12, 17, 31, 1);
 width:100vw;
 `;
+export const ServiceSpan=styled.span`
+font-weight:normal;
+font-size:20px;
+`;
 export const GdPageTitle=styled.h2`
 font-size:26px;
 color:white;
