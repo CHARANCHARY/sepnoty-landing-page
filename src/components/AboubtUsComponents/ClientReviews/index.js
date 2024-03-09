@@ -81,7 +81,7 @@ We band together  businesses from more than 35 nations and 30 different industri
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -91,7 +91,7 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -101,7 +101,7 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -111,7 +111,7 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -121,7 +121,17 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
+                </Main2>
+                <Main2>
+                    <Image2 src={GroupImg} alt="not=found"/>
+                    <Main3>
+                        <Image1 src={Image} alt="not-found"/>
+                        <p>Stinger Technologies, 
+                            a global provider of Business Processes
+                            outsourcing services</p>
+                    </Main3>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -131,7 +141,7 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -141,7 +151,7 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -151,7 +161,18 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
+                </Main2>
+                <Main2>
+                    <Image2 src={GroupImg} alt="not=found"/>
+                    <Main3>
+                        <Image1 src={Image} alt="not-found"/>
+                        <Para>Stinger Technologies, 
+                          a global provider of Business Processes
+                          outsourcing services
+                        </Para>
+                    </Main3>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
                 <Main2>
                     <Image2 src={GroupImg} alt="not=found"/>
@@ -161,32 +182,13 @@ outsourcing services</p>
 a global provider of Business Processes
 outsourcing services</p>
                     </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
-                </Main2>
-                <Main2>
-                    <Image2 src={GroupImg} alt="not=found"/>
-                    <Main3>
-                        <Image1 src={Image} alt="not-found"/>
-                        <p>Stinger Technologies, 
-a global provider of Business Processes
-outsourcing services</p>
-                    </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
-                </Main2>
-                <Main2>
-                    <Image2 src={GroupImg} alt="not=found"/>
-                    <Main3>
-                        <Image1 src={Image} alt="not-found"/>
-                        <p>Stinger Technologies, 
-a global provider of Business Processes
-outsourcing services</p>
-                    </Main3>
-                    <p>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </p>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
             </Main1>
+            <FooterSection />
         </DigitalContainer>
         
-        <FooterSection />
+       
       </>
     );
   
@@ -198,10 +200,13 @@ outsourcing services</p>
   display:flex;
   flex-direction:row;
   flex-wrap : wrap;
-  gap:140px;
-  margin-left:100px;
   margin-top:20px;
-  margin-bottom:120px;
+  width: 85%;
+  height: 100vh;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-bottom: 50%;
+
   `
   const Main2 = Styled.div`
   display:flex;
@@ -210,22 +215,26 @@ outsourcing services</p>
   background: #D9D9D917;
   gap:20px;
   border-radius:7px;
-  padding:20px;
-  height:260px;
-  width:300px;
-  margin-bottom:-120px;
-  `
+  padding: 50px;
+  height:320px;
+  width:350px;
+  margin: 0 20px 30px 20px;
+  `;
   const Main3 = Styled.div`
   display:flex;
   flex-direction:row;
-  gap:16px;
+  gap: 16px;
   
-  `
+  `;
+  const Para = Styled.p`
+      font=size: 14px;
+  
+  `;
   const Image1 = Styled.img`
-  height:80px;
+  height: 80px;
   `
   const Image2 = Styled.img`
-  height:30px;
-  width:80px;
+  height:45px;
+  width:140px;
   `
   

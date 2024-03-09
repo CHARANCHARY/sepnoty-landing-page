@@ -217,7 +217,8 @@ export const BottomContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   @media screen and (max-width: 555px) {
      flex-direction: column;
      margin-top: 20px;
@@ -261,6 +262,7 @@ export const Section = styled.p`
 
 export const FollowUsContainer = styled.div`
   display: flex;
+  display: none;
   flex-direction: column;
   @media screen and (max-width: 555px) {
     display: none;
@@ -268,7 +270,7 @@ export const FollowUsContainer = styled.div`
 `;
 
 export const FollowUsContainer1 = styled.div`
-  display:none;
+  order: 8;
   @media screen and (max-width: 555px) {
     display: flex;
     flex-direction: column;

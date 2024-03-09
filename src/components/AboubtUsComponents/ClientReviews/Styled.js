@@ -5,7 +5,7 @@ export const DigitalContainer = styled.div`
   flex-direction: column;
   background-color: #0c111f;
   padding-top: 70px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 `;
 export const Header = styled.h1`
   font-size: 15px;
