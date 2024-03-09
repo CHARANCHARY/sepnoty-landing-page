@@ -203,7 +203,6 @@ outsourcing services</p>
   margin-top:20px;
   width: 85%;
   height: 100vh;
-  justify-content: space-between;
   margin-left: 10%;
   margin-bottom: 50%;
 
@@ -215,7 +214,7 @@ outsourcing services</p>
   background: #D9D9D917;
   gap:20px;
   border-radius:7px;
-  padding: 50px;
+  padding: 20px;
   height:320px;
   width:350px;
   margin: 0 20px 30px 20px;
@@ -232,6 +231,7 @@ outsourcing services</p>
   `;
   const Image1 = Styled.img`
   height: 80px;
+  margin-right: 10px;
   `
   const Image2 = Styled.img`
   height:45px;
