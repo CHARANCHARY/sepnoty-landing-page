@@ -281,6 +281,7 @@ export const FollowUsSection = styled.ul`
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+
   @media screen and (max-width: 555px) {
     flex-direction: row;
     justify-content: none;

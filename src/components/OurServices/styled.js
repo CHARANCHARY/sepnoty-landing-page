@@ -28,6 +28,7 @@ export const ImgContainer = styled.div`
 
 export const Image = styled.img`
   height: 30px;
+
   width: 200px;
   padding: 0px 30px 0px 30px;
   border-right: 1px solid #abaaaa;

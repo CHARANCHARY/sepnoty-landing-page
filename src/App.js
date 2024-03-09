@@ -65,8 +65,6 @@ import ChangeByDesign from "./components/MyPortfolio/ChangeByDesign";
 
 
 
-
-
 function ScrollToTopOnPageChange() {
   const history = useHistory();
 
@@ -81,20 +79,6 @@ function ScrollToTopOnPageChange() {
 
   return null;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

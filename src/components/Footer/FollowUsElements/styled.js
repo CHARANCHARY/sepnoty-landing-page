@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Logo = styled.img`
+
 height: 13px;
     width: 13px;
     margin-right: 10px;
@@ -13,6 +14,7 @@ height: 13px;
 `;
 
 export const Items = styled.li`
+
 display: flex;
 flex-direction: row;
 margin-bottom: 10px;
@@ -22,8 +24,9 @@ margin-bottom: 10px;
 `;
 
 export const Name = styled.p`
- color: #d9d9d9;
+  color: #d9d9d9;
   font-size: 14px;
+
   @media screen and (max-width: 555px) {
     display:none;
   }

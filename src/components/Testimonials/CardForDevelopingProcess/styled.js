@@ -20,7 +20,9 @@ export const CardContainer = styled.div`
 
   &:hover p {
     color: #263238;
+    text-align: justify;
   }
+
   @media screen and (max-width: 555px) {
     border-radius: 12px;
     flex: 45%;
@@ -32,15 +34,20 @@ export const CardContainer = styled.div`
 
 export const CardHeader = styled.div`
   display: flex;
+
   justify-content: center;
   align-items: flex-start;
   padding-left: 10px;
+  @media screen and (max-width: 555px) {
+    padding: 0px;
+  }
 `;
 
 export const CardNumber = styled.h1`
   font-size: 20px;
   color: #33499e;
   @media screen and (max-width: 555px) {
+
     font-size: 18px;
     margin-top: -18px;
     align-self: flex-start;
@@ -53,6 +60,7 @@ export const CardTitle = styled.h1`
   color: #2b459b;
   padding-top: 3px;
   @media screen and (max-width: 555px) {
+
     font-size: 18px;
     margin-top: -20px;
     align-self: flex-end;
@@ -64,6 +72,7 @@ export const CardParagraph = styled.p`
   font-size: 14px;
   color: #B7B6BD;
   line-height: 1.5em;
+
   @media screen and (max-width: 555px) {
     font-size: 18px;
     line-height: 1.5em;

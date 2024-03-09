@@ -11,7 +11,7 @@ text-align: center;
 
 export const OurWorkCard=styled.div`
 width: 40%;
-height: 45vh;
+${'' /* height: 45vh; */}
 background-color: #DFE3F0;
 padding: 15px;
 border-radius: 8px;
@@ -20,7 +20,8 @@ box-shadow:rgba(43, 69, 155, 1);
 @media screen and (max-width: 555px) {
   width: 100%;
   margin-left: 0%;
-  height: 50%;
+  ${'' /* height: 48vh; */}
+
 }
 `;
 export const OurWorkHeading=styled.h1`

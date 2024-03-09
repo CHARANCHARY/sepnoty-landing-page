@@ -126,7 +126,10 @@ class FooterSection extends Component {
               <ContactHeading>Follow Us</ContactHeading>
               <FollowUsSection>
                 {followUsElements.map((eachLogo) => (
-                  <FollowUsElements key={eachLogo.id} logos={eachLogo} />
+                  <FollowUsElements
+                    key={eachLogo.id}
+                    logos={eachLogo.logoSrc}
+                  />
                 ))}
               </FollowUsSection>
             </FollowUsContainer>

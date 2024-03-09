@@ -280,16 +280,16 @@ const Navbar = () => {
               <button className="contact-button">Contact Us</button>
             </li>
           </Link>
-        </ul> */}
-        {/* 
+        </ul>
+        
         whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 
-        */}
+       
         <button
           className="mobile-menu-icon"
-          /* onClick={() => setMobile(!Mobile)}*/
+         onClick={() => setMobile(!Mobile)}
         >
-          {/* {Mobile ? <ImCross /> : <FaBars />} */}
-        </button>
+          {Mobile ? <ImCross /> : <FaBars />}
+        </button> */}
       </nav>
     </>
   );
