@@ -112,7 +112,8 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
+
+
 font-size: 20px;
 font-weight: 700;
 line-height: 30px;

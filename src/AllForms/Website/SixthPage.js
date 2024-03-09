@@ -130,8 +130,7 @@ margin-left: 10px;
 
 `
 const Label1 = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:14px;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
