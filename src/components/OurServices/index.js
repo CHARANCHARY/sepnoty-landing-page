@@ -11,12 +11,14 @@ import {
 } from "./styled";
 
 import django from "./Images/django-logo.svg";
-import node from "./Images/Node.js_logo_20.svg";
+import node from "./Images/Node.js_logo_2015 2.png";
 import laravel from "./Images/laravel-logo.svg";
 import Python from "./Images/Python-Logo 2.svg";
 import Symfony from "./Images/Symfony-logo.svg";
 import net from "./Images/net-logo.svg";
 import Php from "./Images/PhP.svg";
+// import cuate from "./Images/cuate.svg";
+// import pattern from "./Images/pattern.svg";
 /* import cuate from "./Images/cuate.svg"; */
 
 import idea from "./Images/idea.svg";

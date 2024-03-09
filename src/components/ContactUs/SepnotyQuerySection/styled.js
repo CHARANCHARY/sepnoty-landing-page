@@ -8,7 +8,7 @@ export const BottomCon = styled.div`
   width: 35%;
   margin: 0px;
   align-items: center;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 100%;
     margin-top: -120px;
   }
@@ -29,7 +29,7 @@ export const BottomDesc = styled.p`
   line-height: 1.5em;
   margin-top: 30px;
   margin-bottom: 30px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 18px;
   }
 `;
@@ -48,7 +48,7 @@ export const Button = styled.button`
 
 export const Image = styled.img`
   width: 90%;
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: 555px) {
     height: 200px;
     width: 60%;
   }
@@ -61,7 +61,7 @@ export const QueryContainer = styled.div`
   margin: 0px;
   padding: 50px 0px;
   background-color: rgba(12, 17, 31, 1);
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     flex-direction: column;
   }
 `;

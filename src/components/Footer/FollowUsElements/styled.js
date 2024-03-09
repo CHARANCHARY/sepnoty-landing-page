@@ -4,9 +4,11 @@ export const Logo = styled.img`
   height: 13px;
   width: 13px;
   margin-right: 10px;
-  @media screen and (max-width: 455px) {
-    margin: 0px;
-    padding: 0px;
+  @media screen and (max-width: 555px) {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    height: 18px;
+    width: 18px;
   }
 `;
 
@@ -16,6 +18,12 @@ export const Items = styled.li`
   margin-bottom: 10px;
   @media screen and (max-width: 455px) {
     margin-bottom: 0px;
+
+display: flex;
+flex-direction: row;
+margin-bottom: 10px;
+@media screen and (max-width: 555px) {
+  margin-bottom: 0px;
   }
 `;
 
@@ -24,6 +32,9 @@ export const Name = styled.p`
   font-size: 14px;
   @media screen and (max-width: 455px) {
     display: none;
+
+  @media screen and (max-width: 555px) {
+    display:none;
   }
 `;
 /* @media screen and (max-width: 576px) {

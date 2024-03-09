@@ -21,10 +21,10 @@ export const Heading = Styled.h1`
 color: #2B459B;
 font-size: 40px;
 margin-bottom: 0px;
-  font-family: "Inter", "serif sans";
-  @media screen and (max-width:455px){
-    font-size: 20px;
+font-family: Lexend;
 
+  @media screen and (max-width:555px){
+    font-size: 20px;
     font-family: "roboto";
     text-align: center;
   }
@@ -45,8 +45,8 @@ left: 770px;
 color:#244886;
 font-size: 40px;
 margin: 0px;
-font-family: "Inter", serif sans;
 `;
+
 export const Con = Styled.div`
 display: flex;
 flex-direction:column;
@@ -59,20 +59,23 @@ export const CrEle = Styled.p`
   padding: 0px;
   color: #244886;
   font-size: 17px;
-  font-family: "Inter", serif sans;
+
+
 `;
+
 export const Desc = Styled.p`
   color: #B7B6BD;
   font-size: 20px;
   margin-top:50px
   font-weight: 500;
-  font-family: "Inter", serif sans;
+  font-family: Lexend;
   margin-top:100px;
-  @media screen and (max-width:455px){
+  @media screen and (max-width:555px){
     font-size: 15px;
     font-family: "roboto";
-    margin-top:60px;
-    text-align: center;
+    margin: 60px 0 0 20px;
+    text-align: left;
+    width: 90%;
     text-shadow: 0px 0px 0px;
   }
 `;

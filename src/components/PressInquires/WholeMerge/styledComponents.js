@@ -33,7 +33,7 @@ display:flex;
 flex-direction:row;
 margin:20px 40px 20px 40px;
 justify-content:space-between;
-@media screen and (max-width:768px){
+@media screen and (max-width:555px){
     flex-direction:column;
 }
 `;

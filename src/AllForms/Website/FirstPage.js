@@ -47,7 +47,8 @@ const FirstStep = () => {
             <FormContainer>
                 <Form>
                     <Heading>
-                    *How many Tools will your Software have?
+                    *How many pages will your website/App
+ have?
                     </Heading>
                     <InputContainer>
 <Label>
@@ -112,8 +113,8 @@ align-item:center;
 gap:20px;
 `
 const Heading = Styled.h1`
-font-family: Inter;
-font-size: 20px;
+font-family: Roboto;
+font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
@@ -129,24 +130,25 @@ height:350px;
 width:600px;
 border: 1px solid #C1CAE7;
 background: #C1CAE7;
-gap:30px;
+gap:20px;
 border-radius:10px;
 `
 const CheckBoxCon = Styled.div`
 margin-top:15px;
 align-items:start;
+gap:20px;
 justify-content:space-between;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
+margin-left:10px;
 `
 const Form = Styled.form`
-
 `
 const Input1 = Styled.input`
 background:transparent;
@@ -154,27 +156,28 @@ border: 1px solid gray;
 font-size:15px;
 color: #263238;
 font-weight:500;
-height:15px;
+height:20px;
+margin-left:10px;
 `
-const Buttonel = Styled.button`
-  font-size: 20px;
-  background-color: #d9d9d9;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  padding: 0px;
-  width:60px;
-  height:30px;
-  margin-left: -10px;
-  border-right: 1px solid #9e9898;
-`;
+// const Buttonel = Styled.button`
+//   font-size: 20px;
+//   background-color: #d9d9d9;
+//   border-bottom-right-radius: 10px;
+//   border-top-right-radius: 10px;
+//   border-top-left-radius: 10px;
+//   border-bottom-left-radius: 10px;
+//   padding: 0px;
+//   width:60px;
+//   height:30px;
+//   margin-left: -10px;
+//   border-right: 1px solid #9e9898;
+// `;
 
 
 
-const Para1 = Styled.p`
+// const Para1 = Styled.p`
 
-`
+// `
 const InputContainer=Styled.div`
 margin-top:5px;
 `
@@ -187,5 +190,6 @@ margin-top:5px;
 // height:15px;
 // `
 const Input = Styled.input`
-
+margin-right:10px;
+margin-top:10px;
 `
