@@ -26,7 +26,7 @@ export const ImgContainer = styled.div`
 export const Image = styled.img`
   height: 30px;
   width: 30%;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 3% 0px 3%;
   border-right: 1px solid #abaaaa;
   @media screen and (max-width: 455px) {
     height: 20px;
@@ -90,7 +90,6 @@ export const Pattern = styled.img`
 
 export const CuateImage = styled.img`
   width: 30%;
-
   z-index: 1;
   @media screen and (max-width: 455px) {
     display: none;

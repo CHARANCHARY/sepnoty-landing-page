@@ -5,7 +5,6 @@ export const CardContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin: 20px 40px 30px 0px;
-
   padding: 30px 10px 30px 10px;
   background-color: rgba(0, 0, 150, 0.15);
   border-radius: 8px;
@@ -20,26 +19,33 @@ export const CardContainer = styled.div`
 
   &:hover p {
     color: #263238;
+    text-align: justify;
   }
+
   @media screen and (max-width: 455px) {
-    border-radius: 3px;
-    flex: 40%;
-    width: 55px;
-    margin: 20px 10px 10px 0px;
+    border-radius: 5px;
+    height: 320px;
+    width: 47%;
+    margin: 10px auto;
+    padding: 20px 0px 20px 10px;
   }
 `;
 
 export const CardHeader = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 10px;
+  @media screen and (max-width: 555px) {
+    padding: 0px;
+  }
 `;
 
 export const CardNumber = styled.h1`
   font-size: 20px;
   color: #33499e;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     font-size: 15px;
+    padding: 0px;
   }
 `;
 
@@ -48,9 +54,8 @@ export const CardTitle = styled.h1`
   font-size: 17px;
   color: #2b459b;
   padding-top: 3px;
-  @media screen and (max-width: 455px) {
-    font-size: 15px;
-    margin-top: -20px;
+  @media screen and (max-width: 555px) {
+    font-size: 14px;
     align-self: flex-end;
   }
 `;
@@ -60,8 +65,10 @@ export const CardParagraph = styled.p`
   font-size: 14px;
   line-height: 1.5em;
   @media screen and (max-width: 455px) {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5em;
+    margin: 0px;
+    padding-right: 5px;
   }
 `;
 
@@ -85,7 +92,7 @@ export const PopupContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 90%;
     left: 0%;
     top: 5%;
@@ -97,7 +104,7 @@ export const PopupContent = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     flex-direction: column;
   }
 `;
@@ -120,7 +127,7 @@ export const PopupImage = styled.img`
   height: 120px;
   width: 120px;
   margin: 0px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     height: 80px;
     width: 80px;
     align-self: center;
@@ -144,7 +151,7 @@ export const Header = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 30px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
   }
 `;
 

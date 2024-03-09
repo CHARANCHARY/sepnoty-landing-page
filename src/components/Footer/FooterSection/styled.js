@@ -273,7 +273,8 @@ export const FollowUsSection = styled.ul`
   padding: 0px;
   margin: 0px;
   @media screen and (max-width: 455px) {
-    flex-direction: column;
+    list-style-type: none;
+    flex-direction: row;
     justify-content: flex-start;
   }
 `;
