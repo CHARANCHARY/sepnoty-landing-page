@@ -204,6 +204,10 @@ export const BtnLearn = styled.button`
   background-color: #254989;
   justify-content: center;
   margin: 20px 0 0 180px;
+  border-radius: 50px;
+  height: 35px;
+  width: 120px;
+  color: #fff;
 
 `;
 

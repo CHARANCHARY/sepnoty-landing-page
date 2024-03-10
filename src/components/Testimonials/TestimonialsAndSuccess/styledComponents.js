@@ -23,11 +23,6 @@ font-size: 40px;
 margin-bottom: 0px;
 font-family: Lexend;
 
-
-
-  @media screen and (max-width:455px){
-
-
   @media screen and (max-width:555px){
     font-size: 20px;
     font-family: "roboto";
@@ -50,8 +45,6 @@ left: 770px;
 color:#244886;
 font-size: 40px;
 margin: 0px;
-
-
 `;
 
 export const Con = Styled.div`
@@ -66,8 +59,6 @@ export const CrEle = Styled.p`
   padding: 0px;
   color: #244886;
   font-size: 17px;
-
-
 `;
 
 export const Desc = Styled.p`
