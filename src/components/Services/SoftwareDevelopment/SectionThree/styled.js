@@ -24,10 +24,12 @@ export const ServiceName=styled.h3`
 font-weight:500;
 margin-left:5%;
 font-weight:800;
+margin-top: 20px;
 `;
 export const ServiceDescription=styled.p`
 width:95%;
 text-align:justify;
+margin-top: 30px;
 margin-bottom:20px;
 `;
 export const Forward=styled.div`

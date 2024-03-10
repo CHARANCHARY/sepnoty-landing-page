@@ -13,12 +13,13 @@ padding:10px;
 border:1px solid rgba(255, 255, 255, 1);
 border-radius:10px;
 width:20%;
+padding-bottom: 40px;
 
 `;
 export const ComponentHeading=styled.h1`
 color: #FE8122;
 font-size: 70px;
-line-height: 47px;
+line-height: 87px;
 letter-height: 80px;
 font-weight: 1200;
 -webkit-text-stroke-width: 0.00000001px;
@@ -27,5 +28,5 @@ font-weight: 1200;
 export const ComponentTitle=styled.p`
 color: #BEBEBE;
 font-size:20px;
- margin-top: -40px;
+ margin-top: 0px;
 `;

@@ -14,7 +14,7 @@ font-size:20px;
 export const PageTitle=styled.h2`
 color:white;
 font-size:20px;
-padding:60px 0px 20px 40px;
+padding:100px 0px 20px 40px;
 `;
 
 export const SectionThreeHeading=styled.h2`
@@ -30,7 +30,7 @@ line-height:30px;
 width:55%;
 margin:40px;
 word-spacing: 5px;
-margin-left: 60px;
+margin-left: 120px;
 `;
 export const SectionThree=styled.div`
 display:flex;
@@ -50,11 +50,13 @@ color:white;
 text-align: center
 `;
 export const SectionFourDescription=styled.p`
-color:white;
-padding:10px 30px 20px 0px;
+color: #fff;
+padding: 30px 30px 40px 0px;
+margin-left: 15%;
 line-height:22px;
 font-size:18px;
-width:60%;
+width:70%;
+
 `;
 export const ChooseSection=styled.div`
 display:flex;
@@ -62,7 +64,7 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content:center;
-width:85%;
+width: 70%;
 margin: auto;
 `;
 
@@ -73,10 +75,10 @@ text-align:center;
 margin-top:15px;
 `;
 export const SectionFiveTitle=styled.h3`
-font-size:26px;
+font-size:36px;
 text-align:center;
-margin-top:5px;
-margin-bottom:30px;
+margin-top: 20px;
+margin-bottom: 0px;
 `;
 export const SpanFive=styled.span`
 color:rgba(43, 69, 155, 1);
@@ -86,7 +88,7 @@ display:flex;
 flex-direction:row;
 flex-wrap:wrap;
 justify-content:center;
-margin-top:10px;
+margin-top: 30px;
 margin-bottom:20px;
 `;
 export const SectionSix=styled.div`

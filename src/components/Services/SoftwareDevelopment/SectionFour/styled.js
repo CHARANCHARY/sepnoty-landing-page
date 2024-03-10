@@ -4,12 +4,12 @@ export const ChooseCardCon=styled.div`
 padding:20px;
 padding-right:40px;
 padding-left:45px;
-width:35%;
+width:40%;
 height:40vh;
 
 color:black;
 box-shadow: 0px 15px 20px -10px rgba(255, 255, 255, 0.9);
-border-radius: 10px;
+border-radius: 20px;
 background-color: white;
 
 margin-right:20px;

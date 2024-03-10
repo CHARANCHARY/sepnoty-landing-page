@@ -49,6 +49,7 @@ export const AdServiceLeftDescript = styled.p`
   margin-top: 20px;
   font-size: 20px;
   width: 60%;
+  color: #B7B6BD;
   letter-spacing: 1px;
   @media screen and (max-width: 768px) {
     font-size: 16px;

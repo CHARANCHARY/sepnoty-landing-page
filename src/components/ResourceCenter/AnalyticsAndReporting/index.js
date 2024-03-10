@@ -2,6 +2,8 @@
 import styled from "styled-components";
 import { BarChart, Bar  } from 'recharts';
 import MobSectionOne from './MobSectionOne/MobSectionOne';
+import FooterSection from "../../Footer/FooterSection";
+
 // Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer
 import DaimondImg from "./image 22.png";
 import Vector from "./Vector.png";
@@ -237,6 +239,7 @@ const AnalyticsAndReporting = () => {
                     </CirclesContainer>
             {/* </GraphsContainer> */}
             </MobSection1>    
+            <FooterSection />
         </AnalyticsPage>
     )
 };

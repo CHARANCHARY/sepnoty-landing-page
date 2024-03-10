@@ -33,18 +33,19 @@ import {
   import rectangle1 from "../images/Rectangle 1.svg"
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
-  
+  import FooterSection from "../../Footer/FooterSection";
+
   import GroupImg from "../images/Group.svg"
   
-  import ContactForm from "../../ContactUs/ContactForm";
-  import FooterSection from "../../Footer/FooterSection";
+  
+  // import ContactForm from "../../ContactUs/ContactForm";
   
   const AboutCompany= () => {
     return (
       <>
         <DigitalContainer>
           <Header>
-          ChangeByDesign centre &gt; <Span>About Company</Span>
+          Resource centre &gt; <Span>About Company</Span>
           </Header>
           <Service>About Us</Service>
           <ContentRecomContainer>
