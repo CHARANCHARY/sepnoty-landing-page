@@ -16,7 +16,7 @@ height:350px;
 margin-top:30px;
 width:450px;
 @media screen and (max-width:555px){
-    width:250px;
+    width:300px;
     height:200px;
     margin-left:-10px;
   }
@@ -32,6 +32,7 @@ box-shadow: 0px 4px 4px 0px #00000040;
 margin-bottom:10px;
 @media screen and (max-width:555px){
     height: 250px;
+    width: 400px;
   }
 `
 export const Stars = Styled.a`

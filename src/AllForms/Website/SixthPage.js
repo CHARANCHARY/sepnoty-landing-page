@@ -48,8 +48,8 @@ const SixthPage = () => {
                     Should your website or App support payments?
                     </Para1>
                     <Main5>
-                        <ActiveButton active={current === 'Yes'}  onClick={() => handleButtonClick('Yes')}>Yes</ActiveButton>
-                        <Buttonel active={current === 'No'}  onClick={() => handleButtonClick('No')}>No</Buttonel>
+                        <ActiveButton type="button" active={current === 'Yes'}  onClick={() => handleButtonClick('Yes')}>Yes</ActiveButton>
+                        <Buttonel type="button" active={current === 'No'}  onClick={() => handleButtonClick('No')}>No</Buttonel>
                     </Main5>
                     
                 </Form>
@@ -60,54 +60,64 @@ const SixthPage = () => {
                 *What is the expected number of monthly visitors?
                     </Heading>
                     
-                    <InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    I am not sure
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    up to 50
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    50-100
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    100-500
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    500-1,000
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    1,000-5,000
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    5,000-10,000
-    </Label1>
-</InputContainer>
-<InputContainer>
-<Label1>
-    <Input1 type='radio' name="industry" value="Healthcare"/>
-    more than 10,000
-    </Label1>
-</InputContainer>
+            <InputContainer>
+            <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    I am not sure
+                    </Label1>
+                </InputContainer>
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    up to 50
+                    </Label1>
+                </InputContainer>
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    50-100
+                    </Label1>
+                </InputContainer>
+
+                <InputContainer>
+                    <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                    <Label1>
+                        100-500
+                    </Label1>
+                </InputContainer>
+
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    500-1,000
+                    </Label1>
+                </InputContainer>
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    1,000-5,000
+                    </Label1>
+                </InputContainer>
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    5,000-10,000
+                    </Label1>
+                </InputContainer>
+                <InputContainer>
+                <Input1 type='radio' name="industry" value="Healthcare"/>
+
+                <Label1>
+                    more than 10,000
+                    </Label1>
+            </InputContainer>
                 </Form>
             </FormContainer>
         </Main>
@@ -116,15 +126,17 @@ const SixthPage = () => {
 export default SixthPage;
 const Input1 = Styled.input`
 margin-top:10px;
+margin-left: 10px;
+
 `
 const Label1 = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:14px;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;
 text-align: left;
 margin-top:20px;
+margin-left: 10px;
 `
 
 const Main5 = Styled.div`

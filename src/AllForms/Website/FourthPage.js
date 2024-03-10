@@ -96,8 +96,12 @@ font-size:16px;
 font-family: Roboto;
 
 
+
 font-size:17px;
 font-family: Inter;
+
+font-size:14px;
+
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;

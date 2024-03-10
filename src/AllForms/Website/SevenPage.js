@@ -39,10 +39,9 @@ const SevenPage = () => {
                         </Label>
                     </CheckBoxCon>
                     <CheckBoxCon>
-                        <input type="checkbox" id="five"/>
-                        <Label htmlfor="five">
-                        Others (Please Specify)
-                        </Label>
+                        <Input type="checkbox" id="five"/>
+                        <Input1 type="text" placeholder="Others (Please Specify)"/>
+
                     </CheckBoxCon> 
                 </Form>
             </FormContainer>
@@ -80,6 +79,7 @@ const Heading1 = Styled.h1`
 
 
 font-family: Roboto;
+
 font-size: 18px;
 
 font-family: Inter;
@@ -87,8 +87,11 @@ font-size: 20px;
 font-family: Inter;
 font-size: 20px;
 
+font-size: 15px;
+
+
 font-weight: 700;
-line-height: 30px;
+line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
 color: #263238;
@@ -105,9 +108,13 @@ gap:20px;
 `
 const Heading = Styled.h1`
 font-family: Roboto;
+
 font-size: 18px;
+
+font-size: 15px;
+
 font-weight: 700;
-line-height: 30px;
+line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
 color: #263238;
@@ -131,12 +138,15 @@ justify-content:space-between;
 margin-top:13px;
 `
 const Label = Styled.label`
+
 font-size:16px;
 
 
 font-family: Roboto;
 
 font-family: Inter;
+
+font-size:15px;
 
 font-weight: 500;
 color:#263238;
@@ -156,7 +166,10 @@ margin-top:20px;
 const Input1 = Styled.input`
 background: #C1CAE7;
 border: 1px solid #8C8C8C;
-width:250px;
+width:200px;
+height: 18px;
+color: black;
+padding: 10px;
 border-radius:4px;
 
 `
@@ -177,12 +190,19 @@ width:600px;
 const Form2 = Styled.form`
 
 `
-const Input3 = Styled.input`
+const Input3 = Styled.textarea`
 background: #C1CAE7;
 border: 1px solid #8C8C8C;
+
 width:250px;
+
+width:90%;
+
 height:70px;
 border-radius:4px;
+color: black;
+padding: 8px;
+text-align: left;
 `
 
 

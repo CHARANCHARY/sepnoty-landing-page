@@ -59,7 +59,7 @@ export const QueryContainer = styled.div`
   flex-direction: row;
   padding-bottom: 40px;
   margin: 0px;
-  padding-top: 0px;
+  padding: 50px 0px;
   background-color: rgba(12, 17, 31, 1);
   @media screen and (max-width: 555px) {
     flex-direction: column;

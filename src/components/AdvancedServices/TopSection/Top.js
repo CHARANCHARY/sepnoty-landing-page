@@ -35,11 +35,8 @@ const Top = () => {
           </AdServiceLeftHeading>
           <AdServiceLeftDescript>
           We support founders on their journey from pre-
-          <br />
           revenue to multi-million-dollar valuation and
-          <br />
           beyond All of this is possible through our
-          <br />
           expertise in the leading technology verticals.
           </AdServiceLeftDescript>
      </AdSeviceLeftText>

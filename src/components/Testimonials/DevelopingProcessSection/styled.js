@@ -6,7 +6,7 @@ export const BgContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 30px 0px 30px 30px;
 `;
 export const CardListContainer = styled.ul`
   list-style-type: none;
@@ -15,11 +15,12 @@ export const CardListContainer = styled.ul`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
   margin: 30px 10%;
   @media screen and (max-width: 555px) {
     flex-wrap: wrap;
+
     margin-left: -40px;
+    margin-right: 0px;
   }
 `;
 
@@ -30,8 +31,10 @@ export const Description = styled.p`
   width: 600px;
   font-weight: bold;
   @media screen and (max-width: 555px) {
-    font-size: 15px;
-    width: 400px;
+
+    font-size: 17px;
+    width: 95%;
+    margin-left: -20px;
     line-height: 30px;
   }
 `;

@@ -33,7 +33,7 @@ import {
   SectionContainer,
   SepnotyDescription1,
   Sections,
-  Section,
+  // Section,
   FollowUsContainer,
   Copyright,
   ServiceCon,
@@ -126,7 +126,10 @@ class FooterSection extends Component {
               <ContactHeading>Follow Us</ContactHeading>
               <FollowUsSection>
                 {followUsElements.map((eachLogo) => (
-                  <FollowUsElements key={eachLogo.id} logos={eachLogo} />
+                  <FollowUsElements
+                    key={eachLogo.id}
+                    logos={eachLogo.logoSrc}
+                  />
                 ))}
               </FollowUsSection>
             </FollowUsContainer>
@@ -142,10 +145,12 @@ class FooterSection extends Component {
               <Sections>About</Sections>
               <Sections>Advertise</Sections>
               <Sections>Privacy & Policy</Sections>
-              <Section>Contact Us</Section>
+              <Sections>Contact Us</Sections>
             </SectionContainer>
           </BottomContainer>
+          
         </Container>
+        
       </ThemeProvider>
     );
   }
