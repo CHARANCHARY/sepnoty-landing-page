@@ -69,6 +69,11 @@ Refer to our <Span>Privacy Policy</Span> for details.</P5>
     )
 }
 export default EightthPage;
+const M0 = styled.div`
+
+`
+
+
 
 
 
@@ -147,7 +152,12 @@ flex-direction:row;
 
 
 const P4 = styled.p`
+
+font-family: Inter;
+font-size: 18px;
+
 font-size: 15px;
+
 font-weight: 700;
 margin-right: 30px;
 line-height: 30px;
@@ -169,6 +179,20 @@ border-radius: 3px;
 `
 const Button1 = styled.button`
 
+margin-left:330px;
+
+margin-top:-35px;
+
+margin-top:-45px;
+
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
+width:60px;
+border-radius:5px;
+font-size:12px;
+height:20px;
+
+
 background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
 color: ${(props) => (props.active ? 'white' : 'black')};
 width: 80px;
@@ -177,6 +201,7 @@ border-top-left-radius:10px;
 border-bottom-left-radius:10px;
 font-size:17px;
 height: 30px;
+
 
 `
 const Button2 = styled.button`
@@ -208,10 +233,14 @@ const Span = styled.span`
 color:#BC2424;
 `
 const P5 = styled.p`
+
+font-size:12px;
+
 font-size:13px;
 line-height: 1.5;
 line-space: 20px;
 font-weight: 600;
+
 margin-left:40px;
 
 margin-left:20px;
