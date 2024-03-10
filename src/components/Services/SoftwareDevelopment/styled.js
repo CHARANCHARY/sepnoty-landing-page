@@ -18,7 +18,7 @@ padding:60px 0px 20px 40px;
 `;
 
 export const SectionThreeHeading=styled.h2`
-font-size:28px;
+font-size:42px;
 text-align:center;
 `;
 export const SpanThree=styled.span`
@@ -26,10 +26,11 @@ color:rgba(43, 69, 155, 1);
 `;
 export const SectionThreeDescription=styled.p`
 font-size:20px;
-line-height:25px;
+line-height:30px;
 width:55%;
 margin:40px;
-margin-left:40px;
+word-spacing: 5px;
+margin-left: 60px;
 `;
 export const SectionThree=styled.div`
 display:flex;
@@ -39,19 +40,21 @@ justify-content:center;
 `;
 export const SectionFour=styled.div`
 background-color:rgba(37, 73, 137, 1);
-text-align:center!important;
+display: flex;
+flex-direction: column;
+justify-content: center;
 padding:40px;
 `;
 export const SectionFourHeading=styled.h2`
 color:white;
+text-align: center
 `;
 export const SectionFourDescription=styled.p`
 color:white;
-padding:10px 30px 20px 100px;
+padding:10px 30px 20px 0px;
 line-height:22px;
 font-size:18px;
-text-align:justify;
-width:90%;
+width:60%;
 `;
 export const ChooseSection=styled.div`
 display:flex;

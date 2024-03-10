@@ -8,19 +8,24 @@ padding:60px 50px 60px 50px;
 export const SectionTwoComponent=styled.div`
 display:flex;
 flex-direction:column;
-justify-content:center;
 align-items:center;
-padding:20px;
+padding:10px;
 border:1px solid rgba(255, 255, 255, 1);
 border-radius:10px;
 width:20%;
+
 `;
 export const ComponentHeading=styled.h1`
-color:rgba(254, 129, 34, 1);
-font-size:40px;
-font-weight:900;
+color: #FE8122;
+font-size: 70px;
+line-height: 47px;
+letter-height: 80px;
+font-weight: 1200;
+-webkit-text-stroke-width: 0.00000001px;
+-webkit-text-stroke-color: white;
 `;
 export const ComponentTitle=styled.p`
-color:white;
+color: #BEBEBE;
 font-size:20px;
+ margin-top: -40px;
 `;

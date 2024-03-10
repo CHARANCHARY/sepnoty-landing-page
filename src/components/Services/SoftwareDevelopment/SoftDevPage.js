@@ -138,7 +138,7 @@ imgUrl:workimg3,
 const SoftDevPage = () => {
   return (
     <SoftDevSection>
-    <PageTitle>Services &gt;<ServiceSpan>Software Development</ServiceSpan></PageTitle>
+    <PageTitle>Services &gt; <ServiceSpan>Software Development</ServiceSpan></PageTitle>
     <SectionOne />
     <SectionTwo />
     <SectionThreeHeading>Explore Our <SpanThree>Software Development</SpanThree> Offering</SectionThreeHeading>

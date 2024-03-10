@@ -10,7 +10,7 @@ padding-top:70px 0px 60px 30px;
 export const SubHead=styled.h2`
 color:rgba(43, 69, 155, 1);
 font-size:24px;
-margin:60px 0px 20px 30px;
+margin: 60px 0px 20px 50px;
 z-index:1;
 `;
 export const SubHeadSpan = styled.span`
@@ -23,16 +23,16 @@ export const SubHeadSpan = styled.span`
   z-index:0;
 `;
 export const SubPageImg=styled.img`
-width:80px;
-height:80px;
+width: 70px;
+height: 70px;
 margin-bottom:10px;
 align-self:center;
 `;
 export const SubPara=styled.p`
-font-size:18px;
-margin:0px 0px 20px 30px;
+font-size: 20px;
+margin: 30px 0px 20px 50px;
 color:white;
-width:70%;
+width: 55%;
 `;
 export const BackButton=styled.button`
 background-color:rgba(43, 69, 155, 1);
@@ -56,7 +56,8 @@ margin-left:30px;
 padding:25px;
 `;
 export const SubCardText=styled.p`
-font-size:18px;
-color:black;
-text-align:justify;
+  font-size:16px;
+  color:black;
+  margin: 0 0 0 0;
+  
 `;

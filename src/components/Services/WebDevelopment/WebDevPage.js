@@ -261,9 +261,11 @@ const WebDevPage = () => {
     </>
   )  : (
   <>
-    <WebSectionTwo>
     <HeadingSpan />
     <WebSectionTwoHeading>Technologies that we majorly use for</WebSectionTwoHeading>
+
+    <WebSectionTwo>
+    
     <WebSectionTwoCardsCon>
     {techDetails.map((eachItem) => (
         <WebTechCard
