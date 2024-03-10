@@ -7,6 +7,11 @@ import {
     Rectangle1,
     Rectangle2,
     Rectangle3,
+
+
+
+
+
     // Button,
     Span,
     DigitalContainer,
@@ -44,7 +49,7 @@ import {
       <>
         <DigitalContainer>
           <Header>
-          Resource centre &gt; <Span>About Company</Span>
+           &gt; <Span>About Company</Span>
           </Header>
           <Service>About Us</Service>
           <ContentRecomContainer>

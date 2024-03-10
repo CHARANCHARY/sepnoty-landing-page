@@ -8,7 +8,7 @@ export const DigitalContainer = styled.div`
   padding-bottom: 20px;
 `;
 export const Header = styled.h1`
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
   color: #ffffff;
   padding: 30px 20px 30px 5%;
@@ -19,7 +19,7 @@ export const Span = styled.span`
 `;
 
 export const Service = styled.h1`
-  font-size: 33px;
+  font-size: 34px;
   color: #ffffff;
   font-weight: 600;
   padding: 10px 30px 20px 5%;
@@ -31,7 +31,7 @@ export const ContentRecomContainer = styled.div`
 `;
 
 export const ConRecHead = styled.h1`
-  font-size: 33px;
+  font-size: 34px;
   color: #ffffff;
   margin-bottom: 30px;
   font-weight: bold;
