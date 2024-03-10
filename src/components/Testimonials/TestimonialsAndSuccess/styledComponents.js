@@ -52,12 +52,6 @@ font-size: 40px;
 margin: 0px;
 
 
-`
-
-
-font-family: "Inter", serif sans;
-
-
 `;
 
 export const Con = Styled.div`
@@ -72,10 +66,6 @@ export const CrEle = Styled.p`
   padding: 0px;
   color: #244886;
   font-size: 17px;
-
-
-`
-
 
 
 `;
