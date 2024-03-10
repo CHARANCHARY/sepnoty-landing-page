@@ -121,6 +121,10 @@ const Navbar = () => {
     setButtonOpen(!isButtonOpen);
   };
 
+  const toggleHome = () => {
+    closeOtherSections();
+  };
+
   const closeOtherSections = () => {
     setResourceOpen(false);
     setServiceOpen(false);
@@ -150,7 +154,7 @@ const Navbar = () => {
           }}
         >
           <Link to="/">
-            <ListComponent>Home</ListComponent>
+            <ListComponent onClick={toggleHome}>Home</ListComponent>
           </Link>
           <DropdownContainer ref={aboutUsRef}>
             <ListComponent onClick={toggleAboutUs}>
@@ -276,16 +280,16 @@ const Navbar = () => {
               <button className="contact-button">Contact Us</button>
             </li>
           </Link>
-        </ul> */}
-        {/* 
+        </ul>
+        
         whenever we click on button = setMobile(!Mobile) ==  is mobile oppsite to setMobile 
-        */}
+       
         <button
           className="mobile-menu-icon"
-          /* onClick={() => setMobile(!Mobile)}*/
+         onClick={() => setMobile(!Mobile)}
         >
-          {/* {Mobile ? <ImCross /> : <FaBars />} */}
-        </button>
+          {Mobile ? <ImCross /> : <FaBars />}
+        </button> */}
       </nav>
     </>
   );

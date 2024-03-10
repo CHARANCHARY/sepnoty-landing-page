@@ -1,8 +1,16 @@
 import Styled from "styled-components";
 import Button from "./Button"
 import Image from "./images/Stars.svg"
+
+import image2 from "./images/Group 1261153425.svg";
+
 import Stars from "./images/Stars2.svg"
-import image2 from "./images/Standing.svg"
+import image2 from "./images/Standing.svg";
+// import Stars from "./images/Stars2.svg"
+// import image2 from "./images/Standing.svg";
+
+
+import FooterSection from "../components/Footer/FooterSection";
 
 
 const CostHome = () => {
@@ -33,23 +41,27 @@ const CostHome = () => {
             </HomeContainer>
             <RightContainer>
             <Image2 src={image2}/>
-             <Image3 src={Stars}/>
             </RightContainer> 
         </Main>
-        <div>
-          <Button/>
-        </div>
+        <D>
+          <Button />
+        </D>
+        <FooterSection/>
         </Main2>
     )
 }
 export default CostHome;
+const D = Styled.div`
+margin-left:60px;
+`
 
 const Main2 = Styled.div`
 display:flex;
 flex-direction:column;
-width:191.5vh;
+width: 100.8%;
+margin-left: -6px;
 background:#0C111F;
-background-size:cover;
+background-size: cover;
 
 `
 
@@ -57,11 +69,11 @@ const Main = Styled.div`
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-width:-100%;
+width: auto;
 background-color:#0C111F;
 font-family:'Roboto';
 @media screen and (max-width: 768px) {
-      flex-direction: column;
+     
   }
 `
 // const Button =Styled.div`
@@ -80,10 +92,7 @@ margin-top:20px;
 // `
 const StarsImage = Styled.img`
 margin-top:50px;
-height: 70%;
-width:70%;
-opacity: 0.4px;
-magrin-left:-110px;
+width: 60%;
 `
 const DevelopContainer = Styled.div`
 margin-top:0px;
@@ -95,11 +104,11 @@ margin-button:-20px;
 const Heading = Styled.h1`
 color: #B7B6BD;
 font-size: 40px;
-margin-top:-10px;
+margin-top:10px;
 `
 const Heading1 = Styled.h1`
 color:#4C64B2;
-margin-top:-10px;
+margin-top:10px;
 font-size: 40px;
 `
 // const ParaContainer = Styled.div`
@@ -108,12 +117,12 @@ const Para1 = Styled.p`
 font-size: 24px;
 font-weight:500;
 color:#B7B6BD;
-margin-top:-20px;
+margin-top:20px;
 `
 const Heading3 = Styled.h1`
 color:white;
 font-size:32px;
-margin-top:-10px;
+margin-top:10px;
 `
 const RightContainer = Styled.div`
 text-align : right;
@@ -126,14 +135,15 @@ width:600px;
 height:650px;
 position:relative;
 z-index:1;
+
 `
-const Image3 = Styled.img`
-position:absolute;
-width:70%;
-height:50%;
-top:70%;
-left:50%;
-`
+// const Image3 = Styled.img`
+// position:absolute;
+// width:40%;
+// height:50%;
+// top:70%;
+// left:50%;
+// `
 const SideContainer =   Styled.div`
 display:flex;
 flex-direction:row;

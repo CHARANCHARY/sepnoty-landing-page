@@ -14,6 +14,7 @@ import {
     CapabilityHeading,
     AppDetailsContainer,
     ContactCon,
+    ServiceSpan,
 } from './styled';
 import SubCard from './SubCard/SubCard';
 const AppDetails=[
@@ -134,7 +135,7 @@ const MobDevPage = () => {
     };
   return (
     <MobSection>
-    <WebPageTitle>Services &gt;Mobile App development</WebPageTitle>
+    <WebPageTitle>Services &gt;<ServiceSpan>Mobile App development</ServiceSpan></WebPageTitle>
     <WebHeading>Services</WebHeading>
     <MobSectionOne />
     {selectedDetail ? (

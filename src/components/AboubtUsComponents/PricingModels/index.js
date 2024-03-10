@@ -13,19 +13,19 @@ import {
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
-    ServiceItemDesc,
-    ImageCon,
-    ServiceItemImg,
-    ServiceItemButton,
-    ServiceItemDetails,
-    ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
+    // ServiceItemDesc,
+    // ImageCon,
+    // ServiceItemImg,
+    // ServiceItemButton,
+    // ServiceItemDetails,
+    // ServiceItemCon,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -36,9 +36,9 @@ import {
   import rectangle2 from "../images/Rectangle2.svg";
   import rectangle3 from "../images/Rectangle3.svg";
   
-  import GroupImg from "../images/Group.svg"
+  // import GroupImg from "../images/Group.svg"
   
-  import ContactForm from "../../ContactUs/ContactForm";
+  // import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
   
   const PriceModel= () => {
@@ -175,6 +175,8 @@ padding:13px;
   margin-top:50px;
   margin-left:90px;
 border-radius:10px;
+color: #000000;
+
   `
   const Main4 = Styled.div`
   display:flex;

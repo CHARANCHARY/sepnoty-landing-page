@@ -22,6 +22,7 @@ import {
   IntroPlayButton,
   IntroVideoText,
   IntroExplorePart,
+  IntroExplorePart2,
   IntroAchievements,
   IntroOrangeText,
   IntroBlackText,
@@ -52,18 +53,11 @@ const HomeSection = () => {
         <Intro1>
           <Intro2>
             <Introhd1>
-              Empowering the Next
-              Generation of Software
-              And Web-app
-              Development
+            Empowering The Next Generation of Software And Web-App Development
             </Introhd1>
 
             <Introp1>
-              Development agency specialized in delivering
-              <br />
-              world-class solutions for the web & mobile through mature
-              <br />
-              and emerging technology.
+            Sepnoty, is a Developing agency  Specialized in Delivering World class Solutions For Web and Mobile Through Mature And Development Technology.
             </Introp1>
             <IntroButtonVideo>
               <Link to="/getproposal">
@@ -91,8 +85,25 @@ const HomeSection = () => {
           </Intro2>
           <IntroRightPart>
             <IntroRightImg src={Introimage} alt="not found" />
-          </IntroRightPart>
+            <IntroExplorePart>
+          <IntroAchievements>
+            <IntroOrangeText>{projects}</IntroOrangeText>
 
+            <IntroBlackText>Projects Done</IntroBlackText>
+          </IntroAchievements>
+          <IntroAchievements>
+            <IntroOrangeText>{active}</IntroOrangeText>
+
+            <IntroBlackText>Active Customers</IntroBlackText>
+          </IntroAchievements>
+          <IntroAchievements>
+            <IntroOrangeText>{customer}</IntroOrangeText>
+
+            <IntroBlackText>Customers Support</IntroBlackText>
+          </IntroAchievements>
+        </IntroExplorePart>
+          </IntroRightPart>
+         
           <IntroButtonVideo2>
               <IntroProposalText>Get a Proposal</IntroProposalText>
               <IntroPlayVideo>
@@ -117,23 +128,25 @@ const HomeSection = () => {
                 1.8k People bought our services today.
               </IntroRightText>
             </Intro33>
-        <IntroExplorePart>
-          <IntroAchievements>
-            <IntroOrangeText>{projects}</IntroOrangeText>
+          
+            <IntroExplorePart2>
+                <IntroAchievements>
+                  <IntroOrangeText>{projects}</IntroOrangeText>
 
-            <IntroBlackText>Projects Complete</IntroBlackText>
-          </IntroAchievements>
-          <IntroAchievements>
-            <IntroOrangeText>{active}</IntroOrangeText>
+                  <IntroBlackText>Projects Done</IntroBlackText>
+                </IntroAchievements>
+                <IntroAchievements>
+                  <IntroOrangeText>{active}</IntroOrangeText>
 
-            <IntroBlackText>Active Customers</IntroBlackText>
-          </IntroAchievements>
-          <IntroAchievements>
-            <IntroOrangeText>{customer}</IntroOrangeText>
+                  <IntroBlackText>Active Customers</IntroBlackText>
+                </IntroAchievements>
+                <IntroAchievements>
+                  <IntroOrangeText>{customer}</IntroOrangeText>
 
-            <IntroBlackText>Customer Support</IntroBlackText>
-          </IntroAchievements>
-        </IntroExplorePart>
+                  <IntroBlackText>Customers Support</IntroBlackText>
+                </IntroAchievements>
+            </IntroExplorePart2>
+        
       </Intro>
     </>
   );

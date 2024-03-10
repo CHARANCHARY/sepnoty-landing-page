@@ -1,7 +1,7 @@
 import behance from "../assets/behance.svg";
 import insta from "../assets/instagram.svg";
 import twitter from "../assets/twitter.svg";
-import facebook from "../assets/facebook-logo.svg";
+import facebook from "../assets/facebook.svg";
 import fig from "../assets/figma.svg";
 import search from "../assets/search.svg";
 import MV from "../assets/M&V.svg";
@@ -19,14 +19,12 @@ import {
   CompanyContainer,
   MvContainer,
   MvImg,
-  // FollowUsList,
   BreakLine,
   SearchSuggestion,
   SearchSuggestionContainer,
   SearchContainer,
   Input,
   SearchIcon,
-  // JoinUsCon,
   FollowUsCon,
   Border,
   ApproachBorder,
@@ -60,7 +58,6 @@ const AboutUsSection = (props) => {
           </Description>
           <MvImg src={MV} alt="M&V" />
         </MvContainer>
-
 
         <CompanyContainer>
           <Section>Company</Section>
@@ -105,8 +102,8 @@ const AboutUsSection = (props) => {
         <CompanyContainer>
           <Section>Recognition</Section>
           <Border />
-          <SectionItem onClick={handleLinkClick}>Testimonials</SectionItem>
-          <SectionItem onClick={handleLinkClick}>Awards</SectionItem>
+          <Link to="/AboutUsComponents/Testiomial"><SectionItem onClick={handleLinkClick}>Testimonials</SectionItem></Link>
+          <Link to="/AboutUsComponents/Awards"><SectionItem onClick={handleLinkClick}>Awards</SectionItem></Link>
         </CompanyContainer>
         <div>
           <Section>Join us</Section>

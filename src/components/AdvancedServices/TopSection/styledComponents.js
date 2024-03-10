@@ -19,7 +19,7 @@ export const AdSeviceLeftText = styled.div`
 `;
 export const AdServiceLeftHeading = styled.h2`
   font-size: 30px;
-  color: white;
+  color: #B7B6BD;
   margin-top: 20px;
   @media screen and (max-width: 768px) {
     display: none;
@@ -27,12 +27,13 @@ export const AdServiceLeftHeading = styled.h2`
 `;
 export const AdServiceLeftHeading1 = styled.h2`
   font-size: 25px;
-  color: white;
+  color: #B7B6BD;
   margin-top: 150px;
   display: none;
   @media screen and (max-width: 768px) {
     display: inline;
     width: 300px;
+
   }
 `;
 export const AdServiceLeftHeadingBlue = styled.span`
@@ -47,21 +48,25 @@ export const AdServiceLeftDescript = styled.p`
   line-height: 35px;
   margin-top: 20px;
   font-size: 20px;
+  width: 60%;
+  letter-spacing: 1px;
   @media screen and (max-width: 768px) {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
+    width: 100%;
+    margin-left: -30px;
   }
 `;
 export const AdServiceRightPart = styled.div`
   text-align: right;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;
 export const AdServiceRightPart1 = styled.div`
   text-align: right;
   display: none;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: flex;
   }
 `;
@@ -70,7 +75,7 @@ export const AdServiceRightImg = styled.img`
   height: 650px;
   position: relative;
   z-index: 1;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     width: 200px;
     height: 200px;
     margin-left: -100px;
@@ -82,8 +87,8 @@ export const AdServDots = styled.img`
   left: 0;
   width: 350px;
   height: 200px;
-  @media screen and (max-width: 455px) {
-    top: 920px;
+  @media screen and (max-width: 555px) {
+    top: 1000px;
     width: 330px;
     height: 220px;
   }
@@ -95,7 +100,7 @@ export const AdServRightDots = styled.img`
   z-index: 0;
   margin-top: 250px;
   height: 450px;
-  @media screen and (max-width: 455px) {
+  @media screen and (max-width: 555px) {
     display: none;
   }
 `;

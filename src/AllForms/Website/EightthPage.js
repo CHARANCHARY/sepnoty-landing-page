@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 const EightthPage = () => {
+    const [current,setCurrent] = useState("Any");
+    const handleButtonClick = (page) => {
+        setCurrent(page)
+    }
     return(
         <M> 
         <Main><P1>
@@ -34,12 +39,12 @@ const EightthPage = () => {
             </M3>
 
         </M2><br/>
-        <M3>
+        <M33>
             <P4>Preferred way of communication:</P4>
-            <Button1>Any</Button1>
-            <Button2>Email</Button2>
-            <Button3>Phone</Button3>
-        </M3>
+            <Button1 type="button" active={current === 'Any'}  onClick={() => handleButtonClick('Any')}>Any</Button1>
+            <Button2 type="button" active={current === 'Email'}  onClick={() => handleButtonClick('Email')}>Email</Button2>
+            <Button3 type="button" active={current === 'Phone'}  onClick={() => handleButtonClick('Phone')} >Phone</Button3>
+        </M33>
         <br/>
         <M3>
             <Input1 type="checkbox" id="1" />
@@ -48,8 +53,8 @@ const EightthPage = () => {
         </M3>
         <br/>
         <M3>
-            <Input1 type="checkbox" id="1" />
-            <Label htmlFor="1">I agree to have Sepnoty provide my request information to sepnoty affiliated development
+            <Input1 type="checkbox" id="2" />
+            <Label htmlFor="2">I agree to have Sepnoty provide my request information to sepnoty affiliated development
 centres.</Label>
 
 
@@ -64,51 +69,71 @@ Refer to our <Span>Privacy Policy</Span> for details.</P5>
     )
 }
 export default EightthPage;
+const M0 = styled.div`
+
+`
+
+
+
+
+
+
+
 
 const Input1 = styled.input`
-margin-left:-500px;
-`
+margin-left:-630px;
+color: #C1CAE7;
+cursor: pointer;
+
+`;
 const M = styled.div`
 display:flex;
 justify-content:center;
 align-items:center;
-`
+border-radius: 10px;
+width: 800px;
+margin-left: -80px;
+`;
 const Main = styled.div`
-height:500px;
-width:600px;
+height:550px;
+width: 800px;
+padding: 30px 40px 10px 40px;
 background-color:#C1CAE7;
 display:flex;
 flex-direction:column;
+border-radius: 10px;
 border: 1px solid #C1CAE7;
-margin-left:30px;
+margin-left:0px;
 `
 const P1 = styled.p`
-font-family: Inter;
 font-size: 18px;
 font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
 color:#2B459B;
-margin-left:30px;
+
 `
 const P2 = styled.div`
 margin-left:30px;
 margin-top:-10px;
 margin-right:30px;
 color:#263238;
-font-weight:500;
-`
-const P3 = styled.p`
-font-family: Inter;
-font-size: 20px;
-font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
+font-weight: 500;
+margin-top:15px;
+width: 80%;
+`
+const P3 = styled.p`
+font-size: 16px;
+font-weight: 700;
+
 text-align: left;
 color:#263238;
 margin-left:30px;
-margin-top:5px;
+margin-top: 15px;
+margin-bottom: 0px;
 `
 const M2 = styled.div`
 display:flex;
@@ -118,63 +143,107 @@ gap:40px;
 const M3 = styled.div`
 display:flex;
 flex-direction:column;
-`
+`;
+
+const M33 = styled.div`
+display:flex;
+flex-direction:row;
+`;
+
+
 const P4 = styled.p`
+
 font-family: Inter;
-font-size: 20px;
+font-size: 18px;
+
+font-size: 15px;
+
 font-weight: 700;
+margin-right: 30px;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;
 color:#263238;
 margin-left:30px;
-margin-top:-10px;
+margin-bottom: 15px;
 `
 const Input = styled.input`
 margin-left:30px;
 margin-top:-15px;
 background:transparent;
 border: 1px solid #8C8C8C;
-width:200px;
+width:180px;
+height: 30px;
+margin-bottom: -90px
+border-radius: 3px;
 `
 const Button1 = styled.button`
+
 margin-left:330px;
+
+margin-top:-35px;
+
 margin-top:-45px;
-background: #2B459B;
+
+background-color: ${(props) => (props.active ? 'blue' : 'white')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 width:60px;
 border-radius:5px;
-color:white;
 font-size:12px;
 height:20px;
 
+
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
+color: ${(props) => (props.active ? 'white' : 'black')};
+width: 80px;
+border: 1px solid #8C8C8C;
+border-top-left-radius:10px;
+border-bottom-left-radius:10px;
+font-size:17px;
+height: 30px;
+
+
 `
 const Button2 = styled.button`
-margin-left:380px;
-margin-top:-21px;
-background:transparent;
+margin-left:0px;
+margin-top: 0px;
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 border: 1px solid #8C8C8C;
-width:60px;
-left:-30px;
+width:80px;
+height: 30px;
 `
 const Button3 = styled.button`
-margin-left:440px;
-margin-top:-23px;
-background:transparent;
+background-color: ${(props) => (props.active ? '#2B459B' : '#C1CAE7')};
+color: ${(props) => (props.active ? 'white' : 'black')};
 border: 1px solid #8C8C8C;
-width:60px;
-left:-30px;
+width: 80px;
 border-top-right-radius:10px;
 border-bottom-right-radius:10px;
-`
+height: 30px;
+`;
 const Label = styled.label`
 color:#263238;
+font-weight: 500;
+font-size: 13px;
 margin-left:60px;
-margin-top:-20px;
+margin-top:-15px;
 `
 const Span = styled.span`
 color:#BC2424;
 `
 const P5 = styled.p`
+
 font-size:12px;
+
+font-size:13px;
+line-height: 1.5;
+line-space: 20px;
+font-weight: 600;
+
+margin-left:40px;
+
 margin-left:20px;
+
+color:#263238;
 `

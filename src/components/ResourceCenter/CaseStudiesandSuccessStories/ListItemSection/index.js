@@ -1,5 +1,5 @@
 
-import { Details } from "../../../ourWork/styledComponents";
+// import { Details } from "../../../ourWork/styledComponents";
 import {
     ServiceItemDetails,
     PatternCon,

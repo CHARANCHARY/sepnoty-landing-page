@@ -110,29 +110,30 @@ background: #C1CAE7;
 gap:-10px;
 border-radius:10px;
 padding:20px;
+width:700px;
 height:350px;
-width:400px;
 `
 const Form3 = Styled.div`
 margin-top:40px;
 `
 const Heading = Styled.h1`
 color:#263238;
-font-size:20px;
+font-size:18px;
 font-weight:700;
 margin-bottom:20px;
+font:family:Roboto;
 `
 const Form2 = Styled.form`
 `
 const Input = Styled.input`
-
+margin-right:10px;
 `
 const InputContainer=Styled.div`
 margin-top:20px;
 `
 const Label = Styled.label`
-font-size:18px;
-font-family: Inter;
+font-size:16px;
+font-family: Roboto;
 font-weight: 500;
 color:#263238;
 letter-spacing: 0em;

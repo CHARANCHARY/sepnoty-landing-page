@@ -11,19 +11,19 @@ import {
     Span,
     DigitalContainer,
     ListHeading,
-    Small,
-    Small1,
-    Small2,
-    Small3,
-    ServiceItemDesc,
-    ImageCon,
-    ServiceItemImg,
-    ServiceItemButton,
-    ServiceItemDetails,
+    // Small,
+    // Small1,
+    // Small2,
+    // Small3,
+    // ServiceItemDesc,
+    // ImageCon,
+    // ServiceItemImg,
+    // ServiceItemButton,
+    // ServiceItemDetails,
     ServiceItemCon,
-    ConatctCon,
-    ContactItem,
-    Container,
+    // ConatctCon,
+    // ContactItem,
+    // Container,
     PatternCon,
     SmallPattern,
   
@@ -36,7 +36,7 @@ import {
   
   import GroupImg from "../images/Rectangle 6880.svg"
   
-  import ContactForm from "../../ContactUs/ContactForm";
+  // import ContactForm from "../../ContactUs/ContactForm";
   import FooterSection from "../../Footer/FooterSection";
 import styled from "styled-components";
   

@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { FiUploadCloud } from "react-icons/fi";
 
 import ContactSection from "../ContactSection";
-
+import "./style.css";
 import call from "../Images/call.svg";
 import whatsapp from "../Images/whatsapp.svg";
 import livechat from "../Images/livechat.svg";
@@ -55,54 +55,115 @@ const contactListItem = [
   },
 ];
 
-// const inputElementList = [
-//   { id: 1, inputType: "Full name" },
-//   { id: 2, inputType: "Company" },
-//   { id: 3, inputType: "Work email" },
-//   { id: 4, inputType: "Phone" },
-// ];
-
 const ContactForm = (props) => {
+  const [upload, setUpload] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState(0);
+  const [message, setMessage] = useState("");
+  const [agreement, setAgreement] = useState({
+    contact: false,
+    requestInfo: false,
+  });
   const { heading } = props;
-  const [sepnotyContactChecked, setSepnotyContactChecked] = useState(false);
-  const [requestSepnotyChecked, setRequestSepnotyChecked] = useState(false);
-  const [isFormValid, setIsFormValid] = useState(false);
+  // const [sepnotyContactChecked, setSepnotyContactChecked] = useState(false); // not used after intergration
+  // const [requestSepnotyChecked, setRequestSepnotyChecked] = useState(false);
+  // const [isFormValid, setIsFormValid] = useState(false);
   const fileInputRef = useRef(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (sepnotyContactChecked && requestSepnotyChecked) {
-      console.log("Form submitted");
+  const browseHandler = () => {
+    fileInputRef.current.click();
+  };
+  const fileHandler = (e) => {
+    const allowedTypes = ["application/pdf"];
+    if (e.target.files[0]?.type.includes(allowedTypes)) {
+      const selectedFile = e.target.files[0];
+      setUpload(selectedFile);
     } else {
-      console.log("Please agree to both conditions to proceed.");
+      alert("Enter only pdf file");
     }
   };
 
-  const handleSepnotyContactChange = (e) => {
-    setSepnotyContactChecked(e.target.checked);
-    setIsFormValid(e.target.checked && requestSepnotyChecked);
+  const changeHandler = (type, e) => {
+    if (type === "agreement" && e.target.id === "contact") {
+      setAgreement({ ...agreement, contact: !agreement.contact });
+    } else if (type === "agreement" && e.target.id === "requestInfo") {
+      setAgreement({ ...agreement, requestInfo: !agreement.requestInfo });
+    } else {
+      switch (type) {
+        case "message":
+          setMessage(e.target.value);
+          break;
+        case "email":
+          setEmail(e.target.value);
+          break;
+        case "username":
+          setUsername(e.target.value);
+          break;
+        case "companyName":
+          setCompanyName(e.target.value);
+          break;
+        case "phoneNumber":
+          setPhoneNumber(e.target.value);
+          break;
+        default:
+          console.log("Invalid change Handler");
+      }
+    }
   };
 
-  const handleRequestSepnotyChange = (e) => {
-    setRequestSepnotyChecked(e.target.checked);
-    setIsFormValid(sepnotyContactChecked && e.target.checked);
-  };
+  const formHandler = async (e) => {
+    e.preventDefault();
+    const data = new FormData();
+    data.set("message", message);
+    data.set("username", username);
+    data.set("email", email);
+    data.set("companyName", companyName);
+    data.set("phoneNumber", phoneNumber);
+    data.set("agreement", JSON.stringify(agreement));
+    data.set("files", upload);
 
-  const handleBrowseClick = () => {
-    // Trigger click event of the file input element
-    fileInputRef.current.click();
-  };
+    const response = await fetch(
+      'http://localhost:8800/api/contact/contactus',
+      {
+        method: "POST",
+        body: data,
+        headers: {
+          "Access-Control-Allow-Headers": "*",
+        },
+      }
+    );
 
-  const handleFileChange = (e) => {
-    // Handle file selection
-    const selectedFile = e.target.files[0];
-    console.log("Selected file:", selectedFile);
+    // Common function for reseting the form fields after performing action
+    const resetForm = () => {
+      setMessage("");
+      setUsername("");
+      setCompanyName("");
+      setEmail("");
+      setPhoneNumber(0);
+      setAgreement({ contact: false, requestInfo: false });
+    };
+
+    console.log(response);
+    if (response.status === 400) {
+      resetForm();
+      alert("Please fill all details");
+    } else if (response.ok) {
+      resetForm();
+      alert("Details have been sent");
+    } else {
+      resetForm();
+      alert(
+        "There is an error in sending data. Please try again after sometime"
+      );
+    }
   };
 
   return (
     <ContactContainer>
       <ContactQueryContainer>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={formHandler}>
           <div>
             <ContactHeading>{heading}</ContactHeading>
             <ContactDescription>
@@ -114,19 +175,22 @@ const ContactForm = (props) => {
               rows="9"
               cols="75"
               placeholder="How can we help you?"
+              id="message"
+              value={message}
+              onChange={(e) => changeHandler("message", e)}
             ></ContactTextarea>
           </div>
           <ContactDragAndDrop>
-            <FiUploadCloud className="icon" onClick={handleBrowseClick} />
+            <FiUploadCloud className="icon" onClick={browseHandler} />
             <input
               type="file"
               ref={fileInputRef}
               style={{ display: "none" }}
-              onChange={handleFileChange}
+              onChange={(e) => fileHandler(e)}
             />
             <DragHead>
               Drag and drop or{" "}
-              <ContactAnchorEle onClick={handleBrowseClick}>
+              <ContactAnchorEle onClick={browseHandler}>
                 browse
               </ContactAnchorEle>{" "}
               to upload your file(s)?
@@ -135,23 +199,47 @@ const ContactForm = (props) => {
           <ContactInputContainer>
             <ContactInputList id="userForm">
               <div>
-                <ContactUsInput placeholder="Full Name" type="text" />
+                <ContactUsInput
+                  placeholder="Full Name"
+                  type="text"
+                  id="username"
+                  value={username}
+                  onChange={(e) => changeHandler("username", e)}
+                />
               </div>
               <div>
-                <ContactUsInput placeholder="Work email" type="email" />
+                <ContactUsInput
+                  placeholder="Work email"
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => changeHandler("email", e)}
+                />
               </div>
               <div>
-                <ContactUsInput placeholder="Company" type="text" />
+                <ContactUsInput
+                  placeholder="Company"
+                  type="text"
+                  id="companyName"
+                  value={companyName}
+                  onChange={(e) => changeHandler("companyName", e)}
+                />
               </div>
               <div>
-                <ContactUsInput placeholder="Phone" />
+                <ContactUsInput
+                  placeholder="Phone"
+                  id="phone"
+                  value={phoneNumber}
+                  onChange={(e) => changeHandler("phoneNumber", e)}
+                />
               </div>
               <div className="contact-checked">
                 <SepnotyContact
                   type="checkbox"
-                  id="sepnotyContact"
-                  checked={sepnotyContactChecked}
-                  onChange={handleSepnotyContactChange}
+                  id="contact"
+                  name="contact"
+                  checked={agreement.contact}
+                  onChange={(e) => changeHandler("agreement", e)}
                 />
                 <label htmlFor="sepnotyContact">
                   I agree to have Sepnoty contact me via email, phone,
@@ -160,9 +248,10 @@ const ContactForm = (props) => {
                 <br />
                 <RequestSepnoty
                   type="Checkbox"
-                  id="requestSepnoty"
-                  checked={requestSepnotyChecked}
-                  onChange={handleRequestSepnotyChange}
+                  id="requestInfo"
+                  name="requestInfo"
+                  checked={agreement.requestInfo}
+                  onChange={(e) => changeHandler("agreement", e)}
                 />
                 <label htmlFor="requestSepnoty">
                   I agree to have Sepnoty provide my request Information to
@@ -171,7 +260,17 @@ const ContactForm = (props) => {
               </div>
             </ContactInputList>
             <ContactButtonCon>
-              <ContactButton type="submit" disabled={!isFormValid}>
+              <ContactButton
+                type="submit"
+                className={
+                  !Object.values(agreement).every((elem) => elem === true)
+                    ? "disale"
+                    : null
+                }
+                disabled={
+                  !Object.values(agreement).every((elem) => elem === true)
+                }
+              >
                 Send
               </ContactButton>
             </ContactButtonCon>
