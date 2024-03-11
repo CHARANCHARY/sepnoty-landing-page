@@ -22,19 +22,15 @@ export const Container = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    flex-flow: wrap;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-flow: wrap;
 `;
 
 export const LogoContainer = styled.div`
-  @media screen and (min-width: 768px) {
-    margin-right: 0px;
-  }
+  margin-right: 0px;
 `;
 
 export const SepnotyLogo = styled.img`
@@ -73,14 +69,12 @@ export const ServiceContainer = styled.div`
 `;
 
 export const ServiceHeading = styled.h1`
-  @media screen and (min-width: 768px) {
-    font-size: 17px;
-    font-weight: 600;
-    border-bottom: 2px solid #cac7ee;
-    width: 64px;
-    color: #cac7ee;
-    margin-bottom: 16px;
-  }
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 2px solid #cac7ee;
+  width: 64px;
+  color: #cac7ee;
+  margin-bottom: 16px;
 `;
 
 export const ServiceItems = styled.p`
@@ -91,9 +85,7 @@ export const ServiceItems = styled.p`
 `;
 
 export const ContactUsSection = styled.div`
-  @media screen and (min-width: 768px) {
-    margin-left: 0px;
-  }
+  margin-left: 0px;
 `;
 
 export const ContactHeading = styled.h1`
@@ -171,8 +163,6 @@ export const Button = styled.button`
   border-bottom-right-radius: 2px;
   color: #e2dccc;
   z-index: 2;
-  @media screen and (min-width: 768px) {
-  }
 `;
 
 export const CopywriteContainer = styled.div`
@@ -251,8 +241,6 @@ export const Sections = styled.p`
 export const Section = styled.p`
   font-size: 10px;
   color: #ffffff;
-  @media screen and (min-width: 768px) {
-  }
 `;
 
 export const FollowUsContainer = styled.div`

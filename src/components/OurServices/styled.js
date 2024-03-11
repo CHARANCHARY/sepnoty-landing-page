@@ -30,7 +30,7 @@ export const Image = styled.img`
   height: 30px;
 
   width: 200px;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 4% 0px 4%;
   border-right: 1px solid #abaaaa;
   @media screen and (max-width: 555px) {
     height: 20px;

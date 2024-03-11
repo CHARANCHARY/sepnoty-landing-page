@@ -116,16 +116,15 @@ export const OurWorkText = styled.span`
   color: #2b459b;
 `;
 export const OurWorkPara = styled.p`
-font-size: 22px;
-font-family: Roboto;
-color:#B7B6BD;
-line-height: 40px;
-margin-top: 30px;
-@media screen and (max-width: 555px) {
+  font-size: 22px;
+  font-family: Roboto;
+  color: #b7b6bd;
+  line-height: 40px;
   margin-top: 30px;
-  font-size: 15px;
-}
-}
+  @media screen and (max-width: 555px) {
+    margin-top: 30px;
+    font-size: 15px;
+  }
 `;
 
 export const OurWorkCardTitle = styled.h2`
@@ -170,18 +169,6 @@ export const Details = styled.h4`
 export const Details2 = styled.h4`
   font-weight: 500;
   color: black;
-`;
-
-export const AdServRightDots = styled.img`
-  position: absolute;
-  right: 300px;
-  margin-right: 57%;
-  margin-top: -250px;
-  height: 330px;
-  width: 350px;
-  @media screen and (max-width: 555px) {
-    display: none;
-  }
 `;
 
 export const AdServRightDots = styled.img`
