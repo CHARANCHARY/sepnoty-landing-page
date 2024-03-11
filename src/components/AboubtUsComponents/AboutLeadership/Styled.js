@@ -8,7 +8,7 @@ export const DigitalContainer = styled.div`
   padding-bottom: 20px;
 `;
 export const Header = styled.h1`
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   color: #ffffff;
   padding: 30px 20px 30px 5%;
@@ -19,7 +19,7 @@ export const Span = styled.span`
 `;
 
 export const Service = styled.h1`
-  font-size: 30px;
+  font-size: 32px;
   color: #ffffff;
   font-weight: 600;
   padding: 10px 30px 20px 5%;
@@ -31,7 +31,7 @@ export const ContentRecomContainer = styled.div`
 `;
 
 export const ConRecHead = styled.h1`
-  font-size: 30px;
+  font-size: 32px;
   color: #ffffff;
   margin-bottom: 30px;
   font-weight: bold;
@@ -41,8 +41,9 @@ export const ConRecHead = styled.h1`
 export const ConRecDesc = styled.p`
   font-size: 20px;
   color: #ffffff;
-  width:1300px;
+  width:1100px;
   padding: 20px 30px 30px 0px;
+  margin-left:60px;
 `;
 
 export const Button = styled.button`
@@ -96,11 +97,10 @@ export const ServiceItemCon = styled.div`
 `;
 export const ServiceItemDesc = styled.p`
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 20px;
   color: #ffffff;
   font-weight:400;
   width:1200px;
-  font-family:Inter;
 `;
 
 export const ImageCon = styled.div`
@@ -112,7 +112,7 @@ export const ImageCon = styled.div`
   padding:20px;
 `;
 export const ServiceItemImg = styled.img`
-width:250px;
+width:270px;
 margin-left:-70px;
 `;
 

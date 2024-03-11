@@ -179,7 +179,7 @@ on various technical aspects of a business, project, or initiative.
 
   `
   const Heading = Styled.div`
-  font-size: 18px;
+  font-size: 21px;
   color: #2b459b;
   font-weight: bold;
 
@@ -205,10 +205,11 @@ on various technical aspects of a business, project, or initiative.
 
  const Image = Styled.img`
     margin-top:10px;
-    height:200px;
+    height:250px;
     margin-left:-600px;
  `
  const Para1 = Styled.p`
+ font-size:20px;
 `
 const Para2 = Styled.p`
 

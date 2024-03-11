@@ -184,6 +184,16 @@ outsourcing services</p>
                     </Main3>
                     <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
                 </Main2>
+                <Main2>
+                    <Image2 src={GroupImg} alt="not=found"/>
+                    <Main3>
+                        <Image1 src={Image} alt="not-found"/>
+                        <P>Stinger Technologies, 
+a global provider of Business Processes
+outsourcing services</P>
+                    </Main3>
+                    <Para>Sepnoty demonstrated adaptability and responsiveness. Throughout the whole corporate analytics solution installation process, </Para>
+                </Main2>
             </Main1>
             <FooterSection />
         </DigitalContainer>
@@ -196,6 +206,10 @@ outsourcing services</p>
   
   export default ClientReviews;
 
+  const P = Styled.p`
+  margin-top:20px;
+  `
+
   const Main1 = Styled.div`
   display:flex;
   flex-direction:row;
@@ -203,15 +217,15 @@ outsourcing services</p>
   margin-top:20px;
   width: 85%;
   height: 100vh;
-  margin-left: 10%;
-  margin-bottom: 50%;
+  margin-left: 8%;
+  margin-bottom: 52%;
 
   `
   const Main2 = Styled.div`
   display:flex;
   flex-direction:column;
   border: 0.99px solid #FFFFFF;
-  background: #D9D9D917;
+  background: #2f333f;
   gap:20px;
   border-radius:7px;
   padding: 20px;
@@ -226,15 +240,17 @@ outsourcing services</p>
   
   `;
   const Para = Styled.p`
-      font=size: 14px;
+      font-size: 16px;
   
   `;
   const Image1 = Styled.img`
   height: 80px;
   margin-right: 10px;
+  margin-top:10px;
+margin-right:10px;
   `
   const Image2 = Styled.img`
   height:45px;
   width:140px;
+  margin-top:10px;
   `
-  

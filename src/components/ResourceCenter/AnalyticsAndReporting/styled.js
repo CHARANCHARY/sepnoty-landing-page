@@ -158,9 +158,8 @@ export const ProTopHead = styled.h1`
 `;
 export const ProTopImg = styled.img`
     background-color: #263238;
-    height: 309px;
-   
-    margin: -2px -30px -90px 90px;
+    height: 300px;
+    margin: -2px -30px 0px 90px;
     width: 290px;
 
 
