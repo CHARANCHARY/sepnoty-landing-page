@@ -15,14 +15,14 @@ export const ImgContainer = styled.div`
   align-items: center;
   border-radius: 10px;
   margin: 30px 5% 0px 5%;
-  ${"" /* width: 80%; */}
+  // ${"" /* width: 80%; */}
 
   @media screen and (max-width: 555px) {
     width: 100%;
     margin-left: 0%;
     height: 20px;
     margin-top: 5vh;
-    margin-left: 1%;
+    margin-left: ;
   }
 `;
 
@@ -34,7 +34,7 @@ export const Image = styled.img`
   border-right: 1px solid #abaaaa;
   @media screen and (max-width: 555px) {
     height: 20px;
-    width: 55px;
+    width: 48px;
     padding: 0px 10px 0px 10px;
     border-right: 1px solid #abaaaa;
   }
@@ -96,7 +96,7 @@ export const CuateImage = styled.img`
   width: 30%;
   z-index: 1;
   @media screen and (max-width: 555px) {
-    display: ;
+    display: none;
   }
 `;
 
@@ -104,12 +104,12 @@ export const CuateImage11 = styled.img`
   width: 50%;
   height: 120px;
   position: relative;
-  margin-top: -150px;
+  margin-top: 0px;
   margin-left: auto;
   display: none;
   margin-right: -60px;
   @media screen and (max-width: 555px) {
-    display: none;
+    display: flex;
   }
 `;
 

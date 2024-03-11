@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const SectionOneCon=styled.div`
-background-color:rgba(37, 73, 137, 1);
-padding:30px 50px 30px 40px;
+background-color: #2B459B;
+padding:30px 50px 30px 60px;
 color:white;
 margin-bottom:40px;
+z-index: -4;
+ margin-left: -50px;
 `;
 export const SectionOneHeading=styled.h1`
 width:40%;
@@ -35,19 +37,20 @@ padding-right: 30px;
 border: none;
 font-family: "roboto";
 cursor: pointer;
+z-index: 0;
 @media screen and (max-width: 455px) {
   height: 30px;
   align-self:center;
 }
 `;
 export const BackgroundShapeOne=styled.span`
-position:absolute;
+position: ;
 background-color:rgba(129, 150, 219, 0.25);
 width:170px;
 height:250px;
 top:7;
 left:0;
-z-index:0;
+z-index: ;
 `;
 export const BackgroundShapeTwo=styled.span`
 position:absolute;
@@ -56,9 +59,9 @@ height:350px;
 margin-top: -80px;
 margin-right:0px;
 background-color:rgba(129, 150, 219, 0.25);
-z-index:0;
+z-index: -3;
 top:-25;
 right:0;
 gap:0;
-z-index:0;
+z-index:1;
 `;

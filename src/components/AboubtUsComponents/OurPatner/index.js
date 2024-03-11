@@ -46,7 +46,7 @@ import {
       <>
         <DigitalContainer>
           <Header>
-          Company &gt; <Span>Our Partners</Span>
+          Partners &gt; <Span>Our Partners</Span>
           </Header>
           <Service>About Us</Service>
           <ContentRecomContainer>
@@ -153,8 +153,8 @@ we have collaborations with industry leaders in cloud technologies, data managem
   const He = Styled.h1`
   margin-left:100px;
   margin-top:120px;
-  font-size:22px;
-  margin-bottom:-59px;
+  font-size:24px;
+  margin-bottom:-49px;
   `
   
   const Main = Styled.div`
@@ -163,7 +163,7 @@ we have collaborations with industry leaders in cloud technologies, data managem
   margin-left:100px;
   gap:180px;
   margin-top:190px;
-  margin-bottom:130px;
+  margin-bottom:210px;
   `
   const Main1 = Styled.div`
  
@@ -182,17 +182,22 @@ we have collaborations with industry leaders in cloud technologies, data managem
   // font-weight: bold;
   // `
   const Image5 = Styled.img`
-  height:50px;
+  height:70px;
+  margin-top:10px;
+  margin-bottom:10px;
   `
   const Para1 = Styled.p`
   margin-top:2px;
+  font-size:16px;
+  width:330px;
   `
   const Img = Styled.img`
-  width:300px;
+  width:350px;
   `
   const Par = Styled.p`
   margin-left:100px;
   width:1200px;
   margin-top:100px;
   margin-bottom:-109px;
+  font-size:20px;
   `

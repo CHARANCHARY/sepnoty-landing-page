@@ -30,7 +30,7 @@ const { details, onBackClick } = props;
   return (
     <SubCardSection>
     <SubPageCardCon>
-    <SubPageImg src={pic} />
+    <SubPageImg src={pic}  alt="web pics"/>
     <SubCardText>{cardText}</SubCardText>
     </SubPageCardCon>
     <div>

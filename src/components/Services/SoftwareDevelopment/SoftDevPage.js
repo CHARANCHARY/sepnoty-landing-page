@@ -13,6 +13,7 @@ import workimg1 from './images/workimg1.png'
 import workimg2 from './images/workimg2.png'
 import workimg3 from './images/workimg3.png'
 import ServiceCard from "./SectionThree/ServiceCard"
+import FooterSection from "../../Footer/FooterSection"
 import { 
     SoftDevSection,
     PageTitle,
@@ -138,7 +139,7 @@ imgUrl:workimg3,
 const SoftDevPage = () => {
   return (
     <SoftDevSection>
-    <PageTitle>Services &gt;<ServiceSpan>Software Development</ServiceSpan></PageTitle>
+    <PageTitle>Services &gt; <ServiceSpan>Software Development</ServiceSpan></PageTitle>
     <SectionOne />
     <SectionTwo />
     <SectionThreeHeading>Explore Our <SpanThree>Software Development</SpanThree> Offering</SectionThreeHeading>
@@ -174,7 +175,7 @@ const SoftDevPage = () => {
     <ContactCon>
     <ContactForm />
     </ContactCon>
-   
+    <FooterSection />
     </SoftDevSection>
     
   )

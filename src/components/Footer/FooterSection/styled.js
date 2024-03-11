@@ -4,16 +4,14 @@ import layout from "../Images/layout.svg";
 
 export const GlobalStyle = createGlobalStyle` 
  *{ box-sizing: border-box;
-  color: #D9D9D9;
   margin: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "roboto";
  }
 `;
 
 export const Container = styled.div`
   display: flex;
   background-color: #0c111f;
-  background-size: unset;
   flex-direction: column;
   padding: 40px 40px 5px 40px;
   z-index: 2;
@@ -48,7 +46,7 @@ export const SepnotyDescription = styled.p`
   font-size: 14px;
   width: 398px;
   margin-top: 20px;
-
+  color: #fff;
   @media screen and (max-width: 555px) {
     font-size: 14px;
     width: 258px;
@@ -58,6 +56,7 @@ export const SepnotyDescription = styled.p`
 
 export const SepnotyDescription1 = styled.p`
   margin-top: 10px;
+  color: #fff;
   @media screen and (max-width: 555px) {
     display: none;
   }
@@ -80,6 +79,7 @@ export const ServiceHeading = styled.h1`
 export const ServiceItems = styled.p`
   font-size: 14px;
   margin-top: 10px;
+  color: #fff;
   @media screen and (min-width: 768px) {
   }
 `;
@@ -92,6 +92,7 @@ export const ContactHeading = styled.h1`
   font-size: 17px;
   color: #cac7ee;
   margin-bottom: 16px;
+
   @media screen and (max-width: 555px) {
     margin-bottom: 6px;
     margin-top: 10px;
@@ -203,7 +204,8 @@ export const BottomContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   @media screen and (max-width: 555px) {
     flex-direction: column;
     margin-top: 20px;
@@ -214,6 +216,7 @@ export const BottomContainer = styled.div`
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
+  margin-right: 0px;
   @media screen and (max-width: 555px) {
     width: 90%;
     justify-content: space-around;
@@ -230,7 +233,7 @@ export const Sections = styled.p`
   padding-right: 10px;
   height: 10px;
   @media screen and (max-width: 555px) {
-    font-size: 16px;
+    font-size: 12px;
     height: 20px;
     margin-right: 0px;
     padding-left: 6px;
@@ -245,7 +248,9 @@ export const Section = styled.p`
 
 export const FollowUsContainer = styled.div`
   display: flex;
+  display: none;
   flex-direction: column;
+
   @media screen and (max-width: 555px) {
     display: none;
   }
@@ -253,6 +258,7 @@ export const FollowUsContainer = styled.div`
 
 export const FollowUsContainer1 = styled.div`
   display: none;
+  order: 8;
   @media screen and (max-width: 555px) {
     display: flex;
     flex-direction: column;
@@ -264,7 +270,6 @@ export const FollowUsSection = styled.ul`
   flex-direction: column;
   list-style-type: none;
   padding: 0px;
-  margin: 0px;
 
   @media screen and (max-width: 555px) {
     flex-direction: row;

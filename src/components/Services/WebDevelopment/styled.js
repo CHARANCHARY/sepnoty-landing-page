@@ -24,6 +24,8 @@ export const WebSectionTwo=styled.div`
 display:flex;
 margin-top:40px;
 flex-wrap:wrap;
+justify-content: center;
+
 `;
 export const WebSectionTwoHeading=styled.h2`
 color:rgba(43, 69, 155, 1);
@@ -32,9 +34,11 @@ margin:60px 0px 20px 30px;
 `;
 export const HeadingSpan=styled.span`
 width:65px;
+
 height:8%;
 margin-top: 48px;
-margin-left:15px;
+align-self: flex-start;
+margin-left: 15px;
 position:absolute;
 background-color:rgba(129, 150, 219, 0.25);
 z-index:0;
@@ -43,8 +47,9 @@ export const WebSectionTwoCardsCon=styled.div`
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-justify-content:center;
-margin-bottom:40px;
+width: 80%;
+justify-content: center;
+margin: 40px 0 40px 0;
 `;
 export const ContactCon = styled.div`
   background-color: #d4daf0;

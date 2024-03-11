@@ -59,8 +59,6 @@ export const CrEle = Styled.p`
   padding: 0px;
   color: #244886;
   font-size: 17px;
-
-
 `;
 
 export const Desc = Styled.p`

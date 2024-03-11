@@ -137,42 +137,49 @@ For teams that want to collaborate and build for themselves and their customers.
   display:flex;
   flex-direction:row;
   margin-left:100px;
-  gap:140px;
+  gap:80px;
+  margin-bottom:12%;
   `
   const Main1 = Styled.div`
   background:#D9D9D9;
   border-radius:10px;
-  width:300px;
-  height:200px;
+  width:380px;
+  height:300px;
 padding:13px;
   `
   const Main2 = Styled.div`
   display:flex;
   flex-direction:row;
   justify-content:space-between;
-  margin-top:10px;
+  margin-top:70px;
   `
   const Main3 = Styled.div`
-  margin-top:50px;
+  margin-top: -20px;
   `
   const Heading1 = Styled.h1`
   color: #000000;
-  font-size:22px;
+  font-size:32px;
   font-weight:700;
+  margin-bottom:20px;
   `
   const Para1 = Styled.p`
   color:#000000;
-  font-size:15px;
+  font-size:18px;
   font-weight:400;
   `
   const Rupee = Styled.p`
   color: #000000;
+  font-size:24px;
+  margin-top: 10px;
+  font-weight: 500;
   `
   const Botton = Styled.button`
   
-  background: #89A4FF;
-  height:25px;
-  margin-top:50px;
+  background:  #89a4ff;
+  height:40px;
+  width: 120px;
+  font-size: 16px;
+  margin-top:10px;
   margin-left:90px;
 border-radius:10px;
 color: #000000;
@@ -181,12 +188,12 @@ color: #000000;
   const Main4 = Styled.div`
   display:flex;
   flex-direction:row;
-  margin-top:40px;
+  margin-top:110px;
   justify-content:space-between;
   `
   const Main5 = Styled.div`
  display:flex;
+ margin-top:85px;
  flex-direction:row;
  justify-content:space-between;
- margin-top:30px;
   `

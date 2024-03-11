@@ -2,9 +2,12 @@
 import styled from "styled-components";
 import { BarChart, Bar  } from 'recharts';
 import MobSectionOne from './MobSectionOne/MobSectionOne';
+import FooterSection from "../../Footer/FooterSection";
+
 // Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer
 import DaimondImg from "./image 22.png";
 import Vector from "./Vector.png";
+import GraphPro from "./Rectangle 6232.png";
 import {
     // Header,
     // MobSection,
@@ -29,6 +32,8 @@ import {
     ProTopImg,
     ProBtn,
     VectorImg,
+    GraphImg,
+    BtnLearn,
 } from "./styled"
 
 
@@ -165,7 +170,7 @@ const AnalyticsAndReporting = () => {
         <GdHeading>Resources</GdHeading>
         
         <MobSectionOne />
-        <ProMainDiv>
+              <ProMainDiv>
                  <ProTop>
                  <ProBtn> <VectorImg src={Vector} alt="Vector"/> 15 Days</ProBtn>
 
@@ -175,13 +180,14 @@ const AnalyticsAndReporting = () => {
                       <ProTopImg src={DaimondImg} alt=" Pro version Get" />
                  </ProTop>
                  <ProBottom>
-
+                    <GraphImg src={GraphPro} alt="Graph set"/>
+                    <BtnLearn type="button">Learn More</BtnLearn>
                  </ProBottom>
              </ProMainDiv>
              <MobSection1>
             {/* <GraphsContainer> */}
-                    <CustomResponsiveContainer width="9%" height="5%">
-                        <BarChart width={350} height={300} data={ActivityData}  
+                    <CustomResponsiveContainer width="8%" height="5%">
+                        <BarChart width={310} height={300} data={ActivityData}  
                           //  margin={{
                           //   top: 20,
                           //   right: 10,
@@ -201,7 +207,7 @@ const AnalyticsAndReporting = () => {
                         </BarChart>
                     </CustomResponsiveContainer>
                     <CustomResponsiveContainer width="9%" height="5%">
-                        <BarChart width={350} height={300} data={projectsData}
+                        <BarChart width={310} height={300} data={projectsData}
                           
                         >
                             <defs>
@@ -233,6 +239,7 @@ const AnalyticsAndReporting = () => {
                     </CirclesContainer>
             {/* </GraphsContainer> */}
             </MobSection1>    
+            <FooterSection />
         </AnalyticsPage>
     )
 };

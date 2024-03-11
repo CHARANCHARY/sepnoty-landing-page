@@ -27,8 +27,8 @@ export const Span = styled.span`
 export const CirclesContainer = styled.div`
   background-color: #C1CAE7;
   height: 350px;
-  width: 46%;
-  margin-left: 20px;
+  width: 350px;
+  margin-left: 30px;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -90,24 +90,29 @@ export const PercentageContainer = styled.div`
       background-color: #C1CAE7;
       padding: 30px 0px 0px 30px;
       color: black;
-      margin-right: 10px;
+      margin-right: 0px;
       border-radius: 10px;
       height: 350px;
-      width: 46.5%;
+      width: 350px;
       
 `;
 export const AnalyticsPage=styled.div`
-background-color:rgba(12, 17, 31, 1);
-width:100vw;
+background-color: #0C111F;
+width: 101%;
+height: 130%;
+margin-top: -30px;
+margin-left: -10px;
+margin-right: 0px;
+padding: 0 0px 0 20px;
 `;
 export const ServiceSpan=styled.span`
 font-weight:normal;
 font-size:20px;
 `;
 export const GdPageTitle=styled.h2`
-font-size:26px;
+font-size:20px;
 color:white;
-padding:65px 0px 10px 40px;
+padding: 105px 0px 10px 40px;
 `;
 export const GdHeading=styled.h1`
 font-size:28px;
@@ -127,7 +132,7 @@ export const ProMainDiv = styled.div`
       position: absolute;
       height: 100%;
       padding: 20px;
-      margin 10px 10px 10px 40px;
+      margin 10px 0px 10px 0px;
 
 
 `;
@@ -147,16 +152,24 @@ export const ProBottom = styled.div`
 export const ProTopHead = styled.h1`
     color: #fff;
     font-size: 20px;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 20px;
     padding: 55px 0 0 10px;
 
 `;
 export const ProTopImg = styled.img`
     background-color: #263238;
-    height: 301px;
-   
-    margin: -2px -30px -90px 90px;
+    height: 300px;
+    margin: -2px -30px 0px 90px;
     width: 290px;
+
+
+`;
+
+export const GraphImg = styled.img`
+    height: 150px;
+   
+    margin: 50px 0px 0px 0px;
+    width: 100%;
 
 
 `;
@@ -184,6 +197,20 @@ cursor: pointer;
   align-self:center;
 }
 `;
+
+
+export const BtnLearn = styled.button`
+  background-color: #254989;
+  justify-content: center;
+  margin: 20px 0 0 180px;
+  border-radius: 50px;
+  height: 35px;
+  width: 120px;
+  color: #fff;
+
+`;
+
+
 
 export const VectorImg = styled.img`
     height: 18px;

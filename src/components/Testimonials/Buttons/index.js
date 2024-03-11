@@ -11,8 +11,8 @@ const SwiperButtons = () =>{
 
     return(
         <BarCon>
-            <Button onClick={()=>swiper.slidePrev()}><img src={image2} alt=' '/></Button>
-            <Button onClick={()=>swiper.slideNext()}><img src={image1} alt=' ' /></Button>
+            <Butto1 onClick={()=>swiper.slidePrev()}>←</Butto1>
+            <Button onClick={()=>swiper.slideNext()}>→</Button>
         </BarCon>
 
     )
@@ -20,16 +20,37 @@ const SwiperButtons = () =>{
 
 export default SwiperButtons;
 
-const Button = Styled.p`
+const Butto1 = Styled.p`
 background: transparent;
 border: 0px;
+font-size:25px;
+
+&:hover {
+    color: #254989;
+    font-size: 40px;
+    transition: font-size 0.3s ease; /* Apply transition to font-size */
+  }
 `
+
+const Button = Styled.p`
+
+background: transparent;
+border: 0px;
+font-size:25px;
+
+&:hover {
+    color: #254989;
+    font-size: 40px;
+    transition: font-size 0.3s ease; /* Apply transition to font-size */
+  }
+`;
 const BarCon = Styled.div`
 display: flex;
 flex-direction:row;
 align-items:center;
 justify-content:center;
 gap:40px;
+
 margin-top:10px;
 margin-bottom: 80px;
-`
+`;
