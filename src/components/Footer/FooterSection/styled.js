@@ -270,6 +270,7 @@ export const FollowUsSection = styled.ul`
   flex-direction: column;
   list-style-type: none;
   padding: 0px;
+  margin: 0px;
 
   @media screen and (max-width: 555px) {
     flex-direction: row;

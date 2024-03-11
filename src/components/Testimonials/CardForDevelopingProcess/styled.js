@@ -119,7 +119,6 @@ export const PopupContent = styled.div`
   margin-bottom: 10px;
   @media screen and (max-width: 555px) {
     flex-direction: column;
-
   }
 `;
 
@@ -140,7 +139,6 @@ export const PopupTitle = styled.h1`
     font-size: 100%;
   }
 `;
-
 
 export const PopupImage = styled.img`
   height: 120px;
@@ -186,6 +184,5 @@ export const PopupDesc = styled.p`
   @media screen and (max-width: 555px) {
     font-size: 70%;
     width: ;
-
   }
 `;
