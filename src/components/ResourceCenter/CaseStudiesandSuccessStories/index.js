@@ -4,6 +4,7 @@ import successImg from "./MobSectionOne/Rectangle 6641.png"
 import MobSectionOne from "./MobSectionOne/MobSectionOne"
 import FooterSection from "../../Footer/FooterSection";
 import ListItem from "./ListItemSection"
+import { Link } from "react-router-dom";
 
 import {
     MobSection,
@@ -18,6 +19,7 @@ import {
     ListItemSection,
     ListHead,
     LearnPara1,
+    Spacing,
     // OrderListSection,
     ImgCon,
     InsertImg,
@@ -112,7 +114,9 @@ const successList = [
             </ListItemSection>
         <ImgCon>
             <InsertImg src={img}></InsertImg>
+             <Link to="/ProjectPortfolio">
             <WebTechButton>Learn More</WebTechButton>
+            </Link>
         </ImgCon>
       {
         successList.map((item, index) =>(
@@ -122,8 +126,11 @@ const successList = [
 
         <ImgCon>
             <InsertImg1 src={successImg}></InsertImg1>
-            <WebTechButton>Learn More</WebTechButton>
+            <Link to="/ProjectPortfolio">
+                <WebTechButton>Learn More</WebTechButton>
+            </Link>
         </ImgCon>
+        <Spacing></Spacing>
       <FooterSection />
       </MobSection>
     )

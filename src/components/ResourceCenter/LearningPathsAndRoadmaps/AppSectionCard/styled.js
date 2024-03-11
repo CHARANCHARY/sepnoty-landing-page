@@ -9,14 +9,14 @@ margin-top: 40px;
 `;
 export const WebSectionTwoHeading=styled.h2`
 color:rgba(43, 69, 155, 1);
-font-size:24px;
-margin:0px 0px 20px 30px;
+font-size:28px;
+margin: 5px 0px 20px 40px;
 `;
 export const HeadingSpan=styled.span`
 width:65px;
 height:8%;
 margin-top: -6px;
-margin-left:15px;
+margin-left:10px;
 position:absolute;
 background-color:rgba(129, 150, 219, 0.25);
 z-index:0;
@@ -36,7 +36,7 @@ export const ImgCon = styled.div`
   width: 30%;
   position: relative; /* Add this line */
   justify-content: flex-end; /* Add this line */
-  margin-left: 10px;
+  margin-left: 40px;
   margin-top:20px;
 `;
 export const InsertImg=styled.img`

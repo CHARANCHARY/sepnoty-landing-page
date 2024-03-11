@@ -33,14 +33,14 @@ const AppDetails=[
         title:'Pathways to Knowledge: Navigating Learning Journeys',
         about:'A learning path, in essence, is a selection of courses bound together for learners. This bundle or package helps them progress and earn mastery over a specific subject or program. The learning path is an incredible breakthrough, wherein trainees or employees learn to sharpen the saw by a clear-defined beginning, middle & end of achieving a new skill. And the learning path is a modern-day response to calibrating the said trajectory.',
         img:appimg3,
-        content: "content2",
+        content: "content3",
     },
     {
         id:2,
         title:'Roadmaps',
         about:'Roadmap is outline to learn a particular domain form a scrap and to advanced . These roadmaps are tailored to specific roles within the IT and Non IT sector, providing a structured guide on what skills, knowledge, and experience are required to excel in those roles.',
         img:appimg2,
-        content: "content3",
+        content: "content2",
     },
 ];
 const LearningRoadsMaps = () => {

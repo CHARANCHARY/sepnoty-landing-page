@@ -13,12 +13,11 @@ color:white;
 width:30%;
 `;
 export const WebSectionDescription=styled.p`
-font-size:17px;
+font-size:22px;
 margin-top:60px;
-width:50%;
+width:60%;
 color:white;
 line-height: 1.3;
-text-align:justify;
 `;
 export const BackgroundShapeOne=styled.span`
 position:absolute;

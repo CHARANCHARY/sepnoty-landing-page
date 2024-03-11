@@ -100,7 +100,7 @@ export const Button = styled.button`
 `;
 
 export const ListHeading = styled.h1`
-  font-size: 20px;
+  font-size: 24px;
   color: #2b459b;
   font-weight: bold;
   margin-left: 2.2em;
@@ -191,10 +191,10 @@ export const Rectangle3 = styled.img`
 
 export const Small = styled.img`
   position: absolute;
-  left: 5.5%;
+  left: 5.6%;
   height: 10%;
   width: 5%;
-  top: 78%;
+  top: 73%;
   z-index: 0;
 `;
 
@@ -204,9 +204,17 @@ export const ContentContainer = styled.div`
 
 export const Small1 = styled.img`
   position: absolute;
-  left: 5.5%;
+  left: 5.6%;
   height: 10%;
   width: 5%;
-  top: 187%;
-  bottom: 20%;
+  top: 198%;
+`;
+
+
+export const RedText = styled.p`
+  color: #D01E1E;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: px;
+  margin-top: 8px;
 `;

@@ -8,13 +8,14 @@ min-height: 40vh;
 margin-bottom: 30px;
 `;
 export const WebSectionOneHeading=styled.h2`
-font-size:20px;
+font-size:28px;
+z-index: 4;
 color:white;
 width:30%;
 `;
 export const WebSectionDescription=styled.p`
-font-size:17px;
-margin-top:60px;
+font-size:20px;
+margin-top: 30px;
 width:50%;
 color:white;
 text-align:justify;
@@ -23,10 +24,11 @@ export const BackgroundShapeOne=styled.span`
 position:absolute;
 background-color:rgba(129, 150, 219, 0.25);
 width:170px;
-height:250px;
-top:7;
+height: 150px;
+top: -90;
 left:0;
-z-index:0;
+margin-top: 140px;
+z-index: 0;
 `;
 export const BackgroundShapeTwo=styled.span`
 position:absolute;

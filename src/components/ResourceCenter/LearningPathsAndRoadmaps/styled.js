@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
-width:100vw;
+width:100%;
 `;
 export const WebPageTitle=styled.h2`
 font-size:16px;
 font-weight:600;
 color:white;
-padding:105px 0px 10px 30px;
+padding: 80px 0px 20px 30px;
 `;
 export const WebSpan=styled.span`
 color: #fff;
@@ -55,8 +55,9 @@ export const PatternCon = styled.div`
 export const ListHeading = styled.h1`
   font-size: 25px;
   color: #89A4FF;
+  margin-top: 5px;
   font-weight: bold;
-  margin-left: -25px;
+  margin-left: -29px;
 `;
 
 
@@ -83,15 +84,17 @@ export const LearnPara1 = styled.p`
    margin-top: 0px;
 `;
 export const ListHead = styled.h2`
-color: #89A4FF;
+   color: #89A4FF;
    font-size:18px;
+   font-weight: 100;
    margin-top: 20px;
 `;
 
 export const LearnPara = styled.p`
   font-size:18px;
+  font-weight: 0; 
   line-height:1.5;
-  color: #FFFFFF;
+  color: #FFF;
   width:62%;
   word-spacing: 2px;
   text-align:left;

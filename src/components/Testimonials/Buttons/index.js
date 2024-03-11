@@ -1,8 +1,8 @@
 import { useSwiper } from "swiper/react";
 
 import Styled from "styled-components"
-import image1 from "../images/right.svg"
-import image2 from "../images/Forma 1 copy 8 (1).svg"
+// import image1 from "../images/right.svg"
+// import image2 from "../images/Forma 1 copy 8 (1).svg"
 
 
 

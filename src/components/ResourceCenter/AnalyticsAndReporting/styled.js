@@ -3,14 +3,7 @@ import styled from "styled-components";
 // import Ellipse2 from "./Ellipse 855.png";
 
 
-export const MobSection1=styled.div`
-background-color:rgba(12, 17, 31, 1);
-width: 55%;
-margin-left:40%;
-display: flex;
-flex-wrap: wrap;
-flex-direction:row;
-`;
+
 
 export const Header = styled.h1`
   font-size: 15px;
@@ -98,7 +91,7 @@ export const PercentageContainer = styled.div`
 `;
 export const AnalyticsPage=styled.div`
 background-color: #0C111F;
-width: 101%;
+width: 100.6%;
 height: 130%;
 margin-top: -30px;
 margin-left: -10px;
@@ -112,13 +105,15 @@ font-size:20px;
 export const GdPageTitle=styled.h2`
 font-size:20px;
 color:white;
-padding: 105px 0px 10px 40px;
+font-weight: 600;
+padding: 125px 0px 10px 80px;
 `;
 export const GdHeading=styled.h1`
-font-size:28px;
+font-size: 30px;
 font-weight:700;
-margin:10px 0px 15px 40px;
+margin: 0px 0px 15px 0px;
 color:white;
+padding: 20px 0px 10px 80px;
 `;
 
 
@@ -130,10 +125,9 @@ color:white;
 export const ProMainDiv = styled.div`
       width: 35%;
       position: absolute;
-      height: 100%;
-      padding: 20px;
-      margin 10px 0px 10px 0px;
-
+      height: 107%;
+      padding: 70px 0px 20px 50px;
+      margin 0px 0px 10px 0px;
 
 `;
 export const ProTop = styled.div`
@@ -153,7 +147,7 @@ export const ProTopHead = styled.h1`
     color: #fff;
     font-size: 20px;
     margin: 0px 0px 0px 20px;
-    padding: 55px 0 0 10px;
+    padding: 16px 0 0 10px;
 
 `;
 export const ProTopImg = styled.img`
@@ -217,6 +211,96 @@ export const VectorImg = styled.img`
    
     margin: 3px 3px -3px 10px;
     width: 18px;
+
+
+`;
+
+
+
+
+export const HeadingSection = styled.div`
+    margin: 0px 0px 0px 0px;
+    display: flex;
+
+`;
+
+
+
+
+export const SmallPattern = styled.div`
+  background-color: rgba(129, 150, 219, 0.25);
+  height: 70px;
+  width: 80px;
+  border-radius: 3px;
+  margin-left: 20px;
+`;
+
+export const PatternCon = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+export const ListHeading = styled.h1`
+  font-size: 25px;
+  color: #2B459B;
+  font-weight: bold;
+  margin-left: -20px;
+`;
+
+export const HeadingSearch = styled.h1`
+    margin: 0px 0px 10px -30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    
+
+`;
+
+export const ElementsSection = styled.div`
+    margin: 0px 0px 0px -120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+`;
+
+export const SearchSection = styled.div`
+    margin: 0px 0px 0px 850px;
+
+
+`;
+export const SearchSectionBtn = styled.button`
+    background-color: transparent;
+    border: 1px solid;
+    width: 150px;
+    height: 36px;
+    font-size: 14px;
+    margin: 0px 0px 0px 10px;
+    color: #fff;
+    border-radius: 3px;
+`;
+
+
+
+export const MobSection1=styled.div`
+background-color:rgba(12, 17, 31, 1);
+width: 55%;
+margin-left:40%;
+margin-bottom: 40px;
+margin-top: 30px;
+display: flex;
+flex-wrap: wrap;
+flex-direction:row;
+`;
+
+
+
+export const GraphImageItem = styled.img`
+    margin: 0px 20px 20px 0px;
+   width: 380px;
+   height: 400px;
 
 
 `;

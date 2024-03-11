@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
-width:100vw;
+width:100%;
 `;
 
 export const WebPageTitle=styled.h2`
@@ -123,23 +123,32 @@ export const ImgCon = styled.div`
   margin-top:20px;
 `;
 export const InsertImg=styled.img`
-height:auto;
-width:auto;
+height: 250px;
+width: 300px;
+margin-bottom: -49px;
 
 `;
 export const InsertImg1 =styled.img`
-height: 175px;
-width: 198px;
+height: 250px;
+width: 298px;
+margin-bottom: -49px;
 
 `;
 export const WebTechButton = styled.button`
   cursor: pointer;
   gap: 0;
   padding: 8px;
+  width: 299px;
   border-radius: 7px;
   background-color: rgba(217, 217, 217, 1);
   color: rgba(43, 69, 155, 1);
-  margin-top: -44px; 
-  margin-right: 2px;
+  margin-top: -236px; 
+  margin-right: 8px;
+  margin-left: -1px;
    
+`;
+
+export const Spacing =styled.div`
+ padding: 20px 0 40px 0 ;
+
 `;

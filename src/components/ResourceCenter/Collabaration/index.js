@@ -273,7 +273,7 @@ const Collaboration = () => {
         </div>
         <div>
           <Small2 src={small} alt="not-found" />
-          <ListHeading>Messaging and Chat</ListHeading>
+          <ListHeading>Groups and Communities</ListHeading>
           <CommunityCon>
             <CommunityHeading>
               Community of Website Development

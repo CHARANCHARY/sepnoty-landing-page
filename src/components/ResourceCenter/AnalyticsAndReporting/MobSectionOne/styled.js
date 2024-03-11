@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SectionOneCon=styled.div`
 background-color: #2B459B;
-padding:30px 50px 30px 60px;
+padding:30px 50px 30px 120px;
 color:white;
 margin-bottom:40px;
 z-index: -4;
@@ -19,6 +19,8 @@ width:60%;
 font-size:20px;
 line-height:25px;
 margin-top:30px;
+padding-top: 30px;
+padding-bottom: 20px;
 `;
 export const IntroProposalText = styled.button`
 border-radius: 30px;

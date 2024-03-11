@@ -1,13 +1,27 @@
 // import React, { PureComponent } from 'react';
 import styled from "styled-components";
-import { BarChart, Bar  } from 'recharts';
+// import { BarChart, Bar  } from 'recharts';
 import MobSectionOne from './MobSectionOne/MobSectionOne';
 import FooterSection from "../../Footer/FooterSection";
+import { CiSearch } from "react-icons/ci";
+import { BsSortDownAlt } from "react-icons/bs";
+import { IoClose } from "react-icons/io5";
+
+import React, {useState} from "react";
+
+
 
 // Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Text, ResponsiveContainer
 import DaimondImg from "./image 22.png";
 import Vector from "./Vector.png";
 import GraphPro from "./Rectangle 6232.png";
+
+import grp1 from "./Group 1261153426.png";
+import grp2 from "./Group 1261153427.png";
+import grp3 from './Group 1261153428.png';
+import grp4 from './Group 1261153429.png';
+
+
 import {
     // Header,
     // MobSection,
@@ -34,6 +48,16 @@ import {
     VectorImg,
     GraphImg,
     BtnLearn,
+    PatternCon,
+    SmallPattern,
+    ListHeading,
+    HeadingSection,
+    SearchSection,
+    HeadingSearch,
+    ElementsSection,
+    SearchSectionBtn,
+    GraphImageItem,
+
 } from "./styled"
 
 
@@ -43,6 +67,9 @@ import {
 
 
 const AnalyticsAndReporting = () => {
+
+    const [date, setDate]=useState();
+    console.log("Date", date);
 
     const ActivityData = [
         {
@@ -166,18 +193,85 @@ const AnalyticsAndReporting = () => {
     return(
         <AnalyticsPage>
             
-        <GdPageTitle>Resource Center &gt;<ServiceSpan>Learning Paths and Road Maps</ServiceSpan></GdPageTitle>
+        <GdPageTitle>Resource Center &gt;<ServiceSpan> Analytics and Reporting</ServiceSpan></GdPageTitle>
         <GdHeading>Resources</GdHeading>
         
         <MobSectionOne />
-              <ProMainDiv>
-                 <ProTop>
-                 <ProBtn> <VectorImg src={Vector} alt="Vector"/> 15 Days</ProBtn>
+        <HeadingSection>
+              <PatternCon>
+                <SmallPattern></SmallPattern>
+                <ListHeading>Case Studies</ListHeading>
+              </PatternCon>
+              <SearchSection>
+                  <HeadingSearch>Search here what you're looking for</HeadingSearch>
+                  <ElementsSection>
+                     <CiSearch
+                      style={{
+                        color: 'white', // Change outline color to white
+                        fontSize: '2.2em', // Increase size (adjust as needed)
+                        fontWeight: 'none',
+                        border: '1px solid',
+                        padding: '5px',
+                        borderRadius: '30px',
+                        margin: '0px 0px 0px 10px'
+                      }}
+                      />
 
+                      <BsSortDownAlt
+                           style={{
+                            color: 'white', // Change outline color to white
+                            fontSize: '2.2em', // Increase size (adjust as needed)
+                            fontWeight: 'none',
+                            border: '1px solid',
+                            padding: '5px',
+                            borderRadius: '30px',
+                            margin: '0px 0px 0px 10px'
+                          }}
+
+                       />
+
+                  <input type="date" onChange={e=>setDate(e.target.value)}  
+                       style={{
+                        backgroundColor: 'transparent',
+                        color: '#fff', // Change outline color to white
+                        border: '1px solid',
+                        width: '150px',
+                        height: '36px',
+                        borderRadius: '3px',
+                        textAlign: 'center',
+                        fontSize: '18px',
+                        margin: '0px 0px 0px 10px',
+                        fill: '#fff',
+                        cursor: 'pointer',
+                      }}
+                   />
+
+                  <SearchSectionBtn>Download Report</SearchSectionBtn>
+                  
+                   
+
+                  </ElementsSection>
+                 
+              </SearchSection>
+        </HeadingSection>
+              <ProMainDiv>
+                  
+                 <ProTop>
+                
+                      <ProBtn> <VectorImg src={Vector} alt="Vector"/> 15 Days</ProBtn>
+                      <IoClose 
+                   style={{
+                    color: 'white', // Change outline color to white
+                    fontSize: '2.2em', // Increase size (adjust as needed)
+                    fontWeight: 'none',
+                    margin: '0px 0px 0px 440px'
+                  }}
+                 />
                       <ProTopHead>
                         Pro Version
                       </ProTopHead>
-                      <ProTopImg src={DaimondImg} alt=" Pro version Get" />
+                      
+                      <ProTopImg src={DaimondImg} alt=" Pro version Get" /> 
                  </ProTop>
                  <ProBottom>
                     <GraphImg src={GraphPro} alt="Graph set"/>
@@ -185,59 +279,10 @@ const AnalyticsAndReporting = () => {
                  </ProBottom>
              </ProMainDiv>
              <MobSection1>
-            {/* <GraphsContainer> */}
-                    <CustomResponsiveContainer width="8%" height="5%">
-                        <BarChart width={310} height={300} data={ActivityData}  
-                          //  margin={{
-                          //   top: 20,
-                          //   right: 10,
-                          //   left: 50,
-                          //   bottom: 5,
-                          // }}
-                        >
-                        {/* <XAxis dataKey="name" /> */}
-                          
-                            <defs>
-                                <linearGradient id="grad" x1="0" y1="" x2="0" y2="1">
-                                    <stop offset="0%" stopColor="#FFF854" />
-                                    <stop offset="100%" stopColor="#FFF85400" />
-                                </linearGradient>
-                            </defs>
-                            <Bar dataKey="uv" label={{ position: 'top' }}   shape={<CustomBarShape />} />
-                        </BarChart>
-                    </CustomResponsiveContainer>
-                    <CustomResponsiveContainer width="9%" height="5%">
-                        <BarChart width={310} height={300} data={projectsData}
-                          
-                        >
-                            <defs>
-                                <linearGradient id="grad2" x1="0" y1="" x2="0" y2="1">
-                                    <stop offset="0%" stopColor="#545BFF" />
-                                    <stop offset="100%" stopColor="#FFF85400" />
-                                </linearGradient>
-                            </defs>                  
-                            <Bar dataKey="uv" label={{ position: 'top' }}  shape={<CustomBarShape2 />} />
-                        </BarChart>
-                    </CustomResponsiveContainer>
-                  <PercentageContainer>
-                      <div>
-                        <div style={{ border: '0px solid #ccc', width: '200px', borderRadius: '30px', overflow: 'hidden' }}>
-                            <div  style={{ backgroundColor: '#D9D9D9', height: '30px', width: `${progress}%`,borderRadius: '30px',margin:'5px' }} >
-                              Dollar {progress}%
-                              </div>
-                      
-                        </div>
-                        <div style={{ border: '0px solid #ccc', width: '300px', borderRadius: '30px', overflow: 'hidden' }}>
-                            <div style={{ backgroundColor: '#D9D9D9', height: '30px', width: `${progress}%`,borderRadius: '30px', }} />
-                        </div>
-                      </div>
-                  </PercentageContainer>
-                    <CirclesContainer>
-                        <CircleOne>4%</CircleOne>
-                        <CircleTwo>4%</CircleTwo>
-                        <CircleThree>86%</CircleThree>
-                    </CirclesContainer>
-            {/* </GraphsContainer> */}
+                    <GraphImageItem src={grp3} alt="graph reports"  />  
+                    <GraphImageItem src={grp1} alt="graph reports"  />
+                    <GraphImageItem src={grp4} alt="graph reports"  />
+                    <GraphImageItem src={grp2} alt="graph reports"  />
             </MobSection1>    
             <FooterSection />
         </AnalyticsPage>

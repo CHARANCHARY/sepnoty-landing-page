@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
-width:100vw;
+width:100%;
 `;
 
 export const WebPageTitle=styled.h2`
@@ -54,5 +54,4 @@ export const ServiceItemDesc = styled.p`
 `;
 
 export const SpaceComponent = styled.div`
-    margin: 30px 0px 200px 0px;
 `;

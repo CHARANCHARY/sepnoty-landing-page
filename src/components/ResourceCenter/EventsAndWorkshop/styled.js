@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const MobSection=styled.div`
 background-color:rgba(12, 17, 31, 1);
-width:100vw;
+width:100%;
 `;
 
 export const WebPageTitle=styled.h2`
 font-size:16px;
 font-weight:600;
 color:white;
-padding:105px 0px 10px 30px;
+padding:90px 0px 10px 60px;
 `;
 export const WebSpan=styled.span`
 color: #fff;
@@ -17,7 +17,7 @@ color: #fff;
 export const WebHeading=styled.h1`
 font-size:28px;
 font-weight:700;
-margin:10px 0px 15px 30px;
+margin:10px 0px 15px 60px;
 color:white;
 `;
 

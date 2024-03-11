@@ -62,7 +62,7 @@ const ContentRecommendation = () => {
     <>
       <Container>
         <Header>
-          Blog &gt; <Span>Content Recommendation</Span>
+        Resource center &gt; <Span>Content Recommendation</Span>
         </Header>
         <Resource>Resources</Resource>
         <ContentRecomContainer>

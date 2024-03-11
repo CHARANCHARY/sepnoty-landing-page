@@ -3,19 +3,19 @@ import styled from "styled-components";
 export const WebSectionOneCon=styled.div`
 background-color:rgba(37, 73, 137, 1);
 padding:40px 0px 0px 60px;
-width:100%;
+width: 100%;
 min-height: 40vh;
 margin-bottom: 30px;
 `;
 export const WebSectionOneHeading=styled.h2`
-font-size:25px;
+font-size:30px;
 color:white;
 width:30%;
 `;
 export const WebSectionDescription=styled.p`
-font-size:17px;
+font-size:20px;
 margin-top:60px;
-width:50%;
+width: 60%;
 color:white;
 line-height: 1.3;
 text-align:justify;

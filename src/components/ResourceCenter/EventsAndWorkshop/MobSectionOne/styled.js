@@ -13,22 +13,20 @@ color:white;
 width:30%;
 `;
 export const WebSectionDescription=styled.p`
-font-size:17px;
-margin-top:60px;
-width:50%;
+font-size: 21px;
+margin-top: 20px;
+width:60%;
 color:white;
 line-height: 1.3;
-text-align:justify;
+text-align:;
+margin-left: 50px;
 `;
 export const BackgroundShapeOne=styled.span`
 position: absolute;
 background-color:rgba(129, 150, 219, 0.25);
 width:200px;
-height:220px;
-top: 2;
-left:0;
-bottom:20;
-z-index:0;
+height:150px;
+z-index: -1;
 `;
 export const BackgroundShapeTwo=styled.span`
 position:absolute;
@@ -50,11 +48,11 @@ export const Button = styled.button`
   border-radius: 8px;
   color: #234581;
   border: 0px;
-  height: 40px;
-  width:150px;
-  font-size: 18px;
+  height: 45px;
+  width:180px;
+  font-size: 22px;
   cursor: pointer;
   font-weight: 600;
   margin-top: 20px;
-  margin-left: 150px;
+  margin-left: 50px;
 `;

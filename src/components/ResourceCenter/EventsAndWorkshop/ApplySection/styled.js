@@ -17,12 +17,13 @@ export const PatternCon = styled.div`
   align-items: center;
   margin-bottom: 20px;
   margin-top: 90px;
+  margin-left: 8%;
 `;
 export const ListHeading = styled.h1`
   font-size: 25px;
   color: #89A4FF;
   font-weight: bold;
-  margin-left: -25px;
+  margin-left: -28px;
 `;
 
 

@@ -17,8 +17,9 @@ const DeepLearnCards = (props) => {
   const { title,  image } = cardDetails;
   return (
     <li>
+       <Image src={image} />
       <CardContainer>
-        <Image src={image} />
+       
         <DetailsCon>
           <Title>{title}</Title>
         </DetailsCon>

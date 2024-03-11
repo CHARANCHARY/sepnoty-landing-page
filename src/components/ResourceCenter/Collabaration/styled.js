@@ -6,6 +6,7 @@ export const Container = styled.div`
   background-color: #0c111f;
   padding-top: 70px;
   padding-bottom: 20px;
+  width: 100%;
 `;
 
 export const Header = styled.h1`
@@ -93,10 +94,10 @@ export const ListHeading = styled.h1`
 
 export const Small = styled.img`
   position: absolute;
-  left: 7.5%;
+  left: 6%;
   height: 10%;
   width: 5%;
-  top: 75%;
+  top: 68%;
   z-index: 0;
 `;
 
@@ -105,7 +106,7 @@ export const Small1 = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  bottom: -36%;
+  bottom: -23%;
   z-index: 0;
 `;
 export const Small2 = styled.img`
@@ -113,7 +114,7 @@ export const Small2 = styled.img`
   left: 5.5%;
   height: 10%;
   width: 5%;
-  bottom: -133%;
+  bottom: -112%;
   z-index: 0;
 `;
 export const LabelCont = styled.div`
